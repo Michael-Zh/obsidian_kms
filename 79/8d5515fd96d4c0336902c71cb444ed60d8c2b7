@@ -1,0 +1,138 @@
+02_wiki/Career/Strategist-Requirements.md
+  s_abfcf5729e353d::t_4cda515c1948a4 88-96
+  s_abfcf5729e353d::t_078cf5c38d6c95 97-101
+  s_abfcf5729e353d::t_295031b62ffb52 2-10
+02_wiki/lint/_lint_queue.md
+  s_abfcf5729e353d::t_86a0271c6bf54c 9-10
+  s_abfcf5729e353d::t_fdaef5bf420f41 11-13
+  4791f6ce7686b130 2-7,17-52,55-71
+  s_abfcf5729e353d::t_da3b6b15385f45 54
+02_wiki/AdminHome/Home-Maintenance-Cadence.md
+  s_abfcf5729e353d::t_59a973f68a5191 1-44
+02_wiki/AdminHome/_AdminHome_Index.md
+  s_abfcf5729e353d::t_bbba59685b9421 1-30
+02_wiki/MindMentalHealth/Sexual-Identity.md
+  s_abfcf5729e353d::t_59492e176d6881 1,12-59
+  s_abfcf5729e353d::t_295031b62ffb52 2-11
+02_wiki/MindMentalHealth/Identity-Based-Life-Philosophy.md
+  s_abfcf5729e353d::t_e7341593997c58 7,122-129
+  dfe7551e928a3697 43-119
+02_wiki/PhysicalHealth/Fitness-Routine.md
+  s_abfcf5729e353d::t_295031b62ffb52 2-10
+  s_abfcf5729e353d::t_85f7e6779581cf 87-102
+02_wiki/_processed_log.md
+  s_abfcf5729e353d::t_0b42fc0e602a4b 177-181
+  s_abfcf5729e353d::t_cb46d078fbbbeb 182-183
+  s_abfcf5729e353d::t_f8951f52b89b6d 1-161
+  s_abfcf5729e353d::t_60ac80f5df40a1 162
+  s_abfcf5729e353d::t_63b528740d0b4b 163-166
+  s_abfcf5729e353d::t_c8c6f4c135bce7 167-176
+02_wiki/Finance/Road-to-2040-Investment-Blueprint.md
+  s_abfcf5729e353d::t_bef56d0f6f9542 71-82
+  s_abfcf5729e353d::t_a2cca68a9e3cb2 7
+  s_abfcf5729e353d::t_1a9ed3000a285c 83-98
+  dfe7551e928a3697 58-63
+02_wiki/Relationships/Partnership-with-Jeroen.md
+  s_abfcf5729e353d::t_0e9d13f3528e83 1-81
+02_wiki/_log.md
+  ai_agent 582-689
+  s_abfcf5729e353d::t_1b35c479f4ca96 1-27
+  s_abfcf5729e353d::t_63b528740d0b4b 28-43
+  s_abfcf5729e353d::t_ab98fdef352448 44-81
+  c021a2727212a3cd 121-137
+02_wiki/Career/Portfolio-Career-Design.md
+  dfe7551e928a3697 121-122
+02_wiki/CreativityCuriosity/_CreativityCuriosity_Index.md
+  4bae878438216261 20-26
+02_wiki/CreativityCuriosity/Aesthetic-Intelligence.md
+  dfe7551e928a3697 109-113
+  4d3cd55e007a8a23 76-101
+02_wiki/lint/wiki_lint_20260620.md
+  4791f6ce7686b130 1-92
+02_wiki/LifeManagement/KMS-Development.md
+  dfe7551e928a3697 85-114
+  s_abfcf5729e353d::t_a2cca68a9e3cb2 7
+  s_abfcf5729e353d::t_46f4670a38ff9b 153-163
+  s_abfcf5729e353d::t_fe57a4bbe64cf7 184-191
+  s_abfcf5729e353d::t_55ec4b47e578cd 164-183
+02_wiki/LifeManagement/Habits-2026.md
+  s_abfcf5729e353d::t_a2cca68a9e3cb2 2-10
+  s_abfcf5729e353d::t_6b003b4f5dcca5 1,11-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.33-trip",
+  "base_commit_sha": "798d5515fd96d4c0336902c71cb444ed60d8c2b7",
+  "prompts": {
+    "4791f6ce7686b130": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b6a7fe33-bc7b-4618-bb98-193e33b5fb11",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 132,
+      "overriden_lines": 0
+    },
+    "4bae878438216261": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "496aecb1-946f-4150-b255-3c4948f9ae8c",
+        "model": "arn:aws:bedrock:us-west-2:671660153913:application-inference-profile/kh3mlhvjeex4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 93,
+      "overriden_lines": 0
+    },
+    "4d3cd55e007a8a23": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "57cdff6e-2ce1-4fb6-80de-53b9babb3a53",
+        "model": "us.anthropic.claude-sonnet-4-6"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 14,
+      "overriden_lines": 0
+    },
+    "c021a2727212a3cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1db23cde-81d8-4c4f-b9dc-b1d7c4b993c9",
+        "model": "global.anthropic.claude-sonnet-4-6"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 104,
+      "overriden_lines": 0
+    },
+    "dfe7551e928a3697": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "075b59ad-19cc-434d-a10f-ca32482191de",
+        "model": "global.anthropic.claude-sonnet-4-6"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 86,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_abfcf5729e353d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "383139c2-769c-44de-8d80-df177f6161f6",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
