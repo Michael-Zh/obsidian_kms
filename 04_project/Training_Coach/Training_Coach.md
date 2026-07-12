@@ -17,7 +17,7 @@ Elite body recomposition PWA for a 36-year-old male dancer.
 
 ## 已上线功能
 
-- **Priming tab（第一位）** — KMS GitHub 读取（_POS.md、_priority.md、最新 coaching 文件、**_in_case_you_are_bored.md Active Projects + Backlog**）+ 今日训练/睡眠数据；结构化 AI JSON 输出（brief_markdown + top3 + backlog）；Top3 可拖动卡片（category chip、suggestedTime、Block/Edit/Close）；Google Calendar "Focus Blocks" 写入；Backlog 面板（优先级/分类双排序，±5 步长，Add/promote）；服务端自动去重 top3 与 backlog 重合项；9-pillar BacklogCategory；**页面加载自动生成（无需用户 brain dump）**
+- **Priming tab（第一位）** — KMS GitHub 读取（_POS.md、_priority.md、最新 coaching 文件、**_in_case_you_are_bored.md Active Projects + Backlog**）+ 今日训练/睡眠数据；结构化 AI JSON 输出（brief_markdown + top3 + backlog）；Top3 可拖动卡片（category chip、suggestedTime、**durationMinutes ±15min stepper**、Block/Edit/Close）；Google Calendar "Focus Blocks" 写入（用 durationMinutes 计算结束时间）；Backlog 面板（优先级/分类双排序，±5 步长，Add/promote）；服务端自动去重 top3 与 backlog 重合项；9-pillar BacklogCategory；**页面加载自动生成（无需用户 brain dump）**；**安全 Promotion（关闭面板直接合并，>3 items 显示冲突面板，未选中 items 放回 backlog）**
 - **Today tab** — AM/PM Pulse（AutoSleep webhook）、readiness banner + Apply、Gym Logger（warmup sets、inline edit、rest timer）、7-day lookahead、历史回溯
 - **Coaching tab** — AI chat、Rule 提案卡、Body Scan 录入、In-App Weekly Scheduler（drag-and-drop）、Proactive Insights（daily cache + dismiss）
 - **Metrics tab** — 体成分趋势图、gym PR 曲线、unified energy score
