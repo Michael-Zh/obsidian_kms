@@ -1,0 +1,192 @@
+"04_project/Travel/202606 Madrid/CLAUDE.md"
+  s_7d1bda0cfb1bdc::t_563b2380e62d7f 83-84
+  s_584ead4b828c4f::t_9ee83d303ddb38 1-82
+04_project/Training_program/CLAUDE.md
+  013e7b4b0eea9822 2-174
+  s_7d1bda0cfb1bdc::t_22f360c268c3a9 191-192
+04_project/Life_Management_System/CLAUDE.md
+  s_7d1bda0cfb1bdc::t_8cbe54db5024a8 145-146
+  ac858d7269438cec 2-37,40-142
+  dfe7551e928a3697 38
+04_project/Training_Coach/Training_Coach.md
+  s_2fd15813e7055a::t_baea397ff07b25 27
+  s_2fd15813e7055a::t_94ab987a9f09cf 35-38
+  s_7d1bda0cfb1bdc::t_4f768559ae92f2 20
+04_project/Studio_makeover/CLAUDE.md
+  s_7d1bda0cfb1bdc::t_c02c32c72f1924 116-117
+  51269d8d9c6b3eb0 1-115
+04_project/_in_case_you_are_bored.md
+  s_7d1bda0cfb1bdc::t_d80f338f3333f3 4-11,22-23
+  dfe7551e928a3697 20,56-93
+  972e2a39558f4d6e 109-111
+00_system/_POS.md
+  4bae878438216261 21,24,76-77,81,83,89-91,114-116,120,124,127-128,131,133-135,137,143-146,148-149,151,154-157,173-177,179,184-185,199-201
+  s_52337a42c15bd2::t_e4dfecbb932b55 190
+  s_52337a42c15bd2::t_5a9f2d3f8db83d 158
+  dfe7551e928a3697 103-104
+  s_52337a42c15bd2::t_1d602cfeeee7cb 22
+  s_52337a42c15bd2::t_70cc7277f64b7f 105
+  s_52337a42c15bd2::t_a7a552337e01f9 92
+  s_52337a42c15bd2::t_a5501ac82ddf88 62
+  s_52337a42c15bd2::t_cdd927ba940a77 207
+04_project/Flight_Upsell/CLAUDE.md
+  s_74f4c9e35b1a55::t_1677e4159e657c 86-87
+  74f4c9e35b1a5585 2-6,27-32,34-40,42-84,95-122,124-145
+  s_e783ee2bcdbd03::t_c5f070d02f7e1b 33,41
+  s_74f4c9e35b1a55::t_03a107c756241c 123
+  s_e783ee2bcdbd03::t_653144dade8d60 85
+  s_7d1bda0cfb1bdc::t_18d82b785628a0 158-159
+  s_7d1bda0cfb1bdc::t_0d3d54a3f3b8cb 9-12
+00_system/_priority.md
+  s_0007b4b9b1fb1c::t_09340a2680bfa6 7-26,31,33
+  4bae878438216261 27-30,32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.33-trip",
+  "base_commit_sha": "5c0b171b3e46564e866146c5a1dfe1188d56d24f",
+  "prompts": {
+    "013e7b4b0eea9822": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc53b3c9-2479-48c8-a8bc-4d74e5cb84c7",
+        "model": "<synthetic>"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 80,
+      "overriden_lines": 0
+    },
+    "4bae878438216261": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "496aecb1-946f-4150-b255-3c4948f9ae8c",
+        "model": "arn:aws:bedrock:us-west-2:671660153913:application-inference-profile/kh3mlhvjeex4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 81,
+      "overriden_lines": 0
+    },
+    "51269d8d9c6b3eb0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "486f9eb2-6a6a-4552-b3c6-81d520387149",
+        "model": "global.anthropic.claude-sonnet-4-6"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 139,
+      "overriden_lines": 0
+    },
+    "74f4c9e35b1a5585": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "94ed532b-5376-4e1d-b30b-40cbf25a6f0c",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 682,
+      "overriden_lines": 0
+    },
+    "972e2a39558f4d6e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83a64abf-0ea4-401d-9d32-85040b47fe6c",
+        "model": "DeepSeek-V4-Flash"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 6,
+      "overriden_lines": 0
+    },
+    "ac858d7269438cec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "715f39de-6f4e-4f19-ba94-9a949d876901",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 69,
+      "overriden_lines": 0
+    },
+    "dfe7551e928a3697": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "075b59ad-19cc-434d-a10f-ca32482191de",
+        "model": "global.anthropic.claude-sonnet-4-6"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 50,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_0007b4b9b1fb1c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "486d195b-30d0-4877-8d5f-96b8dbf5b8f8",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_2fd15813e7055a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7d0b128f-daab-4d59-b4ce-15e947edc3a0",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_52337a42c15bd2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bf4ec77c-3dec-4807-92fe-22775b95b496",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_584ead4b828c4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4340a14-8258-41ae-96eb-6267ae747454",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_74f4c9e35b1a55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "94ed532b-5376-4e1d-b30b-40cbf25a6f0c",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_7d1bda0cfb1bdc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f700fbce-eb8f-4c3d-a84b-27ef9458f86e",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_e783ee2bcdbd03": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "240badd8-8257-4a63-879b-a719e4fe6a37",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
