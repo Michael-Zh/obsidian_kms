@@ -43,7 +43,7 @@ jobs:
           curl -fsSL \
             -H "Authorization: Bearer ${{ secrets.TRAINING_COACH_REPO_TOKEN }}" \
             -H "Accept: application/vnd.github.v3.raw" \
-            "https://api.github.com/repos/Michael-Zh/training-coach/contents/scripts/sync-context.py" \
+            "https://api.github.com/repos/Michael-Zh/danseur-noble-hub/contents/scripts/sync-context.py" \
             -o sync-context.py
 
       - name: Run sync
