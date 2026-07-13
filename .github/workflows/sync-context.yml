@@ -1,0 +1,54 @@
+# sync-context.yml
+# Triggered on pushes to obsidian_kms that touch system or project files.
+# Runs sync-context.py (from training-coach repo) to upsert parsed context
+# into Supabase context_snapshots + projects_state tables.
+#
+# Required secrets (set in Michael-Zh/obsidian_kms repo settings):
+#   SUPABASE_URL             — Supabase project URL
+#   SUPABASE_SERVICE_ROLE_KEY — Service-role key (bypasses RLS for sync writes)
+#   TRAINING_COACH_REPO_TOKEN — Fine-grained PAT with read access to this repo
+#                               (to download sync-context.py from training-coach)
+#
+# Note: this file lives in Michael-Zh/obsidian_kms at .github/workflows/sync-context.yml
+# The Python script is fetched from training-coach repo at runtime.
+
+name: sync-context
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "00_system/_priority.md"
+      - "00_system/_POS.md"
+      - "04_project/**/*.md"
+
+  workflow_dispatch:  # allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch sync-context.py from training-coach repo
+        run: |
+          curl -fsSL \
+            -H "Authorization: Bearer ${{ secrets.TRAINING_COACH_REPO_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3.raw" \
+            "https://api.github.com/repos/Michael-Zh/training-coach/contents/scripts/sync-context.py" \
+            -o sync-context.py
+
+      - name: Run sync
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          VAULT_PATH: ${{ github.workspace }}
+        run: python3 sync-context.py
