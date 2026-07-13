@@ -168,7 +168,12 @@ def main() -> None:
     print("\n[2] Syncing projects_state…")
     project_files = sorted(VAULT_PATH.glob(PROJECTS_GLOB))
     parsed = [parse_project_file(p) for p in project_files]
-    project_rows = [r for r in parsed if r is not None]
+    # Deduplicate by project_id — last file wins (deepest path)
+    seen: dict[str, dict] = {}
+    for r in parsed:
+        if r is not None:
+            seen[r["project_id"]] = r
+    project_rows = list(seen.values())
     print(f"  parsed {len(project_rows)} project files")
 
     if project_rows:
