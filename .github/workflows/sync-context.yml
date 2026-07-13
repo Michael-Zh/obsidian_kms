@@ -22,7 +22,7 @@ on:
       - "00_system/_POS.md"
       - "04_project/**/*.md"
 
-  workflow_dispatch:  # allow manual trigger
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -38,17 +38,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch sync-context.py from training-coach repo
-        run: |
-          curl -fsSL \
-            -H "Authorization: Bearer ${{ secrets.TRAINING_COACH_REPO_TOKEN }}" \
-            -H "Accept: application/vnd.github.v3.raw" \
-            "https://api.github.com/repos/Michael-Zh/danseur-noble-hub/contents/scripts/sync-context.py" \
-            -o sync-context.py
-
       - name: Run sync
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           VAULT_PATH: ${{ github.workspace }}
-        run: python3 sync-context.py
+        run: python3 scripts/sync-context.py
+  
