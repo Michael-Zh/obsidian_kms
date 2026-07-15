@@ -1,3 +1,8 @@
+---
+processed: true
+processed_date: "2026-05-17"
+---
+
 ### Signal 1: The Systemic Paralysis Pattern is LIVE
 
 Your _POS notes: "Seeing tasks as complex, interdependent systems... Inability to solve the entire equation at once causes freezing."

@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.fuse_hidden*
+
+# Obsidian local data (plugins may contain API keys)
+.obsidian/
+
+# Smart Connections plugin (local embeddings, large binary data)
+.smart-env/
+
+# Claude Code local settings (contains API tokens)
+.claude/
+
+# Sensitive credentials
+*.pickle
+*.google_token*
+google_oauth_credentials.json
+*credentials*.json
+*client_secret*.json
+
+# Logs
+*.log

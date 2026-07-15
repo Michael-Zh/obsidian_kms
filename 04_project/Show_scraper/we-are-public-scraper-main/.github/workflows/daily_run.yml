@@ -1,0 +1,52 @@
+name: Daily Scraper
+
+on:
+  schedule:
+    - cron: '0 9 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 5
+
+      - name: Skip if already ran today
+        run: |
+          LAST=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d" -- results.csv)
+          TODAY=$(TZ='Europe/Amsterdam' date +%Y-%m-%d)
+          if [ "$LAST" = "$TODAY" ]; then
+            echo "results.csv already updated today ($TODAY). Skipping."
+            exit 0
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        run: python main.py
+
+      - name: Commit and push if CSV changed
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add results.csv
+          git commit -m "Update results.csv [skip ci]" || exit 0
+          git push

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Priming — 2026-06-16</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #1a1a1a;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      padding: 16px;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .date {
+      color: #777;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .card {
+      background: #2a2a2a;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .card-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    /* Card 1 — Main Goal */
+    .card-main .goal-text {
+      font-size: 22px;
+      font-weight: 700;
+      color: #f5a623;
+      line-height: 1.35;
+    }
+    .card-main .goal-sub {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* Card 2 — Top 3 */
+    .task-list {
+      list-style: none;
+    }
+    .task-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+    }
+    .task-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .task-num {
+      font-size: 18px;
+      font-weight: 700;
+      color: #f5a623;
+      flex-shrink: 0;
+      line-height: 1.4;
+    }
+    .task-content .task-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #e0e0e0;
+    }
+    .task-content .task-why {
+      font-size: 13px;
+      color: #999;
+      margin-top: 2px;
+    }
+
+    /* Card 3 — Rhythm */
+    .rhythm-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+      align-items: flex-start;
+    }
+    .rhythm-time {
+      font-size: 12px;
+      color: #f5a623;
+      font-weight: 600;
+      min-width: 80px;
+      padding-top: 2px;
+    }
+    .rhythm-label {
+      font-size: 14px;
+      color: #ccc;
+    }
+    .energy-note {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #333;
+      font-size: 13px;
+      color: #999;
+    }
+
+    /* Card 4 — Nudge */
+    .card-nudge {
+      border-left: 3px solid #f5a623;
+    }
+    .nudge-text {
+      font-size: 15px;
+      color: #ddd;
+      line-height: 1.65;
+    }
+    .nudge-text strong {
+      color: #f5a623;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="date">2026年6月16日 · 周二</div>
+
+  <!-- Card 1: Main Goal -->
+  <div class="card card-main">
+    <div class="card-label">今天的主线</div>
+    <div class="goal-text">用会议记录为 Upsell 项目打下分析地基</div>
+    <div class="goal-sub">CT 课 + FBU 会议 + 晚上 AI 探索 —— 一天三个不同频率，顺势而为</div>
+  </div>
+
+  <!-- Card 2: Top 3 -->
+  <div class="card">
+    <div class="card-label">Top 3</div>
+    <ul class="task-list">
+      <li>
+        <span class="task-num">1</span>
+        <div class="task-content">
+          <div class="task-title">整理 Upsell 会议记录</div>
+          <div class="task-why">直接喂给 H1 Review — 你的 P1。把笔记变成结构化输入</div>
+        </div>
+      </li>
+      <li>
+        <span class="task-num">2</span>
+        <div class="task-content">
+          <div class="task-title">FBU HQ 飞机 Upsell 会议</div>
+          <div class="task-why">进去前写一句话假设 — Context-First patch，防止 freeze</div>
+        </div>
+      </li>
+      <li>
+        <span class="task-num">3</span>
+        <div class="task-content">
+          <div class="task-title">AI 探索 + 财务讨论（晚上）</div>
+          <div class="task-why">超体 窗口 19:00–22:00 是完美容器 — P1 + P2，不是分心</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Card 3: Rhythm + Energy -->
+  <div class="card">
+    <div class="card-label">今天的节奏</div>
+    <div class="rhythm-row">
+      <span class="rhythm-time">09:00–11:00</span>
+      <span class="rhythm-label">会议记录整理</span>
+    </div>
+    <div class="rhythm-row">
+      <span class="rhythm-time">11:15–12:45</span>
+      <span class="rhythm-label">CT — Countertechnique 课</span>
+    </div>
+    <div class="rhythm-row">
+      <span class="rhythm-time">13:00–14:00</span>
+      <span class="rhythm-label">午餐 · buffer 恢复</span>
+    </div>
+    <div class="rhythm-row">
+      <span class="rhythm-time">下午</span>
+      <span class="rhythm-label">FBU HQ 会议（飞机 Upsell）</span>
+    </div>
+    <div class="rhythm-row">
+      <span class="rhythm-time">19:00–22:00</span>
+      <span class="rhythm-label">超体 + AI 探索 + Claude 讨论 + 财务</span>
+    </div>
+    <div class="energy-note">
+      ⚡ CT 课会消耗体力 — FBU 会议前留 15 分钟安静 buffer，不要从课直接冲进会议室
+    </div>
+  </div>
+
+  <!-- Card 4: Nudge -->
+  <div class="card card-nudge">
+    <div class="card-label">小提醒</div>
+    <div class="nudge-text">
+      FBU 会议前，先写一句话：<strong>「我认为……」</strong><br><br>
+      不需要完美，不需要全部数据。一个起点就够了。<br>
+      带着它进会议室 — 这就是打破 freeze 的那一步。
+    </div>
+  </div>
+
+</body>
+</html>

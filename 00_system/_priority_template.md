@@ -8,7 +8,7 @@
 - **Why**: [Psychological/strategic reasoning]
 - **Success Metrics**: [How you'll know it's done]
 - **Timeline**: [When should this be complete]
-- **Related Quests**: [[Quest_A]], [[Quest_B]] (link to wiki)
+- **Related Pages**: [[Quest_A]], [[Quest_B]] (link to wiki)
 - **Related Projects**: Project_X, Project_Y
 
 ## Priority 2: ...

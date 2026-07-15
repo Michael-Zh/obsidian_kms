@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Daily Priming — 2026-06-24</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #e8e8c8;
+    font-family: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 0 0 40px 0;
+  }
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .header {
+    background: #1a2a6c;
+    padding: 28px 20px 22px 20px;
+    border-radius: 0 0 4px 4px;
+  }
+  .header-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a0b0d0;
+    margin-bottom: 4px;
+  }
+  .header-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #f5c518;
+    letter-spacing: -0.5px;
+    margin-bottom: 2px;
+  }
+  .header-date {
+    font-size: 13px;
+    color: #8090b8;
+    margin-bottom: 12px;
+  }
+  .header-subtitle {
+    font-size: 14px;
+    color: #c8d8f0;
+    line-height: 1.5;
+    border-left: 3px solid #f5c518;
+    padding-left: 10px;
+  }
+
+  /* Hazard stripe */
+  .stripe {
+    height: 10px;
+    background: repeating-linear-gradient(
+      -45deg,
+      #f5c518 0px, #f5c518 8px,
+      #1a2a6c 8px, #1a2a6c 16px
+    );
+  }
+
+  /* Cards */
+  .card {
+    background: #fff;
+    border: 2px solid #1a2a6c;
+    border-top: none;
+    border-bottom: none;
+    padding: 20px 20px;
+  }
+  .card:last-child {
+    border-radius: 0 0 16px 16px;
+    border-bottom: 2px solid #1a2a6c;
+  }
+  .card-title {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8090b8;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+
+  /* Card 1 — Main Goal */
+  .main-goal {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1a2a6c;
+    line-height: 1.35;
+  }
+  .main-goal span {
+    color: #f5c518;
+    background: #1a2a6c;
+    border-radius: 4px;
+    padding: 0 4px;
+  }
+
+  /* Card 2 — Top 3 */
+  .task-list {
+    list-style: none;
+  }
+  .task-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e8e8c8;
+  }
+  .task-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .task-item:first-child {
+    padding-top: 0;
+  }
+  .task-num {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: #1a2a6c;
+    color: #f5c518;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-top: 2px;
+  }
+  .task-body {
+    flex: 1;
+  }
+  .task-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2a6c;
+    line-height: 1.4;
+  }
+  .task-why {
+    font-size: 13px;
+    color: #556;
+    margin-top: 2px;
+    line-height: 1.4;
+  }
+
+  /* Card 3 — Rhythm */
+  .rhythm-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .rhythm-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .time-chip {
+    flex-shrink: 0;
+    background: #f5c518;
+    color: #1a2a6c;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin-top: 2px;
+    letter-spacing: 0.3px;
+  }
+  .rhythm-text {
+    font-size: 14px;
+    color: #334;
+    line-height: 1.5;
+  }
+  .energy-note {
+    margin-top: 14px;
+    padding: 10px 14px;
+    background: #f0f0e0;
+    border-left: 3px solid #f5c518;
+    border-radius: 0 4px 4px 0;
+    font-size: 13px;
+    color: #445;
+    line-height: 1.5;
+  }
+
+  /* Card 4 — Nudge */
+  .nudge-card {
+    background: #1a2a6c !important;
+    border-color: #1a2a6c !important;
+    border-radius: 0 0 16px 16px !important;
+    border-bottom: 2px solid #1a2a6c !important;
+  }
+  .nudge-card .card-title {
+    color: #6a8ab8;
+  }
+  .nudge-text {
+    font-size: 15px;
+    color: #c8d8f0;
+    line-height: 1.6;
+  }
+  .nudge-text strong {
+    color: #f5c518;
+    font-weight: 700;
+  }
+  .nudge-tag {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #f5c518;
+    border: 1px solid #f5c518;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-label">Daily Priming</div>
+    <div class="header-title">今天出发</div>
+    <div class="header-date">Tuesday, 2026-06-24 &nbsp;·&nbsp; Deload Week &nbsp;·&nbsp; Madrid T-6</div>
+    <div class="header-subtitle">把辅盈 flexibility 数据融入分析，跑通 H1 Review 的核心证据链</div>
+  </div>
+
+  <div class="stripe"></div>
+
+  <!-- Card 1: Main Goal -->
+  <div class="card">
+    <div class="card-title">今天的主线</div>
+    <div class="main-goal">辅盈 flexibility 数据融入 — <span>做完这一块，今天就赢了</span></div>
+  </div>
+
+  <div class="stripe"></div>
+
+  <!-- Card 2: Top 3 -->
+  <div class="card">
+    <div class="card-title">Top 3</div>
+    <ul class="task-list">
+      <li class="task-item">
+        <div class="task-num">1</div>
+        <div class="task-body">
+          <div class="task-name">辅盈 flexibility 数据融入 + 分析更新</div>
+          <div class="task-why">H1 Review 的核心证据，最直接连着 P1 — 先写一句假设再开始跑数据</div>
+        </div>
+      </li>
+      <li class="task-item">
+        <div class="task-num">2</div>
+        <div class="task-body">
+          <div class="task-name">前端 documentation 更新跟进</div>
+          <div class="task-why">积压已久的维护任务，下午空档清掉，心里会轻松一块</div>
+        </div>
+      </li>
+      <li class="task-item">
+        <div class="task-num">3</div>
+        <div class="task-body">
+          <div class="task-name">Personal Training App 跑通</div>
+          <div class="task-why">AI Learning 项目的实践落地 — 下班后的个人时间，轻松对待</div>
+        </div>
+      </li>
+    </ul>
+    <div class="energy-note">📌 Fly Audit（日本 / 美国 / 中东市场）优先级较低 — 如下午有余力再看，不做也没损失。</div>
+  </div>
+
+  <div class="stripe"></div>
+
+  <!-- Card 3: Rhythm -->
+  <div class="card">
+    <div class="card-title">今天的节奏</div>
+    <div class="rhythm-rows">
+      <div class="rhythm-row">
+        <div class="time-chip">09:00</div>
+        <div class="rhythm-text"><strong>深度工作块</strong> — 辅盈分析，先写假设，再融数据</div>
+      </div>
+      <div class="rhythm-row">
+        <div class="time-chip">12:00</div>
+        <div class="rhythm-text">午餐 / 开始 16:8 窗口（Rest day 节奏：12:00–20:00）</div>
+      </div>
+      <div class="rhythm-row">
+        <div class="time-chip">13:00</div>
+        <div class="rhythm-text">前端 documentation 跟进 — 低激活成本，下午适合</div>
+      </div>
+      <div class="rhythm-row">
+        <div class="time-chip">15:00</div>
+        <div class="rhythm-text">缓冲 / Fly Audit 如有余力</div>
+      </div>
+      <div class="rhythm-row">
+        <div class="time-chip">下班后</div>
+        <div class="rhythm-text">Deload 健身房（半量）+ Personal Training App 尝试跑通</div>
+      </div>
+    </div>
+    <div class="energy-note">
+      🥇 Readiness 今天 6.0 颗星（HRV 163，bpm 48）——系统恢复信号非常强。但昨晚实际睡了约 2.75h，下午注意别透支，Madrid 前保留好状态。
+    </div>
+  </div>
+
+  <div class="stripe"></div>
+
+  <!-- Card 4: Nudge -->
+  <div class="card nudge-card">
+    <div class="card-title">今日提醒</div>
+    <div class="nudge-text">
+      做辅盈分析之前，先写一句话：<strong>这批数据融入之后，原来的结论是放大、修正、还是颠覆？</strong><br><br>
+      有了方向再跑数据，结果才有立场——这是你送给 H1 Review 最好的礼物。
+    </div>
+    <div class="nudge-tag">H1 Review → 先假设，再数据</div>
+  </div>
+
+</div>
+</body>
+</html>
