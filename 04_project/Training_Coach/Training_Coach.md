@@ -17,14 +17,19 @@ Elite body recomposition PWA for a 36-year-old male dancer.
 
 ## 已上线功能
 
-- **Priming tab（第一位）** — KMS GitHub 读取（_POS.md、_priority.md、最新 coaching 文件、_in_case_you_are_bored.md Active Projects + Backlog）+ 今日训练/睡眠数据；结构化 AI JSON 输出（brief_markdown + top3 + backlog）；**v6（Session 20）Top3 架构统一**：`is_top3` 作为 `priming_backlog` 上动态标签（Migration 035），`done` 字段统一跨 Top3/Stretch/Backlog，tab 切换不丢失；mount 自动生成；Stretch 区域；Top3 可拖动；9-pillar 颜色系统；Backlog 面板；Google Calendar 写入；**Session 22 新增：Backlog 内联编辑**（task/category/due_date，Migration 037）；**AppIdeas category + 全局 FAB**（Lightbulb 悬浮按钮，chat-style panel，自由文字 → priming_backlog，training-coach-context skill 自动拉取标记 done）；**briefOnly Regenerate**（stale banner 只刷新 brief，保留 Top3；Top3 任何改动只 setBriefStale，手动触发）；**"Today's Focus & Workouts" 统一列表**（Top3 + Google Calendar 训练事件按时间混排，拖拽后自动 recomputeSuggestedTimes 避开训练块）；**Calendar 冲突检查**（block 前验证时间重叠，有冲突弹确认 modal）
-- **Today tab** — 两阶段加载；AM/PM Pulse；readiness banner + Apply；Gym Logger；date navigation；WorkoutCard bold solid pillar 颜色；WorkoutStatus 三值（planned/completed/skipped）
-- **Coaching tab** — 3-scope；AI chat + rule proposals；Time-Limited Rules；**End Session 改造（Session 22）**：只汇总 lastSessionAt 之后的新消息；summary inline 插入 messages 流；shouldScroll ref 恢复（防历史加载滚底）；`coaching_messages` 按 scope 持久化
+- **Priming tab** — `projects_state` Supabase 直读；brief + top3 + backlog；9-pillar 颜色；Backlog 内联编辑；AppIdeas FAB；briefOnly Regenerate；Today's Focus + Calendar 训练事件混排；Calendar 冲突检查；BacklogRow done toggle；Priming 去重
+- **Today tab** — 两阶段加载；AM/PM Pulse；readiness banner + Apply；Gym Logger（warmup sets、inline edit、rest timer）；date navigation；WorkoutStatus 三值
+- **Coaching tab** — 3-scope（Training / General / Priority）；AI chat + rule proposals；Time-Limited Rules；End Session（只汇总新消息，summary inline 插入）；`coaching_messages` 按 scope 持久化；scope 切换时 `projects_state` active projects 自动注入 General/Priority context；End Session 后 Push to Obsidian 按钮
 - **Metrics tab** — 体成分趋势图、gym PRs；Sleep/HRV/RHR 双 Y 轴图表
-- **Exercise Library** — 30+ exercises；Exercise Bank UI；AI coaching card
-- **Infrastructure** — Calendar reconcile cron；sync-context GitHub Action；Supabase RLS；Dev/Prod split；prod→dev 数据同步脚本
-- **UI 设计系统** — "Grid & Blob"；4 pillar 颜色；浮动 pill dock nav；GymLogger `#0A0A0A` 全深色；`overscroll-behavior-y: none`
-- **PWA Icons（Session 22 修复）** — apple-touch-icon.png + icon-192/512.png，正确 PNG 格式（之前为 JPEG 内容 + .png 扩展名，Chrome manifest 校验失败）
+- **Exercise Library** — 30+ exercises；Exercise Bank UI
+- **Infrastructure** — Calendar reconcile cron；sync-context GitHub Action（`context_snapshots` + `projects_state`）；Dev/Prod split；Supabase RLS
+- **Context 系统（Session 26 大改造）：**
+  - `coaching_sessions` carry-forward：每次 AI 对话自动注入最近 3 条同 scope 的 session 摘要
+  - `training_context` append-only 历史追溯（Migration 040）：`superseded_by` + `change_reason`，年度回顾可查目标演变
+  - `context_snapshots` 切换：generate-log、priming、coaching/priorities 全切为读 Supabase 镜像，移除 GitHub API 依赖
+  - DB → Obsidian snapshot：`POST /api/training-context/sync-snapshot` 每次 training_context 更新后自动触发，写入 `training_context_snapshot.md`
+  - Training Chat 加载 `scheduling_constraints`（之前只有 guidelines）
+  - `training-coach-context` CC skill 加 `training_context` 查询 + 历史追溯字段
 
 ---
 
@@ -32,21 +37,59 @@ Elite body recomposition PWA for a 36-year-old male dancer.
 
 | 优先级 | Item |
 |--------|------|
-| TBD | Dance Intensive Week Program Builder |
-| TBD | Life Management System 整体审视 |
-| ~~P1~~ | ~~PWA Logo~~ ✅ Icons 修复 (Session 22) |
-| ~~P0~~ | ~~Backlog 内联编辑（task/category/due_date）~~ ✅ Done (Session 22) |
-| ~~P0~~ | ~~AppIdeas FAB + category~~ ✅ Done (Session 22) |
-| ~~P0~~ | ~~Training Events → Priming 统一列表~~ ✅ Done (Session 22) |
-| ~~P0~~ | ~~briefOnly Regenerate~~ ✅ Done (Session 22) |
-| ~~P0~~ | ~~Calendar 冲突检查~~ ✅ Done (Session 22) |
+| P1 | Manual Context Sync Reset Dashboard（人工审查所有 context source 同步状态）|
+| P2 | `coaching_sessions` 自动回流 Obsidian（目前 Push to Obsidian 按钮手动）|
+| P2 | General coaching tab 启动时调 `/api/projects/pending` 批量 reconcile |
+| P2 | `google-calendar.ts` + `coaching/insights` 的 `key`/`value` schema mismatch 修复 |
+| P2 | Class Pool DB 化 + 管理 UI |
+| P2 | Schedule Coaching Integration（schedule_suggestion proposal card）|
+| P2 | Backlog `project_id` UI 入口（BacklogRow 编辑模式加 project 下拉）|
+| P3 | Pulse 简化（去掉 AM/PM） |
 | P3 | Priorities panel 显示优化（Short-Term Focus 摘要） |
-| P2 | Web Push Notifications |
+| P3 | Schedule Panel 手动内联编辑 |
+| P3 | Web Push Notifications |
 | P3 | Exercise Library v3 — AI Substitution + YouTube links |
-| P4 | Nutrition Module（独立 track） |
-| P4 | Calendar 主日程 → Priming 只读卡（低优先级） |
+| P3 | Project-specific coaching / docs（低优先级）|
+| Later | KMS + App 统一 Context Audit |
 | Defer | Timezone Review |
 
 ---
 
 _代码已移出 vault。此文件每次开发会话结束后同步更新。_
+
+---
+
+_2026-07-19 更新（Session 27）_
+
+**新增 / 变更：**
+- Coaching tab 新增 **Weekends scope** — Weekend Planner：读取 AMS/DH calendar 现有状态，toggle 每个周末的 location，Wand2 auto-fill（从锚点交替填充后续周末），AI 批量日程文本解析，Apply 写回 Google Calendar
+- Priming backlog 按钮优化：minus→数字→plus；header pill 纯数字（0=白/橙/>0，激活=黑）
+- Metrics：Body Scan Last scan 日期移至标题栏（M/D 格式）
+- WorkoutJournal 跨设备 display bug 修复；Edit → Pencil icon
+
+**Backlog 更新：**
+- Location Calendar Weekend Planner ✅ Done（已移出 backlog）
+- UI 三条 AppIdeas 小调整 ✅ Done
+
+
+---
+
+_2026-07-20 更新（Session 29）_
+
+**新增 / 变更：**
+- **Class Pool DB 化**（Migration 042）：新建 `class_pool` 表替换硬编码 `WEEKLY_TEMPLATE` 和 `VALID_SESSION_TITLES`；generate/adjust route 改为动态读 DB；`ClassPoolManager` 管理 UI（按 match_title 分组，共性字段自动批量 PATCH，slot 增删改）；入口在 Metrics tab（与 Exercise Bank 并列）
+- **Backlog `project_id` UI 入口**：新建 `GET /api/projects` → BacklogRow 编辑模式新增 project 下拉 → `update` action 接受 `project_id`
+- **Schedule Panel 内联编辑**：MiniSessionCard 点击 → 展开 title select + time inputs + location → Save 更新 schedule-store（纯内存，不调 API）
+- Metrics tab 两个 library 按钮改为纯文字（Exercise Bank | Class Pool）
+
+**Backlog 更新（已完成）：**
+- Class Pool DB 化 + 管理 UI ✅
+- Backlog `project_id` UI 入口 ✅
+- Schedule Panel 手动内联编辑 ✅
+
+**当前 Backlog（主要剩余）：**
+- P1: Manual Context Sync Reset Dashboard
+- P2: Schedule Coaching Integration（schedule_suggestion proposal card）
+- P3: Priority 回写 Gap
+- P3: Priorities panel 显示优化
+- P3: Web Push Notifications
