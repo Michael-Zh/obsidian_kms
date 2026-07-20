@@ -1,0 +1,63 @@
+04_project/Parents_relationship/Parents_relationship.md
+  s_8e21c0930f1628::t_ef384f2afd13e9 1-93
+04_project/Life_Management_System/CLAUDE.md
+  s_8a111462fecf32::t_df2149f65a6863 146-149
+  s_8e21c0930f1628::t_deae79446c0753 1-2,6,9-10
+00_system/_priority.md
+  s_8e21c0930f1628::t_cf3d92d6b880ce 5,7,11,13,15,17,19,21,23,25,28-31,35,46,48,78,92-93,115-116,169
+04_project/Studio_makeover/CLAUDE.md
+  s_8a111462fecf32::t_3cdf84e3dfa3a1 115-116,119
+  s_8e21c0930f1628::t_8adf5cd5da466b 2,6,9-10
+04_project/Parents_relationship/CLAUDE.md
+  s_8e21c0930f1628::t_ad328d31aafa31 1-57
+04_project/Studio_makeover/Studio_makeover.md
+  s_8e21c0930f1628::t_ed3ba52bb6990b 5,7-8
+04_project/_in_case_you_are_bored.md
+  s_8e21c0930f1628::t_df12d5992cc926 4,11,20-25,31,35-38,67-69,87,94,109,118
+04_project/Road_to_2040_Investment_Blueprint/Road_to_2040_Investment_Blueprint.md
+  s_8e21c0930f1628::t_b6a1660da78e08 3,5,7,9
+04_project/Strategic_relationship_audit/Strategic_relationship_audit.md
+  s_8e21c0930f1628::t_f9d415a29be8c1 19-26
+  s_8e21c0930f1628::t_bf6ffdbcde53cc 3,5,7-9
+04_project/Training_program/Training_program.md
+  s_8e21c0930f1628::t_fe6b38651fe4bb 19-20
+  s_8e21c0930f1628::t_e68b79e67ee368 5,7,9
+04_project/Life_Management_System/Life_Management_System.md
+  s_8e21c0930f1628::t_0d622b42c33eac 15-33
+  s_8e21c0930f1628::t_487c949d250ef5 2,5,7-8
+04_project/Training_program/CLAUDE.md
+  s_8e21c0930f1628::t_7b23cf177ce7dc 2,6,10-11
+  s_8a111462fecf32::t_ea964914354a94 190-191,194
+04_project/Meal_prep_routine/Meal_prep_routine.md
+  s_8e21c0930f1628::t_be918e9f434cbf 13-24
+  s_8e21c0930f1628::t_e123967ce86d69 5,7-8
+04_project/Meal_prep_routine/CLAUDE.md
+  s_8e21c0930f1628::t_d797514e3dcdc6 1-51
+04_project/AI_learning/AI_learning.md
+  s_8e21c0930f1628::t_74897c155ae552 5,7
+  s_8e21c0930f1628::t_4fa6ac1b78df1d 16-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.34-trip",
+  "base_commit_sha": "985bc3f9161f8b307fd062c5c8277e69629caa2a",
+  "prompts": {},
+  "sessions": {
+    "s_8a111462fecf32": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b52cab55-255c-42f9-bc07-79b4bb18cfe2",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_8e21c0930f1628": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b464c785-36fd-42b5-9212-f15c258b77f2",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
