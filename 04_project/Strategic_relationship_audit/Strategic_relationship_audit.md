@@ -1,12 +1,12 @@
 ---
 name: Strategic_relationship_audit
-status: active
+status: parked
 pillar: Relationships
-current_focus: "Phase 1: Internal audit + disclosure meeting planning"
+current_focus: "On hold — 推迟到 8 月底/9 月。Madrid 关键数据已沉淀（ENM 单向→双向探索，FOMO/safety 模式），见 coaching docs。October gate: Jeroen 公寓 → cohabitation/ENM/kids in Q4."
 created: 2026-04-01
-updated: 2026-05-04
-target_completion: 2026-06-30
-priority: P2
+updated: 2026-07-21
+target_completion: 2026-12-31
+priority: P3
 tags: [Relationships, MindMentalHealth]
 ---
 
@@ -15,6 +15,14 @@ tags: [Relationships, MindMentalHealth]
 ## Overview
 
 Transition from a 3-year "weekend" partnership to high-integrity cohabitation through radical transparency and structural optimization. Address core mismatches (physicality, sexuality, future planning) using data-driven frameworks and explicit agreements.
+
+**当前状态（2026-07-21）：** On hold — 推迟到 8 月底/9 月重新启动。Madrid trip (Jul 2026) 带来了关键新数据：
+- ENM 从单向→双向探索：Jeroen 主动尝试了一次 hookup，这是积极信号
+- FOMO/safety 模式被识别出来：Sauna Paraíso experience → 无法拒绝友善的人，驱动力是安全焦虑而非真实 desire
+- October conversation 的情感质地改变了：不再是你「asking permission」，更多的是 shared territory
+- Hard gate 不变：Jeroen 公寓 October → cohabitation/ENM/kids in Q4
+
+所有 Madrid 详细讨论已沉淀在 [[coaching_20260709]]。
 
 ---
 

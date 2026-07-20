@@ -1,18 +1,36 @@
 ---
-name: AI_Assistant
+name: Life_Management_System
 status: active
 pillar: LifeManagement
-current_focus: "Daily workflow automation live: AutoSleep → sleep_log.md, /priming skill, calendar --today flag, laptop wake 07:00 | Next: Module 4 entity processing"
+current_focus: "Meta-system hub — 概念层（KMS 知识架构 + wiki-coach + POS + priority） + 执行层（自定义 App + Claude Code）| 集成的子系统：Training Coach App、Training Program、Meal Prep、Priming、Coaching"
 created: 2026-05-03
-updated: 2026-06-16
-target_completion: 2026-08-30
+updated: 2026-07-21
+target_completion: ongoing
 priority: P1
 tags:
   - LifeManagement
 ---
 ## 0. Overview
 
-Transform raw content (daily notes, web clips, videos, ebooks) into "Constructive Failures" (trials and learnings) using an LLM-powered maintenance agent. The system creates a durable record of sources, synthesizes knowledge hierarchically (Pillar > Page > Project), and converts insights into actionable trials, coaching sessions, and reminders.
+Life Management System (LMS) is the **meta-system hub** — the overarching operating system that integrates all of Michael's knowledge management, training and physical management, daily priming, and coaching into one cohesive whole.
+
+**Two-layer architecture:**
+
+1. **概念层（Concept Layer）** — How the system works: 8-pillar knowledge architecture, wiki-coach synthesis, Personal Operating System (POS), priority system, coaching generation
+2. **执行层（Execution Layer）** — The technical implementation: a custom-built App (via Vibe Coding) paired with Claude Code, plus iOS Shortcuts and automation
+
+**Integrated sub-systems:**
+
+| Sub-system | Role | Project Folder |
+|------------|------|----------------|
+| **Training Coach App** | 日常训练/生活管理/priming 的统一执行载体 | [[Training_Coach]] |
+| **Training Program** | 训练执行 + 数据追踪 + 周计划 | [[Training_program]] |
+| **Meal Prep Routine** | 饮食哲学 + routine 设计（未来并入 App）| [[Meal_prep_routine]] |
+| **Priming** | 早晨启动流程（Typeless → daily note block + HTML card）| Part of this project |
+| **Coaching** | 所有 coaching sessions 作为系统输入 + action 输出 | `01_raw/coaching/` |
+| **KMS 知识管理** | 8 pillars, wiki synthesis, article ingestion, watchlist | This project |
+
+The key insight (2026-07-21 re-org): these are not separate concerns — they are a single integrated system. The Training Coach App is the execution interface; Claude Code + Obsidian is the cognitive engine; the coaching sessions are the feedback loop.
 
 ---
 

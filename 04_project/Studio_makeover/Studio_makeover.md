@@ -2,10 +2,10 @@
 name: Studio_makeover
 status: active
 pillar: AdminHome
-current_focus: "June: daily declutter (€5 rule). Jul/Aug: kitchen + under-desk + plant repotting."
+current_focus: "Cleaner prep (最高优先级) — 整理到适合 cleaner 清洁的状态 | 其余 makeover items（plant repotting 等）推迟到 summer 结束后"
 created: 2026-05-03
-updated: 2026-06-07
-target_completion: 2026-08-30
+updated: 2026-07-21
+target_completion: 2026-10-30
 priority: P2
 tags:
   - AdminHome

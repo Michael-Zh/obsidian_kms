@@ -1,14 +1,14 @@
 # Project Context: Training_program
-_Last updated: 2026-06-24_
+_Last updated: 2026-07-21_
 
 ## What This Project Is
 
-Elite body recomposition protocol for a 36-year-old male dancer (187cm), targeting the "Danseur Noble" aesthetic: V-taper, zero bloat, silent landings. Strategy is minimalist — 2x/week gym (Sun/Mon/Tue), dance-based cardio (ballet/jazz/ashtanga/pilates), 16:8 fasting, 2,300 kcal structured macros — preserving 43kg+ skeletal muscle while driving body fat toward 9% BFM by September 2026. Currently in active recomposition with confirmed results: June 2 scan showed flawless progress. Deload week (Jun 23–29) precedes Madrid/Pride travel (Jun 30).
+Elite body recomposition protocol for a 36-year-old male dancer (187cm), targeting the "Danseur Noble" aesthetic: V-taper, zero bloat, silent landings. Strategy is minimalist — 2x/week gym (Sun/Mon/Tue), dance-based cardio (ballet/jazz/ashtanga/pilates), 16:8 fasting, 2,300 kcal structured macros — preserving 43kg+ skeletal muscle while driving body fat toward 9% BFM by September 2026.
 
 **Primary Pillar:** PhysicalHealth  
 **Status:** active  
-**Current Focus:** Body recomposition: 86-87kg target | 43kg+ muscle | <10% body fat (9kg BFM)  
-**Priority:** P2  
+**Current Focus:** CT intensive prep. 下一步 focus → Meal Prep（什么时候吃、吃什么、吃多少）。Body recomposition 大方向不变，但 sleep + fasting 执行困难，先通过 Meal Prep Routine 解决 plan 层面。Training Program 配合执行。  
+**Priority:** P3（Meal Prep Routine 为 P2，是下一阶段的 driver）  
 **Target Completion:** 2026-09-30  
 
 ---
@@ -187,6 +187,10 @@ You are acting as a **thought partner and analyst** for this project. Your role 
 
 **Do not** rewrite existing content — only propose additions.
 
+**Session-start reconcile rule:** 每次 CC session 加载 project-context 时，如果 `project-context` skill 在顶部显示 `## ⚠️ Pending App Changes`，必须先 review delta（backlog 完成情况 + coaching sessions 的 decisions），和用户确认是否写入 Obsidian project doc，完成 reconcile 后再进入正式讨论。
+
 **Prompt occasionally** during longer sessions: "Good stopping point — want to wrap up and capture what we've covered so far?"
+
+**Output rules:** Always reply in Chinese (中文).
 
 **Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里 [[Training_program]] 行的 Current Focus + Updated 字段。

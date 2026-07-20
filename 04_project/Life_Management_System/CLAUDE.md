@@ -1,13 +1,13 @@
-# Project Context: Life_Management_System (KMS)
-_Last updated: 2026-06-22_
+# Project Context: Life_Management_System (LMS)
+_Last updated: 2026-07-21_
 
 ## What This Project Is
 
-An LLM-powered personal knowledge management system that transforms raw inputs (daily notes, web clips, articles, videos) into synthesized wiki pages, priority-aware coaching sessions, and tracked project trials. The system runs through Obsidian + Claude skills on a fixed 8-pillar knowledge structure. Modules 1–3 are complete and live. Phase 2.10 (daily workflow automation) completed 2026-06-16. Architecture proved simpler than planned — annotation IS the routing logic; no database or MCP server needed.
+The **meta-system hub** — the overarching operating system that integrates all of Michael's knowledge management, training and physical management, daily priming, and coaching into one cohesive whole. Two layers: (1) 概念层 — how the system works (8 pillars, wiki-coach, POS, priority system); (2) 执行层 — the technical implementation (custom App + Claude Code + iOS Shortcuts). Modules 1–3 are complete and live. The system now orchestrates multiple integrated sub-systems: Training Coach App, Training Program, Meal Prep Routine, Priming, and Coaching.
 
 **Primary Pillar:** LifeManagement
-**Status:** Active
-**Current Focus:** Module 4 entity processing (next phase)
+**Status:** Active — meta-system hub
+**Current Focus:** Ongoing: maintain + evolve. LMS itself no longer has a separate build roadmap — it evolves through the sub-systems it orchestrates.
 **Priority:** P1
 
 ---
@@ -142,5 +142,9 @@ You are acting as a **thought partner and analyst** for the KMS / Life_Managemen
 **Prompt occasionally** during longer sessions: "Good stopping point — want to wrap up and capture what we've covered so far?"
 
 **Do not** rewrite existing content — only propose additions.
+
+**Session-start reconcile rule:** 每次 CC session 加载 project-context 时，如果 `project-context` skill 在顶部显示 `## ⚠️ Pending App Changes`，必须先 review delta（backlog 完成情况 + coaching sessions 的 decisions），和用户确认是否写入 Obsidian project doc，完成 reconcile 后再进入正式讨论。
+
+**Output rules:** Always reply in Chinese (中文).
 
 **Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里 [[Life_Management_System]] 行的 Current Focus + Updated 字段。

@@ -1,14 +1,14 @@
 ---
 name: In Case You're Bored
 description: Full project landscape — active projects, backlog, ideas, and decisions in one place
-updated: 2026-07-11
+updated: 2026-07-21
 ---
 
 # In Case You're Bored
 
 Single source of truth for the full project landscape: what's in motion, what's waiting, and what's percolating.
 
-**Last Updated:** 2026-07-11
+**Last Updated:** 2026-07-21
 **Links:** Use `/project-review` for priority re-ordering | `/project-context [name]` to start a focused session | `/Project-Initiation` to formalize a backlog idea
 
 ---
@@ -17,22 +17,25 @@ Single source of truth for the full project landscape: what's in motion, what's 
 
 | Project | Pillar | Priority | Current Focus | Updated |
 |---------|--------|----------|---------------|---------|
-| [[Life_Management_System]] | LifeManagement | P1 | Daily workflow automation live (AutoSleep, /priming, calendar --today, laptop wake) \| Next: Module 4 entity processing | 2026-06-16 |
-| [[Road_to_2040_Investment_Blueprint]] | Finance | P1 | Q2 2026: Bucket 1 automation setup + Bucket 2 growth kickoff | 2026-05-04 |
-| [[Flight_Upsell]] | Career | P1 | H1 review submission (void/24h number pending) + H2 analytical insights phase | 2026-07-11 |
-| [[Strategic_relationship_audit]] | Relationships | P2 | Resumed mid-July; Q4 active conversations (October gate) | 2026-07-11 |
-| [[Training_program]] | PhysicalHealth | P2 | Body recomposition: 86-87kg \| 43kg+ muscle \| <10% BFM | 2026-05-04 |
-| [[Studio_makeover]] | AdminHome | P2 | Modern Art Museum Cafe / Neo-Industrial aesthetic for 33sqm | 2026-05-03 |
-| [[Meal_prep_routine]] | PhysicalHealth | P2 | Nutrition system + macro optimization | 2026-05-03 |
+| [[Life_Management_System]] | LifeManagement | P1 | Meta-system hub: 概念层（KMS + wiki-coach + POS + priority）+ 执行层（自定义 App + Claude Code）| 集成子系统：Training Coach App、Training Program、Meal Prep、Priming、Coaching | 2026-07-21 |
+| [[Flight_Upsell]] | Career | P1 | Q3 三部分框架：audit 收尾 + 前端量化支持 + 沟通协作。待与 J 对齐 | 2026-07-20 |
+| [[Parents_relationship]] | Relationships | P1 | Phase 1: 安全层分享（CT intensive + 马德里展览感受），建立真实沟通语境 | 2026-07-21 |
+| [[Meal_prep_routine]] | PhysicalHealth | P2 | Phase 1: 饮食 philosophy + routine 设计（什么时候吃、吃什么、吃多少）| 2026-07-21 |
+| [[Studio_makeover]] | AdminHome | P2 | Cleaner prep 最高优先级；其余 makeover items（plant repotting 等）推迟到 summer 后 | 2026-07-21 |
+| [[Training_program]] | PhysicalHealth | P3 | CT intensive prep；配合 Meal Prep Routine 执行。Body recomposition 方向不变 | 2026-07-21 |
 
 ## Recently Completed / Wrapping Up
 
 | Project | Pillar | Status | Notes |
 |---------|--------|--------|-------|
+| H1 Performance Review | Career | ✅ Closed | Self-evaluation submitted（3.92 overall）。All content in [[Flight_Upsell]] PROJECT_CONTEXT |
 
 ## On Hold
 
-*(none currently)*
+| Project | Pillar | Status | Notes |
+|---------|--------|--------|-------|
+| [[Road_to_2040_Investment_Blueprint]] | Finance | Parked | System fully operational — automated waterfall + 3-tier architecture running. Quarterly net worth reviews only |
+| [[Strategic_relationship_audit]] | Relationships | Parked | 推迟到 8 月底/9 月。Madrid 关键数据已沉淀（ENM 双向探索、FOMO/safety 模式）。October gate: Jeroen 公寓 → Q4 |
 
 ---
 
@@ -61,6 +64,9 @@ Ideas with enough context to become a project when priority opens up.
 - **Exercise → next-day energy tracking** — 4-week data collection; 1-5 scale for intensity and next-day energy | Question: sleep, nutrition, intensity, or recovery gap? | Related quests: [[Fitness-Routine]], [[Energy-Management]] | Source: [[coaching_session_20260509]]
 - (new) **Energy Budgeting Framework** — Design a lightweight system for tagging calendar items by energy load (high/low) and planning days around energy availability, not just time. Particularly useful for multi-class dance days + heavy work weeks. **Trigger: late August / early September 2026** — assess after new routine settles; only formalize if needed. (ref: [[coaching_discussion_20260530]], [[coaching_session_20260305]])
 - (new) **Fitbod CSV → Training Log integration (monthly)** — At each monthly body scan + review session: export Fitbod CSV (Log → Settings → Export Workout Data), run script to extract PRs and recent session data for TBDL/Bench/Lat columns, integrate into monthly review. Trigger: next monthly review session. (ref: 2026-06-16 AI system design session)
+- (new) **Iyengar Yoga Institute Amsterdam — weekend workshop prototype** — Book an anatomy/alignment-focused weekend workshop as low-cost test of Plan 2. Three-layer ROI: dance improvement, principles discovery, Plan 2 ground-truth. **Trigger: late August 2026.** (ref: [[Life_Design_Coaching_Transcript]])
+- (new) **Studio Anna Mora — 1-on-1 Gyrotonic equipment session** — Single private session to test whether body intelligence resonates vs. theoretical interest. **Trigger: late August 2026.** (ref: [[Life_Design_Coaching_Transcript]])
+- (new) **Fighting Monkey / Celeste Pereira deep-dive** — Study operating model of these educators; how did they build body knowledge → passive income? Pattern to extract for Plan 2. **Trigger: late August 2026.** (ref: [[Life_Design_Coaching_Transcript]])
 
 ### Mind & Mental Health
 
@@ -78,15 +84,14 @@ Ideas with enough context to become a project when priority opens up.
 
 ### Relationships
 
-- **Parent elderly care + distance strategy** — Separate project stream to think through long-term solution to distance/elderly care with parents and communication strategy. Prompted by recurring dream of father's health crisis and structural guilt about being too far. Formalize when mental space opens (from: [[2026-05-25]], [[2026-05-23]]) | Related: [[Coming-Out-and-Family-Authenticity]], [[Location-Independent-Lifestyle]]
+- **Parent elderly care + distance strategy** — Separate project stream to think through long-term solution to distance/elderly care with parents and communication strategy. Now partly addressed in [[Parents_relationship]] project. | Related: [[Coming-Out-and-Family-Authenticity]], [[Location-Independent-Lifestyle]]
 - (new) **Relationship Hardware Checklist** — A structured checklist of non-negotiable hardware requirements for a long-term partner (physical, cultural, life-vision), distilled from existing relationship audit work. Related to three-category needs taxonomy (taxonomy = what you need; checklist = partner requirements). **Trigger: end of August 2026** — deferred alongside all relationship prep work. Add to [[Strategic_relationship_audit]] when ready. (ref: [[coaching_discussion_20260530]], [[coaching_session_20260305]])
 
 ### Travel
 
 ### Admin & Home
 
-- *(no active ideas beyond Studio_makeover project)*
-- **Plants audit project** — Audit current plant conditions and make necessary changes (split from Studio_makeover). Formalize when ready to feed details (from: [[2026-05-25]])
+- **Plants audit project** — Audit current plant conditions and make necessary changes (split from Studio_makeover). Deferred to post-summer alongside other makeover items. (from: [[2026-05-25]])
 
 ### Life Management / KMS
 
@@ -101,6 +106,7 @@ Key themes that connect multiple areas:
 - **Portfolio Career** (Career + Creativity + PhysicalHealth) — Location-independence is the gate; once clear, everything else (certifications, teaching, energy system) falls into place | [[Portfolio-Career-Design]], [[Location-Independent-Lifestyle]], [[Movement-Career-Options]]
 - **Energy Activation System** (PhysicalHealth + LifeManagement + Career) — Brain dump ritual + exercise tracking + sleep optimization all feed work and creative capacity | [[Energy-Management]], [[Sleep-Optimization-Routine]], [[Fitness-Routine]]
 - **Entrepreneurship & Identity** (Creativity + Career + MindMentalHealth) — Which venture you choose reflects who you are; principle: plant seeds, don't force harvest | [[Movement-Career-Options]], [[Identity-Based-Life-Philosophy]], [[Content-Creator-and-Entrepreneurship-Ideas]]
+- **LMS Integration** (LifeManagement + PhysicalHealth + Career) — Training Coach App + Meal Prep + Training Program + Coaching are not separate; they're one integrated system | [[Life_Management_System]], [[Training_Coach]]
 
 ---
 
@@ -109,14 +115,8 @@ Key themes that connect multiple areas:
 | Project | Pillar | Status | Notes |
 |---------|--------|--------|-------|
 | [[Skincare_Routine]] | AdminHome | Completed | Routine established (home + travel). Future idea: incorporate eye mask & face mask treatments. |
+| H1 Performance Review | Career | Completed | Self-evaluation submitted (3.92). Content fully in [[Flight_Upsell]] PROJECT_CONTEXT. |
 
 ---
 
 **Maintenance:** Update after each `/wiki-coach-kms-cli` run. Run `/project-review` monthly to re-order priorities.
-
-
-### Creativity & Curiosity (Movement)
-
-- (new) **Iyengar Yoga Institute Amsterdam — weekend workshop prototype** — Book an anatomy/alignment-focused weekend workshop as low-cost test of Plan 2. Three-layer ROI: dance improvement, principles discovery, Plan 2 ground-truth. (ref: [[Life_Design_Coaching_Transcript]])
-- (new) **Studio Anna Mora — 1-on-1 Gyrotonic equipment session** — Single private session to test whether body intelligence resonates vs. theoretical interest. (ref: [[Life_Design_Coaching_Transcript]])
-- (new) **Fighting Monkey / Celeste Pereira deep-dive** — Study operating model of these educators; how did they build body knowledge → passive income? Pattern to extract for Plan 2. (ref: [[Life_Design_Coaching_Transcript]])

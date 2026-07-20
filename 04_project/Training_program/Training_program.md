@@ -2,11 +2,11 @@
 name: Training_program
 status: active
 pillar: PhysicalHealth
-current_focus: "Body recomposition: 86-87kg target | 43kg+ muscle | <10% body fat (9kg BFM)"
+current_focus: "CT intensive prep: 下一步 focus → Meal Prep（什么时候吃、吃什么、吃多少）；long-term goal 仍是 body recomposition（86-87kg, 43kg+ muscle, <10% BFM）"
 created: 2026-04-06
-updated: 2026-05-24
+updated: 2026-07-21
 target_completion: 2026-09-30
-priority: P2
+priority: P3
 tags: [PhysicalHealth]
 ---
 
@@ -15,6 +15,8 @@ tags: [PhysicalHealth]
 ## Overview
 
 Elite athlete recomposition protocol balancing dance-based endurance (ballet/jazz/ashtanga/pilates) with resistance work (2x/week gym: Sun back/legs/arms + Mon chest/shoulders). Target: Maintain 43kg+ skeletal muscle while reducing body fat to 9kg (from current 15%). Optimized through 16:8 fasting, 2,300 kcal structured macros, and cognitive load management.
+
+**当前阶段（2026-07-21）：** Body recomposition 大方向不变，但现阶段 focus 是 CT intensive 前的基础维护。Sleep + fasting 执行困难，下一步优先推向 **Meal Prep Routine**（什么时候吃、吃什么、吃多少），先解决 plan 层面。Meal Prep 作为独立项目推进（P2），Training Program 配合执行（P3）。
 
 ---
 

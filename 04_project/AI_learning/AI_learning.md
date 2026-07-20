@@ -2,9 +2,9 @@
 name: "AI_learning"
 status: "active"
 pillar: "LifeManagement"
-current_focus: "超体 program (started 2026-06-12)"
+current_focus: "通过实践学习——自定义 App 开发（Training Coach App）+ Claude Code 深度使用。超体 program 作为理论框架。想法沉淀到 Wiki，不单独追踪项目。"
 created: "2026-06-12"
-updated: "2026-06-12"
+updated: "2026-07-21"
 priority: P1
 tags: [LifeManagement, Career]
 ---
@@ -13,7 +13,9 @@ tags: [LifeManagement, Career]
 
 ## Overview
 
-Structured AI learning pipeline alongside active work application. Goal: move from 10-30% AI integration at work to deep, fluent AI-assisted analysis and decision-making — particularly for commercial strategy and data work.
+AI learning 的主要方式是通过**实践**—目前的核心实践是搭建自定义 App（Training Coach App），搭配 Claude Code 进行深度使用。超体 program 提供了理论框架和系统设计思维。
+
+这个文件夹不需要作为独立的 active project 来追踪——实践的产出（App 代码、Wiki 知识沉淀）已经在其他项目中体现。此文件主要记录 learning pipeline 和学习日志。
 
 ## Learning Pipeline
 

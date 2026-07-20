@@ -2,35 +2,37 @@
 
 ---
 
-## Short-Term Focus (now → late July 2026)
+## Short-Term Focus (now → CT Intensive, late July 2026)
 
-*What is actually getting attention right now. Updated: 2026-07-11.*
+*What is actually getting attention right now. Updated: 2026-07-21.*
 
 **Active focuses — in order of current energy/urgency:**
 
-1. **H1 Review** — Self-evaluation written (3.92 overall, all competencies at 4, strategist narrative complete). Remaining: void/24h number from J → conversation this week. Then submit.
+1. **CT Notes 收尾** — 绝大部分已完成整理（A–F taxonomy），只剩少量零散内容。本周（7月21日这周）收尾完毕。
 
-2. **AI Learning (P1 alongside H1)** — Output > input confirmed as learning mode. 超体 program ongoing (first log entry July 8 voice note — log needs filling). AI development sequence: Training App priming → Vibe Coding App → Travel App (after intensive). Build > consume as default. Work tracks under [[Flight Upsell]] still active.
+2. **AI Learning / App 开发** — Output > input confirmed。Training Coach App + Claude Code 深度使用是主要学习方式。超体 program 提供理论框架。想法沉淀到 Wiki。
 
-3. **Physical Foundation** — July variable: nutrition (moved from June's activity-aligned 16:8). Sleep in recovery after Madrid disruption. P1 before intensive: sleep baseline + 16:8, bilateral lower back recovery (fatigue, not injury).
+3. **Physical Foundation** — 下一步转向 **Meal Prep Routine**（什么时候吃、吃什么、吃多少）。不讲具体 calorie、不讲 timing 细节——先讨论 eating philosophy 和 routine 设计。Sleep + fasting 当前执行困难，通过 Meal Prep 先解决 plan 层。
 
-4. **Dance** — CT notes organization urgent: first two weeks of July window (deadline now). CT intensive late July.
+4. **Dance** — CT intensive 即将开始（late July）。CT notes 收尾是 immediate priority；intensive 期间 body maintenance 是重点（bilateral lower back recovery 继续关注）。
 
-5. **Parents** — New active thread before intensive: start sharing "safe layer" content (CT intensive, Madrid exhibitions). Goal is genuine connection. Their digestion process is theirs — say it, give time, don't over-explain, don't apologize, don't retract.
+5. **Parents** — 新立项 [[Parents_relationship]]：Phase 1 从 CT intensive 开始分享「安全层」内容。动机已从「寻求认可」转为「分享真实快乐」。核心原则：说完，给时间，不追着解释，不道歉，不收回。
 
-6. **Home** — Tidying: 90-min block approach. Space as physical foundation before intensive.
+6. **Home** — Cleaner prep 是唯一优先级。整理到适合 cleaner 清洁的状态。其余 makeover items 推迟到 summer 结束后。
 
-7. **Relationship** — Mid-July resume (now active). Jeroen tried a hookup in Madrid (ENM shift: one-way → mutual exploration). FOMO/safety-anxiety pattern identified at Sauna Paraíso — not genuine desire. October conversation texture changed: less "asking permission," more shared territory. Hard gate: Jeroen's apartment October → cohabitation/ENM/kids in Q4. Three-category needs taxonomy → [[Strategic_relationship_audit]].
+7. **Relationship** — 推迟到 8 月底/9 月。Madrid 关键数据（ENM 双向探索、FOMO/safety 模式）已沉淀在 coaching docs 和 [[Strategic_relationship_audit]]。October gate: Jeroen 公寓 → Q4 conversations。
 
-8. **Finance** — Ongoing: stress-test Bucket 1 against Boring Investor rule; pension transfer in progress; legal tax planning. Mindset: "spend small for efficiency" (not pure save mode).
+8. **Finance** — Road to 2040 system 已完全跑起来。Automated waterfall + 3-tier architecture operational。仅需 quarterly net worth review，不需 active management。
 
 **Backlog (parked — not active):**
-- Life Management System (LMS) — build complete; minor maintenance as needed
-- Life Design prototyping (Iyengar workshop, Studio Anna Mora) — postponed to late August after summer intensive
+- Life Management System (LMS) — 不再是独立 build 项目，已成为 meta-system hub；通过集成的子系统（Training Coach App、Training Program、Meal Prep、Priming、Coaching）持续演进
+- Road to 2040 — system operational，parked
+- Strategic Relationship Audit — 推迟到 8 月底/9 月
+- Life Design prototyping (Iyengar workshop, Studio Anna Mora, Fighting Monkey) — 推迟到 late August
 - Microaggression storybase — [[Microaggression_Synthesis]] created; add cases as they arise
 - Post-intensive (August+): improv comedy, social accounts, dance direction
 
-**Alignment note:** H1 Review and AI Learning are the two parallel P1 threads. CT notes and physical foundation are the immediate pre-intensive P1s. Relationship resumes now (mid-July).
+**Alignment note:** CT Notes 和 AI Learning 是当前的 parallel P1。Meal Prep 是下一阶段的 P2 driver。CT intensive 前的基础维护（cleaner prep、parents 第一步）在并行推进。
 
 ---
 
@@ -41,9 +43,9 @@
 **Key Actions:**
 
 - Establish minimal health baseline (pragmatic, not perfectionist—e.g., 7 hours sleep daily, rest flexible)
-- Create repeatable meal prep system (3-5 core recipes)
+- Create repeatable meal prep system (3-5 core recipes) — **now pushed forward as [[Meal_prep_routine]] (P2)**
 - Design consistent, sustainable workout routine
-- Complete apartment make-over (design, contractor, execution)
+- Complete apartment make-over (design, contractor, execution) — **currently reduced to cleaner prep only**
 - Hire long-term cleaner (outsource trivial maintenance tasks)
 
 **Timeline:** Q2-Q3 (active), Q4 (optimization & maintenance)
@@ -73,7 +75,7 @@
 
 **Key Actions:**
 
-- Work: Solidify strategist role by delivering clear OKR impact in H1 review (June). Shift primary identity from data analyst → strategist.
+- Work: Solidify strategist role by delivering clear OKR impact in H1 review (June). Shift primary identity from data analyst → strategist. ✅ H1 review submitted.
 - Investing: Map financial goals (3-5 years, early retirement vision) and execute aligned investment allocation (80/20 strategy)
 - Awareness: Quarterly net worth reviews to track progress and decision-making feedback
 
@@ -86,6 +88,8 @@
 - ✅ Investment plan finalized: mapped to 3-5 year goals with documented reasoning
 - ✅ Q2 net worth calculated and baseline established; quarterly tracking system live
 - ✅ Financial clarity achieved: you can articulate your "moat" (cash position, growth trajectory, risk tolerance)
+
+**Current status (2026-07-21):** Road to 2040 system has been fully set up and is running automatically — automated waterfall cashflow + 3-tier architecture operational. Parked as active project; only quarterly net worth reviews needed.
 
 **Why This Matters:** Resource security is the prerequisite for handling relational complexity with clarity rather than desperation. It also enables Priority 1's low-friction living without financial anxiety. Financial autonomy = psychological freedom.
 
@@ -107,6 +111,8 @@
 - Q4: Explicit negotiation on "sexual needs / ENM" with defined outcomes
 
 **Timeline:** H2 2026 (Q3-Q4 active conversations; Q2 preparation)
+
+**Current status (2026-07-21):** Madrid trip brought key new data — ENM shifted from one-way to mutual exploration (Jeroen tried a hookup, positively encouraged); FOMO/safety pattern identified at Sauna Paraíso. October conversation texture changed: less "asking permission," more shared territory. Full relationship audit paused until late August/September. Hard gate unchanged: Jeroen's apartment October → cohabitation/ENM/kids in Q4.
 
 **Success Metrics:**
 

@@ -2,14 +2,26 @@
 name: Meal_prep_routine
 status: active
 pillar: PhysicalHealth
-current_focus: "..."
+current_focus: "Phase 1: 讨论饮食 philosophy + routine 设计；Phase 2: 与 Training Program 结合，集成到 App"
 created: 2026-05-03
-updated: 2026-05-03
-target_completion: 2026-08-30
+updated: 2026-07-21
+target_completion: 2026-09-30
 priority: P2
 tags:
   - PhysicalHealth
 ---
+# Meal Prep Routine
+## Overview
+
+设计一套可持续的饮食系统，回答三个核心问题：**什么时候吃、吃什么、吃多少**。这是实现 body recomposition 目标的 foundation — 先解决 plan 层面，再通过执行养成习惯。
+
+**当前阶段（2026-07-21）：** 作为独立项目推进。先讨论整体饮食 philosophy + routine，之后再与 Training Program 结合，集成到 Training Coach App 中。
+
+**关键待解决问题：**
+- 晚上不吃（16:8 后半段）在实际执行中困难 — 需要重新设计 fasting 窗口
+- 需要可重复的 meal prep 流程（去 IKEA 采购 container 等）
+- 宏观营养目标：2,300 kcal（175g P | 230g C | 75g F）
+
 ## 1. The Inventory Matrix (Total Units: 18)
 
 |   |   |   |   |   |   |

@@ -1,13 +1,13 @@
 # Project Context: Studio_makeover
-_Last updated: 2026-06-07_
+_Last updated: 2026-07-21_
 
 ## What This Project Is
 
-A room-by-room renovation of a 33sqm studio apartment toward a "Modern Art Museum Cafe / Neo-Industrial" aesthetic — clean lines, white space, black steel accents, warm wood and plants. The project phases from layout (done) → systems/storage → aesthetics/vibe, with hosting readiness as a near-term milestone. Currently at the Phase 1.5 / Phase 2 transition.
+A room-by-room renovation of a 33sqm studio apartment toward a "Modern Art Museum Cafe / Neo-Industrial" aesthetic — clean lines, white space, black steel accents, warm wood and plants. **Currently in a reduced scope:** the highest priority is cleaner prep (整理到适合 cleaner 清洁的状态). Remaining makeover items (plant repotting, gallery rail, etc.) are deferred to after summer/dance intensive.
 
 **Primary Pillar:** AdminHome  
-**Status:** active  
-**Current Focus:** June: daily declutter (€5 rule). Jul/Aug: kitchen + under-desk + plant repotting.  
+**Status:** active — reduced scope  
+**Current Focus:** Cleaner prep only. Full renovation deferred to post-summer.  
 **Priority:** P2
 
 ## Objectives
@@ -112,6 +112,10 @@ You are acting as a **thought partner and project coach** for this home renovati
 
 **Do not** rewrite existing content — only propose additions.
 
+**Session-start reconcile rule:** 每次 CC session 加载 project-context 时，如果 `project-context` skill 在顶部显示 `## ⚠️ Pending App Changes`，必须先 review delta（backlog 完成情况 + coaching sessions 的 decisions），和用户确认是否写入 Obsidian project doc，完成 reconcile 后再进入正式讨论。
+
 **Note:** No log file exists yet. When wrapping up the first session, propose creating `Studio_makeover_Log.md` with the first entry.
+
+**Output rules:** Always reply in Chinese (中文).
 
 **Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里 [[Studio_makeover]] 行的 Current Focus + Updated 字段。
