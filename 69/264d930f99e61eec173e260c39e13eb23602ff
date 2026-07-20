@@ -1,0 +1,29 @@
+04_project/Training_Coach/Training_Coach.md
+  s_8a111462fecf32::t_706d4721d182cf 21,24-25,42,46,50
+  s_8a111462fecf32::t_40cfd29dfcdbac 44-45,47,49,53
+  s_a1167be7814544::t_b32d9d2fa88fee 77-94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.34-trip",
+  "base_commit_sha": "69264d930f99e61eec173e260c39e13eb23602ff",
+  "prompts": {},
+  "sessions": {
+    "s_8a111462fecf32": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b52cab55-255c-42f9-bc07-79b4bb18cfe2",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_a1167be7814544": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e7bbf40c-8ed0-4a03-aaae-f4891ca7d8df",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
