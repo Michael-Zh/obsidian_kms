@@ -241,3 +241,90 @@ For any new trip, resolve these in order. **Open Questions go at the top of ever
 13. [ ] Heat/climate protocol applied to daily schedule
 13. [ ] Google Calendar sync script updated and run once itinerary is finalised
 14. [ ] Parking Lot created for anything that doesn't fit — don't discard, just defer
+
+---
+
+## Packing Checklist
+
+Use this as the baseline for packing. **Core — Always Pack** items are non-negotiable. The **Clothing, Shoes & Accessories** section is a template to fill per trip based on duration, weather, and occasions.
+
+---
+
+### Core — Always Pack
+
+These items go in every trip, regardless of destination or duration. Check before closing the bag.
+
+- [ ] **Toiletry kit** — travel-sized essentials (toothbrush, toothpaste, deodorant, shampoo, face wash, razor, nail clippers). Keep a pre-packed kit to avoid re-packing every trip.
+- [ ] **Charger bundle** — phone cable + block, laptop cable + block. Put in a labelled pouch for easy access at airports/cafés.
+- [ ] **Power bank** — charged and cabled. Essential for all-day sightseeing (maps, tickets, transit info drain the phone).
+- [ ] **Loop / Ear plugs** — non-negotiable for the quiet-room strategy. Block hotel noise, snoring roommates, and airplane cabin hum. Also useful for loud transit or crowded events.
+- [ ] **Vitamins + prep** — daily supplements and any pre-dance-class fuel. Pack in a weekly pill organiser.
+- [ ] **Sunscreen** — SPF 50+, applied daily in hot destinations. Buy a fresh bottle at destination if flying with only carry-on (liquid restrictions).
+- [ ] **Sunglasses** — polarised preferred. Essential for walking in 35°C+ cities and reducing eye strain during long sightseeing days.
+- [ ] **Lube** — personal lubricant. Especially relevant for sauna visits and sexual activity (see [[#LGBTQ+ Infrastructure]]).
+- [ ] **Water bottle** — reusable, preferably collapsible for carry-on. Fill at hotel before heading out each day — critical for heat-climate hydration.
+- [ ] **Eye cover**
+- [ ] **laundry bag**
+---
+
+### Clothing, Shoes & Accessories — Trip-Dependent Template
+
+This section is **not a fixed list** — fill it per trip based on the trip's specific parameters. Copy the template below into each trip plan's packing section and check off as you pack.
+
+**Parameters to consider before filling:**
+- **Trip duration** → how many outfits, laundry strategy (see below)
+- **Climate / weather** → hot? cold? rain? layering needs?
+- **Occasions** → sightseeing, dance class, performance, Pride, dinner out, club/sauna
+
+```
+#### Clothing
+- [ ] Tops — ___ (number based on duration + laundry plan)
+- [ ] Bottoms — ___ (shorts, trousers, jeans)
+- [ ] Underwear — ___ (one per day + 1 spare)
+- [ ] Socks — ___ (one per day + 1 spare)
+- [ ] Lightweight layer / jacket — for evening chill or air-conditioned museums
+- [ ] Rain shell / umbrella — if rain forecast
+- [ ] Swimwear — if hotel pool, beach day, or sauna visit
+- [ ] Sleepwear
+
+#### Dance Class Gear
+- [ ] Leotard
+- [ ] Tights (1–2 pairs)
+- [ ] Ballet flats / dance shoes
+- [ ] Warm-ups (leg warmers, wrap top) — useful for A/C studios
+- [ ] Dance bag — compact, separates sweaty gear from regular clothes
+
+#### Event-Specific (check against itinerary)
+- [ ] Performance outfit — dress shirt / smart casual for theatre/ballet evening
+- [ ] Pride outfit — expressive, weather-appropriate
+- [ ] Club / nightlife outfit
+- [ ] Sauna kit — flip-flops, towel (check if venue provides), small bag
+
+#### Shoes
+- [ ] Primary walking shoes — comfortable, broken-in, suitable for 15k+ steps/day. In hot cities: breathable (e.g. leather sneakers, mesh trainers).
+- [ ] Secondary pair — dressier option for evening / performance / nice dinner (e.g. loafers, clean trainers).
+- [ ] Sandals / flip-flops — if hot destination, pool, or sauna.
+
+#### Accessories
+- [ ] Hat — wide-brim or cap for sun protection
+- [ ] Crossbody bag / sling — hands-free for sightseeing, pickpocket-resistant (keep phone, wallet, power bank, water bottle)
+- [ ] Belt
+- [ ] Watch
+- [ ] Scarf / bandana — multi-purpose (sun cover, dust, light warmth)
+- [ ] Small reusable shopping bag — for market finds or grocery runs
+- [ ] RFID-blocking card sleeve — if carrying multiple cards in a high-theft area
+```
+
+---
+
+### Packing Strategy Notes
+
+**One-bag / carry-on preference:** Default to a single carry-on suitcase + a small crossbody/personal item. Solo travel + metro-first transport makes checked luggage a liability. Only check a bag if the trip exceeds 10 days or includes specialised gear (dance shoes, multiple performance outfits, gifts).
+
+**Laundry strategy:** For trips longer than 5 days, plan one laundry day mid-trip (hotel service or nearby laundromat). This halves the clothing needed — pack for 4–5 days of wear, not the full trip duration. Hand-wash socks/underwear in the sink as needed.
+
+**Dance gear weight:** Ballet flats and tights are light; leotards pack small. If the trip includes multiple classes, bring 2 leotards + 2 tights and wash between. Dance shoes are the bulkiest item — wear them onto the plane to save suitcase space.
+
+**Heat-climate cheat:** In summer destinations (35°C+), minimise synthetic fabrics — prioritise linen, cotton, and breathable blends. You'll re-wear the same 3 outfits on rotation because you'll sweat through them anyway. Accept this and pack less, not more.
+
+**Packing list lives here:** Each trip's packing list is drafted when building the itinerary and stored in the trip's own planning document. The checklist above is the template — mark it up per trip, don't modify the template itself.

@@ -458,3 +458,230 @@ H1 review cycle. Worked through full self-evaluation across O1–O4 and leadersh
 
 **Documents Updated:**
 - `H1_self_evaluation.md` — created; full Part 1 + Part 2 final version
+---
+
+## Session 8 — 2026-07-15
+
+**Topic:** AirAsia VPL 附加率趋势分析 + BA 旁路表 Proposal
+
+**Context:**
+AirAsia Value Pack Lite（15kg 托运 + 标准选座）于 6 月 17 日在 TH/MY/PH 国内航线正式上线。本次 session 的核心目标是通过内部 BQ 数据评估 VPL 上线后 attach rate 的实际变化趋势。同时整理了 BA 旁路表的上线请求内容。
+
+**数据范围：**
+- 航司：AK / FD / XJ / D7 / Z2 / QZ / KT（全 AirAsia 实体）
+- 路线：TH/MY/PH 三国国内（出发 + 到达国一致，region IN ('th','my','ph')）
+- 时间：2026-01-01 至 2026-07-15（覆盖 VPL 上线前后完整对比窗口）
+- 舱位：Y/W 经济舱 + 超级经济舱
+- SQL 存档：`Order_ori.md`（目标表 `MZ_order_ori_AirAsia`）
+
+**Key Finding — VPL Attach Rate 趋势（meta + 1-meta 合并）：**
+- **15kg 托运包**：VPL 上线前（W1-W23）占比约 2%；上线后（W24+）稳步增长，最新 week（截至 7/15）达约 8%
+- **20kg 托运包**：上线前约 7%；上线后降至 3-4%（部分被 15kg VPL 替代）
+- **整体 check bag share**：上线后净增约 3pp（非纯零和置换），方向健康
+- **整体 upsell rate**：维持 ~25-27%，VPL 尚未明显拉动 base fare → upsell 的整体转化
+- **异常点**：2 月 W5-8 出现 15kg 小幅峰值（VPL 上线前），来源待确认（可能是其他 Reg+Bag 15kg 运价）
+- **vs. AA 官网**：AA.com VPL attach rate ~11%；Trip 当前 ~8%，缺口约 3pp；原因尚待 coverage 数据确认
+
+**分析判断：**
+- VPL 方向健康，但 base fare 用户向 checkin bag 的增量转化暂不显著 → 问题可能在 Supply/Ranking/Display 层
+- 等待 Lulu 的 coverage 数据（当前约 47%），确认 supply 修复完整性后再做下一步诊断
+
+**BA 旁路表 Proposal（2026-07-17 补充）：**
+- **内容：** 通过旁路表保留 BA 所有品牌运价（semi-flex / flex / fully flex）至所有 BA 航线
+- **Metrics：** BA 整体 CR、upsell%、订单量和订单 share
+- **Breakdown 维度：** 品牌运价（监控被保留运价的恢复情况）× 长途 vs. 中短途（长途 + semi-flex/flex 预期效果更强）
+- **节奏建议：** 尽快配置 → 最早下周初开始测试；在 BI Personalized Ranking ABT 测试流量增加至 30% 之前先跑（避免 ranking 变量干扰，先确认旁路表本身的效果）
+- **后续：** BA 测试开始后，逐步扩展至其他类似情况的航司（清单待补充）
+
+**Parked / 待跟进：**
+1. **Coverage 数据（Lulu）**：等回复 → 确认 supply 修复完整性；决定下一步诊断层（Ranking / Display）
+2. **Pure Value Pack WS2 filter**：VP 运价被比价算法 PK，用户无法看到/购买 VP；需确认 bypass 方案或旁路表是否可覆盖
+
+**Documents Updated:**
+- `Order_ori.md` — 最终 SQL（AirAsia TH/MY/PH domestic，含 `checkin_bagweight` + `orderdate_d`，isBatch1 修正为 CASE 表达式）
+
+---
+
+## Session 9 — 2026-07-20
+
+**Topic:** FBU H2 OKR Review + 用研报告阅读 + PROJECT_CONTEXT 状态清理
+
+**Context:**
+读取并分析了三份 FBU H2 文档：
+1. **Vivi 的 Upsell 项目文档（v2.2, Jul 9）：** 战略转向——"供给侧补货"→"表达侧提效 + 动机侧强化"。核心判断：不是没货，是货没卖出去，用户没觉得值得买。
+2. **丁一团队前端 H2 OKR：** 五个 O。Jessie Li own upsell KR1（Fare Upsell Conversion），Doris own O2（运卡表达提效），孙爽 own post-booking/cross-sell 和 Direct Channel Conversion。
+3. **用研报告（UK & SG, n=707）：** 40% 纯最低价，28% L+Extras（最大机会人群），13% Upgrader。行李是唯一通用升级驱动因素。87% 用户想要 upfront add-on cost estimate。"Recommended for you" 排序被 14/15 用户拒绝。
+
+**Key Findings:**
+
+**FBU OKR × IBU workstream 交叉分析：**
+- Void/24h 在 FBU OKR 中未被显性命名——隐含在 Jessie KR1（differentiated benefit expression）或 Doris O2（运卡表达）中。需确认实际 owner（可能非孙爽）。
+- 用研数据提供了 push void/24h 的新弹药：SG 用户 37% 认为 flexibility 重要（长途跳至 53%），退改规则不可见是用户痛点。
+- FBU 定价竞争力标为"中优先级，悬，往后"——短期内不会有 AB 测试资源。IBU Pricing 分析定位需调整：从"驱动 AB 测试"→"提供诊断输入"。
+- IBU Pricing Type A（内部 price gap）直接回应用研"不值"的 #1 障碍——33% UK / 46% SG 说"更高的运卡不值这个价"。
+- Brand Fare Mapping scraper 恰好与 FBU O4-KR1（自动化缺口发现）对齐。
+- Golden Routes / Natural Demand Ceiling 方法论是 FBU 完全未覆盖的盲区，但执行难度较高。
+
+**PROJECT_CONTEXT 状态清理：**
+- FBU display trigger logic：已确认获取（之前标为 blocker）
+- H1 narrative：已完成
+- EY/UA/AC 24h 案例深度分析：已 close
+- 移除不再相关的 backlog 项：Ghost Query rate、Natural Demand Ceiling、Void/24h by market cut、service_fee_type 探索、Upgrade step framework（全航司扩展）、RouteType BQ split、航司 scope 扩展
+- 两个 Active P0（BA 旁路表、AirAsia VPL）为 ongoing，暂不需主动投入
+- Blocker 列表从 5 项精简为 4 项
+
+**H2 优先级建议（更新版）：**
+| 优先级 | 事项 | 理由 |
+|---|---|---|
+| P0 | Void/24h：用用研数据 push，确认 FBU owner | 最大的已知 opportunity；用研是新弹药 |
+| P0 | Revenue leakage 量化 | H1 遗留；独立可控；对 business case 必需 |
+| P1 | Pricing Type A（内部 price gap）| 不依赖 FBU；回应用研"不值"障碍；差异化贡献 |
+| P2 | Golden Routes / Natural Demand Ceiling | 方法论差异化；但执行有难度 |
+
+**Food for Thought:**
+- 用研中"总成本估算"（87% 用户想要）是最强的产品信号之一——与 IBU Pricing 分析天然连接：price gap 数据可以 feed 进总成本展示的产品设计。
+- "Recommended for you" 排序被用户强烈拒绝（14/15），而 benefit filter 被自发提及（12/15）——FBU 的 Personalized Ranking ABT（Jul 9 上线）如果用了推荐排序逻辑，可能面临用户接受度风险。值得监控 ABT 结果。
+- 用研报告本身值得作为 IBU 的 reference document——在 J 沟通中引用第三方用户证据比引用自己的分析更有说服力。
+
+**Documents Updated:**
+- `PROJECT_CONTEXT.md` — 多处状态清理、FBU OKR review 发现写入、Pricing 定位调整、Next Steps 精简、Stakeholder Map 更新
+
+---
+
+## Session 9 续 — 2026-07-20
+
+**Topic:** H2 优先级规划 — Q3 工作框架 Draft
+
+**Context:**
+在完成 FBU OKR review 和状态清理后，深入讨论了 H2 的实质工作方向。关键约束：作为 Strategy Team，应聚焦 needle mover——单 fix 撬动大范围、共性问题优先。
+
+**Key Decisions:**
+
+**Q3 三部分框架（Draft，待与 J 对齐）：**
+
+**Part 1 — H1 Carry-over：Audit 收尾 + 航司排查**
+- 航司 audit 收尾（欧线剩余 FSC + EU LCC + 北美/中东/日本）
+- 用现有方法论（baggage share → fare family comparison → root cause diagnosis）补完余下航司
+- 旁路表可复用：后续类似 BA 的比价过滤问题可直接套用
+- Coverage 基建交接：等 automated brand fare mapping 跑通后，手工 audit 结束
+
+**Part 2 — Net New：前端展示与辅营的量化支持**
+- FBU 有方向但缺量化和优先级——IBU 可以做 mapping：用研发现 → BQ 全量数据验证 → 帮 FBU 判断方案优先级
+- Void/24h + Service Fee：确认 FBU owner（Jessie/Doris），推动进入执行
+- Pricing：方向待定，与 J 确认是否投入
+- Service fee alignment 已明确
+
+**Part 3 — Communication & Coordination**
+- Keep up 现有 cross-BU 沟通
+- 增强与 region 的 collaboration（待细化）
+
+**Fare Family 航司分类框架 讨论结论：**
+- 现有手动 approach（baggage share under-index → fare family comparison → benchmark 对比）已经够用
+- 系统性分类的 marginal value 有限，且应由 FBU 来做（他们有自己的数据基建和产品方向）
+- IBU 不需要做 taxonomy，但可以提供分类维度的设计建议
+
+**Pricing 分层澄清：**
+- 供应角度：成本价不合理 → 平台无法亏本卖
+- 内部运营角度：business rules/人为操作放大价差 → 可调整
+- 目前缺乏可靠数据做深度归因，先 observational：看最终价格差与转化率关系
+
+**Food for Thought:**
+- 目前没有发现第二个 void/24h 级别的系统性 bug——这正常，void/24h 也是一个逐步发现的过程。Q3 的重点是把手头的事情推进好，同时保持 judgment 敏锐。
+- L+Extras 用户（28%）→ 他们实际花更多 vs. 直接选高一档运卡？这是最 concrete 的用研→BQ 量化切入点。
+
+**Documents Updated:**
+- `PROJECT_CONTEXT.md` — Q3 工作框架（Part 1/2/3）、Pricing 精简、Next Steps 重组
+
+---
+
+## Session 10 — 2026-07-20
+
+**Topic:** 11 Airlines Brand Fare Coverage Analysis — Supply vs Selection 全景诊断
+
+**Context:**
+H1 carry-over 的航司 audit 收尾。用 `MZ_coverage_check_for_claude` 表（底层：`dw_fltdb_adm_rsc_engine_airline_route_brand_cover_v2_di`，近 90 天），对 EK, KL, AC, UA, AA, DL, CI, BR, VB, VF, NH, JL 共 11 家航司做 supply coverage 和 selection coverage 双口径诊断。目的是为后续人工走查（航司官网验证 + fare family study）提供数据基线。
+
+**Key Decisions:**
+
+**核心发现：品牌运价覆盖问题是结构性、分层的**
+
+按五层漏斗归因：
+
+**1. Data Foundation → Supply 层问题（brand mapping 缺失）**
+- **BR Discount: 0%**（949K traces 全局无映射）——最严重
+- **CI Discount: 10.8%**（1.55M traces）——接近缺失
+- **AA 全 tier <78%**（JP-US 方向 Basic 仅 0.9%）——核心市场大面积缺失
+- **EK Special: 41.5%**——最低 tier 映射不完整
+- **NH Flex: 56.2%**——特定 tier 缺失
+- **UA Economy Plus: 48.6%**（仅覆盖 87 CPs vs. 其他 tier 的 670+ CPs）
+
+**2. Fare Selection 层问题（比价过滤高端 tier）**
+- **VF Flex −43pp**（intl）、Ecojet 国内 −95pp——Supply 完美但比价全杀
+- **NH Full Flex −79pp**（CN-JP 仅 4.7%）
+- **JL Flex −69pp**（JP-VN 仅 0.2%）
+- **AC Latitude −79pp**（JP-CA 仅 2.7%）
+- **CI Flex −69pp**（HK-TW 仅 4.8%）
+- **EK Flex Plus −66pp**（FR-AE 仅 3.3%）
+- **BR Up −77pp**、**DL Comfort 系列 −51~57pp**、**UA Fully Refundable −38pp**
+
+**共同规律：最低 price tier 在所有航司都健康（filter drop <10pp），越贵的 tier filter drop 越大。** 这符合比价算法逻辑——最低价始终排最前。
+
+**3. 无重大问题**
+- **KL：** 94.6% supply → 92.1% selection，filter drop 仅 2.5pp——但这是 WS5 Airline Compliance（Strict Fare Display）强制要求的效果，不是系统自然表现
+
+**VB 单独说明：**
+- US-MX 国际线量不大（~77K traces），但品牌映射和比价表现都相对健康，NDC 接入可能是原因
+
+**下一步行动计划：**
+- 每航司人工走查：官网确认 fare family 结构 + Top 3 CPs 比价验证
+- P0 走查：AA/BR/CI（supply gap）
+- P1 走查：NH/JL/VF（selection gap）
+- P2 走查：EK/AC/UA/DL
+- KL 作为 reference 对照
+
+**Food for Thought:**
+- VB 如果是 NDC 接入导致的良好表现，说明 NDC 是解决 coverage 的可复制路径——值得进一步验证
+- JL 的 brand name 有空格不干净问题（`Economy Flex` vs `Economy  Flex`），说明 ATPCO mapping 层面本身有脏数据
+- NH 有 6 个 tier，是 11 家里最多的——tier 越多意味着 mapping 和比价过滤的复杂度越高
+- Filter drop 模式的规律性（低 tier 健康、高 tier 被杀）说明比价算法有系统性逻辑，可能可以通过旁路表或 compliance 干预
+
+**Documents Updated:**
+- `audit/11_airlines_coverage_analysis.md` — 新建，完整 11 航司 coverage 分析
+- `PROJECT_CONTEXT.md` — Next Steps 更新
+
+---
+
+## Session 9 续② — 2026-07-20
+
+**Topic:** J 1-on-1 同步 + Regional Sync Agenda + Q3 OKR Proposal
+
+**Context:**
+完成 Q3 工作框架讨论后，与 J 进行了 1-on-1 同步。未深入讨论 OKR 细节，但获得了四条重要背景信息。同日起草了 Regional Sync 会议 agenda 和 Q3 OKR Proposal 文档。
+
+**J 1-on-1 关键信息：**
+1. **全公司 AI-driven 优化方向：** 后续项目需尽可能 leverage AI 能力
+2. **FBU BI team lead 离职：** 新接替待宣布，需重新磨合合作模式
+3. **IPU ETL 支持升级：** Phase 1 — IBU 自行 exploration 后要求 copy 到 BQ，次日交付；Phase 2 — IPU 主动帮我们找数据
+4. **Q3 OKR：** 具体 KR 未深入讨论；近期重点 — regional sync 尽快完成；需与 Jessie 约会 align void/24h
+
+**Q3 OKR Proposal 起草：**
+- `H2_OKR_Proposal.md` — 三个 O：O1 Audit收尾+基建交接 / O2 前端量化支持 / O3 协同维护
+- 待与 J 进一步讨论后定稿
+
+**Regional Sync Agenda 起草：**
+- `Regional_Sync_Agenda.md` — 30-60 min 会议模板，四个 items：
+  1. Circle back on region requests
+  2. 24h case share (FYI, dependency noted)
+  3. Audit update (verified/quantified only)
+  4. ABT update + regional support ask
+- 核心原则：brief, concrete, tailored per region
+
+**Documents Created:**
+- `H2_OKR_Proposal.md` — Q3 OKR proposal for J discussion
+- `Regional_Sync_Agenda.md` — Regional sync meeting template
+
+**Documents Updated:**
+- `PROJECT_CONTEXT.md` — Part 3 新增 J 1-on-1 背景、Stakeholder Map 重构（拆分为 Jessie/Doris/孙爽独立行，新增 FBU BI 和 IPU DE）
+- `CLAUDE.md` — Trial Log 范围更新至 Session 10
+
+

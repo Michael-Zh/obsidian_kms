@@ -55,7 +55,7 @@ WITH
                AND x.bookpagename = '中间页',               1, 0)) AS all_flexibility_bundle,
       MAX(IF(x.packagename = 'Cancellation Guarantee - Bundled with Fare'
                AND x.bookpagename = '中间页',               1, 0)) AS rp_bundle
-    FROM `trip-ibu-adhoc.ibu_adhoc_temp.dw_fltdb_edw_deal_ord_factxproductorderdetail_all` x
+    FROM `trip-ibu-bi-dw-etl.ibu_bi_dw_source.dw_fltdb_edw_deal_ord_factxproductorderdetail_all_ibu` x
     JOIN `trip-ibu-bi-dw-etl.ibu_bi_dw_cdw.edw_ord_flt_order` o
       ON x.orderid = o.orderid
     WHERE

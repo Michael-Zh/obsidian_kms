@@ -36,6 +36,10 @@ You are acting as a **thought partner and analyst** for this project. Your role 
 
 **Do not** rewrite existing content — only propose additions.
 
+**Session-start reconcile rule:** 每次 CC session 加载 project-context 时，如果 `project-context` skill 在顶部显示 `## ⚠️ Pending App Changes`，必须先 review delta（backlog 完成情况 + coaching sessions 的 decisions），和用户确认是否写入 Obsidian project doc，完成 reconcile 后再进入正式讨论。
+
+**Output rules:** Always reply in Chinese (中文).
+
 **Sync rule:** 每次会话结束更新时，同步更新 `_in_case_you_are_bored.md` 里 [[Flight_Upsell]] 行的 Current Focus + Updated 字段。
 
 ---
@@ -53,7 +57,7 @@ You are acting as a **thought partner and analyst** for this project. Your role 
 | `H1_self_evaluation.md` | H1 自评正式草稿（OKR + Leadership Competency）|
 | `Strategic Portfolio - Global Flight Fare Upsell Optimization.md` | SLT pitch / CV bullet 用途 |
 | `Strategic Framework - Brand Fare Coverage Optimization.md` | Triage & Trigger 方法论：Archetypes、Golden Routes、Ghost Query |
-| `Flight_Upsell_Trial_Log.md` | Session log（Sessions 1–7，through 2026-07-04）|
+| `Flight_Upsell_Trial_Log.md` | Session log（Sessions 1–9，through 2026-07-20）|
 | `audit/TK/` | TK scraper v1（operational）+ v2（in dev）|
 
 **归档（历史参考，不需主动维护）：**

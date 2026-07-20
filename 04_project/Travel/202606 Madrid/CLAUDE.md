@@ -81,4 +81,8 @@ You are acting as a **logistics partner and travel thought partner** for this tr
 
 **Do not** rewrite existing content — only propose additions.
 
+**Session-start reconcile rule:** 每次 CC session 加载 project-context 时，如果 `project-context` skill 在顶部显示 `## ⚠️ Pending App Changes`，必须先 review delta（backlog 完成情况 + coaching sessions 的 decisions），和用户确认是否写入 Obsidian project doc，完成 reconcile 后再进入正式讨论。
+
+**Output rules:** Always reply in Chinese (中文).
+
 **Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里相关项目行的 Current Focus + Updated 字段。
