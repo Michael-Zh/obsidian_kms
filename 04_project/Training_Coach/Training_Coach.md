@@ -77,18 +77,19 @@ _2026-07-19 更新（Session 27）_
 _2026-07-20 更新（Session 29）_
 
 **新增 / 变更：**
-- **Class Pool DB 化**（Migration 042）：新建 `class_pool` 表替换硬编码 `WEEKLY_TEMPLATE` 和 `VALID_SESSION_TITLES`；generate/adjust route 改为动态读 DB；`ClassPoolManager` 管理 UI（按 match_title 分组，共性字段自动批量 PATCH，slot 增删改）；入口在 Metrics tab（与 Exercise Bank 并列）
-- **Backlog `project_id` UI 入口**：新建 `GET /api/projects` → BacklogRow 编辑模式新增 project 下拉 → `update` action 接受 `project_id`
-- **Schedule Panel 内联编辑**：MiniSessionCard 点击 → 展开 title select + time inputs + location → Save 更新 schedule-store（纯内存，不调 API）
-- Metrics tab 两个 library 按钮改为纯文字（Exercise Bank | Class Pool）
+- **Context Sync Dashboard**：跨端口 context 诊断 + 修复中心。`GET /api/context/status` 显示三表状态 + GitHub commit 时间对比；`POST /api/context/re-sync` 从 GitHub 拉 KMS 文件 upsert DB；`POST /api/context/re-push` 推 DB 数据回 Obsidian；`ContextSyncDashboard` 全屏组件（Re-sync / Re-push / View delta / Mark reviewed）
+- **Class Pool DB 化**（Migration 042）：`class_pool` 表替换硬编码；generate/adjust route 动态读 DB；`ClassPoolManager` 管理 UI（match_title 分组，共性字段自动批量 PATCH，slot 增删改）
+- **Backlog `project_id` UI 入口**：`GET /api/projects` → BacklogRow 编辑模式 project 下拉
+- **Schedule Panel 内联编辑**：MiniSessionCard 点击 → 内联编辑 title/时间/地点 → Save 更新 schedule-store
+- **Dashboard 重构**：Metrics tab → Dashboard tab；所有 charts 归到可折叠 Metrics 区域；下方三管理按钮纵向排列（Class Pool / Exercise Bank / Context Sync）
 
 **Backlog 更新（已完成）：**
 - Class Pool DB 化 + 管理 UI ✅
 - Backlog `project_id` UI 入口 ✅
 - Schedule Panel 手动内联编辑 ✅
+- Context Sync Dashboard ✅
 
 **当前 Backlog（主要剩余）：**
-- P1: Manual Context Sync Reset Dashboard
 - P2: Schedule Coaching Integration（schedule_suggestion proposal card）
 - P3: Priority 回写 Gap
 - P3: Priorities panel 显示优化
