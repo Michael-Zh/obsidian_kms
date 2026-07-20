@@ -77,13 +77,14 @@ _2026-07-19 更新（Session 27）_
 _2026-07-20 更新（Session 29）_
 
 **新增 / 变更：**
-- **Context Sync Dashboard**：跨端口 context 诊断 + 修复中心（Re-sync / Re-push / View delta / Mark reviewed / Priority Alignment）
+- **Context Sync Dashboard**：跨端口 context 诊断 + 修复中心（Re-sync / Re-push / View delta / Mark reviewed / Priority Alignment）；Re-sync 只取 valid project 子目录
 - **Priority Sync 闭环**：End Session 自动检测 P1/P2/P3 decisions → 写回 `_priority.md` Short-Term Focus + `projects_state.priority`
 - **Class Pool DB 化**（Migration 042）：`class_pool` 表替换硬编码；`ClassPoolManager` 管理 UI（match_title 分组，共性字段自动批量 PATCH，slot 增删改）
 - **Backlog `project_id` UI 入口**：`GET /api/projects` → BacklogRow 编辑模式 project 下拉
 - **Schedule Panel 内联编辑**：MiniSessionCard 点击 → 内联编辑 title/时间/地点
-- **Dashboard 重构**：Metrics tab → Dashboard tab；charts 归可折叠 Metrics 区域；三管理按钮横向排列；Gym PR 三条线合并单图；30 天固定窗口
-- **Bug 修复**：Priming regenerate done 行污染、Gym PR 7 月数据 FK expansion null、backlog 按钮颜色、Coaching Clear Chat 按钮
+- **Dashboard 重构**：Metrics tab → Dashboard tab；charts 归可折叠 Metrics 区域；三管理按钮横向排列；Gym PR 三条线合并单图；30 天固定窗口；Backlog 按钮改文字 pill
+- **Bug 修复**：Priming regenerate done 行污染、Gym PR 7 月数据（FK expansion + ilike 关键词匹配）、Coaching Clear Chat 按钮
+- **Service role 权限补充**：workouts + gym_logs
 
 **Backlog 更新（已完成）：**
 - Class Pool DB 化 + 管理 UI ✅
@@ -96,3 +97,4 @@ _2026-07-20 更新（Session 29）_
 - P2: Schedule Coaching Integration（schedule_suggestion proposal card）
 - P3: Priorities panel 显示优化
 - P3: Web Push Notifications
+- ⚠ Migration 042 需在 prod Supabase 手动执行
