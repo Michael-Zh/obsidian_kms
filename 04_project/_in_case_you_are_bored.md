@@ -23,19 +23,22 @@ Single source of truth for the full project landscape: what's in motion, what's 
 | [[Meal_prep_routine]] | pj0004 | PhysicalHealth | P2 | Phase 1: 饮食 philosophy + routine 设计（什么时候吃、吃什么、吃多少）| 2026-07-21 |
 | [[Studio_makeover]] | pj0005 | AdminHome | P2 | Cleaner prep 最高优先级；其余 makeover items（plant repotting 等）推迟到 summer 后 | 2026-07-21 |
 | [[Training_program]] | pj0006 | PhysicalHealth | P3 | CT intensive prep；配合 Meal Prep Routine 执行。Body recomposition 方向不变 | 2026-07-21 |
+| [[Training_Coach]] | pj0007 | PhysicalHealth | P1 | Training Coach App — Danseur Noble S&C Hub（LMS 子系统——app + coaching + priming + metrics） | 2026-07-21 |
+| [[Travel Buddy]] | pj0008 | CreativityCuriosity | P2 | Mobile-first 旅行全程伴侣 App（规划/调整/复盘/灵感 backlog） | 2026-07-21 |
+| [[Vibe Coding Tool]] | pj0009 | CreativityCuriosity | P3 | Mobile-first AI coding assistant（plan → code → commit → deploy） | 2026-07-21 |
 
 ## Recently Completed / Wrapping Up
 
-| Project | Pillar | Status | Notes |
-|---------|--------|--------|-------|
+| Project | ID | Pillar | Status | Notes |
+|---------|----|--------|--------|-------|
 | H1 Performance Review | Career | ✅ Closed | Self-evaluation submitted（3.92 overall）。All content in [[Flight_Upsell]] PROJECT_CONTEXT |
 
 ## On Hold
 
-| Project | Pillar | Status | Notes |
-|---------|--------|--------|-------|
-| [[Road_to_2040_Investment_Blueprint]] | Finance | Parked | System fully operational — automated waterfall + 3-tier architecture running. Quarterly net worth reviews only |
-| [[Strategic_relationship_audit]] | Relationships | Parked | 推迟到 8 月底/9 月。Madrid 关键数据已沉淀（ENM 双向探索、FOMO/safety 模式）。October gate: Jeroen 公寓 → Q4 |
+| Project | ID | Pillar | Status | Notes |
+|---------|----|--------|--------|-------|
+| [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance | Parked | System fully operational — automated waterfall + 3-tier architecture running. Quarterly net worth reviews only |
+| [[Strategic_relationship_audit]] | pj0011 | Relationships | Parked | 推迟到 8 月底/9 月。Madrid 关键数据已沉淀（ENM 双向探索、FOMO/safety 模式）。October gate: Jeroen 公寓 → Q4 |
 
 ---
 
@@ -112,8 +115,8 @@ Key themes that connect multiple areas:
 
 ## Done (Archive)
 
-| Project | Pillar | Status | Notes |
-|---------|--------|--------|-------|
+| Project | ID | Pillar | Status | Notes |
+|---------|----|--------|--------|-------|
 | [[Skincare_Routine]] | AdminHome | Completed | Routine established (home + travel). Future idea: incorporate eye mask & face mask treatments. |
 | H1 Performance Review | Career | Completed | Self-evaluation submitted (3.92). Content fully in [[Flight_Upsell]] PROJECT_CONTEXT. |
 
