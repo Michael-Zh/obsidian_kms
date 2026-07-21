@@ -1,5 +1,6 @@
 ---
 name: Meal_prep_routine
+project_id: pj0004
 status: active
 pillar: PhysicalHealth
 current_focus: "Phase 1: 讨论饮食 philosophy + routine 设计；Phase 2: 与 Training Program 结合，集成到 App"
