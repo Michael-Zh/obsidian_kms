@@ -1,5 +1,6 @@
 ---
 name: Life_Management_System
+project_id: pj0001
 status: active
 pillar: LifeManagement
 current_focus: "Meta-system hub — 概念层（KMS 知识架构 + wiki-coach + POS + priority） + 执行层（自定义 App + Claude Code）| 集成的子系统：Training Coach App、Training Program、Meal Prep、Priming、Coaching"
@@ -369,4 +370,3 @@ What's already been completed or achieved in this project.
 - [[coaching_20260516]] — Phase 2.2 completion: skill updates, project standardization, link cleanup
 
 **Related Projects:**
-
