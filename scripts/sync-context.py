@@ -31,6 +31,9 @@ SYSTEM_FILES = {
 }
 PROJECTS_GLOB = "04_project/**/*.md"
 
+# Each project's main file is 04_project/<project>/<project>.md
+# Exclude sub-files like CLAUDE.md, Order.md, etc. by checking dirname == stem
+
 # ─── Supabase helpers ─────────────────────────────────────────────────────────
 
 def supabase_upsert(table: str, rows: list[dict], conflict_cols: list[str]) -> None:
@@ -164,12 +167,20 @@ def main() -> None:
     if snapshot_rows:
         supabase_upsert("context_snapshots", snapshot_rows, ["key"])
 
-    # 2. Sync projects_state (04_project/**/*.md)
+    # 2. Sync projects_state (04_project/<name>/<name>.md only)
     print("\n[2] Syncing projects_state…")
     project_files = sorted(VAULT_PATH.glob(PROJECTS_GLOB))
-    parsed = [parse_project_file(p) for p in project_files]
+    # Only keep canonical project files: dir name == stem, skip _-prefixed
+    valid = []
+    for p in project_files:
+        if p.stem.startswith("_"):
+            continue
+        if p.parent.name != p.stem:
+            continue
+        valid.append(p)
+    parsed = [parse_project_file(p) for p in valid]
     project_rows = [r for r in parsed if r is not None]
-    print(f"  parsed {len(project_rows)} project files")
+    print(f"  parsed {len(project_rows)} project files (filtered from {len(project_files)} total)")
 
     if project_rows:
         supabase_upsert("projects_state", project_rows, ["project_id"])
