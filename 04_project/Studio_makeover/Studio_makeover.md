@@ -1,5 +1,6 @@
 ---
 name: Studio_makeover
+project_id: pj0005
 status: active
 pillar: AdminHome
 current_focus: "Cleaner prep (最高优先级) — 整理到适合 cleaner 清洁的状态 | 其余 makeover items（plant repotting 等）推迟到 summer 结束后"
