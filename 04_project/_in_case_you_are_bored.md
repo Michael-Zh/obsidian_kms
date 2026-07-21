@@ -15,14 +15,14 @@ Single source of truth for the full project landscape: what's in motion, what's 
 
 ## Active Projects
 
-| Project | Pillar | Priority | Current Focus | Updated |
-|---------|--------|----------|---------------|---------|
-| [[Life_Management_System]] | LifeManagement | P1 | Meta-system hub: 概念层（KMS + wiki-coach + POS + priority）+ 执行层（自定义 App + Claude Code）| 集成子系统：Training Coach App、Training Program、Meal Prep、Priming、Coaching | 2026-07-21 |
-| [[Flight_Upsell]] | Career | P1 | Q3 三部分框架：audit 收尾 + 前端量化支持 + 沟通协作。待与 J 对齐 | 2026-07-20 |
-| [[Parents_relationship]] | Relationships | P1 | Phase 1: 安全层分享（CT intensive + 马德里展览感受），建立真实沟通语境 | 2026-07-21 |
-| [[Meal_prep_routine]] | PhysicalHealth | P2 | Phase 1: 饮食 philosophy + routine 设计（什么时候吃、吃什么、吃多少）| 2026-07-21 |
-| [[Studio_makeover]] | AdminHome | P2 | Cleaner prep 最高优先级；其余 makeover items（plant repotting 等）推迟到 summer 后 | 2026-07-21 |
-| [[Training_program]] | PhysicalHealth | P3 | CT intensive prep；配合 Meal Prep Routine 执行。Body recomposition 方向不变 | 2026-07-21 |
+| Project | ID | Pillar | Priority | Current Focus | Updated |
+|---------|----|--------|----------|---------------|---------|
+| [[Life_Management_System]] | pj0001 | LifeManagement | P1 | Meta-system hub: 概念层（KMS + wiki-coach + POS + priority）+ 执行层（自定义 App + Claude Code）| 集成子系统：Training Coach App、Training Program、Meal Prep、Priming、Coaching | 2026-07-21 |
+| [[Flight_Upsell]] | pj0002 | Career | P1 | Q3 三部分框架：audit 收尾 + 前端量化支持 + 沟通协作。待与 J 对齐 | 2026-07-20 |
+| [[Parents_relationship]] | pj0003 | Relationships | P1 | Phase 1: 安全层分享（CT intensive + 马德里展览感受），建立真实沟通语境 | 2026-07-21 |
+| [[Meal_prep_routine]] | pj0004 | PhysicalHealth | P2 | Phase 1: 饮食 philosophy + routine 设计（什么时候吃、吃什么、吃多少）| 2026-07-21 |
+| [[Studio_makeover]] | pj0005 | AdminHome | P2 | Cleaner prep 最高优先级；其余 makeover items（plant repotting 等）推迟到 summer 后 | 2026-07-21 |
+| [[Training_program]] | pj0006 | PhysicalHealth | P3 | CT intensive prep；配合 Meal Prep Routine 执行。Body recomposition 方向不变 | 2026-07-21 |
 
 ## Recently Completed / Wrapping Up
 
