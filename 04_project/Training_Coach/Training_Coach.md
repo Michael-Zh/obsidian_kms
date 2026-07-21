@@ -1,3 +1,7 @@
+---
+project_id: pj0007
+---
+
 # Training Coach — Danseur Noble S&C Hub
 
 **GitHub:** https://github.com/Michael-Zh/danseur-noble-hub  
