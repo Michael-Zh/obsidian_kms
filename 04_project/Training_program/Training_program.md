@@ -1,5 +1,6 @@
 ---
 name: Training_program
+project_id: pj0006
 status: active
 pillar: PhysicalHealth
 current_focus: "CT intensive prep: 下一步 focus → Meal Prep（什么时候吃、吃什么、吃多少）；long-term goal 仍是 body recomposition（86-87kg, 43kg+ muscle, <10% BFM）"
