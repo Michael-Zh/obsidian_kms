@@ -40,7 +40,7 @@ tags:
 ## Upcoming Inflection Points
 
 - **Jeroen's new apartment delivered October 2026** → Moving-in-together question will surface by Q3. This is an external forcing function for the relationship decisions already in progress. (ref: [[coaching_insight_20260518]])
-- **Open question: ENM protocol design** — What would a personal green/yellow/red actually look like? This design work belongs in [[Strategic_relationship_audit]] before Q3 conversations begin. (ref: [[coaching_insight_20260529]])
+- **Open question: ENM protocol design** — What would a personal green/yellow/red actually look like? This design work belongs in [[Strategic_Relationship_Audit]] before Q3 conversations begin. (ref: [[coaching_insight_20260529]])
 
 ## Needs Clarification — Two Distinct Categories
 
@@ -63,7 +63,7 @@ tags:
 
 ## Connections
 
-Related Pages: [[Sexual-Identity]], [[Relationship-Patterns]], [[Strategic_relationship_audit]], [[Coming-Out-and-Family-Authenticity]], [[Life-Transitions]], [[Social-Connections]], [[Travel-Interests]]
+Related Pages: [[Sexual-Identity]], [[Relationship-Patterns]], [[Strategic_Relationship_Audit]], [[Coming-Out-and-Family-Authenticity]], [[Life-Transitions]], [[Social-Connections]], [[Travel-Interests]]
 
 
 ## ENM Framework: Rupture-and-Repair as Core Diagnostic (June 2026)

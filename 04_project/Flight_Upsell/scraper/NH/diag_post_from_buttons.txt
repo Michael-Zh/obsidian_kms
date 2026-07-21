@@ -1,0 +1,23 @@
+[
+  {
+    "text": "Tokyo (Haneda)[HND]",
+    "aria": "",
+    "cls": "be-wws-reserve-ticket-departure-airport__button js-button",
+    "id": "",
+    "outer": "<button type=\"button\" class=\"be-wws-reserve-ticket-departure-airport__button js-button\" aria-required=\"true\" aria-describedby=\"be-wws-reserve-ticket-departure-airport-described-text-81d77840-7f8d-8d3c-8c87-318d3d53c2de\" aria-expanded=\"false\" aria-controls=\"be-wws-reserve-ticket-departure-airport-dialog-81d77840-7f8d-8d3c-8c87-318d3d53c2de\" onclick=\"SCClick('20260130_en_us_wws_booking-modal-bottom-hero_tickets_from'); return true;\"><span>Tokyo (Haneda)[HND]</span></button>"
+  },
+  {
+    "text": "",
+    "aria": "Switch between Departure Location and Arrival Location",
+    "cls": "be-wws-reserve-ticket-swap-airport__button js-button",
+    "id": "",
+    "outer": "<button type=\"button\" class=\"be-wws-reserve-ticket-swap-airport__button js-button\" aria-label=\"Switch between Departure Location and Arrival Location\"></button>"
+  },
+  {
+    "text": "Select arrival location",
+    "aria": "",
+    "cls": "be-wws-reserve-ticket-arrival-airport__button js-button",
+    "id": "",
+    "outer": "<button type=\"button\" class=\"be-wws-reserve-ticket-arrival-airport__button js-button\" aria-required=\"true\" aria-describedby=\"be-wws-reserve-ticket-arrival-airport-described-text-81d77840-7f8d-8d3c-8c87-318d3d53c2de\" aria-expanded=\"false\" aria-controls=\"be-wws-reserve-ticket-arrival-airport-dialog-81d77840-7f8d-8d3c-8c87-318d3d53c2de\" onclick=\"SCClick('20260130_en_us_wws_booking-modal-bottom-hero_tickets_to'); return true;\"><span>Select arrival location</span></button>"
+  }
+]

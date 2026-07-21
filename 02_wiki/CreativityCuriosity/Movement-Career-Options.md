@@ -114,7 +114,7 @@ This honors your natural learning style (curiosity-driven, not forced) while sti
 ## Connections
 
 Related Pages: [[Portfolio-Career-Design]], [[Dance-Creation]], [[Project-Ideas]], [[Location-Independent-Lifestyle]], [[Content-Creator-and-Entrepreneurship-Ideas]]
-Related Projects: [[Training_program]], [[Meal_prep_routine]]
+Related Projects: [[Training_Program]], [[Meal_Prep_Routine]]
 
 
 ## Life Design Framework: The 3-Plan Architecture (ref: [[Life_Design_Coaching_Transcript]])

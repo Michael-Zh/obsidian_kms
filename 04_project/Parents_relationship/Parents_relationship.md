@@ -91,4 +91,4 @@ tags:
 - [[coaching_20260509]] — Portfolio Career Design 中也涉及 location-independence 与父母养老的张力
 
 **Related Projects:**
-- [[Strategic_relationship_audit]] — 伴侣关系的战略性思考；父母关系是平行的另一条线
+- [[Strategic_Relationship_Audit]] — 伴侣关系的战略性思考；父母关系是平行的另一条线

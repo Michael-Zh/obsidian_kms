@@ -41,4 +41,4 @@ tags: [AdminHome]
 ## Connections
 
 Related Pages: [[Plant-Care-System]], [[Fitness-Routine]]
-Related Projects: [[Studio_makeover]]
+Related Projects: [[Studio_Makeover]]

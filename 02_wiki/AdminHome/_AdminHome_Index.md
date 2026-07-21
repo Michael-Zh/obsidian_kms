@@ -13,7 +13,7 @@ Low-activity pillar. Active administrative items noted below.
 
 ## Related Projects
 
-- [[Studio_makeover]] — apartment renovation (active; cross-pillar with PhysicalHealth/Priority 1)
+- [[Studio_Makeover]] — apartment renovation (active; cross-pillar with PhysicalHealth/Priority 1)
 
 ## Next Steps
 

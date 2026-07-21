@@ -32,6 +32,7 @@ Mobile-first AI coding assistant。描述代码改动 → planning agent 分析 
 - Multi-file support — `proposals: { target_file, new_code }[]`
 - Auth layer — `TOOL_PASSWORD` env var 或 Supabase Auth
 - Vercel deploy status polling — Apply 后轮询 deploy 状态
+- Cloud Executor（云端执行端） — GitHub Codespaces 或廉价 VPS（Hetzner $5/月）运行 Claude Code，实现纯移动端闭环：手机 Plan + 云端执行 + 自动 commit。云服务器到 GitHub/OpenRouter 延迟更低、不挂墙、24 小时在线
 
 ---
 

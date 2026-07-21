@@ -684,4 +684,69 @@ H1 carry-over 的航司 audit 收尾。用 `MZ_coverage_check_for_claude` 表（
 - `PROJECT_CONTEXT.md` — Part 3 新增 J 1-on-1 背景、Stakeholder Map 重构（拆分为 Jessie/Doris/孙爽独立行，新增 FBU BI 和 IPU DE）
 - `CLAUDE.md` — Trial Log 范围更新至 Session 10
 
+---
+
+## Session 11 — 2026-07-21
+
+**Topic:** NH ATPCO Brand Name 验证 — Fare Family 方向性确认 + 五层问题定位
+
+**Context:**
+用订单层 `edw_prd_flt_factfltsegment_eng.atpco_brand_name` 验证 NH 的 fare family 分类是否准确，按航线和方向拆开看实际 tier 分布。同时确认了 Flex 零订单的根因——比价过滤 + Ranking 双杀。
+
+**Key Findings:**
+
+**Tier 映射验证：** 九个主要 tier 的 ATPCO → unified brand name 映射链完整，无错配。国内线专用名（DMS/NHIE/DJ FARE 等）未泄漏到国际线。
+
+**Fare Family 方向性：** 四套 fare family 假设被订单数据广泛验证。新增发现：KR→JP 航线结构不同于中日线和 SEA 线（Standard + Full Flex 为主），需人工走查确定。
+
+**NULL ATPCO name：** 25-37% 订单 `atpco_brand_name IS NULL`，全局均匀，部分 supply 通道不传此字段。低优先级，暂不投入排查。
+
+**Flex 零订单根因 — 双杀：**
+- Fare Selection：Flex −44pp 系统性过滤（Standard 同 CP 仅 −8pp），比价算法对 Flex 有系统性不利。中日线例外（JP-CN 仅 −19pp）。
+- Ranking：即使活下来的 49.6%，Flex 订单在 JP→SEA 方向仍为 0。Standard 85.6% 可见、定价合理，订单也仅 5.6%——排序问题是更大瓶颈。
+
+**五层最终定位：**
+
+| 层 | 状态 | 证据 |
+|---|---|---|
+| Data Foundation | 🔴 Light coverage trace 缺失 + KR→JP fare family 不明 | `officialbrandname=NULL` 导致 ETL 过滤 Light |
+| Supply | 🟡 JP→Americas Value 偏低（JP→US 71.1%, JP→CA 64.2%） | 方向性限制假象外，存在真实局部缺失 |
+| Fare Selection | 🔴 Flex −44pp 系统性过滤 | Standard −8pp 对照 |
+| Ranking | 🔴 Standard 85.6% 可见但仅 5.6% 订单 | 能见≠能买 |
+| Display | ❓ 待验证 | 权益差异是否清晰展示 |
+
+**Next Step — Scraper 人工走查（本次 session 讨论中）：**
+- 用 scraper 爬 NH 官网，做两件事：(a) 验证低 coverage 航线在官网侧是否真的有对应 tier；(b) 确定 KR→JP 航线的 fare family 结构
+- 讨论 scraper 开发方向：TK v2 继续修 vs. 换航司/换技术路线
+
+**Documents Updated:**
+- `Flight_Upsell_Trial_Log.md` — Session 11 追加
+
+---
+
+## Session 11 续 — 2026-07-21
+
+**Topic:** NH Scraper 开发 + 目录重组
+
+**Scraper 工作流：**
+- 确认 NH scraper 用 CDP 模式（复用用户 Chrome session，避免反爬）
+- 完整搜索流程跑通：机场选择（click field → type IATA → select from list）→ 键盘输入日期 → Search → 结果页加载
+- 问题 1：`wait_until="domcontentloaded"` 不够，需等待 booking widget 渲染（`networkidle` 反而超时）
+- 问题 2：RT 回程无航班导致整页 No results，OW 正常
+- 问题 3：Fare 提取逻辑未完成——结果页每个日期 tab 需逐个点击展开，提取 tier 价格
+- 关键注意：**NH scraper 需先选 One Way tab，再填机场/日期**（当前代码 `set_ow` 调用顺序正确，但 ANA 在 RT default 下可能需先切换 tab）
+
+**Scraping Plan（最终）：**
+- 全部 OW、1 pax、每周一、+1 月 + +3 月
+- 每航线 4 次搜索（去程 × 2 + 回程 × 2），GMP 仅 2 次
+- 一次搜索覆盖 7 天日期窗口
+
+**目录重组：**
+- `audit/TK/`、`audit/NH/`、`audit/JL/` → `scraper/` 独立目录
+- `audit/` 保留纯数据分析文件
+
+**Documents Updated:**
+- `scraper/` 目录新建，TK/NH/JL 移入
+- `Flight_Upsell_Trial_Log.md` — Session 11 续追加
+
 

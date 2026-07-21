@@ -64,4 +64,4 @@ To: "This emotional depth is a gift to be expressed, shared, celebrated"
 ## Connections
 
 Related Pages: [[Sexual-Identity]], [[Coming-Out-and-Family-Authenticity]], [[Dance-Creation]]
-Related Projects: [[Skincare_Routine]] (self-care), [[Strategic_relationship_audit]]
+Related Projects: [[Skincare_Routine]] (self-care), [[Strategic_Relationship_Audit]]

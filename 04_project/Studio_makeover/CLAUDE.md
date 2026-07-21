@@ -118,4 +118,4 @@ You are acting as a **thought partner and project coach** for this home renovati
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里 [[Studio_makeover]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里 [[Studio_Makeover]] 行的 Current Focus + Updated 字段。

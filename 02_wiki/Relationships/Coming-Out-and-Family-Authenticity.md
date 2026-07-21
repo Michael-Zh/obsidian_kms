@@ -59,4 +59,4 @@ tags: [Relationships, MindMentalHealth]
 ## Connections
 
 Related Pages: [[Sexual-Identity]], [[Location-Independent-Lifestyle]], [[Partnership-with-Jeroen]], [[Life-Transitions]], [[Queer-Storytelling-and-Identity-Resonance]]
-Related Projects: [[Strategic_relationship_audit]]
+Related Projects: [[Strategic_Relationship_Audit]]

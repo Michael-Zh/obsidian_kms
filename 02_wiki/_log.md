@@ -7,7 +7,7 @@
 | Updated | [[KMS-Development]] | [[AI_learning]] |
 | Updated | [[Road-to-2040-Investment-Blueprint]] | [[Road_to_2040_Investment_Blueprint]] |
 | Updated | [[Habits-2026]] (LifeManagement) | — |
-| Created | [[Home-Maintenance-Cadence]] | [[Studio_makeover]] |
+| Created | [[Home-Maintenance-Cadence]] | [[Studio_Makeover]] |
 | Created | 01_raw/coaching/coaching_20260704.md | — |
 | Created | POS_signal_20260704.md | — |
 | Updated | AdminHome index | — |
@@ -46,7 +46,7 @@ Stanford AI Systems, Nick Maggiulli Just Keep Buying, n8n + Claude Code workflow
 | Action | Page | Project |
 |--------|------|---------|
 | Updated | [[Sexual-Identity]] | |
-| Updated | [[Fitness-Routine]] | [[Training_program]] |
+| Updated | [[Fitness-Routine]] | [[Training_Program]] |
 | Updated | [[Strategist-Requirements]] | [[Flight_Upsell]] |
 | Updated | [[Road-to-2040-Investment-Blueprint]] | [[Road_to_2040_Investment_Blueprint]] |
 | Updated | [[KMS-Development]] | [[AI_learning]] |
@@ -66,7 +66,7 @@ Stanford AI Systems, Nick Maggiulli Just Keep Buying, n8n + Claude Code workflow
 |---------|--------|--------|
 | [[Flight_Upsell]] | H1 narrative framing complete; 24h/void quantification open with J | [[coaching_20260620]] |
 | [[Road_to_2040_Investment_Blueprint]] | 3-Tier architecture confirmed; pension transfer complete; Adidas closed | [[coaching_20260620]] |
-| [[Training_program]] | Two-track sleep protocol + Sunday meal prep + pre-class eating added | [[coaching_20260620]] |
+| [[Training_Program]] | Two-track sleep protocol + Sunday meal prep + pre-class eating added | [[coaching_20260620]] |
 | [[Dance_Note]] | CT pelvis/spiral cue, diagonal line cue, improv principles, Iyengar shoulderstand, Enemy of the People theater analysis | [[2026-06-22]], [[2026-06-24]], [[2026-06-25]], [[2026-06-27]] |
 | [[AI_learning]] | Learning log still pending first entry; 超体 8 days in | [[coaching_20260620]] |
 
@@ -84,7 +84,7 @@ Stanford AI Systems, Nick Maggiulli Just Keep Buying, n8n + Claude Code workflow
 | Action | Page | Project |
 |--------|------|---------|
 | Updated | [[Road-to-2040-Investment-Blueprint]] | [[Road_to_2040_Investment_Blueprint]] |
-| Updated | [[Partnership-with-Jeroen]] | [[Strategic_relationship_audit]] |
+| Updated | [[Partnership-with-Jeroen]] | [[Strategic_Relationship_Audit]] |
 | Updated | [[KMS-Development]] | [[Life_Management_System]] |
 | Lint: backlinks | [[Location-Independent-Lifestyle]] | |
 | Lint: backlinks | [[Portfolio-Career-Design]] | |
@@ -104,7 +104,7 @@ Stanford AI Systems, Nick Maggiulli Just Keep Buying, n8n + Claude Code workflow
 | Project | Update | Source |
 |---------|--------|--------|
 | [[Road_to_2040_Investment_Blueprint]] | 4 actions added: Bucket 1 stress-test, Adidas infrastructure-layer test, sandbox rule decision, IWDA anchor paragraph | [[quick_highlights_Road_to_2040_Investment_Blueprint_20260607]] |
-| [[Strategic_relationship_audit]] | 2 actions added: ENM invitation framing, rupture-and-repair SLA design | [[quick_highlights_Strategic_relationship_audit_20260607]] |
+| [[Strategic_Relationship_Audit]] | 2 actions added: ENM invitation framing, rupture-and-repair SLA design | [[quick_highlights_Strategic_relationship_audit_20260607]] |
 
 ## Lint Fixes
 | Fix | Page | Issue Resolved |
@@ -234,19 +234,19 @@ Dedup system fixed: switched from log-based filename check to article-level proc
 
 | Action | Page | Project |
 |--------|------|---------|
-| Updated | [[Partnership-with-Jeroen]] | [[Strategic_relationship_audit]] |
+| Updated | [[Partnership-with-Jeroen]] | [[Strategic_Relationship_Audit]] |
 
 ### CreativityCuriosity
 
 | Action | Page | Project |
 |--------|------|---------|
-| Updated | [[Dance-Creation]] | [[Training_program]] |
+| Updated | [[Dance-Creation]] | [[Training_Program]] |
 
 ### PhysicalHealth
 
 | Action | Page | Project |
 |--------|------|---------|
-| Updated | [[Fitness-Routine]] | [[Training_program]] |
+| Updated | [[Fitness-Routine]] | [[Training_Program]] |
 
 ## Cross-Pillar Connections
 
@@ -258,9 +258,9 @@ Dedup system fixed: switched from log-based filename check to article-level proc
 
 | Project | Update | Source |
 |---------|--------|--------|
-| [[Training_program]] | Added 3 next steps: schedule restructure proposal, meal prep timing integration, minimal training week priority list | [[2026-06-01]], [[2026-06-02]] |
+| [[Training_Program]] | Added 3 next steps: schedule restructure proposal, meal prep timing integration, minimal training week priority list | [[2026-06-01]], [[2026-06-02]] |
 | [[Flight Upsell]] | Work anxiety + POC exposure pattern documented in wiki; coaching session includes specific intervention (back-to-J ritual) | [[2026-05-31]], [[2026-06-04]] |
-| [[Strategic_relationship_audit]] | Third needs category named: somatic/closeness need (distinct from novelty and BDSM). Action: write up three-category taxonomy | [[2026-05-31]] |
+| [[Strategic_Relationship_Audit]] | Third needs category named: somatic/closeness need (distinct from novelty and BDSM). Action: write up three-category taxonomy | [[2026-05-31]] |
 
 ## Lint Fixes
 
@@ -278,7 +278,7 @@ Dedup system fixed: switched from log-based filename check to article-level proc
 | Action | Page | Project |
 |--------|------|---------|
 | Updated (confirmed already merged) | [[Aesthetic-Intelligence]] | — |
-| Updated (confirmed already merged) | [[Dance-Creation]] | [[Training_program]] |
+| Updated (confirmed already merged) | [[Dance-Creation]] | [[Training_Program]] |
 
 ### Career
 
@@ -290,7 +290,7 @@ Dedup system fixed: switched from log-based filename check to article-level proc
 
 | Action | Page | Project |
 |--------|------|---------|
-| Updated | [[Partnership-with-Jeroen]] | [[Strategic_relationship_audit]] |
+| Updated | [[Partnership-with-Jeroen]] | [[Strategic_Relationship_Audit]] |
 
 ### LifeManagement
 
@@ -304,7 +304,7 @@ Dedup system fixed: switched from log-based filename check to article-level proc
 
 | Action | Page | Project |
 |--------|------|---------|
-| Updated (lint fix) | [[Fitness-Routine]] | [[Training_program]] |
+| Updated (lint fix) | [[Fitness-Routine]] | [[Training_Program]] |
 
 ## Cross-Pillar Connections
 
@@ -316,8 +316,8 @@ Dedup system fixed: switched from log-based filename check to article-level proc
 
 | Project | Update | Source |
 |---------|--------|--------|
-| [[Strategic_relationship_audit]] | Added future design tasks: Relationship Hardware Checklist, ENM traffic light protocol design, Cohabitation spec | [[coaching_discussion_20260530]] |
-| [[Training_program]] | Added swimming to backlog (not current focus) | [[coaching_discussion_20260530]] |
+| [[Strategic_Relationship_Audit]] | Added future design tasks: Relationship Hardware Checklist, ENM traffic light protocol design, Cohabitation spec | [[coaching_discussion_20260530]] |
+| [[Training_Program]] | Added swimming to backlog (not current focus) | [[coaching_discussion_20260530]] |
 
 ## Lint Fixes
 
@@ -343,14 +343,14 @@ Dedup system fixed: switched from log-based filename check to article-level proc
 
 | Action | Page | Project |
 |--------|------|---------|
-| Updated | [[Partnership-with-Jeroen]] | [[Strategic_relationship_audit]] |
-| Updated | [[Coming-Out-and-Family-Authenticity]] | [[Strategic_relationship_audit]] |
+| Updated | [[Partnership-with-Jeroen]] | [[Strategic_Relationship_Audit]] |
+| Updated | [[Coming-Out-and-Family-Authenticity]] | [[Strategic_Relationship_Audit]] |
 
 ### PhysicalHealth
 
 | Action | Page | Project |
 |--------|------|---------|
-| Updated | [[Fitness-Routine]] | [[Training_program]] |
+| Updated | [[Fitness-Routine]] | [[Training_Program]] |
 
 ### MindMentalHealth
 
@@ -391,8 +391,8 @@ Dedup system fixed: switched from log-based filename check to article-level proc
 
 | Project | Update | Source |
 |---------|--------|--------|
-| [[Training_program]] | Added 4 next steps: daily notes as training log, Apple Shortcut, pose audit, contemporary rotation | [[2026-05-25]], [[2026-05-26]] |
-| [[Strategic_relationship_audit]] | Two needs named: novelty vs BDSM (distinct categories, different conversations); parent care distance documented | [[2026-05-28]], [[2026-05-23]] |
+| [[Training_Program]] | Added 4 next steps: daily notes as training log, Apple Shortcut, pose audit, contemporary rotation | [[2026-05-25]], [[2026-05-26]] |
+| [[Strategic_Relationship_Audit]] | Two needs named: novelty vs BDSM (distinct categories, different conversations); parent care distance documented | [[2026-05-28]], [[2026-05-23]] |
 
 ---
 

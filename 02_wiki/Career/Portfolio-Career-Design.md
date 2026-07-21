@@ -113,7 +113,7 @@ Two parallel tracks:
 ## Connections
 
 Related Pages: [[Movement-Career-Options]], [[Location-Independent-Lifestyle]], [[Strategist-Requirements]], [[Life-Transitions]], [[Content-Creator-and-Entrepreneurship-Ideas]]
-Related Projects: [[Training_program]]
+Related Projects: [[Training_Program]]
 
 
 ## Reference Points: Portfolio Life in Practice

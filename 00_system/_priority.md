@@ -16,11 +16,11 @@
 
 4. **Dance** — CT intensive 即将开始（late July）。CT notes 收尾是 immediate priority；intensive 期间 body maintenance 是重点（bilateral lower back recovery 继续关注）。
 
-5. **Parents** — 新立项 [[Parents_relationship]]：Phase 1 从 CT intensive 开始分享「安全层」内容。动机已从「寻求认可」转为「分享真实快乐」。核心原则：说完，给时间，不追着解释，不道歉，不收回。
+5. **Parents** — 新立项 [[Parents_Relationship]]：Phase 1 从 CT intensive 开始分享「安全层」内容。动机已从「寻求认可」转为「分享真实快乐」。核心原则：说完，给时间，不追着解释，不道歉，不收回。
 
 6. **Home** — Cleaner prep 是唯一优先级。整理到适合 cleaner 清洁的状态。其余 makeover items 推迟到 summer 结束后。
 
-7. **Relationship** — 推迟到 8 月底/9 月。Madrid 关键数据（ENM 双向探索、FOMO/safety 模式）已沉淀在 coaching docs 和 [[Strategic_relationship_audit]]。October gate: Jeroen 公寓 → Q4 conversations。
+7. **Relationship** — 推迟到 8 月底/9 月。Madrid 关键数据（ENM 双向探索、FOMO/safety 模式）已沉淀在 coaching docs 和 [[Strategic_Relationship_Audit]]。October gate: Jeroen 公寓 → Q4 conversations。
 
 8. **Finance** — Road to 2040 system 已完全跑起来。Automated waterfall + 3-tier architecture operational。仅需 quarterly net worth review，不需 active management。
 
@@ -43,7 +43,7 @@
 **Key Actions:**
 
 - Establish minimal health baseline (pragmatic, not perfectionist—e.g., 7 hours sleep daily, rest flexible)
-- Create repeatable meal prep system (3-5 core recipes) — **now pushed forward as [[Meal_prep_routine]] (P2)**
+- Create repeatable meal prep system (3-5 core recipes) — **now pushed forward as [[Meal_Prep_Routine]] (P2)**
 - Design consistent, sustainable workout routine
 - Complete apartment make-over (design, contractor, execution) — **currently reduced to cleaner prep only**
 - Hire long-term cleaner (outsource trivial maintenance tasks)
@@ -62,10 +62,10 @@
 
 **Related Pages:**
 
-- [[Studio_makeover]]
+- [[Studio_Makeover]]
 - [[Daily-Habits-and-Sleep-Optimization]]
-- [[Training_program]]
-- [[Meal_prep_routine]]
+- [[Training_Program]]
+- [[Meal_Prep_Routine]]
 
 ---
 

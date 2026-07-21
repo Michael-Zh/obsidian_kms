@@ -109,7 +109,7 @@ Elite body recomposition protocol for a 36-year-old male dancer (187cm), targeti
 - **Exercise → next-day energy tracking** — 4-week data collection; 1–5 scale for exercise intensity and next-day energy. Question: is the crash driven by sleep quality, nutrition, intensity, or recovery gap? Related: [[Fitness-Routine]], [[Energy-Management]]
 - **Energy Budgeting Framework** — Design system for tagging calendar items by energy load (high/low). Trigger: late August/September 2026 — after new routine settles. Don't formalize yet.
 - **Fitbod CSV → Training Log integration (monthly)** — At each monthly body scan session: export Fitbod CSV, run script to extract PRs and recent session data for TBDL/Bench/Lat columns, integrate into review. Trigger: next monthly review.
-- **[[Meal_prep_routine]]** project — Separate project tracking nutrition system + macro optimization. Related to Sunday meal prep protocol.
+- **[[Meal_Prep_Routine]]** project — Separate project tracking nutrition system + macro optimization. Related to Sunday meal prep protocol.
 
 ---
 
@@ -193,4 +193,4 @@ You are acting as a **thought partner and analyst** for this project. Your role 
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里 [[Training_program]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里 [[Training_Program]] 行的 Current Focus + Updated 字段。

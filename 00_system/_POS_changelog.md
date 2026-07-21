@@ -64,7 +64,7 @@ Sources: [[coaching_discussion_20260607]], [[Work-Performance-Anxiety]]
 
 **Group 2 — 2.3 Relationship Protocol**
 Added Three-Category Needs Taxonomy: (1) Somatic/Closeness, (2) Novelty/ENM, (3) BDSM/Control. Each requires distinct conversation and design. Open question: which is a primary-partner requirement vs. ENM-accommodatable.
-Sources: [[Partnership-with-Jeroen]], [[Strategic_relationship_audit]]
+Sources: [[Partnership-with-Jeroen]], [[Strategic_Relationship_Audit]]
 
 **Group 3 — 2.6 Dance Protocol**
 Added: Artistic Objectives (sustainable practice, structural improv, personal movement language). Project Selection Filter (moved ≠ energised; drain signal is conclusive). Plan 2/3 Transition Signal (outward-facing projects emerging naturally = readiness signal).

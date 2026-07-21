@@ -20,6 +20,6 @@ connected_pages: [[Partnership-with-Jeroen]], [[Sexual-Identity]]
 
 **Actions:**
 - [ ] Before the Jeroen disclosure conversation: draft two versions of the ENM framing — one that starts from "what do *you* actually want in this relationship?" (inviting his inquiry) rather than "I want to open things up" (which reads as ultimatum). The video's therapist explicitly flags that leading with an invitation to joint exploration is less triggering than presenting a pre-formed request.
-- [ ] Add "rupture-and-repair capacity" as an explicit item to the ENM SLA design in [[Strategic_relationship_audit]]: define what a successful repair looks like after a difficult encounter, *before* any encounter happens — not after.
+- [ ] Add "rupture-and-repair capacity" as an explicit item to the ENM SLA design in [[Strategic_Relationship_Audit]]: define what a successful repair looks like after a difficult encounter, *before* any encounter happens — not after.
 
 ---

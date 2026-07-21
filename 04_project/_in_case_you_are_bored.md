@@ -15,17 +15,17 @@ Single source of truth for the full project landscape: what's in motion, what's 
 
 ## Active Projects
 
-| Project | ID | Pillar | Priority | Current Focus | Updated |
-|---------|----|--------|----------|---------------|---------|
-| [[Life_Management_System]] | pj0001 | LifeManagement | P1 | Meta-system hub: 概念层（KMS + wiki-coach + POS + priority）+ 执行层（自定义 App + Claude Code）| 集成子系统：Training Coach App、Training Program、Meal Prep、Priming、Coaching | 2026-07-21 |
-| [[Flight_Upsell]] | pj0002 | Career | P1 | Q3 三部分框架：audit 收尾 + 前端量化支持 + 沟通协作。待与 J 对齐 | 2026-07-20 |
-| [[Parents_relationship]] | pj0003 | Relationships | P1 | Phase 1: 安全层分享（CT intensive + 马德里展览感受），建立真实沟通语境 | 2026-07-21 |
-| [[Meal_prep_routine]] | pj0004 | PhysicalHealth | P2 | Phase 1: 饮食 philosophy + routine 设计（什么时候吃、吃什么、吃多少）| 2026-07-21 |
-| [[Studio_makeover]] | pj0005 | AdminHome | P2 | Cleaner prep 最高优先级；其余 makeover items（plant repotting 等）推迟到 summer 后 | 2026-07-21 |
-| [[Training_program]] | pj0006 | PhysicalHealth | P3 | CT intensive prep；配合 Meal Prep Routine 执行。Body recomposition 方向不变 | 2026-07-21 |
-| [[Training_Coach]] | pj0007 | PhysicalHealth | P1 | Training Coach App — Danseur Noble S&C Hub（LMS 子系统——app + coaching + priming + metrics） | 2026-07-21 |
-| [[Travel Buddy]] | pj0008 | CreativityCuriosity | P2 | Mobile-first 旅行全程伴侣 App（规划/调整/复盘/灵感 backlog） | 2026-07-21 |
-| [[Vibe Coding Tool]] | pj0009 | CreativityCuriosity | P3 | Mobile-first AI coding assistant（plan → code → commit → deploy） | 2026-07-21 |
+| Project                    | ID     | Pillar              | Priority | Current Focus                                                                           | Updated                                                              |            |
+| -------------------------- | ------ | ------------------- | -------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------- |
+| [[Life_Management_System]] | pj0001 | LifeManagement      | P1       | Meta-system hub: 概念层（KMS + wiki-coach + POS + priority）+ 执行层（自定义 App + Claude Code）     | 集成子系统：Training Coach App、Training Program、Meal Prep、Priming、Coaching | 2026-07-21 |
+| [[Flight_Upsell]]          | pj0002 | Career              | P1       | Q3 三部分框架：audit 收尾 + 前端量化支持 + 沟通协作。待与 J 对齐                                               | 2026-07-20                                                           |            |
+| [[Parents_Relationship]]   | pj0003 | Relationships       | P1       | Phase 1: 安全层分享（CT intensive + 马德里展览感受），建立真实沟通语境                                         | 2026-07-21                                                           |            |
+| [[Meal_Prep_Routine]]      | pj0004 | PhysicalHealth      | P2       | Phase 1: 饮食 philosophy + routine 设计（什么时候吃、吃什么、吃多少）                                      | 2026-07-21                                                           |            |
+| [[Studio_Makeover]]        | pj0005 | AdminHome           | P2       | Cleaner prep 最高优先级；其余 makeover items（plant repotting 等）推迟到 summer 后                     | 2026-07-21                                                           |            |
+| [[Training_Program]]       | pj0006 | PhysicalHealth      | P3       | CT intensive prep；配合 Meal Prep Routine 执行。Body recomposition 方向不变                       | 2026-07-21                                                           |            |
+| [[Training_Coach]]         | pj0007 | PhysicalHealth      | P1       | Training Coach App — Danseur Noble S&C Hub（LMS 子系统——app + coaching + priming + metrics） | 2026-07-21                                                           |            |
+| [[Travel_Buddy]]           | pj0008 | CreativityCuriosity | P2       | Mobile-first 旅行全程伴侣 App（规划/调整/复盘/灵感 backlog）                                            | 2026-07-21                                                           |            |
+| [[Vibe_Coding]]            | pj0009 | CreativityCuriosity | P3       | Mobile-first AI coding assistant（plan → code → commit → deploy）                         | 2026-07-21                                                           |            |
 
 ## Recently Completed / Wrapping Up
 
@@ -35,10 +35,10 @@ Single source of truth for the full project landscape: what's in motion, what's 
 
 ## On Hold
 
-| Project | ID | Pillar | Status | Notes |
-|---------|----|--------|--------|-------|
-| [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance | Parked | System fully operational — automated waterfall + 3-tier architecture running. Quarterly net worth reviews only |
-| [[Strategic_relationship_audit]] | pj0011 | Relationships | Parked | 推迟到 8 月底/9 月。Madrid 关键数据已沉淀（ENM 双向探索、FOMO/safety 模式）。October gate: Jeroen 公寓 → Q4 |
+| Project                               | ID     | Pillar        | Status | Notes                                                                                                          |
+| ------------------------------------- | ------ | ------------- | ------ | -------------------------------------------------------------------------------------------------------------- |
+| [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance       | Parked | System fully operational — automated waterfall + 3-tier architecture running. Quarterly net worth reviews only |
+| [[Strategic_Relationship_Audit]]      | pj0011 | Relationships | Parked | 推迟到 8 月底/9 月。Madrid 关键数据已沉淀（ENM 双向探索、FOMO/safety 模式）。October gate: Jeroen 公寓 → Q4                              |
 
 ---
 
@@ -87,8 +87,8 @@ Ideas with enough context to become a project when priority opens up.
 
 ### Relationships
 
-- **Parent elderly care + distance strategy** — Separate project stream to think through long-term solution to distance/elderly care with parents and communication strategy. Now partly addressed in [[Parents_relationship]] project. | Related: [[Coming-Out-and-Family-Authenticity]], [[Location-Independent-Lifestyle]]
-- (new) **Relationship Hardware Checklist** — A structured checklist of non-negotiable hardware requirements for a long-term partner (physical, cultural, life-vision), distilled from existing relationship audit work. Related to three-category needs taxonomy (taxonomy = what you need; checklist = partner requirements). **Trigger: end of August 2026** — deferred alongside all relationship prep work. Add to [[Strategic_relationship_audit]] when ready. (ref: [[coaching_discussion_20260530]], [[coaching_session_20260305]])
+- **Parent elderly care + distance strategy** — Separate project stream to think through long-term solution to distance/elderly care with parents and communication strategy. Now partly addressed in [[Parents_Relationship]] project. | Related: [[Coming-Out-and-Family-Authenticity]], [[Location-Independent-Lifestyle]]
+- (new) **Relationship Hardware Checklist** — A structured checklist of non-negotiable hardware requirements for a long-term partner (physical, cultural, life-vision), distilled from existing relationship audit work. Related to three-category needs taxonomy (taxonomy = what you need; checklist = partner requirements). **Trigger: end of August 2026** — deferred alongside all relationship prep work. Add to [[Strategic_Relationship_Audit]] when ready. (ref: [[coaching_discussion_20260530]], [[coaching_session_20260305]])
 
 ### Travel
 
@@ -99,6 +99,7 @@ Ideas with enough context to become a project when priority opens up.
 ### Life Management / KMS
 
 - (new) **Naval's Almanack prompt as KMS skill** — Convert Naval Ravikant's core decision-making and wealth-building prompts into a reusable KMS/Claude skill. Add to [[Life_Management_System]] backlog or skill development queue. **Trigger: July 2026** — low priority, do when there's a quiet slot. (ref: [[coaching_discussion_20260530]])
+- (new) **Vibe Coding Cloud Executor** — 在云端（GitHub Codespaces 或 Hetzner $5/月 VPS）运行 Claude Code，实现纯移动端闭环：手机 Plan + 云端执行 + 自动 commit。优势：到 GitHub/OpenRouter 延迟低、不挂墙、24 小时在线、不需要本地 GPU。[[vibe_coding_tool]] 的 backlog idea。**Trigger: 有空时探索**
 
 ---
 

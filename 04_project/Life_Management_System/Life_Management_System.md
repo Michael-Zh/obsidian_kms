@@ -25,8 +25,8 @@ Life Management System (LMS) is the **meta-system hub** — the overarching oper
 | Sub-system | Role | Project Folder |
 |------------|------|----------------|
 | **Training Coach App** | 日常训练/生活管理/priming 的统一执行载体 | [[Training_Coach]] |
-| **Training Program** | 训练执行 + 数据追踪 + 周计划 | [[Training_program]] |
-| **Meal Prep Routine** | 饮食哲学 + routine 设计（未来并入 App）| [[Meal_prep_routine]] |
+| **Training Program** | 训练执行 + 数据追踪 + 周计划 | [[Training_Program]] |
+| **Meal Prep Routine** | 饮食哲学 + routine 设计（未来并入 App）| [[Meal_Prep_Routine]] |
 | **Priming** | 早晨启动流程（Typeless → daily note block + HTML card）| Part of this project |
 | **Coaching** | 所有 coaching sessions 作为系统输入 + action 输出 | `01_raw/coaching/` |
 | **KMS 知识管理** | 8 pillars, wiki synthesis, article ingestion, watchlist | This project |

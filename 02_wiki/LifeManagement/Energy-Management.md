@@ -58,7 +58,7 @@ You need energy to do the things that _create_ energy. It's the "activation ener
 ## Connections
 
 Related Pages: [[Sleep-Optimization-Routine]], [[Fitness-Routine]], [[Habits-2026]], [[Information-Overload]], [[Portfolio-Career-Design]], [[Identity-Based-Life-Philosophy]]
-Related Projects: [[Training_program]]
+Related Projects: [[Training_Program]]
 
 ## Project Ideas
 

@@ -103,4 +103,4 @@ Not "biggest" or "most profitable," but:
 ## Connections
 
 Related Pages: [[Movement-Career-Options]], [[Portfolio-Career-Design]], [[Public-Knowledge-Sharing]], [[Location-Independent-Lifestyle]]
-Related Projects: [[Life_Management_System]], [[Training_program]], [[Meal_prep_routine]]
+Related Projects: [[Life_Management_System]], [[Training_Program]], [[Meal_Prep_Routine]]
