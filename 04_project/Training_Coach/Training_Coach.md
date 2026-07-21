@@ -95,6 +95,7 @@ _2026-07-20 更新（Session 29）_
 
 **当前 Backlog（主要剩余）：**
 - P2: Schedule Coaching Integration（schedule_suggestion proposal card）
+- P2: Backlog 重构 — 清理现有 items，从 project 层面重新生成，讨论 dynamic prioritization
 - P3: Priorities panel 显示优化
 - P3: Web Push Notifications
-- ⚠ Migration 042 需在 prod Supabase 手动执行
+- ⚠ Migration 042 已在 prod 验证（RLS/CRUD 正常），需确认 updated_at trigger
