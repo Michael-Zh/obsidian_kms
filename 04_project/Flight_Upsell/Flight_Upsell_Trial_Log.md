@@ -749,4 +749,76 @@ H1 carry-over 的航司 audit 收尾。用 `MZ_coverage_check_for_claude` 表（
 - `scraper/` 目录新建，TK/NH/JL 移入
 - `Flight_Upsell_Trial_Log.md` — Session 11 续追加
 
+---
 
+## Session 12 — 2026-07-21
+
+**Topic:** NH Scraper v2 Debug — 修通全流程
+
+**Context:**
+Session 11 续调 NH scraper 发现多处因 Angular 动态渲染导致的 Playwright click/fill 失效。重写 v2，全部改用 JS 直接操作 DOM。
+
+**Key Decisions:**
+- **机场选取**：`fill()`+Enter 不触发选择 → JS `el.click()` on `[data-value="IATA"]`，优先 `IATA+` variant（如 BKK+ 是主机场）
+- **日期选择**：ANA 双面板日历，JS 按 header text（"August 2026"）定位 month panel → 再按 day text 点日期 → Confirm
+- **One Way tab**：不是 `<button>` 而是 `<li role="button" data-value="onewayOrMulticity">`
+- **结果页 tab**：Angular `id="c-result-date-navi-btn-N"`，`text_content()` 只返回 "Destination 1"，需从 `<span>` 子元素提取日期和 "From USD"
+- **运价解析**：按 "A fare selection screen will be displayed" 分段，跳过 "Not available" 的 screen
+- **日期策略**：+1mo Monday（Mon–Thu 4天）+ +3mo Thursday（Thu–Sun 4天），8 天全覆盖
+- **进度显示**：每步显示 done/total、剩余数、本次/累计/平均用时、ETA
+
+**Results:**
+- `--test` 验证：HND→BKK，7天×273行×16航班，63秒
+- 全量预估：24 搜索 × ~60s = ~25 分钟
+
+**Blockers:**
+- 待明天（7/22）启动全量运行
+- 运价 tier 标签映射需验证（当前页仅显示 Value/Standard/Flex/Full Flex 的 2-3 个）
+
+**Food for Thought:**
+- 全天用 JS click 很脆弱——如果 Angular 渲染慢可能取不到日期文本，考虑加 retry + wait
+- ANA 某些航线可能不提供全部四个 tier，需区分「页面未展示」vs「航线确实没有」
+
+**Documents Updated:**
+- `scraper/NH/fetch_fares_nh_v1.py` — 完整重写
+- `Flight_Upsell_Trial_Log.md` — Session 12 新增
+- `PROJECT_CONTEXT.md` — Next Steps 更新
+
+---
+
+## Session 13 — 2026-07-21/22/23
+
+**Topic:** Regional Sync Agenda 准备 + Jay v2 版本对比分析 + AirAsia VPL Coverage 初步排查
+
+**Context:**
+本次 session 围绕 Regional Sync 会议准备展开，同步处理了 AirAsia VPL coverage 的初步排查，并在 session 末对 Jay 修改后的 v2 版本做了对比学习。
+
+**Key Decisions:**
+
+**Regional Sync Agenda：**
+- 受众确认为全球所有 PGM & market（不是单独 per-region 会）
+- Section 1（Circle back）：Cristina（EU，BA 高阶运价）和 Peam（TH/SEA，Quick Filter）作为 case 点名感谢——定位为向全体 PGM 展示"region input → IBU action"协作 loop 有效
+- 24h case（Section 3）：三步走结构（发现→量化→推动落地），突出 IBU 主导角色；技术细节（void vs. 24h 区别、市场展示规则）保留在正文
+- 英文版按中文版内容严格翻译，不增减
+
+**Jay v2 版本对比（可学习点）：**
+1. 用 hypothesis 叙事开头，不从 deliverable 列表开头——给受众"为什么这些事重要"的框架
+2. 把相关问题归在同一主题下（Full Cost Display + 24h case 并列为 Issue 1/2），比各自独立 section 更有说服力
+3. 感谢做成独立 section（"A BIG THANK YOU"），不是 footnote——对 region engagement 激励效果更强
+4. 对 region 的 ask 具体到"在 mock-up 阶段给 feedback"——比"随时告诉我们"更能转化为实际行动
+
+**AirAsia VPL Coverage 初步排查（已搁置）：**
+- 数据：VPL 15kg pre（命中率）≈ post（胜出率），gap 仅 1–3pp——比价算法不是问题
+- 命中率约 35–48%，上线后持续爬升，近两周进入平台期
+- Spot check 发现前台有 VPL 但数据显示低 coverage——初步推断是分母定义问题，非真实 supply gap
+- 下一步（搁置）：与 FBU 数据同事确认 coverage 指标分母定义；用 spot check 反证直接推进
+
+**Food for Thought:**
+- Jay 把 24h case 降格为 Issue 2 并与 Full Cost Display 并列——"退改政策展示不透明"作为系统性主题比两个独立 case 更有说服力。未来向 region 或 leadership 汇报时可复用这种归类方式
+- AirAsia pitch 卡在 FBU "先确认 coverage" 的门槛上——如果能快速澄清分母问题，这个拦路虎可以快速移除，不需要等 supply 真正修复
+
+**Documents Updated:**
+- `Regional_Sync_Agenda.md` — 中文版完整四 section（工作草稿，供参考）
+- `Regional_Sync_Agenda_EN.md` — 定稿同步自飞书 v2（VY68djwUlox1fxxxBXjlAsQigqf，2026-07-23）
+- `PROJECT_CONTEXT.md` — Part 3 Next Steps 更新、AirAsia 排查进展更新
+- `_in_case_you_are_bored.md` — [[Flight_Upsell]] 行更新

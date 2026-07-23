@@ -103,3 +103,46 @@ _2026-07-20 更新（Session 29）_
 - P3: Priorities panel 显示优化
 - P3: Web Push Notifications
 - ⚠ Migration 042 已在 prod 验证（RLS/CRUD 正常），需确认 updated_at trigger
+
+## Session 30 — 2026-07-23
+
+_2026-07-23 更新（Session 30）_
+
+**核心讨论：Backlog 生成架构重新设计**
+
+从 KMS Vision 出发，重新定义了 Training Coach App 在两层架构中的角色：
+
+**两层架构边界：**
+- KMS = 策略层：Project overview、design decisions、principles、方向性 next steps。不再逐条追踪执行状态。
+- App DB = 执行层：projects_state（bridge）、priming_backlog（to-do list）、coaching_sessions。完成状态完全由 DB 承载。
+
+**Coaching Output 三层 Routing：**
+所有 coaching session 产出自动路由到三个去向：
+1. Global Decisions → _priority.md / POS（影响日常安排、能量管理）
+2. Project Decisions → Project doc（项目内方向性结论、原则）
+3. Action Items → priming_backlog（具体下一步执行）
+
+**Push-Through Cascade（两个方向）：**
+- 方向 A（Project → Backlog）：Coaching wrap-up → decisions → 和现有 backlog 做 project-scoped diff → suggest 新增/改变状态/stale
+- 方向 B（Backlog → Project）：Backlog item done → 检查对应 project → suggest 移除已完成的 → 加入 write-back 队列
+
+**Timestamp-Based Diff：**
+- done_at > source.updated_at → source 未刷新 → 跳过
+- done_at < source.updated_at → source 又更新但仍保留 action → 建议新增或改变状态
+
+**Stale Review：**
+Priming 底部按钮 → sync endpoint → 显示 diff 结果（新增/改变状态/stale/待回写）→ 用户 confirm
+
+**待实现（Session 31+）：**
+1. Migration：priming_backlog.source + done_at 字段
+2. Shared lib：src/lib/backlog-utils.ts
+3. 所有写入路径加 source 值
+4. Done toggle 写 done_at
+5. Coaching wrap-up cascade（project-scoped diff）
+6. Stale Review UI
+7. sync-context 触发 cascade
+8. 统一去重（normalizeTask()）
+
+**Backlog 清理：**
+- Gym PR Chart Done
+- Nutrition / Timezone / Calendar events → deferred（标记保留在 tech-spec，不再出现在活跃列表）

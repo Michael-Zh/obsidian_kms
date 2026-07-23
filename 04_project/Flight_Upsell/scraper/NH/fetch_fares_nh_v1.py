@@ -269,8 +269,10 @@ async def select_date(page, target_date):
 # ── Search ───────────────────────────────────────────────────────────────────
 
 async def click_search(page):
-    btn = page.locator("button:has-text('Search')").first
-    await btn.click(timeout=5000)
+    await page.evaluate("""() => {
+        const btn = document.querySelector('button.be-wws-reserve-ticket-submit__button');
+        if (btn) btn.click();
+    }""")
     print("    Search clicked")
 
 async def wait_results(page, timeout=90):
@@ -302,11 +304,15 @@ async def extract_all_tabs(page, search):
     await page.wait_for_timeout(3000)
     slug = search["date"].strftime("%Y%m%d")
 
-    # Scroll past sticky header to trigger Angular lazy rendering, then full-page capture
-    await page.evaluate("() => window.scrollTo({top: 500, behavior: 'instant'})")
-    await page.wait_for_timeout(1000)
-    await page.screenshot(path=str(shot_dir/f"{slug}_{search['origin']}_{search['dest']}_results.png"), full_page=True)
-    await page.evaluate("() => window.scrollTo({top: 0, behavior: 'instant'})")
+    # Screenshot (viewport only, skip if takes too long)
+    try:
+        await page.evaluate("() => window.scrollTo({top: 500, behavior: 'instant'})")
+        await page.wait_for_timeout(1000)
+        await page.screenshot(path=str(shot_dir/f"{slug}_{search['origin']}_{search['dest']}_results.png"), timeout=5000)
+        await page.evaluate("() => window.scrollTo({top: 0, behavior: 'instant'})")
+        await page.wait_for_timeout(500)
+    except:
+        pass  # screenshot is optional, don't block on it
 
     # ANA results page has Angular date-nav buttons: id="c-result-date-navi-btn-0" through btn-6
     # Each button's inner spans contain: "Destination 1", "Jul 28 (Tue)", "From USD1,299.50"

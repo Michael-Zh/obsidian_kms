@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NH Brand Fare Coverage Report</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f5;color:#333;line-height:1.6}
+header{background:#1a237e;color:#fff;padding:24px 32px}
+header h1{font-size:1.5rem;font-weight:600}
+header p{opacity:.8;margin-top:4px;font-size:.9rem}
+.container{max-width:1200px;margin:0 auto;padding:24px}
+.summary-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:24px}
+.card{background:#fff;border-radius:8px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.card .label{font-size:.75rem;text-transform:uppercase;color:#666;letter-spacing:.5px}
+.card .value{font-size:1.8rem;font-weight:700;color:#1a237e;margin-top:4px}
+h2{font-size:1.2rem;margin:32px 0 16px;color:#1a237e}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.1);margin-bottom:24px}
+th,td{padding:10px 14px;text-align:left;font-size:.85rem}
+th{background:#1a237e;color:#fff;font-weight:500;position:sticky;top:0}
+tr:nth-child(even){background:#f8f9fa}
+tr:hover{background:#e8eaf6}
+.coverage-high{color:#2e7d32;font-weight:600}
+.coverage-mid{color:#f57f17;font-weight:600}
+.coverage-low{color:#c62828;font-weight:600}
+.route-section{margin-bottom:32px}
+.route-title{font-size:1rem;font-weight:600;color:#1a237e;margin-bottom:8px;padding:8px 12px;background:#e8eaf6;border-radius:4px}
+.bar-container{width:100%;height:8px;background:#e0e0e0;border-radius:4px}
+.bar{height:100%;border-radius:4px;transition:width .3s}
+.bar-high{background:#2e7d32}
+.bar-mid{background:#f57f17}
+.bar-low{background:#c62828}
+.price-table td{font-family:'SF Mono',Monaco,monospace;font-size:.8rem}
+.footer{text-align:center;padding:32px;color:#999;font-size:.8rem}
+.badge{padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:500}
+.badge-green{background:#e8f5e9;color:#2e7d32}
+.badge-yellow{background:#fff8e1;color:#f57f17}
+.badge-red{background:#ffebee;color:#c62828}
+</style>
+</head>
+<body>
+<header>
+<h1>ANA (NH) Brand Fare Coverage</h1>
+<p>Generated 2026-07-22 13:05 · 23 searches · 12 routes · 7250 rows</p>
+</header>
+<div class="container">
+
+<div class="summary-cards">
+<div class="card"><div class="label">Total Rows</div><div class="value">7250</div></div>
+<div class="card"><div class="label">Routes</div><div class="value">12</div></div>
+<div class="card"><div class="label">Unique Flights</div><div class="value">93</div></div>
+<div class="card"><div class="label">Tiers Found</div><div class="value">3</div></div>
+</div>
+
+<h2>1. Route × Tier Coverage Matrix</h2>
+<p style="color:#666;margin-bottom:16px;font-size:.85rem">
+Each cell shows: flights with this tier / total flights on this route.
+Coverage % = percentage of flights on this route that offer this tier brand fare.
+Green ≥80%, Yellow 50-79%, Red &lt;50%.
+</p>
+<div style="overflow-x:auto"><table>
+<thead><tr><th>Route</th>
+<th>Economy Flex</th>
+<th>Economy Standard</th>
+<th>Economy Value</th>
+<th>Flights</th></tr></thead><tbody>
+<tr><td style="font-weight:500">HND-BKK</td>
+<td><span class="coverage-low">2/15</span> <span class="badge badge-red">13.3%</span><div class="bar-container"><div class="bar bar-low" style="width:13.3%"></div></div></td>
+<td><span class="coverage-high">15/15</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td><span class="coverage-low">0/15</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td style="font-weight:500">15</td></tr>
+<tr><td style="font-weight:500">HND-FRA</td>
+<td><span class="coverage-low">0/15</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td><span class="coverage-low">1/15</span> <span class="badge badge-red">6.7%</span><div class="bar-container"><div class="bar bar-low" style="width:6.7%"></div></div></td>
+<td><span class="coverage-high">15/15</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td style="font-weight:500">15</td></tr>
+<tr><td style="font-weight:500">HND-GMP</td>
+<td><span class="coverage-low">1/8</span> <span class="badge badge-red">12.5%</span><div class="bar-container"><div class="bar bar-low" style="width:12.5%"></div></div></td>
+<td><span class="coverage-high">8/8</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td><span class="coverage-low">0/8</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td style="font-weight:500">8</td></tr>
+<tr><td style="font-weight:500">HND-HKG</td>
+<td><span class="coverage-low">2/8</span> <span class="badge badge-red">25.0%</span><div class="bar-container"><div class="bar bar-low" style="width:25.0%"></div></div></td>
+<td><span class="coverage-high">8/8</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td><span class="coverage-low">0/8</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td style="font-weight:500">8</td></tr>
+<tr><td style="font-weight:500">HND-LAX</td>
+<td><span class="coverage-low">2/10</span> <span class="badge badge-red">20.0%</span><div class="bar-container"><div class="bar bar-low" style="width:20.0%"></div></div></td>
+<td><span class="coverage-high">10/10</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td><span class="coverage-low">0/10</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td style="font-weight:500">10</td></tr>
+<tr><td style="font-weight:500">HND-LHR</td>
+<td><span class="coverage-low">0/12</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td><span class="coverage-low">1/12</span> <span class="badge badge-red">8.3%</span><div class="bar-container"><div class="bar bar-low" style="width:8.3%"></div></div></td>
+<td><span class="coverage-high">12/12</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td style="font-weight:500">12</td></tr>
+<tr><td style="font-weight:500">HND-PVG</td>
+<td><span class="coverage-low">1/6</span> <span class="badge badge-red">16.7%</span><div class="bar-container"><div class="bar bar-low" style="width:16.7%"></div></div></td>
+<td><span class="coverage-high">6/6</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td><span class="coverage-low">0/6</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td style="font-weight:500">6</td></tr>
+<tr><td style="font-weight:500">HND-SFO</td>
+<td><span class="coverage-low">2/10</span> <span class="badge badge-red">20.0%</span><div class="bar-container"><div class="bar bar-low" style="width:20.0%"></div></div></td>
+<td><span class="coverage-high">10/10</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td><span class="coverage-low">0/10</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td style="font-weight:500">10</td></tr>
+<tr><td style="font-weight:500">HND-SGN</td>
+<td><span class="coverage-low">2/14</span> <span class="badge badge-red">14.3%</span><div class="bar-container"><div class="bar bar-low" style="width:14.3%"></div></div></td>
+<td><span class="coverage-high">14/14</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td><span class="coverage-low">0/14</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td style="font-weight:500">14</td></tr>
+<tr><td style="font-weight:500">HND-SIN</td>
+<td><span class="coverage-low">0/17</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td><span class="coverage-high">17/17</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td><span class="coverage-low">0/17</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td style="font-weight:500">17</td></tr>
+<tr><td style="font-weight:500">HND-YVR</td>
+<td><span class="coverage-low">1/8</span> <span class="badge badge-red">12.5%</span><div class="bar-container"><div class="bar bar-low" style="width:12.5%"></div></div></td>
+<td><span class="coverage-high">8/8</span> <span class="badge badge-green">100.0%</span><div class="bar-container"><div class="bar bar-high" style="width:100.0%"></div></div></td>
+<td><span class="coverage-low">0/8</span> <span class="badge badge-red">0.0%</span><div class="bar-container"><div class="bar bar-low" style="width:0.0%"></div></div></td>
+<td style="font-weight:500">8</td></tr>
+<tr><td style="font-weight:500">PVG-HND</td>
+<td><span class="coverage-low">1/16</span> <span class="badge badge-red">6.2%</span><div class="bar-container"><div class="bar bar-low" style="width:6.2%"></div></div></td>
+<td><span class="coverage-high">15/16</span> <span class="badge badge-green">93.8%</span><div class="bar-container"><div class="bar bar-high" style="width:93.8%"></div></div></td>
+<td><span class="coverage-low">5/16</span> <span class="badge badge-red">31.2%</span><div class="bar-container"><div class="bar bar-low" style="width:31.2%"></div></div></td>
+<td style="font-weight:500">16</td></tr>
+</tbody></table></div>
+
+<h2>2. Per-Route Detail</h2>
+
+<div class="route-section">
+<div class="route-title">HND-BKK · 15 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 2/15 (13.3%)</span> <span class="badge badge-green">Economy Standard: 15/15 (100.0%)</span> <span class="badge badge-red">Economy Value: 0/15 (0.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH5331</td><td>2:05a.m.</td><td class="price-cell">$1,299.40</td><td class="price-cell">$2,913.70–$3,128.70</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5333</td><td>2:55p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,913.70–$3,128.70</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5597</td><td>8:45a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,616.80–$3,076.80</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5599</td><td>10:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,607.80–$1,694.80</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5959</td><td>1:40p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,616.80–$2,860.80</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5965</td><td>12:20a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,607.80–$3,113.80</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6251</td><td>10:55p.m.</td><td class="price-cell">$1,299.40</td><td class="price-cell">$3,530.00–$3,800.00</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH813</td><td>1:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,481.00–$3,015.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH841</td><td>10:55a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$3,573.00–$3,894.00</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH843</td><td>12:40a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$3,581.00–$3,851.00</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH847</td><td>10:50a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,348.40–$3,112.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH849</td><td>12:05a.m., 12:15a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,299.40–$3,066.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH859</td><td>8:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,512.00–$3,045.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH869</td><td>9:45a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,913.70–$3,128.70</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH877</td><td>1:25a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,299.40–$3,066.40</td><td style="color:#ccc">—</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">HND-FRA · 15 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 0/15 (0.0%)</span> <span class="badge badge-red">Economy Standard: 1/15 (6.7%)</span> <span class="badge badge-green">Economy Value: 15/15 (100.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH203</td><td>9:40p.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,872.70–$4,310.70</td></tr><tr><td style="font-weight:500">NH205</td><td>10:45p.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,964.30–$4,181.30</td></tr><tr><td style="font-weight:500">NH211</td><td>9:55a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,909.70–$1,971.70</td><td class="price-cell">$1,956.90–$4,357.90</td></tr><tr><td style="font-weight:500">NH215</td><td>9:35a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,955.90–$4,356.90</td></tr><tr><td style="font-weight:500">NH217</td><td>10:55p.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,934.10–$4,372.10</td></tr><tr><td style="font-weight:500">NH223</td><td>9:40a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,909.70–$4,310.70</td></tr><tr><td style="font-weight:500">NH5436</td><td>10:55p.m., 9:25a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,934.10–$4,396.60</td></tr><tr><td style="font-weight:500">NH5643</td><td>10:45p.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,964.30–$2,660.30</td></tr><tr><td style="font-weight:500">NH5851</td><td>9:25a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,934.10–$4,372.10</td></tr><tr><td style="font-weight:500">NH5853</td><td>11:45a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,909.70–$4,310.70</td></tr><tr><td style="font-weight:500">NH5884</td><td>9:45p.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$2,783.40–$2,893.40</td></tr><tr><td style="font-weight:500">NH6019</td><td>9:35a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,955.90–$4,356.90</td></tr><tr><td style="font-weight:500">NH6060</td><td>9:25a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,934.10–$4,372.10</td></tr><tr><td style="font-weight:500">NH6138</td><td>9:55a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,956.90–$4,357.90</td></tr><tr><td style="font-weight:500">NH6635</td><td>9:45p.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$2,813.00–$3,046.00</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">HND-GMP · 8 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 1/8 (12.5%)</span> <span class="badge badge-green">Economy Standard: 8/8 (100.0%)</span> <span class="badge badge-red">Economy Value: 0/8 (0.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH6957</td><td>6:20a.m., 7:25a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,084.20–$1,323.50</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6967</td><td>12:05p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$965.50–$1,107.50</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6969</td><td>8:05p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$965.50–$1,107.50</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6979</td><td>2:00p.m., 2:50p.m., 3:15p.m., 4:25p.m.</td><td class="price-cell">$712.10</td><td class="price-cell">$1,084.20–$1,323.50</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6983</td><td>9:00a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$965.50–$1,107.50</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH861</td><td>8:40a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$736.10–$1,106.10</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH865</td><td>4:10p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$736.10–$1,106.10</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH867</td><td>8:05p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$712.10–$1,075.10</td><td style="color:#ccc">—</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">HND-HKG · 8 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 2/8 (25.0%)</span> <span class="badge badge-green">Economy Standard: 8/8 (100.0%)</span> <span class="badge badge-red">Economy Value: 0/8 (0.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH5313</td><td>10:00a.m., 10:05a.m., 12:00p.m.</td><td class="price-cell">$1,036.50</td><td class="price-cell">$2,108.40–$2,371.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5327</td><td>10:15a.m., 11:30a.m.</td><td class="price-cell">$1,036.50</td><td class="price-cell">$2,098.90–$2,361.90</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5329</td><td>7:25a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,108.40–$2,371.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5331</td><td>2:05a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,055.00–$2,308.00</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5333</td><td>2:55p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,055.00–$2,261.00</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH813</td><td>1:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,036.50–$1,793.50</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH859</td><td>8:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,082.50–$1,824.50</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH869</td><td>9:45a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,055.00–$2,308.00</td><td style="color:#ccc">—</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">HND-LAX · 10 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 2/10 (20.0%)</span> <span class="badge badge-green">Economy Standard: 10/10 (100.0%)</span> <span class="badge badge-red">Economy Value: 0/10 (0.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH106</td><td>12:30a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,250.33–$5,159.33</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH108</td><td>10:55p.m.</td><td class="price-cell">$2,204.33</td><td class="price-cell">$2,260.43–$5,179.53</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH116</td><td>9:55p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$3,123.63–$5,810.53</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH118</td><td>9:15p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,260.43–$5,169.43</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH126</td><td>9:05p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,250.33–$5,159.33</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH186</td><td>9:55p.m.</td><td class="price-cell">$2,508.33</td><td class="price-cell">$2,246.93–$5,737.93</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7010</td><td>3:50p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,472.43–$5,107.43</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7263</td><td>3:50p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,214.43–$5,107.43</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7352</td><td>3:50p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,214.43–$5,107.43</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7542</td><td>6:10p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,204.33–$5,097.33</td><td style="color:#ccc">—</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">HND-LHR · 12 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 0/12 (0.0%)</span> <span class="badge badge-red">Economy Standard: 1/12 (8.3%)</span> <span class="badge badge-green">Economy Value: 12/12 (100.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH203</td><td>9:40p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,971.70</td><td class="price-cell">$1,945.10–$4,383.10</td></tr><tr><td style="font-weight:500">NH205</td><td>10:45p.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,964.30–$4,181.30</td></tr><tr><td style="font-weight:500">NH211</td><td>9:55a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,909.70–$4,310.70</td></tr><tr><td style="font-weight:500">NH217</td><td>10:55p.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,935.20–$4,373.20</td></tr><tr><td style="font-weight:500">NH219</td><td>8:25a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,908.00–$4,315.00</td></tr><tr><td style="font-weight:500">NH223</td><td>9:40a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,982.10–$4,383.10</td></tr><tr><td style="font-weight:500">NH5851</td><td>9:25a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,935.20–$4,373.20</td></tr><tr><td style="font-weight:500">NH5853</td><td>11:45a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,982.10–$4,383.10</td></tr><tr><td style="font-weight:500">NH6137</td><td>11:45a.m., 9:40a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,982.10–$4,383.10</td></tr><tr><td style="font-weight:500">NH6143</td><td>10:55p.m., 9:25a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,935.20–$4,398.40</td></tr><tr><td style="font-weight:500">NH6145</td><td>10:55p.m., 9:25a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,935.20–$4,398.40</td></tr><tr><td style="font-weight:500">NH6233</td><td>11:45a.m., 9:40p.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,945.10–$4,414.50</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">HND-PVG · 6 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 1/6 (16.7%)</span> <span class="badge badge-green">Economy Standard: 6/6 (100.0%)</span> <span class="badge badge-red">Economy Value: 0/6 (0.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH949</td><td>9:45a.m.</td><td class="price-cell">$1,223.30</td><td class="price-cell">$1,490.10–$2,184.10</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH965</td><td>11:10a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,466.50</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH967</td><td>10:30p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,223.30–$1,851.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH971</td><td>6:35p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,223.30–$1,851.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH973</td><td>3:15p.m., 4:25p.m., 7:00p.m., 7:15p.m., 8:30p.m., 9:00p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,207.10–$1,688.70</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH975</td><td>10:00a.m., 10:05a.m., 11:00a.m., 12:00p.m., 6:40a.m., 7:25a.m., 8:30p.m., 8:45a.m., 9:00p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,207.10–$1,861.70</td><td style="color:#ccc">—</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">HND-SFO · 10 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 2/10 (20.0%)</span> <span class="badge badge-green">Economy Standard: 10/10 (100.0%)</span> <span class="badge badge-red">Economy Value: 0/10 (0.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH108</td><td>10:55p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,194.33–$5,362.33</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH116</td><td>9:55p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$5,231.53–$6,093.53</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH126</td><td>9:05p.m.</td><td class="price-cell">$2,539.33</td><td class="price-cell">$3,277.93–$5,376.93</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6494</td><td>9:55p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,485.53–$5,292.53</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7010</td><td>3:50p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,194.33–$5,362.33</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7070</td><td>11:00a.m., 12:00p.m., 1:40p.m., 6:40a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,157.13–$5,310.73</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7262</td><td>12:30a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,204.43–$4,855.43</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7327</td><td>9:15p.m.</td><td class="price-cell">$2,194.33</td><td class="price-cell">$2,204.43–$4,855.43</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7353</td><td>6:10p.m., 9:05p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,158.43–$5,372.43</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7542</td><td>6:10p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,158.43–$5,310.43</td><td style="color:#ccc">—</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">HND-SGN · 14 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 2/14 (14.3%)</span> <span class="badge badge-green">Economy Standard: 14/14 (100.0%)</span> <span class="badge badge-red">Economy Value: 0/14 (0.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH5331</td><td>2:05a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,431.30–$2,647.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5597</td><td>8:45a.m.</td><td class="price-cell">$1,190.00</td><td class="price-cell">$1,525.30–$2,595.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5599</td><td>10:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,516.30–$1,602.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5965</td><td>12:20a.m.</td><td class="price-cell">$1,190.00</td><td class="price-cell">$1,516.30–$2,858.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6259</td><td>8:55a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$3,056.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH813</td><td>1:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,350.30–$2,587.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH841</td><td>10:55a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$3,056.30–$3,325.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH843</td><td>12:40a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$3,013.30–$3,282.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH847</td><td>10:50a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,416.40–$2,856.90</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH849</td><td>12:05a.m., 12:15a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,453.90–$2,810.90</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH859</td><td>8:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,380.30–$2,618.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH877</td><td>1:25a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,453.90–$2,810.90</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH891</td><td>5:45p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,190.00–$2,584.00</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH9705</td><td>7:25a.m., 8:30p.m., 9:00p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,355.80–$2,594.40</td><td style="color:#ccc">—</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">HND-SIN · 17 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 0/17 (0.0%)</span> <span class="badge badge-green">Economy Standard: 17/17 (100.0%)</span> <span class="badge badge-red">Economy Value: 0/17 (0.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH5331</td><td>2:05a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,639.40–$1,786.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5333</td><td>2:55p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,724.00–$1,871.00</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5599</td><td>10:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,745.80–$1,831.80</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH5965</td><td>12:20a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,745.80–$1,806.80</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6251</td><td>10:55p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,389.70–$1,451.70</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6257</td><td>5:05p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,389.70–$2,836.70</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6259</td><td>8:55a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,404.70–$3,076.70</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6261</td><td>8:30p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,400.10–$1,462.10</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6263</td><td>7:25a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,400.10–$1,702.10</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH6271</td><td>6:20a.m., 6:35a.m., 6:45a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,390.60–$1,452.60</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH813</td><td>1:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,565.30–$1,627.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH841</td><td>10:55a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,404.70–$3,076.70</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH843</td><td>12:40a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,389.70–$3,051.70</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH855</td><td>10:15a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,758.20–$3,351.20</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH859</td><td>8:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,527.70–$1,713.30</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH877</td><td>1:25a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,682.40–$1,830.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH885</td><td>11:30p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$1,465.00–$1,512.00</td><td style="color:#ccc">—</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">HND-YVR · 8 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 1/8 (12.5%)</span> <span class="badge badge-green">Economy Standard: 8/8 (100.0%)</span> <span class="badge badge-red">Economy Value: 0/8 (0.0%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH106</td><td>12:30a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,136.53–$5,515.90</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH108</td><td>10:55p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,132.03–$5,093.28</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH116</td><td>9:55p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,049.90–$4,512.90</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH118</td><td>9:15p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,395.53–$5,226.53</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH126</td><td>9:05p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,391.03–$5,429.53</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7010</td><td>3:50p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,086.03–$4,956.03</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7394</td><td>12:00p.m., 1:40p.m., 3:50p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$2,086.03–$5,374.43</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH7542</td><td>6:10p.m.</td><td class="price-cell">$2,308.90</td><td class="price-cell">$2,090.53–$5,368.53</td><td style="color:#ccc">—</td></tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="route-section">
+<div class="route-title">PVG-HND · 16 flights · Tier coverage: <span class="badge badge-red">Economy Flex: 1/16 (6.2%)</span> <span class="badge badge-green">Economy Standard: 15/16 (93.8%)</span> <span class="badge badge-red">Economy Value: 5/16 (31.2%)</span></div>
+
+<h3 style="font-size:.95rem;margin:16px 0 8px">Flight × Tier Price Matrix</h3>
+<div style="overflow-x:auto">
+<table class="price-table">
+<thead><tr><th>Flight</th><th>Time</th><th>Economy Flex</th><th>Economy Standard</th><th>Economy Value</th></tr></thead>
+<tbody><tr><td style="font-weight:500">NH014</td><td>6:20p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$612.10–$1,544.10</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH038</td><td>11:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$812.10–$1,544.10</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH040</td><td>11:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$627.10–$1,544.10</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH094</td><td>6:20p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$613.40–$1,545.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH098</td><td>11:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$628.40–$1,545.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH3822</td><td>6:20p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$613.40–$1,545.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH3824</td><td>11:30p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$415.20</td><td class="price-cell">$1,560.20</td></tr><tr><td style="font-weight:500">NH3826</td><td>11:35a.m., 11:50a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$628.40–$1,545.40</td><td class="price-cell">$1,160.40–$1,545.40</td></tr><tr><td style="font-weight:500">NH3828</td><td>11:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$628.40–$1,545.40</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH412</td><td>11:35a.m., 6:20p.m.</td><td class="price-cell">$607.20</td><td class="price-cell">$611.80–$1,543.80</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH416</td><td>11:35a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$626.80–$1,543.80</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH950</td><td>7:15a.m.</td><td style="color:#ccc">—</td><td style="color:#ccc">—</td><td class="price-cell">$1,773.00</td></tr><tr><td style="font-weight:500">NH968</td><td>1:50a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$607.20–$1,539.20</td><td class="price-cell">$415.20–$1,539.20</td></tr><tr><td style="font-weight:500">NH972</td><td>8:25a.m.</td><td style="color:#ccc">—</td><td class="price-cell">$829.20–$1,539.20</td><td class="price-cell">$452.20–$1,539.20</td></tr><tr><td style="font-weight:500">NH986</td><td>6:20p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$612.10–$1,544.10</td><td style="color:#ccc">—</td></tr><tr><td style="font-weight:500">NH990</td><td>11:35a.m., 6:20p.m.</td><td style="color:#ccc">—</td><td class="price-cell">$613.40–$1,545.40</td><td style="color:#ccc">—</td></tr></tbody>
+</table>
+</div>
+</div>
+
+</div>
+<div class="footer">NH Brand Fare Coverage · 2026-07-22 13:05</div>
+</body>
+</html>
