@@ -1,0 +1,63 @@
+04_project/Flight_Upsell/scraper/NH/NH_20260817_HND_BKK_ow_1pax.csv
+  s_1d0baa5c7173b0::t_f537e431536b88 76-87,89-108,110-111,113-148,186-197,199-218,220-221
+  s_1d0baa5c7173b0::t_e0d45340bef9cc 4-75,88,109,112,149-185,198,219,222-259
+04_project/Flight_Upsell/scraper/NH/NH_coverage_report.html
+  s_1d0baa5c7173b0::t_72a14a9fafc90f 1-279
+04_project/Flight_Upsell/scraper/NH/NH_20260817_HND_SIN_ow_1pax.csv
+  s_1d0baa5c7173b0::t_e0d45340bef9cc 4-247
+04_project/Flight_Upsell/scraper/NH/report.py
+  s_1d0baa5c7173b0::t_8485a540bb350a 1-315
+04_project/Flight_Upsell/scraper/NH/NH_20260817_HND_PVG_ow_1pax.csv
+  s_1d0baa5c7173b0::t_1e0e893334a80b 2-337
+04_project/Flight_Upsell/PROJECT_CONTEXT.md
+  s_732a142cc35a33::t_857aedf11105c7 230
+  s_732a142cc35a33::t_721148975a0d1c 237
+  s_1d0baa5c7173b0::t_6fe221658800e1 219
+  s_1d0baa5c7173b0::t_186b0636604c9f 56
+  s_1d0baa5c7173b0::t_ea724003f2dabb 2
+  s_732a142cc35a33::t_da73741e03e2c7 229
+04_project/Flight_Upsell/scraper/NH/NH_20260817_HND_HKG_ow_1pax.csv
+  s_1d0baa5c7173b0::t_e0d45340bef9cc 106-120
+04_project/Flight_Upsell/Flight_Upsell_Trial_Log.md
+  s_732a142cc35a33::t_215887d5b730c1 787-820,823-824
+  s_732a142cc35a33::t_2d0a377acb1c96 821-822
+  s_1d0baa5c7173b0::t_d6c77551ea9af2 752-785
+04_project/Flight_Upsell/scraper/NH/NH_20261022_HND_SIN_ow_1pax.csv
+  s_1d0baa5c7173b0::t_e0d45340bef9cc 4-259
+04_project/Flight_Upsell/scraper/NH/NH_20261022_HND_BKK_ow_1pax.csv
+  s_1d0baa5c7173b0::t_e0d45340bef9cc 4-264
+04_project/Flight_Upsell/scraper/NH/NH_20260817_HND_SGN_ow_1pax.csv
+  s_1d0baa5c7173b0::t_e0d45340bef9cc 4-243
+04_project/Flight_Upsell/Regional_Sync_Agenda_EN.md
+  s_732a142cc35a33::t_7495addc477b21 70,72,74,76,78,80,82
+  s_732a142cc35a33::t_19e8c63a21835a 2-4,7,9,11-13,15,17-23,27-33,35-36,38,40-41,43-51,54-55,62-69,71,73,75,77,79,81,83,85-88,90,92-94
+04_project/_in_case_you_are_bored.md
+  s_732a142cc35a33::t_24e584722905dd 21
+04_project/Flight_Upsell/scraper/NH/fetch_fares_nh_v1.py
+  s_1d0baa5c7173b0::t_093ea82a117581 307-315
+  s_1d0baa5c7173b0::t_23810e88c142de 272-275
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.34-trip",
+  "base_commit_sha": "79f790acb823f75a88180d520ea64cc973f67f6c",
+  "prompts": {},
+  "sessions": {
+    "s_1d0baa5c7173b0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "90110c7f-69db-47b4-b3fb-9016c5799d0d",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_732a142cc35a33": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a4edb9d6-b3d4-4bb6-95a4-4352095603c0",
+        "model": "arn:aws:bedrock:us-west-2:133197901387:application-inference-profile/f1o7fn3rqmi4"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
