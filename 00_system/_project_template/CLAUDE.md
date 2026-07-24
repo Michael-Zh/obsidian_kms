@@ -19,7 +19,14 @@
 1. Summarize decisions made and what changed
 2. Propose a log entry for the dev log — date + decisions + open questions
 3. Propose updates to the vault brief — update project status and `## Strategic Direction`
-4. Wait for approval before writing anything
+4. **Commit KMS vault to git** — if any KMS files were modified during the session (project docs, coaching files, wiki pages, POS signals, etc.):
+   ```bash
+   cd "/Users/michael_zhang/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS"
+   git add -A && git status --short
+   git commit -m "feat: [brief description of changes]"
+   ```
+   Show the commit message for approval, then push: `git push origin main`
+5. Wait for approval before writing anything
 
 ---
 
