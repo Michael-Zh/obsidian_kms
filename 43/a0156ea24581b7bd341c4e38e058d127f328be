@@ -1,0 +1,44 @@
+04_project/Flight_Upsell/Flight_Upsell.md
+  s_1cbda756453028::t_69dfccc7dfd025 1-64
+04_project/AI_learning/AI_learning.md
+  s_1cbda756453028::t_38dcbb7cbbe468 39,41-55
+04_project/Life_Management_System/Life_Management_System.md
+  s_1cbda756453028::t_a64c980aeff724 229,231-235,237-248,250,252-260
+04_project/Training_Coach/Training_Coach.md
+  s_1cbda756453028::t_02391618977cd1 48,50,57-67
+  s_1cbda756453028::t_35acd6b4ebac3b 176-196
+04_project/Training_program/Training_program.md
+  s_1cbda756453028::t_233af6ec887f92 57-113
+04_project/Plant_rearrangement/Plant_rearrangement.md
+  s_1cbda756453028::t_215c124a15a5b2 1-58
+00_system/_project_template/CLAUDE.md
+  s_1cbda756453028::t_752c118769be35 21,24-53,55-58
+04_project/Travel/Travel.md
+  s_1cbda756453028::t_3950949ccc55fe 1-62
+00_system/_project_template/Project_Overview_Template.md
+  s_1cbda756453028::t_2d525a956e3e3f 72,74,76-78,96-104,132-141
+00_system/_project_template/Project_Template_System.md
+  s_1cbda756453028::t_25da71abfbfdbe 16-18,21-22,26-28,33,35,37,43,45-53
+  s_1cbda756453028::t_f47e0a49969b44 137
+  s_1cbda756453028::t_244f60591c4932 55
+04_project/Strategic_relationship_audit/Strategic_relationship_audit.md
+  s_1cbda756453028::t_7cadf2a457975a 86,88,90-110
+04_project/vibe_coding_tool/vibe_coding_tool.md
+  s_1cbda756453028::t_e178c3b87fc281 1-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.34-trip",
+  "base_commit_sha": "43a0156ea24581b7bd341c4e38e058d127f328be",
+  "prompts": {},
+  "sessions": {
+    "s_1cbda756453028": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5f8a3234-80e4-4836-ac3c-9bbbac31b868",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
