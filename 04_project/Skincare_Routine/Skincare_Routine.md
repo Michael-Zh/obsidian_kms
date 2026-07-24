@@ -1,13 +1,15 @@
 ---
 name: Skincare_Routine
-status: done
+status: active
 pillar: AdminHome
 current_focus: "Routine established (home + travel). Future idea: incorporate eye mask & face mask treatments."
 created: 2026-04-01
-updated: 2026-05-31
+updated: 2026-07-24
 target_completion: 2026-07-31
 priority: P3
-tags: [AdminHome, PhysicalHealth]
+tags:
+  - AdminHome
+  - PhysicalHealth
 ---
 
 # [[Anti-Aging Skincare Optimization: Home + Travel]]
@@ -75,28 +77,17 @@ Daily consistent protocol (no alternating):
 
 ---
 
-## Next Steps
+## Strategic Direction
 
-What can you start doing and prioritize now?
-
-**Immediate priorities (This week):**
-- [ ] **Finalize Order Quantities** — Confirm sizes/quantities for all 5 orders to hit thresholds
-- [ ] **Place Order 1** — Buffet + Copper Peptides (€48 target); monitor for free gift eligibility
-- [ ] **Set Storage Reminders** — Label containers (Fridge vs. Cool Drawer); establish consistent placement
-- [ ] **Trial 1 Product** — Introduce ONE new serum into routine this week; monitor for irritation (48-hour observation)
-
-**Near-term (Next 2-3 weeks):**
-- [ ] **Complete All 5 Orders** — Stagger by 3-5 days to avoid duplicate free gifts triggering
-- [ ] **Inventory Received** — Organize by storage requirement upon arrival
-- [ ] **Home Routine Execution** — Run full alternating schedule for 2 weeks; assess skin texture changes
-- [ ] **Adjust Based on Response** — If redness occurs, drop back to staples for 48 hours
-
-**Decision gates:**
-- [ ] **Trial Tolerance (Week 2):** No irritation = proceed to full rotation. If irritation = isolate product; slow rollout
-- [ ] **China Trip Prep (6 weeks before):** Switch to simplified travel routine; test Ascorbyl Glucoside for 2 weeks
+- Home + travel routine established — 维持现状
+- 未来想法: 加入 eye mask + face mask treatments
+- 重新激活为 active P3 — 低优先级但持续维护
 
 ---
 
+## Decisions
+
+- **2026-07-24:** Status changed from done → active P3. Routine established but ongoing maintenance.
 ## Open Decisions/Questions
 
 Decisions to be made, blockers to resolve.

@@ -18,12 +18,44 @@
 
 1. Summarize decisions made and what changed
 2. Propose a log entry for the dev log — date + decisions + open questions
-3. Propose updates to the vault brief — update current features list and open backlog
+3. Propose updates to the vault brief — update project status and `## Strategic Direction`
 4. Wait for approval before writing anything
 
-**Sync rule:** 每次会话结束更新 vault brief 时，同步更新 `_in_case_you_are_bored.md` 里 [[project_slug]] 行的 Current Focus + Updated 字段。
+---
 
-**Session-start reconcile rule:** 每次 CC session 加载 project-context 时，如果 `project-context` skill 在顶部显示 `## ⚠️ Pending App Changes`，必须先 review delta（backlog 完成情况 + coaching sessions 的 decisions），和用户确认是否写入 Obsidian project doc，完成 reconcile 后再进入正式讨论。
+## Session-End Backlog Sync
+
+**每次 CC session 结束时，执行 Backlog Sync：**
+
+1. 收集本次 session 产生的 action items（可执行的具体任务）
+2. 调用 `POST /api/backlog/review/cc` (action: "preview") 预览 diff：
+   - `new_actions`：新增项（会去重，已存在的自动跳过）
+   - `stale`：可能过期的旧 backlog items
+3. 显示预览结果，逐条或批量确认
+4. 用户确认后，调用 `POST /api/backlog/review/cc` (action: "apply") 写入 DB
+5. 报告结果：`新增 X 条，标记完成 Y 条，跳过 Z 条（重复）`
+
+```bash
+KEY=$(grep SUPABASE_SERVICE_ROLE_KEY .env.local.prod | cut -d= -f2)
+BASE="https://danseur-noble-hub.vercel.app"  # or http://localhost:3000 for dev
+
+# Preview
+curl -s -X POST "$BASE/api/backlog/review/cc" \
+  -H "Authorization: Bearer $KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"action":"preview","proposed_items":[...],"project_ids":[...]}'
+
+# Apply after confirmation
+curl -s -X POST "$BASE/api/backlog/review/cc" \
+  -H "Authorization: Bearer $KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"action":"apply","accept_tasks":[...],"resolve_stale_ids":[...]}'
+```
+
+**Project-specific Rules:**
+- Only CC sessions that `project-context` loaded a specific project trigger this
+- Global CC sessions (no project loaded) skip Backlog Sync
+- The `## Strategic Direction` section in the project doc is updated by coaching decisions, not individual tasks — Backlog Sync handles the tasks
 
 ---
 

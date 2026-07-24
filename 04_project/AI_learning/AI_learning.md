@@ -1,12 +1,14 @@
 ---
-name: "AI_learning"
-status: "active"
-pillar: "LifeManagement"
-current_focus: "通过实践学习——自定义 App 开发（Training Coach App）+ Claude Code 深度使用。超体 program 作为理论框架。想法沉淀到 Wiki，不单独追踪项目。"
-created: "2026-06-12"
-updated: "2026-07-21"
+name: AI_learning
+status: active
+pillar: LifeManagement
+current_focus: 通过实践学习——自定义 App 开发（Training Coach App）+ Claude Code 深度使用。超体 program 作为理论框架。想法沉淀到 Wiki，不单独追踪项目。
+created: 2026-06-12
+updated: 2026-07-24
 priority: P1
-tags: [LifeManagement, Career]
+tags:
+  - LifeManagement
+  - Career
 ---
 
 # AI Learning Program
@@ -34,12 +36,23 @@ AI learning 的主要方式是通过**实践**—目前的核心实践是搭建�
 
 The Life Management System — already built and running. The 超体 program will surface gaps and prompt iteration. See [[Life_Management_System]].
 
-## Next Steps
+## Strategic Direction
 
-- [ ] Complete 超体 program — ongoing from 2026-06-12
-- [ ] Discuss flight upsell AI approach in dedicated session (next week)
-- [ ] On 超体 completion: begin Anthropic Academy
-- [ ] Note key cognitive upgrades from 超体 as they emerge → append below
+- 超体 program 作为理论框架 — 完成课程并通过实践（Training Coach App）内化认知升级
+- Flight upsell AI 分析 — 建立 BQ 数据分析能力，形成可复用的商业分析 pattern
+- Anthropic Academy 准备 — 超体完成后进入，提前熟悉 Claude API 和 agent 设计
+- 实践驱动学习 — 每个学习目标绑定一个 build project，输出 > 输入
+
+---
+
+## Archived: Detailed Next Steps
+
+*Previous next steps preserved for alignment verification. Replaced by ## Strategic Direction above.*
+
+- [ ] ~~Complete 超体 program — ongoing from 2026-06-12~~ → 超体 program 作为理论框架
+- [ ] ~~Discuss flight upsell AI approach in dedicated session~~ → Flight upsell AI 分析
+- [ ] ~~On 超体 completion: begin Anthropic Academy~~ → Anthropic Academy 准备
+- [ ] ~~Note key cognitive upgrades from 超体~~ → 实践驱动学习 + Learning Log
 
 ## Learning Log
 

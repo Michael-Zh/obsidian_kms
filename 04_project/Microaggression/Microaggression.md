@@ -3,8 +3,9 @@ name: Microaggression
 pillar: Relationships
 status: active
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-24
 description: Personal learning resource for identifying and responding to anti-Asian microaggression and discrimination — starts as private reference, can evolve into shareable/contributable community resource
+priority: P3
 ---
 
 # Microaggression — Response Database
@@ -50,13 +51,29 @@ Build a personal reference for identifying and responding to anti-Asian microagg
 | Analysis | Why it worked or didn't |
 | Source | Personal / Community / Published |
 
-## Next Steps
+## Strategic Direction
 
-- [ ] Decide on storage format: Obsidian database (Dataview) vs. simple flat entries?
-- [ ] Log first 5 personal experience entries as seed data
-- [ ] Identify 3 external published sources to read and extract from
-- [ ] Once 20+ entries exist: review for patterns and update [[Microaggression-and-Social-Navigation]] wiki page
+- 确定存储格式 — Obsidian flat entries vs. Dataview 数据库
+- 采集 5 条 seed data — 个人经验作为基础案例
+- 识别 3 个外部已发布来源 — 提取框架和方法
+- 20+ entries 后模式回顾 — 更新 [[Microaggression-and-Social-Navigation]] wiki 页面
 
+---
+
+## Decisions
+
+<!-- Populate after coaching sessions -->
+
+---
+
+## Archived: Detailed Next Steps
+
+*Previous next steps preserved for alignment verification.*
+
+- [ ] ~~Decide on storage format~~ → 确定存储格式
+- [ ] ~~Log first 5 personal experience entries~~ → 采集 seed data
+- [ ] ~~Identify 3 external published sources~~ → 识别外部来源
+- [ ] ~~Review for patterns after 20+ entries~~ → 20+ entries 模式回顾
 ## Connections
 
 Related Pages: [[Microaggression-and-Social-Navigation]], [[Coming-Out-and-Family-Authenticity]], [[Work-Performance-Anxiety]]

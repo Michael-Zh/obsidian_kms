@@ -4,10 +4,12 @@ status: parked
 pillar: Relationships
 current_focus: "On hold — 推迟到 8 月底/9 月。Madrid 关键数据已沉淀（ENM 单向→双向探索，FOMO/safety 模式），见 coaching docs。October gate: Jeroen 公寓 → cohabitation/ENM/kids in Q4."
 created: 2026-04-01
-updated: 2026-07-21
+updated: 2026-07-24
 target_completion: 2026-12-31
 priority: P3
-tags: [Relationships, MindMentalHealth]
+tags:
+  - Relationships
+  - MindMentalHealth
 ---
 
 # [[Strategic Relationship Audit & Cohabitation Roadmap]]
@@ -81,11 +83,31 @@ Transition from a 3-year "weekend" partnership to high-integrity cohabitation th
 
 ---
 
-## Next Steps
+## Strategic Direction
 
-What can you start doing and prioritize now?
+*On hold — 推迟到 8 月底/9 月。*
 
-**Immediate priorities (This week):**
+- Internal Audit (Q1) — Confirm collector drive trend; Madrid data suggests natural curiosity rather than relationship avoidance
+- ENM framework disclosure (Q3) — Prepare and execute disclosure conversation; October gate: Jeroen 公寓
+- Kids deadline (Q2) — Binary Yes/No by mid-2026
+
+---
+
+## Decisions
+
+*Major coaching decisions related to relationship strategy.*
+
+- **2026-07-09:** Madrid data — ENM from one-way to two-way exploration (Jeroen tried hookup, positive signal); FOMO/safety pattern identified (can't say no to friendly people). October conversation's emotional texture shifted: no longer "asking permission", more shared territory.
+
+---
+
+## Archived: Detailed Next Steps
+
+*Previous next steps preserved for alignment verification. Replaced by ## Strategic Direction above.*
+
+<details>
+
+**Immediate priorities (archived):**
 - [ ] **Internal Audit (Q1)** — Confirm your "collector" drive trend; is it natural fade or compensation for home deficit?
 - [ ] **Self-Mapping Exercise** — Document "Safe Touch Zones" and time caps with partner (Exercise A: Empathetic Mirror)
 - [ ] **Prepare Disclosure Script** — Draft "I Statement" opening: "I want to move in with zero secrets so I can be 100% present with you"

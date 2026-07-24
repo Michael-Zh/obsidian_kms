@@ -3,8 +3,9 @@ name: Show Scraper
 pillar: CreativityCuriosity
 status: active
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-24
 description: Automated show discovery — wearepublic.nl scraper (Phase 1 complete); Phase 2 multi-source expansion
+priority: P3
 ---
 
 # Show Scraper
@@ -21,12 +22,27 @@ Python scraper tracking keywords (NDT, Introdans, Scapino, Club Guy, Carré) + 1
 
 Collect shows from additional internet sources beyond wearepublic.nl.
 
-## Next Steps
+## Strategic Direction
 
-- [ ] Identify additional sources for show discovery (venue direct sites, other aggregators, social channels)
-- [ ] Design Phase 2 scraper architecture — unified output format across sources
-- [ ] Evaluate deduplication logic when same show appears in multiple sources
+- 识别额外来源 — 场地官网、其他聚合器、社交媒体渠道
+- Phase 2 架构设计 — 多源统一输出格式
+- 去重逻辑评估 — 同一演出在多源重复出现时的处理方案
 
+---
+
+## Decisions
+
+<!-- Populate after coaching sessions -->
+
+---
+
+## Archived: Detailed Next Steps
+
+*Previous next steps preserved for alignment verification.*
+
+- [ ] ~~Identify additional sources~~ → 识别额外来源
+- [ ] ~~Design Phase 2 scraper architecture~~ → Phase 2 架构设计
+- [ ] ~~Evaluate deduplication logic~~ → 去重逻辑评估
 ## Key Files
 
 - `we-are-public-scraper-main/main.py` — Phase 1 scraper

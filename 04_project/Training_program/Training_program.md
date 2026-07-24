@@ -54,42 +54,63 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 
 ---
 
-## Next Steps
+## Strategic Direction
 
-What can you start doing and prioritize now?
+- 推进 Meal Prep Routine — CT intensive 前的 nutrition driver。解决什么时候吃、吃什么、吃多少的 plan 层面问题。两餐 timing + 周日 20-min prep protocol
+- CT intensive 期间身体维护 — bilateral lower back recovery 持续关注、sleep/energy management、维护性 gym 训练（不再是重训阶段）
+- 9 月 body composition reassess — 重新评估 body recomposition 指标（体重、SMM、BFM），决定 Q4 训练方向
 
-**Immediate priorities (This week):**
-- [ ] **Body Composition Scan** — Scheduled June 1, 2026 (rescheduled from May; recurring monthly on the 1st)
-- [ ] **Activity-Aligned 16:8 Window** — Implement: Evening training days 13:00–21:00 (lighter recovery meal post-workout, sleep 23:30–00:00); Morning training days 08:00–16:00; Rest/gym days 12:00–20:00. Log morning energy score (1–5) daily.
-- [ ] **Verify Caloric Adherence** — Log 3 days of food tracking once window is stable (~1 week); confirm 2,300 kcal target and protein (175g) are actually hit
-- [ ] **Sunday Gym Session** — Execute "Do or Die" session; test Trap Bar Deadlift weight (current: TBD)
-- [ ] **Brain Dump Protocol** — Establish nightly 21:00 capture; implement 3-2-1 task selection at 07:05
+---
 
-**Queued ideas from daily notes:**
-- [ ] Use daily note template as primary training log input (energy level, notes) — eliminates separate log. Add training section to daily note template (from: [[2026-05-25]])
-- [ ] Apple Shortcut for sleep data + calendar-based actual workout data input — reduce manual logging friction (from: [[2026-05-25]])
-- [ ] Ashtanga/ballet pose audit — systematically go through common poses to identify body areas for targeted gym work, then prioritize (from: [[2026-05-26]])
-- [ ] Contemporary slot: prioritize choreography version on Tuesdays; add improv version once per month as a double (from: [[2026-05-26]])
-- [ ] Swimming — add to backlog when current recomposition phase stabilises; not a focus now (ref: [[coaching_discussion_20260530]])
-- [ ] **Schedule restructure proposal** — Move ballet to Sunday; Mon/Tue gym (Tue lighter: improv contemporary/salsa/hip-hop only); Thu secondary ballet slot instead of Iyengar. Evaluate after 2-week trial (from: [[2026-06-01]])
-- [ ] **Add meal prep timing to schedule** — Any schedule redesign must include meal time and meal prep windows, not just class times (from: [[2026-06-02]])
-- [ ] **Two-track sleep protocol** — Track A (home by 10:30pm): shower+heat food on arrival, eat, 30-min phone timer after eating, then bed. Target 11pm–12am. Track B (home after 10:30pm, e.g. Mon Iyengar / Thu sauna): no pressure, normal wind down, 1–2am accepted. Do NOT apply Track A standard to Track B nights. (from: [[coaching_discussion_20260621]])
-- [ ] **Sunday Meal Prep — 20-min protocol** — After Sunday gym session: (1) start rice cooker, (2) boil 8–10 eggs, (3) batch cook one protein (chicken/tofu/tin fish). All passive — do while showering. Produces: 4–5 days of rice, eggs for grab-and-go, one protein source. (from: [[coaching_discussion_20260621]])
-- [ ] **Pre-class eating habit** — On training days (6–8:30pm window), eat a proper meal at work before leaving (5–5:30pm): rice/sandwich + protein. Prevents post-class hunger crash and late-night overeating. (from: [[coaching_discussion_20260621]])
-- [ ] **Define minimal training week** — Create a priority-ordered "minimum viable training" list so the most important sessions happen even in a busy week (from: [[2026-06-02]])
+## Decisions
 
-**Near-term (Next 2-3 weeks):**
-- [ ] **Assess Recovery** — After Week 1-2, evaluate sleep quality, muscle soreness, hunger levels
-- [ ] **Adjust Macros if Needed** — If energy crashes or performance dips, consider +100-200 kcal reallocation
-- [ ] **Track BFM Trends** — Weigh weekly (same time, same conditions) to monitor progress toward 9kg BFM
-- [ ] **Daily Note Logging** — Start using Obsidian daily template: energy scores, training reflections, sleep data (Apple Shortcut)
-- [ ] **Review Actual vs Planned (May 31 planning session)** — Compare actual calendar (May 24–30) to planned; identify deviations before next week
-- [ ] **Assess Planning Log Overhead** — After 2–3 weeks, review if `calendar_planning_log.json` is valuable or too much overhead
+*Major coaching decisions related to training strategy.*
 
-**Decision gates:**
-- [ ] **Scan Results (June 1):** Confirm muscle retention on this protocol; if dropping below 42kg, increase protein/calories
-- [ ] **Window Calibration Check (June 4):** Is morning energy improving (target: 3+/5)? Has late-night reactive eating stopped? If stable → window locked, proceed to nutrition variable
-- [ ] **Recomposition Validation (Mid-June):** Check BFM trending down; if stalled, investigate caloric surplus or excess volume
+- **2026-07-21:** Current focus shift — body recomposition 大方向不变，但现阶段优先级是 CT intensive 前的基础维护。Meal Prep Routine 作为独立 project（P2）推进，Training Program 配合执行（P3）。
+- **2026-07-09:** Two-track sleep protocol defined — Track A（home by 10:30pm）/ Track B（late night accepted）；Sunday Meal Prep 20-min passive protocol；Pre-class eating habit（5-5:30pm meal）
+
+---
+
+## Archived: Detailed Next Steps
+
+*Previous detailed next steps preserved for alignment verification. Replaced by ## Strategic Direction above.*
+
+<details>
+
+**Immediate priorities (archived):**
+- [ ] ~~Body Composition Scan — June 1~~ → reassess in September
+- [ ] ~~Activity-Aligned 16:8 Window~~ → absorbed into Meal Prep Routine
+- [ ] ~~Verify Caloric Adherence~~ → absorbed into Meal Prep Routine
+- [ ] ~~Sunday Gym Session — Do or Die~~ → maintenance mode during CT intensive
+- [ ] ~~Brain Dump Protocol~~ → part of daily routine, not project-specific
+
+**Queued ideas (archived):**
+- [ ] ~~Use daily note template as training log~~
+- [ ] ~~Apple Shortcut for sleep/calendar data~~
+- [ ] ~~Ashtanga/ballet pose audit~~
+- [ ] ~~Contemporary slot prioritization~~
+- [ ] ~~Swimming~~
+- [ ] ~~Schedule restructure proposal~~
+- [ ] ~~Add meal prep timing to schedule~~
+- [ ] ~~Two-track sleep protocol~~ → baked in as decision
+- [ ] ~~Sunday Meal Prep — 20-min protocol~~ → baked in as decision
+- [ ] ~~Pre-class eating habit~~ → baked in as decision
+- [ ] ~~Define minimal training week~~
+
+**Near-term (archived):**
+- [ ] ~~Assess Recovery~~
+- [ ] ~~Adjust Macros if Needed~~
+- [ ] ~~Track BFM Trends~~
+- [ ] ~~Daily Note Logging~~
+- [ ] ~~Review Actual vs Planned~~
+- [ ] ~~Assess Planning Log Overhead~~
+
+**Decision gates (archived):**
+- [ ] ~~Scan Results (June 1)~~
+- [ ] ~~Window Calibration Check (June 4)~~
+- [ ] ~~Recomposition Validation (Mid-June)~~
+
+</details>
 
 ---
 

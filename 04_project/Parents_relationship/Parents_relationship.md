@@ -3,9 +3,9 @@ name: Parents_relationship
 project_id: pj0003
 status: active
 pillar: Relationships
-current_focus: "Phase 1：开始分享「安全层」内容（CT intensive、马德里展览感受），建立「我们可以谈真实的我」的语境"
-created: 2026-07-21
-updated: 2026-07-21
+current_focus: "Phase 1: 从 CT intensive 开始分享安全层内容"
+created: 2026-07-01
+updated: 2026-07-24
 target_completion: 2026-09-30
 priority: P1
 tags:
@@ -92,3 +92,17 @@ tags:
 
 **Related Projects:**
 - [[Strategic_Relationship_Audit]] — 伴侣关系的战略性思考；父母关系是平行的另一条线
+
+
+## Strategic Direction
+
+- Phase 1: 从 CT intensive 开始分享安全层内容 — 建立"可以谈真实的我"的沟通基础
+- Phase 2: 扩展分享范围 — 舞蹈训练、展览、旅行等充实生活的侧面
+- Long-term: 渐进打开取向话题 — 需要耐心，不触碰敏感话题
+- 核心原则: 说完给时间，不追着解释，不道歉，不收回。动机已从"寻求认可"转为"分享真实快乐"
+
+---
+
+## Decisions
+
+- **2026-07-21:** 从分享安全层内容开始（CT intensive、马德里展览感受），建立语境而非触碰敏感话题。动机移动: 从"希望他们认可" → "分享真实快乐"

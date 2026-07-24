@@ -5,7 +5,7 @@ status: active
 pillar: PhysicalHealth
 current_focus: "Phase 1: 讨论饮食 philosophy + routine 设计；Phase 2: 与 Training Program 结合，集成到 App"
 created: 2026-05-03
-updated: 2026-07-21
+updated: 2026-07-24
 target_completion: 2026-09-30
 priority: P2
 tags:
@@ -130,3 +130,17 @@ tags:
 | Fries                | 3 bags      |
 | Shrimp               | 1 pack      |
 | Prepared frozen meal | 4 units     |
+
+
+## Strategic Direction
+
+- 设计可重复的 meal prep 流程 — container 采购、批量备餐、存储方案
+- 回答三个核心问题: 什么时候吃、吃什么、吃多少
+- 与 Training Program 集成 — meal timing 对齐训练日历
+- 长期: 集成到 Training Coach App
+
+---
+
+## Decisions
+
+- **2026-07-21:** Meal Prep Routine 独立为 P2 project。先解决 plan 层面（eating philosophy + routine 设计），再与 Training Program 合并执行。

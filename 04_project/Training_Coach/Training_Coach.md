@@ -41,21 +41,30 @@ Elite body recomposition PWA for a 36-year-old male dancer.
 
 | 优先级 | Item |
 |--------|------|
-| P1 | Manual Context Sync Reset Dashboard（人工审查所有 context source 同步状态）|
 | P2 | `coaching_sessions` 自动回流 Obsidian（目前 Push to Obsidian 按钮手动）|
 | P2 | General coaching tab 启动时调 `/api/projects/pending` 批量 reconcile |
 | P2 | `google-calendar.ts` + `coaching/insights` 的 `key`/`value` schema mismatch 修复 |
-| P2 | Class Pool DB 化 + 管理 UI |
 | P2 | Schedule Coaching Integration（schedule_suggestion proposal card）|
-| P2 | Backlog `project_id` UI 入口（BacklogRow 编辑模式加 project 下拉）|
+| P2 | Backlog 重构 — 清理现有 items，从 project 层面重新生成，讨论 dynamic prioritization |
 | P3 | Pulse 简化（去掉 AM/PM） |
-| P3 | Priorities panel 显示优化（Short-Term Focus 摘要） |
-| P3 | Schedule Panel 手动内联编辑 |
+| P3 | Priorities panel 显示优化（Short-Term Focus 摘要）|
 | P3 | Web Push Notifications |
 | P3 | Exercise Library v3 — AI Substitution + YouTube links |
 | P3 | Project-specific coaching / docs（低优先级）|
 | Later | KMS + App 统一 Context Audit |
 | Defer | Timezone Review |
+
+**Session 31-32 已完成：**
+- ✅ Context Sync Dashboard（Manual Context Sync Reset）
+- ✅ Backlog `project_id` UI 入口
+- ✅ Schedule Panel 手动内联编辑
+- ✅ Class Pool DB 化 + 管理 UI
+- ✅ Priority 回写 Gap
+- ✅ Backlog source + done_at 字段（Migration 044）
+- ✅ normalizeTask() 去重统一
+- ✅ Stale Review 面板
+- ✅ CC Backlog Review API（`/api/backlog/review/cc`）
+- ✅ KMS Project 文档格式统一（Strategic Direction + Decisions + Archived）
 
 ---
 
@@ -146,3 +155,42 @@ Priming 底部按钮 → sync endpoint → 显示 diff 结果（新增/改变状
 **Backlog 清理：**
 - Gym PR Chart Done
 - Nutrition / Timezone / Calendar events → deferred（标记保留在 tech-spec，不再出现在活跃列表）
+
+
+---
+
+_2026-07-24 更新（Session 31）_
+
+**新增 / 变更：**
+- 移除 `regenerate` 路由（一次性工具，已被 Priming AI + Summarize cascade 替代）
+- 提取共享工具库 `backlog-utils.ts`：`normalizeTask()` 统一去重逻辑（降大小写 → 去 markdown → 去标点 → trim）、`guessProjectId()`、`guessCategory()`、`computeDefaultPriority()`
+- **去重统一**：三个 backlog 生成入口（Priming AI、Coaching Session End、Manual）全部使用 `normalizeTask()` 去重，解决之前不一致导致的重复项问题
+- **Migration 044**：`priming_backlog` 加 `source`（origin 追踪）+ `done_at`（时间戳 diff 基础）列
+- **Stale Review 面板**：Priming 页新增 Review 按钮 → `/api/backlog/review` GET 对比 backlog vs KMS next_actions → 三栏 diff（stale/红色、new_actions/绿色、to_write_back/蓝色）→ PATCH 应用用户选择
+- **re-sync cascade**：`POST /api/context/re-sync` 完成后自动检测 stale backlog items（normalized task 不再匹配任何 project 的 next_actions），自动标记 done（`source=manual` 除外）
+
+**架构决策：**
+- Two-Layer Architecture 明确化：KMS (Obsidian) = Strategy Layer → App DB (Supabase) = Execution Layer
+- 双向同步链路：KMS push → GitHub Action sync-context → App re-sync cascade → backlog diff；App coaching → End Session → summarizer → Push to Obsidian → KMS
+- `done_at` timestamp 替代 `source.updated_at` 作为 stale 判断基础（简化、可靠）
+
+---
+_2026-07-25 更新（Session 32）_
+
+**新增 / 变更：**
+- **CC Backlog Review API** — `POST /api/backlog/review/cc`（service role auth）：`action: "preview"` 返回 stale/new_actions/skipped，`action: "apply"` 写入并 resolve stale。CC session 结束可直接推送 action items 到 DB 触发 review
+- **KMS Project 文档格式统一** — `## Strategic Direction`（纯 bullets，无 `[ ]` checkbox）替代 `## Next Steps`；新增 `## Decisions`（含日期的 major coaching decisions）+ `## Archived: Detailed Next Steps`（保留旧 items 供 alignment 验证）
+- **re-sync 严格文件名** — 只取 `{dir}/{dir}.md`，不再 fallback 任意 .md 文件；next_actions 解析 strip `[ ]`/`[x]` 前缀
+- **Prod DB 清理** — 删除 7 对重复 project ID + pj0010/pj0011 畸形行；48 条 backlog items 补充 `source` 列
+- **Project 模板更新** — `00_system/_project_template/` 三个文件（Overview Template / CLAUDE.md / System）全部更新为新格式
+- **Skill 更新** — `project-initiation`（Step 6 Strategic Direction）+ `coach-session`（Step 10 Backlog Sync）+ `wiki-coach-kms-cli`（移除 append-to-Next-Steps 指令，新增 Backlog Sync section）
+- **18 个 KMS project docs 全部更新** — Strategic Direction + Archived 写入所有 active/parked projects；4 个新主文档创建（Flight_Upsell, vibe_coding_tool, Travel, Plant_rearrangement）
+
+**Backlog 更新：**
+- App 代码已 commit（`1811bd3` + `72b8215`）→ 待 push develop
+- KMS vault 18 修改 + 4 新文件 待 commit → push 触发 sync-context → re-sync cascade 验证新格式解析
+
+**待测试（push prod 后）：**
+- `POST /api/context/re-sync` — 新格式（Strategic Direction headings、`[ ]` strip）是否正确解析 next_actions
+- `POST /api/backlog/review/cc` — preview + apply 完整流程
+- Priming Stale Review 面板 — 三栏 diff 与新 strategic direction 对齐

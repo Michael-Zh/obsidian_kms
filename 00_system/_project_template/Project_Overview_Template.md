@@ -69,17 +69,13 @@ High-level structure of this project. What are the main components or areas? How
 
 ---
 
-## Next Steps
+## Strategic Direction
 
-What can you start doing and prioritize now based on current roadmap phase?
+*3-5 strategic-level direction statements. What is the project driving toward right now? These get synced into the App as `next_actions` for backlog diff. Updated after coaching sessions that affect project strategy.*
 
-**Immediate priorities (This week):**
-- [ ] [Action 1] — Why it matters: [connection to roadmap]
-- [ ] [Action 2] — Why it matters: [connection to roadmap]
-
-**Near-term (Next 2-3 weeks):**
-- [ ] [Action 3] — Depends on: [Action 1 or earlier phase]
-- [ ] [Action 4] — Depends on: [decision to be made]
+- [Key strategic direction 1] — [why this matters, connection to roadmap]
+- [Key strategic direction 2] — [why this matters, connection to roadmap]
+- [Key strategic direction 3] — [why this matters, connection to roadmap]
 
 ---
 
@@ -94,6 +90,15 @@ Decisions to be made, blockers to resolve, research/learning needed (and what ar
 ### Blockers
 - **[Blocker 1]:** [Description] — Impact: [what's blocked] — Unblock by: [action/date]
 - **[Blocker 2]:** [Description] — Impact: [what's blocked] — Unblock by: [action/date]
+
+---
+
+## Decisions
+
+*Major coaching decisions related to this project. Updated after relevant coaching sessions.*
+
+- **[YYYY-MM-DD]:** [Decision summary] — [rationale, timing, dependencies]
+- **[YYYY-MM-DD]:** [Decision summary] — [rationale, timing, dependencies]
 
 ---
 
@@ -124,4 +129,13 @@ What's already been completed or achieved in this project. Track progress here s
 
 ---
 
-**Note:** Learnings are documented in `_[ProjectName]_trial_log.md` (where experiments happen). Decisions are documented in the trial log linked to the experiment that informed them. This overview focuses on strategy, actions, and blockers.
+## Archived: Detailed Next Steps
+
+*Previous detailed next steps preserved for alignment verification. These were replaced by the ## Strategic Direction section above. Kept temporarily for reference — can be deleted after confirming alignment.*
+
+- [ ] ~~[Archived action item 1]~~ — Replaced by: [which strategic direction covers it]
+- [ ] ~~[Archived action item 2]~~ — Replaced by: [which strategic direction covers it]
+
+---
+
+**Note:** Learnings are documented in `[ProjectName]_trial_log.md` (where experiments happen). Strategic direction is the KMS-level declaration of what the project is driving toward — specific task tracking lives in the App's `priming_backlog` table. Coaching decisions go into `## Decisions` above.

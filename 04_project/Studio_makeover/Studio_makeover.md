@@ -3,9 +3,9 @@ name: Studio_makeover
 project_id: pj0005
 status: active
 pillar: AdminHome
-current_focus: "Cleaner prep (最高优先级) — 整理到适合 cleaner 清洁的状态 | 其余 makeover items（plant repotting 等）推迟到 summer 结束后"
+current_focus: Cleaner prep (最高优先级) — 整理到适合 cleaner 清洁的状态 | 其余 makeover items（plant repotting 等）推迟到 summer 结束后
 created: 2026-05-03
-updated: 2026-07-21
+updated: 2026-07-24
 target_completion: 2026-10-30
 priority: P2
 tags:
@@ -255,3 +255,16 @@ _Low priority improvements to tackle when budget/time allows._
 ### 4. The "Clothing & Paper" Loop
 
 - **The "Probation" Purge:** Overflow clothes -> **Slim Under-Bed Storage Box**.
+
+
+## Strategic Direction
+
+- Cleaner prep — 为专业清洁工入场做好准备（厨房 + 湿区优先）
+- Phase 2: Systems — 建立可持续的家居维护体系
+- 其余 makeover items 推迟到 summer 结束后
+
+---
+
+## Decisions
+
+- **2026-07-21:** Cleaner prep 是当前唯一优先级的家居任务。其余 makeover 推迟。

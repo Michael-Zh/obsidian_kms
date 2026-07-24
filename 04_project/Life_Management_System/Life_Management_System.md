@@ -226,24 +226,38 @@ RESULT: Both wiki updates (neutral) + coaching guidance (priority-filtered) from
 
 ---
 
-## Next Steps
+## Strategic Direction
 
-What can you start doing and prioritize now?
+- Module 4 Entity Processing — 完成 `_watchlist.md` `type: process` 条目到 wiki synthesis 的端到端流程
+- Shows & museums capture type — 文化活动作为一等输入类型，接入 wiki-coach 处理链路
+- YAML metadata enrichment — wiki-coach 处理 process 条目时自动补充结构化元数据
+- Mobile quick-read route — 桌面版验证后设计移动端流程（Gemini project + export skill + Shortcut）
+- System documentation — 更新模块流程图反映 Phases 2.5–2.8 完成状态
 
-**Immediate priorities (This week):**
-- [ ] **Design Module 4 entity processing** — define how `_watchlist.md` entries with `type: process` + `status: done` flow into wiki synthesis. Key question: does a book/person get its own wiki page, or does it feed into an existing topic page?
+---
 
-**Near-term (Next 2-3 weeks):**
-- [ ] **Shows & museums as a capture type** — Add cultural events (shows, museum visits, exhibitions) as a first-class type in `_watchlist.md`. Define how they get processed and linked to wiki pages.
-- [ ] **Update module flow chart** — reflects Phases 2.5–2.8 completions
-- [ ] **YAML metadata enrichment** — When wiki-coach processes a `_watchlist.md` `process` entry, enrich source with structured metadata: type, pillar, capture_date, processing_status, linked_page
-- [ ] **Mobile quick-read route** — once desktop `/quick-read` is validated in practice, design mobile flow (Gemini project per domain + `/export-gemini-context` skill + "Send to Obsidian" Shortcut)
+## Decisions
 
-**Decision gates:**
-- [x] **Input Consolidation (2.4)** — Resolved 2026-05-16: `_inbox/` single folder
-- [x] **Module 2 database schema** — Resolved 2026-06-07: no database needed; annotation IS the routing logic
-- [x] **Module 3 MCP server** — Resolved 2026-06-07: not needed; capture solved at tool layer (bijitongbu + Web Clipper)
-- [x] **Instant implication layer** — Resolved 2026-06-07: desktop `/quick-read` skill; mobile route deferred
+*Major coaching decisions related to LMS architecture.*
+
+- **2026-07-21:** Two-layer architecture confirmed — KMS = Strategy Layer, App = Execution Layer. Backlog sync via `normalizeTask` dedup across three paths (Priming AI / Coaching Session / Manual).
+- **2026-07-24:** CC Backlog Sync implemented — coaching sessions now push action items directly to App DB, bypassing KMS `## Next Steps`.
+
+---
+
+## Archived: Detailed Next Steps
+
+*Previous next steps preserved for alignment verification. Replaced by ## Strategic Direction above.*
+
+- [ ] ~~Design Module 4 entity processing~~ → Module 4 Entity Processing
+- [ ] ~~Shows & museums as a capture type~~ → Shows & museums capture type
+- [ ] ~~Update module flow chart~~ → System documentation
+- [ ] ~~YAML metadata enrichment~~ → YAML metadata enrichment
+- [ ] ~~Mobile quick-read route~~ → Mobile quick-read route
+- [x] ~~Input Consolidation (2.4)~~ — Resolved 2026-05-16
+- [x] ~~Module 2 database schema~~ — Resolved 2026-06-07
+- [x] ~~Module 3 MCP server~~ — Resolved 2026-06-07
+- [x] ~~Instant implication layer~~ — Resolved 2026-06-07
 
 ---
 

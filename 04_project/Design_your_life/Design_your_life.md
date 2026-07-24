@@ -3,8 +3,9 @@ name: Design Your Life
 pillar: MindMentalHealth
 status: active
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-24
 description: Applying Stanford DYL framework — Odyssey plans, prototype experiments, identity-anchored life architecture
+priority: P3
 ---
 
 # Design Your Life
@@ -19,13 +20,29 @@ Build a clear, structured view of my three Odyssey Plans and the prototype exper
 - Wiki page created: [[Life-Design-Methodology]]
 - Next: structured summary document (clean, shareable format)
 
-## Next Steps
+## Strategic Direction
 
-- [ ] Build structured DYL summary doc — condensed Odyssey Plan architecture with clear section headers (from: [[Life_Design_Coaching_Transcript]])
-- [ ] Book Iyengar Yoga Institute Amsterdam anatomy/alignment weekend workshop (after H1 review clears, mid-July)
-- [ ] Book Studio Anna Mora 1-on-1 Gyrotonic session (after H1 review clears)
-- [ ] Research Fighting Monkey + Celeste Pereira operating models — how did they build body knowledge → income? (from: [[Life_Design_Coaching_Transcript]])
+- 完成 DYL Structured Summary — Odyssey Plans 架构冷凝，当前处于 Steps 6-7（原型实验阶段）
+- 预订 Iyengar Yoga Institute Amsterdam 工作坊 — 身体知识实践入口（after training exits hyper-controlled phase）
+- 预订 Studio Anna Mora Gyrotonic 1-on-1 — 身体教育探索
+- Fighting Monkey + Celeste Pereira 研究 — 独立实践者运营模式调研
 
+---
+
+## Decisions
+
+<!-- Populate after coaching sessions -->
+
+---
+
+## Archived: Detailed Next Steps
+
+*Previous next steps preserved for alignment verification.*
+
+- [ ] ~~Build structured DYL summary doc~~ → DYL Structured Summary
+- [ ] ~~Book Iyengar Yoga Institute workshop~~ → 预订 Iyengar 工作坊
+- [ ] ~~Book Studio Anna Mora Gyrotonic~~ → 预订 Gyrotonic 1-on-1
+- [ ] ~~Research Fighting Monkey + Celeste Pereira~~ → 运营模式调研
 ## Key Files
 
 - [[Life_Design_Coaching_Transcript]] — full DYL coaching session

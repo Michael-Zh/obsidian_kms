@@ -1,13 +1,14 @@
 ---
 name: Road_to_2040_Investment_Blueprint
-status: parked
+status: active
 pillar: Finance
 current_focus: "System fully operational — automated waterfall cashflow + 3-tier architecture running. Quarterly net worth reviews only. Next: Q3 Net Worth Update."
 created: 2026-04-15
-updated: 2026-07-21
+updated: 2026-07-24
 target_completion: 2040-12-31
 priority: P3
-tags: [Finance]
+tags:
+  - Finance
 ---
 # Road to 2040 Investment Blueprint
 
@@ -86,3 +87,17 @@ Automated monthly flow:
 ---
 
 *Full decision log, quarterly reviews, and closed decisions: see `_Road_to_2040_trial_log.md`.*
+
+
+## Strategic Direction
+
+- 保持 automated waterfall cashflow + 3-tier architecture 运转
+- Quarterly net worth review only — 下次: Q3 2026
+- 无需 active management — Tier 2/3 规则驱动（[[Daily_Tactical_SOP]]）
+- 长期: 维持 Barista FIRE trajectory toward 2040 target
+
+---
+
+## Decisions
+
+- **2026-07-24:** Status changed from parked → active P3. System fully operational — passive monitoring only.

@@ -13,37 +13,46 @@ Finalized template structure for managing projects in your KMS.
 
 ```
 /04_project/[ProjectName]/
-├── _[ProjectName]_overview.md      ← Main project file (status, roadmap, decisions)
-├── _[ProjectName]_trial_log.md     ← Constantly updated experiments log
-└── _[ProjectName]_*.md             ← Additional files (appendices, research, etc.)
+├── [ProjectName].md                ← Main project file (status, strategy, decisions)
+├── [ProjectName]_trial_log.md     ← Constantly updated experiments log
+└── [ProjectName]_*.md             ← Additional files (appendices, research, etc.)
 ```
+
+**Important:** The main file MUST be named `[ProjectName].md` (matching the directory name exactly). This is what `re-sync` reads to push project state into the App.
 
 **Example:**
 ```
 /04_project/Analytics_Strategist_Skill/
-├── _Analytics_Strategist_Skill_overview.md
-├── _Analytics_Strategist_Skill_trial_log.md
-└── _Analytics_Strategist_Skill_research.md
+├── Analytics_Strategist_Skill.md
+├── Analytics_Strategist_Skill_trial_log.md
+└── Analytics_Strategist_Skill_research.md
 ```
 
 ---
 
-## File 1: Project Overview (`_[ProjectName]_overview.md`)
+## File 1: Project Overview (`[ProjectName].md`)
 
-**Purpose:** Single source of truth for project status, progress, decisions, roadmap.
+**Purpose:** Single source of truth for project status, strategy, decisions, roadmap.
 
-**Sections (9 total):**
+**Sections (11 total):**
 1. **YAML Frontmatter** — Metadata (name, status, pillar, current_focus, dates, priority, tags)
 2. **Overview** — What is this project? Why does it matter? How does it connect to broader vision?
 3. **Context & Background** — What led to this? Trigger, assumptions, constraints, prior work
 4. **Objectives & Goals** — How will you measure success? What are the main goals?
 5. **Roadmap** — Flexible: "Modules & Roadmap" (product) OR "Research Questions/Topics" (research)
-6. **Next Steps** — What can you start doing and prioritize now?
+6. **Strategic Direction** — 3-5 strategic-level direction statements. Synced to App as `next_actions`.
 7. **Open Decisions/Questions** — Decisions pending, blockers, constraints
-8. **Accomplishments** — What's already done? Track progress here
-9. **Connections** — Parent pillar, related quests, coaching sessions, projects
+8. **Decisions** — Major coaching decisions with dates and rationale
+9. **Accomplishments** — What's already done? Track progress here
+10. **Connections** — Parent pillar, related quests, coaching sessions, projects
+11. **Archived: Detailed Next Steps** — Previous detailed tasks, kept temporarily for alignment verification
 
-**Context & Background Section (NEW):**
+**Key Design Principle:** KMS = Strategy Layer. App = Execution Layer.
+- `## Strategic Direction` in KMS → synced as `next_actions` in App → used for backlog diff
+- Individual task tracking lives in App's `priming_backlog`, NOT in KMS
+- After coaching sessions: update `## Strategic Direction` + `## Decisions` in KMS; use Backlog Sync to push tasks to App
+
+**Context & Background Section:**
 
 Purpose: Capture the origin story and foundational context of the project. Helps you remember WHY you started this and identify blind spots/assumptions early.
 
@@ -125,7 +134,7 @@ The Roadmap section adapts based on project type:
 - After each phase completion
 - Anytime you have a learning or insight
 - When decisions are made (document the decision and rationale here, linked to the experiment)
-- When you update trial log with decisions, also update the corresponding sections in the overview (Next Steps, Open Decisions, or Accomplishments)
+- When you update trial log with decisions, also update the corresponding sections in the overview (Strategic Direction, Decisions, or Accomplishments)
 
 **Trial Log Entry Format:**
 | Date | Experiment | Result | Learning | Decision (if any) |
