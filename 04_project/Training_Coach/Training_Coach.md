@@ -194,3 +194,19 @@ _2026-07-25 更新（Session 32）_
 - `POST /api/context/re-sync` — 新格式（Strategic Direction headings、`[ ]` strip）是否正确解析 next_actions
 - `POST /api/backlog/review/cc` — preview + apply 完整流程
 - Priming Stale Review 面板 — 三栏 diff 与新 strategic direction 对齐
+
+---
+_2026-07-26 更新（Session 33-34）_
+
+**新增 / 变更：**
+- **Review 面板重构** — 从底部 fixed overlay 改为内联卡片，与 Backlog 面板同位置 toggle；Review 按钮只在有 pending changes 时出现（橙色 pill，挂载时静默检查）
+- **re-sync dual auth** — service role key OR session cookie，CC session 可通过 Bearer token 直接调用
+- **Middleware bypass** — `/api/context/re-sync` + `/api/backlog/review/cc` 跳过 session auth
+- **Dashboard 图表 7-day moving average** — Energy/Stress + Sleep/Recovery 用 centered MA（±3 天窗口，min 2 数据点）平滑 daily noise
+- **KMS H1 wikilink strip** — Training_program、Strategic_relationship_audit、Skincare_Routine 三个文件 `# [[...]]` → `# ...`
+
+**Backlog 更新：**
+- Review UI 重构 ✅ Done
+- Schedule Coaching → Drop（App Schedule 面板 + CC /schedule-week 已覆盖）
+- Web Push → Defer（无 killer use case）
+- 当前 P1：Review 每个 project 确保最新状态 → Backlog 重构
