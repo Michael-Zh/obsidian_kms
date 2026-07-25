@@ -11,7 +11,7 @@ priority: P3
 tags: [PhysicalHealth]
 ---
 
-# [[Hybrid Athlete OS: Danseur Noble Master Ecosystem]]
+# Hybrid Athlete OS: Danseur Noble Master Ecosystem
 
 ## Overview
 
@@ -149,7 +149,7 @@ What's already been completed or achieved in this project.
 
 ## Connections
 
-**Parent Pillar:** [[PhysicalHealth]]
+**Parent Pillar:** [[PhysicalHealth)
 
 **Related Pages:**
 - [[Movement & Dance]] — Ballet, jazz, ashtanga practice

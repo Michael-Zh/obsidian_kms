@@ -12,7 +12,7 @@ tags:
   - PhysicalHealth
 ---
 
-# [[Anti-Aging Skincare Optimization: Home + Travel]]
+# Anti-Aging Skincare Optimization: Home + Travel
 
 ## Overview
 
