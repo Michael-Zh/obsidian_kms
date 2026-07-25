@@ -1,0 +1,19 @@
+04_project/Strategic_relationship_audit/Strategic_relationship_audit.md
+  s_1cbda756453028::t_fe2f44c52d5b56 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.34-trip",
+  "base_commit_sha": "03e0ef86f442040c471c07ee2c5a58ae2594484f",
+  "prompts": {},
+  "sessions": {
+    "s_1cbda756453028": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5f8a3234-80e4-4836-ac3c-9bbbac31b868",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
