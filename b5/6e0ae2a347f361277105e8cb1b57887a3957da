@@ -1,0 +1,19 @@
+04_project/Training_Coach/Training_Coach.md
+  s_1cbda756453028::t_019fb1457fe0ad 197-212
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.34-trip",
+  "base_commit_sha": "b56e0ae2a347f361277105e8cb1b57887a3957da",
+  "prompts": {},
+  "sessions": {
+    "s_1cbda756453028": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5f8a3234-80e4-4836-ac3c-9bbbac31b868",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
