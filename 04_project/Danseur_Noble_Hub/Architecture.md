@@ -128,9 +128,7 @@ Epley 公式（`weight × (1 + reps/30)`），排除 deload session 的历史记
 ```
 KMS GitHub API:
   ├─ _POS.md（个人操作系统）
-  ├─ _priority.md（当前优先级）
-  ├─ 01_raw/coaching/ 最新 coaching 文件
-  └─ project_overview.md（Active Projects + Backlog Ideas）
+  ├─ _priority.md（优先级 + 项目全景）
 
 Supabase:
   ├─ daily_metrics（今日睡眠/精力数据）

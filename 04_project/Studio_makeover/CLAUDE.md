@@ -79,7 +79,7 @@ _Forward-looking references (pages that don't exist yet but could be relevant):_
 - `[[Home_Aesthetic_Principles]]` — would house the Museum Rule, style principles, and decision frameworks
 - `[[Plant_Care_System]]` — plants audit was split out as a separate project idea (see Other Pending Items)
 
-## Other Pending Items (from project_overview)
+## Other Pending Items (from _priority.md)
 
 - **Plants audit project** — Audit current plant conditions and make necessary changes. Flagged as a separate project idea to formalize when ready. For now, repotting is embedded in Phase 2 of this project.
 - No other Studio_makeover items in the bored backlog.
@@ -120,4 +120,4 @@ You are acting as a **thought partner and project coach** for this home renovati
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `project_overview.md` 里 [[Studio_Makeover]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新时，同步更新 `00_system/_priority.md` 里 [[Studio_Makeover]] 行的 Current Focus + Updated 字段。

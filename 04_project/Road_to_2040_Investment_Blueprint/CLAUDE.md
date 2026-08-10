@@ -53,4 +53,4 @@ You are acting as a **financial systems architect and analyst**. Your role is to
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新时，同步更新 `project_overview.md` 里 [[Road_to_2040_Investment_Blueprint]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新时，同步更新 `00_system/_priority.md` 里 [[Road_to_2040_Investment_Blueprint]] 行的 Current Focus + Updated 字段。

@@ -56,7 +56,7 @@ Detailed designs live in:
 
 ---
 
-## Other Pending Items (from project_overview)
+## Other Pending Items (from _priority.md)
 
 - **Naval's Almanack as KMS skill** — Convert Naval Ravikant's decision-making prompts into a reusable Claude skill. Trigger: July 2026, low priority, quiet slot. (ref: [[coaching_20260530]])
 - **Xiaohongshu Content Series** — Share KMS journey + movement/body tips; defer until KMS MVP validated. Related: [[Content-Creator-and-Entrepreneurship-Ideas]]
@@ -74,7 +74,7 @@ Timeless synthesis. "What do I know about X?" AI-generated. 5 page types: concep
 **Layer 3 — Morning Priming** (`/03_priming/`)
 HTML card output from the `/priming` skill. Dated, self-contained.
 
-**The bridge:** `project_overview.md` — durable project landscape (active + backlog + ideas).
+**The bridge:** `_priority.md` — durable project landscape (priorities + active projects + ideas).
 
 **Key architectural insight:** Annotation IS the routing logic. Add `annotation:` to a file's YAML → it gets processed. Coaching files are always processed (no annotation gate). No database, no explicit routing rules.
 
@@ -118,7 +118,7 @@ HTML card output from the `/priming` skill. Dated, self-contained.
 | `02_wiki/LifeManagement/Information-Overload.md` | Problem definition; ideal pipeline; capture friction points |
 | `01_raw/_watchlist.md` | Current watchlist; check for `process+done` items ready for annotation |
 | `01_raw/coaching/coaching_YYYYMMDD.md` | Past coaching sessions — all unified here now |
-| `04_project/project_overview.md` | Full active project landscape and backlog |
+| `00_system/_priority.md` | Full active project landscape, priorities, and backlog ideas |
 
 ---
 
@@ -151,4 +151,4 @@ You are acting as a **thought partner and analyst** for the KMS / Life_Managemen
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `project_overview.md` 里 [[Life_Management_System]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新时，同步更新 `00_system/_priority.md` 里 [[Life_Management_System]] 行的 Current Focus + Updated 字段。

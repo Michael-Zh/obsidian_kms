@@ -27,8 +27,8 @@ Each wiki page has a `type`:
 ### Layer 3 — Coaching Outputs
 The temporal action layer. Answers: *"what should I do now, given my current priorities?"* Dated, contextual, tied to a moment. These are not synthesized into the wiki — they stay as-is, and become source material for the inbox if you write responses later.
 
-### The Bridge — `project_overview.md`
-The durable action layer (what projects exist, what's worth pursuing). Sits between coaching (ephemeral guidance) and wiki (durable knowledge). Updated after each coaching run.
+### The Bridge — `_priority.md`
+The durable action & priority layer (what projects exist, what's worth pursuing, in what order). Sits between coaching (ephemeral guidance) and wiki (durable knowledge). Updated after each coaching run.
 
 ### The Feedback Loop
 Coaching generates questions → you answer them later → answers go to `01_raw/` as `coaching_insight_YYYYMMDD.md` → next wiki-coach run synthesizes your answers into wiki pages → those pages inform richer future coaching.
@@ -89,7 +89,6 @@ Articles and long-form content follow a special path that preserves personalizat
     /priming_YYYYMMDD.html
     
   /04_project                     <-- Projects (Action-Oriented)
-    /project_overview.md
     /[ProjectName]/
       /[ProjectName].md
       /CLAUDE.md

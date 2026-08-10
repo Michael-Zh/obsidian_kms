@@ -102,7 +102,7 @@ Elite body recomposition protocol for a 36-year-old male dancer (187cm), targeti
 
 ---
 
-## Other Pending Items (from project_overview)
+## Other Pending Items (from _priority.md)
 
 - **Brain dump ritual tracking** — Started 2026-05-10; track sleep quality over 4 weeks to confirm impact. Related: [[Sleep-Optimization-Routine]], [[Energy-Management]]
 - **Exercise → next-day energy tracking** — 4-week data collection; 1–5 scale for exercise intensity and next-day energy. Question: is the crash driven by sleep quality, nutrition, intensity, or recovery gap? Related: [[Fitness-Routine]], [[Energy-Management]]
@@ -192,4 +192,4 @@ You are acting as a **thought partner and analyst** for this project. Your role 
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `project_overview.md` 里 [[Training_Program]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新时，同步更新 `00_system/_priority.md` 里 [[Training_Program]] 行的 Current Focus + Updated 字段。

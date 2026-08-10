@@ -44,7 +44,7 @@ You are acting as a **thought partner and analyst** for this project. Your role 
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新时，同步更新 `project_overview.md` 里 [[Flight_Upsell]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新时，同步更新 `00_system/_priority.md` 里 [[Flight_Upsell]] 行的 Current Focus + Updated 字段。
 
 ---
 
