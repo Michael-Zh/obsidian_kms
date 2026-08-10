@@ -19,11 +19,11 @@ Vault: /Users/michael_zhang/Library/Mobile Documents/iCloud~md~obsidian/Document
 Context files:
   00_system/_POS.md
   00_system/_priority.md
-  04_project/Training_program/sleep_log.md
+  04_project/Training/sleep_log.md
   01_raw/coaching/coaching_YYYYMMDD.md    ← all coaching sessions (unified)
 
 Calendar script:
-  04_project/Training_program/training-calendar-scheduler/calendar_scheduler_v3.py
+  04_project/Training/training-calendar-scheduler/calendar_scheduler_v3.py
 
 Output targets:
   01_raw/_daily_note/YYYY-MM-DD.md           ← append priming block
@@ -50,7 +50,7 @@ Load in this order:
 3. **`sleep_log.md`** — read the most recent entry only (last AutoSleep block at the top of file)
 4. **Calendar — today's events:**
    ```bash
-   python3 "[vault]/04_project/Training_program/training-calendar-scheduler/calendar_scheduler_v3.py" --today
+   python3 "[vault]/04_project/Training/training-calendar-scheduler/calendar_scheduler_v3.py" --today
    ```
    Returns JSON with `training_events` and `main_events` for today.
 5. **Most recent coaching session** — find the latest `coaching_YYYYMMDD.md` in `01_raw/coaching/` by date → read the Open Items and Experiment Checklist sections only

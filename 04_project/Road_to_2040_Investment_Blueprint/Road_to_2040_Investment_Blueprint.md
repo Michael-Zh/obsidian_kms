@@ -2,11 +2,11 @@
 name: Road_to_2040_Investment_Blueprint
 status: active
 pillar: Finance
-current_focus: "System fully operational — automated waterfall cashflow + 3-tier architecture running. Quarterly net worth reviews only. Next: Q3 Net Worth Update."
+current_focus: "System operational — automated waterfall + 3-tier running. Net worth update frequency TBD. AI market monitoring under development. Q4 tax optimization."
 created: 2026-04-15
-updated: 2026-07-24
+updated: 2026-08-09
 target_completion: 2040-12-31
-priority: P3
+priority: P2
 tags:
   - Finance
 ---
@@ -62,22 +62,13 @@ Automated monthly flow:
 
 ---
 
-## Next Action Gates
+## Current Focus
 
-- [ ] **July 1, 2026:** Q3 Net Worth Quarterly Update — see `Road_to_2040_Investment_Blueprint_networth.md`
-- [ ] **Before July 1:** Stress-test Bucket 1 against 5-year rule: any cash accidentally drifting toward equity risk?
-- [ ] **Ongoing:** Open Brand New Day Box 1 account to catch capital spilling over €57,684 Box 3 threshold.
-- [ ] **October 2026:** Peildatumarbitrage math re-evaluation.
-- [x] Write IWDA anchor paragraph in trial log — done 2026-06-22. See `_Road_to_2040_trial_log.md`.
-
----
-
-## Open Decisions
-
-- [ ] **Target annual spend in retirement** — review whether current €684k target is realistic.
-- [ ] **Car strategy: Lease vs. Buy** — Option A: 50/50 private lease with partner (preserves €18.5k). Option B: outright purchase (€18.5k capital drain). Recommendation: Lease.
-
----
+- 大部分 setup 已完成 — automated waterfall + 3-tier 已在运行，无需频繁主动管理
+- 三个待推进方向：
+  1. 确定 Net Worth 更新频率（目前不确定多 often 才合理）
+  2. AI 投资监控系统 — 利用 AI 结合固定策略观察市场，寻找中短线投资时机
+  3. Q4 合理避税讨论 — 届时集中处理 Box 3 / Peildatumarbitrage
 
 ## Connections
 
@@ -91,13 +82,14 @@ Automated monthly flow:
 
 ## Strategic Direction
 
-- 保持 automated waterfall cashflow + 3-tier architecture 运转
-- Quarterly net worth review only — 下次: Q3 2026
-- 无需 active management — Tier 2/3 规则驱动（[[Daily_Tactical_SOP]]）
-- 长期: 维持 Barista FIRE trajectory toward 2040 target
+- Net Worth 更新频率 — TBD，需要确定合理节奏
+- AI 投资监控系统 — 建立 AI-assisted 市场观察 + 投资决策辅助
+- 长线 EUNL 定投保持 automated，不需要关注
+- Q4 tax optimization review — Peildatumarbitrage + Box 1 pension 策略
 
 ---
 
 ## Decisions
 
 - **2026-07-24:** Status changed from parked → active P3. System fully operational — passive monitoring only.
+- **2026-08-09:** Priority P3 → P2（重要但不紧急，大部分 setup 已完成）。Current focus 调整为：net worth 更新频率 TBD、AI 投资监控系统开发、Q4 tax optimization review。

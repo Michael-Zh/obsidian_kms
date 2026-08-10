@@ -1,12 +1,12 @@
 ---
 name: Strategic_relationship_audit
-status: parked
+status: active
 pillar: Relationships
-current_focus: "On hold — 推迟到 8 月底/9 月。Madrid 关键数据已沉淀（ENM 单向→双向探索，FOMO/safety 模式），见 coaching docs。October gate: Jeroen 公寓 → cohabitation/ENM/kids in Q4."
+current_focus: "9 月开始讨论。October gate: Jeroen 公寓 → cohabitation/ENM/kids in Q4。"
 created: 2026-04-01
-updated: 2026-07-24
+updated: 2026-08-09
 target_completion: 2026-12-31
-priority: P3
+priority: P2
 tags:
   - Relationships
   - MindMentalHealth
@@ -85,11 +85,16 @@ Transition from a 3-year "weekend" partnership to high-integrity cohabitation th
 
 ## Strategic Direction
 
-*On hold — 推迟到 8 月底/9 月。*
+9 月重新启动讨论，基于 Madrid 数据更新框架。
 
-- Internal Audit (Q1) — Confirm collector drive trend; Madrid data suggests natural curiosity rather than relationship avoidance
-- ENM framework disclosure (Q3) — Prepare and execute disclosure conversation; October gate: Jeroen 公寓
-- Kids deadline (Q2) — Binary Yes/No by mid-2026
+核心 backlog：
+
+- Internal Audit — 确认 collector drive 趋势：纯好奇心 vs. 关系补偿（Madrid 数据已提供初步信号）
+- ENM disclosure 准备 — 设计披露对话脚本；October gate: Jeroen 公寓，对话质地已从 asking permission → shared territory
+- Kids binary decision — 从 Unsure 推进到 Yes/No
+- ENM traffic light protocol — 参考 Niko's model，October 前设计 green/yellow/red 参数
+- Relationship Hardware Checklist — 从 coaching sessions 提取 non-negotiable 伴侣要求
+- Cohabitation spec — 同居设计任务（novelty vs BDSM two-categories clarity 是前提）
 
 ---
 
@@ -98,69 +103,7 @@ Transition from a 3-year "weekend" partnership to high-integrity cohabitation th
 *Major coaching decisions related to relationship strategy.*
 
 - **2026-07-09:** Madrid data — ENM from one-way to two-way exploration (Jeroen tried hookup, positive signal); FOMO/safety pattern identified (can't say no to friendly people). October conversation's emotional texture shifted: no longer "asking permission", more shared territory.
-
----
-
-## Archived: Detailed Next Steps
-
-*Previous next steps preserved for alignment verification. Replaced by ## Strategic Direction above.*
-
-<details>
-
-**Immediate priorities (archived):**
-- [ ] **Internal Audit (Q1)** — Confirm your "collector" drive trend; is it natural fade or compensation for home deficit?
-- [ ] **Self-Mapping Exercise** — Document "Safe Touch Zones" and time caps with partner (Exercise A: Empathetic Mirror)
-- [ ] **Prepare Disclosure Script** — Draft "I Statement" opening: "I want to move in with zero secrets so I can be 100% present with you"
-
-**Near-term (Next 2-3 weeks):**
-- [ ] **Disclosure Meeting (Q3)** — Present ENM framework; use Decision Matrix to gauge response type
-- [ ] **TMI Threshold Definition (Q2)** — If partner interested, negotiate Option A (Full Data) vs. Option B (Need-to-Know)
-- [ ] **SLA Draft (Phase 3)** — Document scope, frequency, communication, re-entry protocol if partner approves
-
-**Decision gates:**
-- [ ] **After Disclosure:** Partner response = "Yes + SLA Interest" (proceed) / "No + Solution Oriented" (stay) / "Compliance" (pause) / "Double No" (no-go)
-- [ ] **Kids Deadline (Q2):** Move from "Unsure" to binary "Yes/No" by 2026-06-30
-
-**Future design tasks (backlog):**
-- [ ] **Relationship Hardware Checklist** — Draft a structured checklist of non-negotiable partner requirements (physical, cultural, life-vision) from past coaching sessions and daily notes. (ref: [[coaching_discussion_20260530]], [[coaching_session_20260305]])
-- [ ] **ENM traffic light protocol design** — Define personal green/yellow/red parameters based on Niko's model. Design before October 2026 Jeroen apartment conversations. (ref: [[coaching_discussion_20260530]], [[coaching_session_20260516]])
-- [ ] **Cohabitation spec** — Moving-in-together design task; two-categories (novelty vs BDSM) clarity is prerequisite. (ref: [[coaching_session_20260530]])
-
----
-
-## Open Decisions/Questions
-
-Decisions to be made, blockers to resolve.
-
-### Decisions Pending
-
-- [ ] **Should you disclose before or after moving in?** → Target date: 2026-05-15
-  - Option A: Disclose now (3 months before move, allows adjustment time)
-  - Option B: After move (leverage new intimacy of cohabitation first)
-  - Recommendation: Option A (transparency principle; avoids "hidden data set" stress)
-
-- [ ] **What happens if partner says "No" to ENM?** → Target date: 2026-06-01
-  - Option A: Stay and iterate on internal solutions (e.g., he tries topping; you explore new positions)
-  - Option B: Monogamy non-negotiable; accept his boundary
-  - Option C: Stay as weekend partners; don't move in
-
-- [ ] **How many months to test ENM before kids decision?** → Target date: 2026-05-20
-  - Suggested: 2-3 months after SLA agreement to see if system holds
-
-### Blockers
-
-- **No current blockers** — All phases unblocked; ready to start Internal Audit this week
-
----
-
-## Accomplishments
-
-What's already been completed or achieved in this project.
-
-- **Context & Archetype Analysis (✅):** Deep dive on INTP/ISFJ personality dynamics completed
-- **Mismatch Inventory (✅):** Identified 4 core mismatches (physicality, sexuality, curiosity, future)
-- **Strategic Framework (✅):** ENM SLA concept designed with scope, frequency, communication rules
-- **Decision Matrix (✅):** Created response scenarios (Yes/No/Compliance/Double-No) and action paths
+- **2026-08-09:** Re-activated — 9 月开始讨论。Core backlog updated with 6 items based on Madrid data insights.
 
 ---
 
@@ -182,26 +125,6 @@ What's already been completed or achieved in this project.
 ---
 
 **Note:** Learnings are documented in `_Strategic_relationship_audit_trial_log.md`. This overview focuses on strategic framework and next actions.
-
----
-
-## Suggested Edits for Template Alignment
-
-### What Changed:
-1. ✅ **Header:** Corrected pillar (Relationships, not "Relationship"); added cross-pillar tag (MindMentalHealth)
-2. ✅ **Restructured as Research-Driven:** Changed from "Roadmap (narrative)" to "Research Questions/Topics (table with priority/dependencies)"
-3. ✅ **Simplified Sections:** Removed detailed "Context & Archetype Analysis", "Mismatch Inventory" (moved to Accomplishments as research outputs)
-4. ✅ **Reframed Exercise A & B:** Changed from "Cognitive Exercises" to "Next Steps" (actionable)
-5. ✅ **Extracted Decision Matrix:** Moved from body section to "Open Decisions/Questions" as decision logic
-6. ✅ **Clarified Goals:** 3 focused goals instead of narrative
-7. ✅ **Added Trial Log Note:** Learnings belong in trial log, not overview
-
-### For Trial Log:
-- Create `_Strategic_relationship_audit_trial_log.md` 
-- Purpose: "Testing whether ENM framework can resolve cohabitation mismatches"
-- Log experiments: Internal audit results, disclosure meeting outcome, SLA negotiations
-- Track: Partner responses to each phase, emotional reactions, decision points
-
 
 
 ## Three-Category Needs Taxonomy

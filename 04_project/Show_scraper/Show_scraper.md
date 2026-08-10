@@ -1,10 +1,10 @@
 ---
 name: Show Scraper
 pillar: CreativityCuriosity
-status: active
+status: parked
 created: 2026-06-12
-updated: 2026-07-24
-description: Automated show discovery — wearepublic.nl scraper (Phase 1 complete); Phase 2 multi-source expansion
+updated: 2026-08-09
+description: Automated show discovery — Phase 1 (wearepublic.nl) complete. Parked until Q4 2026 for Phase 2 multi-source expansion.
 priority: P3
 ---
 
@@ -22,11 +22,15 @@ Python scraper tracking keywords (NDT, Introdans, Scapino, Club Guy, Carré) + 1
 
 Collect shows from additional internet sources beyond wearepublic.nl.
 
+## Current Status
+
+Parked — Phase 1 已完成并运行中。Phase 2 推迟到 Q4 2026，低优先级。
+
 ## Strategic Direction
 
-- 识别额外来源 — 场地官网、其他聚合器、社交媒体渠道
-- Phase 2 架构设计 — 多源统一输出格式
-- 去重逻辑评估 — 同一演出在多源重复出现时的处理方案
+- Phase 1 保持运行即可，无需主动管理
+- Q4 评估是否推进 Phase 2（多源扩展 + 去重逻辑）
+- 低优先级 — 当前有更重要的项目需要推进
 
 ---
 

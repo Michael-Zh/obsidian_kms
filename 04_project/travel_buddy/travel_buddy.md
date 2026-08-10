@@ -1,6 +1,8 @@
 ---
 project_id: pj0008
-updated: 2026-07-24
+updated: 2026-08-09
+status: parked
+priority: P3
 ---
 
 # Travel Buddy
@@ -44,11 +46,18 @@ MVP in progress（localStorage 方案）。与 Vibe Coding Tool 同 repo，路�
 _代码已移出 vault。此文件每次开发会话结束后同步更新。_
 
 
+## Current Status
+
+Parked — 不是当前最紧急的项目。下次 travel 之前重新 review 是否需要继续开发。
+
 ## Strategic Direction
+
+保留的 valid backlog（下次恢复时讨论）：
 
 - App 完成 Plan & Adjust 核心流 — 行程创建 + 实时调整
 - Reflect & Review 模块 — 行后评分 + 笔记回流
 - Backlog / Inspiration Pool — 城市标签、来源追踪、状态管理
+- Post-MVP：Supabase 持久化、Reflect 模块、离线支持
 - P3 优先级 — 有空时推进，非 urgent
 
 ---

@@ -4,7 +4,7 @@ status: active
 pillar: LifeManagement
 current_focus: 通过实践学习——自定义 App 开发（Training Coach App）+ Claude Code 深度使用。超体 program 作为理论框架。想法沉淀到 Wiki，不单独追踪项目。
 created: 2026-06-12
-updated: 2026-07-24
+updated: 2026-08-09
 priority: P1
 tags:
   - LifeManagement
@@ -21,11 +21,44 @@ AI learning 的主要方式是通过**实践**—目前的核心实践是搭建�
 
 ## Learning Pipeline
 
-| Program | Status | URL | Focus |
-|---------|--------|-----|-------|
-| **超体 (Harness AI × Harness Self)** | 🔄 Started 2026-06-12 | — | AI systems design, self-management, vibe coding |
-| **Anthropic Academy** | ⬜ Next | https://anthropic.skilljar.com/ | Claude API, prompt engineering, agent design |
-| **Harvard CS50** | ⬜ Queued | https://www.edx.org/cs50 | Computer science foundations |
+### 🔄 超体 (Harness AI × Harness Self)
+- **Started**: 2026-06-12
+- **Total chapters**: 18
+- **Current progress**: Chapter 5 (未开始)
+- **Pace**: 2 chapters/week, starting this week (2026-08-09)
+- **Target completion**: ~9 weeks, around mid-October 2026
+
+**Backlog**:
+- Chapter 1–4 — 已完成
+- Chapter 5 — 本周开始
+- Chapter 6
+- Chapter 7
+- Chapter 8
+- Chapter 9
+- Chapter 10
+- Chapter 11
+- Chapter 12
+- Chapter 13
+- Chapter 14
+- Chapter 15
+- Chapter 16
+- Chapter 17
+- Chapter 18
+
+### ⬜ AI 时代 IP 变现（直播课）
+- **Lessons**: 3 课
+- **Pace**: 一周内完成
+- **Status**: Backlog — 超体完成后开始
+
+### ⬜ Anthropic Academy
+- **URL**: https://anthropic.skilljar.com/
+- **Focus**: Claude API, prompt engineering, agent design
+- **Status**: Backlog — AI 时代 IP 变现完成后开始
+
+### ⬜ Harvard CS50
+- **URL**: https://www.edx.org/cs50
+- **Focus**: Computer science foundations
+- **Status**: Queued — Anthropic Academy 完成后开始
 
 ## Work Application Tracks (Active Projects)
 
@@ -38,10 +71,12 @@ The Life Management System — already built and running. The 超体 program wil
 
 ## Strategic Direction
 
-- 超体 program 作为理论框架 — 完成课程并通过实践（Training Coach App）内化认知升级
+- 超体 — 一周两章持续推进（Ch5–Ch18），预计 2026年10月中旬完成
+- AI 时代 IP 变现（3课）— 超体完成后一周内完成
+- 之后依次进入 Anthropic Academy → CS50
 - Flight upsell AI 分析 — 建立 BQ 数据分析能力，形成可复用的商业分析 pattern
-- Anthropic Academy 准备 — 超体完成后进入，提前熟悉 Claude API 和 agent 设计
 - 实践驱动学习 — 每个学习目标绑定一个 build project，输出 > 输入
+- Learning Log 在其他地方体现，不在此文件记录
 
 ---
 

@@ -172,7 +172,8 @@ FBU 有方向（并排比较、权益筛选、总成本展示、核心权益前�
 
 **FBU H2 OKR 参考文档（已获取）：**
 - [[FBU H2 Upsell 项目文档]]（Vivi 维护，v2.2, Jul 9）— 整体战略转向："供给侧补货"→"表达侧提效 + 动机侧强化"
-- [[Flight User Product Team H2 OKRs]]（丁一团队，Jul 2026）— 前端五个 O，关键 owner：Jessie Li（upsell KR1）、Doris（O2 运卡表达）、孙爽（post-booking/cross-sell）
+- Flight User Product Team H2 OKRs（丁一团队，Jul 2026，权威 O1–O5 含 KR 与 owner）— https://trip.larkenterprise.com/docx/RD7hdAzmZoAnU9xwt5aczLffnPb
+- **OKR 关键发现：** O4-KR3 mention refund/change policy display mid-tier（孙爽 own KR3，但 mid-tier 标注 multiple owners）；void/24h 实际 owner 可能在中台侧而非孙爽
 - [[Non-Lowest-Price Fare Option — User Research Report · UK & SG]]（Jul 2026，n=707）— 用研验证："不值"是 #1 障碍，87% 用户想要 upfront add-on cost estimate
 
 **FBU OKR review 关键发现：**

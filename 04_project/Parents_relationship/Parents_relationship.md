@@ -3,11 +3,11 @@ name: Parents_relationship
 project_id: pj0003
 status: active
 pillar: Relationships
-current_focus: "Phase 1: 从 CT intensive 开始分享安全层内容"
+current_focus: "Phase 1: 计划 9 月开始 kick off — 从 CT intensive 体验开始做第一次安全层分享"
 created: 2026-07-01
-updated: 2026-07-24
-target_completion: 2026-09-30
-priority: P1
+updated: 2026-08-09
+target_completion: 2026-12-31
+priority: P2
 tags:
   - Relationships
   - MindMentalHealth
@@ -43,8 +43,8 @@ tags:
 
 ## Objectives & Goals
 
-- **Goal 1（Phase 1 — 现在到 8 月）：** 建立「安全层分享」的 communication loop——至少 2-3 次有意义的分享，让他们看到我在过一个充实、快乐的生活
-- **Goal 2（Phase 2 — 8 月以后）：** 逐步扩大可分享范围，建立更自然的沟通频率
+- **Phase 1（9 月开始）：** 建立「安全层分享」的 communication loop — 从 CT intensive 体验开始，2-3 次有意义的分享，让他们看到我在过一个充实、快乐的生活
+- **Phase 2（Phase 1 完成后）：** 逐步扩大可分享范围，建立更自然的沟通频率
 - **Goal 3（长期）：** 父母能够在情感上接纳真实的我（包括取向和生活方式），形成相互理解而非相互担心的关系
 
 ## 关键障碍
@@ -55,9 +55,9 @@ tags:
 
 ## 下一步
 
-- [ ] 从 CT intensive 开始分享 — 第一段内容（发生了什么、学到什么、感受是什么）
-- [ ] 设定合理预期 — 不要期待立刻得到理想回应；他们的第一反应可能平淡
-- [ ] 建立节奏 — 不用每次沟通都刻意深度，但也不逃避真实内容
+- 9 月开始第一次安全层分享 — CT intensive 体验（发生了什么、学到什么、感受）
+- 设定合理预期 — 不期待立刻得到理想回应，第一反应可能平淡
+- 建立节奏 — 不用每次沟通都刻意深度，但不逃避真实内容
 
 ---
 
@@ -96,10 +96,11 @@ tags:
 
 ## Strategic Direction
 
-- Phase 1: 从 CT intensive 开始分享安全层内容 — 建立"可以谈真实的我"的沟通基础
+- Phase 1: 9 月开始 kick off — 从 CT intensive 体验开始分享安全层内容，建立沟通基础
 - Phase 2: 扩展分享范围 — 舞蹈训练、展览、旅行等充实生活的侧面
 - Long-term: 渐进打开取向话题 — 需要耐心，不触碰敏感话题
-- 核心原则: 说完给时间，不追着解释，不道歉，不收回。动机已从"寻求认可"转为"分享真实快乐"
+- Target completion: 2026 年底
+- 核心原则: 说完给时间，不追着解释，不道歉，不收回
 
 ---
 

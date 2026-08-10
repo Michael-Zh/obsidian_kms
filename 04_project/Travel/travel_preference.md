@@ -195,7 +195,7 @@ Once an itinerary is finalised, push it to Google Calendar using the sync script
 ```
 
 Script pattern (reusable for future trips):
-- Auth shared with `Training_program/training-calendar-scheduler/` (same `google_oauth_credentials.json` + `.google_token.pickle`)
+- Auth shared with `Training/training-calendar-scheduler/` (same `google_oauth_credentials.json` + `.google_token.pickle`)
 - Events tagged with a trip-specific tag (e.g. `#madrid-2026`) for safe identification
 - **Idempotent**: creates new events, updates changed ones, deletes stale ones — safe to re-run after itinerary edits
 - `--dry-run` flag previews changes without modifying calendar

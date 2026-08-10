@@ -52,7 +52,7 @@ Show the current state of all active projects in a single view:
 | Project | Status | Focus | Priority | Last Updated |
 |---------|--------|-------|----------|--------------|
 | [[AI_assistant]] | active | Phase 2.1 | P1 | 2026-05-09 |
-| [[Training_program]] | active | Recomposition | P2 | 2026-05-06 |
+| [[Training_Program]] | active | Recomposition | P2 | 2026-05-06 |
 | ...
 
 ## Ideas Ready to Become Projects (from _in_case_you_are_bored)

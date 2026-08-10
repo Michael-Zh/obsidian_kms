@@ -11,8 +11,8 @@ Given one or more sources already in the KMS vault, load full context and return
 
 Examples:
 - `/quick-read 如何利用一个周末掌握 Claude Code` — generic route, no project specified
-- `/quick-read dancer-nutrition-video Training_program` — project specified, load that project in full
-- `/quick-read article1 article2 Training_program Flight_Upsell` — multiple sources, multiple projects
+- `/quick-read dancer-nutrition-video Training_Program` — project specified, load that project in full
+- `/quick-read article1 article2 Training_Program Flight_Upsell` — multiple sources, multiple projects
 
 ---
 

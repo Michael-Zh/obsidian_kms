@@ -1,10 +1,10 @@
 ---
 name: Microaggression
-pillar: Relationships
-status: active
+pillar: MindMentalHealth
+status: parked
 created: 2026-06-12
-updated: 2026-07-24
-description: Personal learning resource for identifying and responding to anti-Asian microaggression and discrimination — starts as private reference, can evolve into shareable/contributable community resource
+updated: 2026-08-09
+description: Personal learning resource for identifying and responding to anti-Asian microaggression and discrimination. Currently parked — when relevant wiki content or articles are found, add as source for future discussion.
 priority: P3
 ---
 
@@ -51,12 +51,15 @@ Build a personal reference for identifying and responding to anti-Asian microagg
 | Analysis | Why it worked or didn't |
 | Source | Personal / Community / Published |
 
+## Current Status
+
+Parked — 短期内不会作为 active project 推进。当在 wiki 或文章中遇到相关内容时，作为 source 加入此文件夹，以后再做讨论和模式回顾。
+
 ## Strategic Direction
 
-- 确定存储格式 — Obsidian flat entries vs. Dataview 数据库
-- 采集 5 条 seed data — 个人经验作为基础案例
-- 识别 3 个外部已发布来源 — 提取框架和方法
-- 20+ entries 后模式回顾 — 更新 [[Microaggression-and-Social-Navigation]] wiki 页面
+- 被动收集：遇到相关 wiki 内容或文章时，作为 source 加入
+- 短期不推进 seed data 采集、外部来源识别等主动行动
+- 以后重新 activate 时再做模式回顾
 
 ---
 

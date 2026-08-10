@@ -1,21 +1,22 @@
 # Project Context: Parents_relationship
-_Last updated: 2026-07-21_
+_Last updated: 2026-08-09_
 
 ## What This Project Is
 
-重建与父母的真实沟通——从三年出柜后的「不咸不淡」状态，逐步建立父母能够理解和接纳真实自我的关系。当前 Phase 1 重点是分享「安全层」内容（CT intensive、马德里展览、舞蹈训练日常），建立「我们可以谈真实的我」的语境。
+重建与父母的真实沟通——从三年出柜后的「不咸不淡」状态，逐步建立父母能够理解和接纳真实自我的关系。Phase 1 计划 9 月 kick off，从 CT intensive 体验开始分享「安全层」内容（舞蹈训练、展览、旅行日常），建立「我们可以谈真实的我」的语境。
 
 **Primary Pillar:** Relationships  
-**Status:** active — Phase 1: 安全层分享  
-**Priority:** P1  
-**Current Focus:** 从 CT intensive 开始第一次有意义的分享
+**Status:** active — Phase 1: 9 月 kick off  
+**Priority:** P2  
+**Current Focus:** 9 月开始第一次安全层分享（CT intensive 体验）
+**Target Completion:** 2026-12-31
 
 ---
 
 ## Objectives
 
-1. 建立「安全层分享」的 communication loop（Phase 1：现在到 8 月）
-2. 逐步扩大可分享范围，建立更自然的沟通频率（Phase 2：8 月以后）
+1. 建立「安全层分享」的 communication loop（Phase 1：9 月开始）
+2. 逐步扩大可分享范围，建立更自然的沟通频率（Phase 2）
 3. 父母能够在情感上接纳真实的我（长期）
 
 ---
@@ -36,9 +37,9 @@ _Last updated: 2026-07-21_
 
 ## Next Steps
 
-- [ ] 从 CT intensive 开始第一次分享 — 写一段关于 intensive 的内容（发生了什么、学到什么、感受）
-- [ ] 分享马德里 FGT 展览感受
-- [ ] 设定合理预期 — 不期待立刻得到理想回应
+- 9 月开始第一次安全层分享 — CT intensive 体验（发生了什么、学到什么、感受）
+- 分享马德里 FGT 展览感受
+- 设定合理预期 — 不期待立刻得到理想回应
 
 ---
 
@@ -54,4 +55,4 @@ You are acting as a **thought partner and coach** for this emotionally sensitive
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新时，同步更新 `_in_case_you_are_bored.md` 里 [[Parents_Relationship]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新时，同步更新 `project_overview.md` 里 [[Parents_Relationship]] 行的 Current Focus + Updated 字段。

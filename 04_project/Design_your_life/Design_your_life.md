@@ -3,7 +3,7 @@ name: Design Your Life
 pillar: MindMentalHealth
 status: active
 created: 2026-06-12
-updated: 2026-07-24
+updated: 2026-08-09
 description: Applying Stanford DYL framework — Odyssey plans, prototype experiments, identity-anchored life architecture
 priority: P3
 ---
@@ -18,44 +18,43 @@ Build a clear, structured view of my three Odyssey Plans and the prototype exper
 
 - DYL coaching session completed (June 2026) — transcript in [[Life_Design_Coaching_Transcript]]
 - Wiki page created: [[Life-Design-Methodology]]
-- Next: structured summary document (clean, shareable format)
+- Structured summary drafted (Steps 1-7) — 用 generic prompt 生成的初版
+- Next: 用更系统性的 prompt 重新走一遍 DYL exercise
+- Workshop 探索推迟到 Q4
 
 ## Strategic Direction
 
-- 完成 DYL Structured Summary — Odyssey Plans 架构冷凝，当前处于 Steps 6-7（原型实验阶段）
-- 预订 Iyengar Yoga Institute Amsterdam 工作坊 — 身体知识实践入口（after training exits hyper-controlled phase）
-- 预订 Studio Anna Mora Gyrotonic 1-on-1 — 身体教育探索
-- Fighting Monkey + Celeste Pereira 研究 — 独立实践者运营模式调研
+- 用更系统性的 prompt 重新过一遍 DYL exercise — 有一个文章笔记里包含了更完整的 prompt 框架
+- 使用 Gemini 或 Claude 重新生成 DYL 结构化总结
+- Workshop 探索（Iyengar Yoga、Studio Anna Mora Gyrotonic、Fighting Monkey / Celeste Pereira）推迟到 Q4 再评估
+- Q4 时 review 奥德赛计划，判断是否有值得转化为 action 的部分
+
+## Current Focus
+
+- 当前 physical 训练以 dance 相关内容为主，不建议加入新的 workshop 或 workout style
+- Q4（10月后）review 窗口：重新审视奥德赛计划和 workshop 探索
 
 ---
 
 ## Decisions
 
-<!-- Populate after coaching sessions -->
+<style> *Previously blank — no coaching sessions since last update.* </style>
 
 ---
 
-## Archived: Detailed Next Steps
+## Next Steps
 
-*Previous next steps preserved for alignment verification.*
+- 找到包含系统性 DYL prompt 的文章笔记
+- 用该 prompt 重新走一遍 DYL exercise（Gemini 或 Claude）
+- 更新 Life_Design_Structured_Summary.md
+- Q4 review 窗口：重新审视奥德赛计划 + workshop 探索
 
-- [ ] ~~Build structured DYL summary doc~~ → DYL Structured Summary
-- [ ] ~~Book Iyengar Yoga Institute workshop~~ → 预订 Iyengar 工作坊
-- [ ] ~~Book Studio Anna Mora Gyrotonic~~ → 预订 Gyrotonic 1-on-1
-- [ ] ~~Research Fighting Monkey + Celeste Pereira~~ → 运营模式调研
 ## Key Files
 
 - [[Life_Design_Coaching_Transcript]] — full DYL coaching session
 - [[Life-Design-Methodology]] — wiki synthesis
+- [[Life_Design_Structured_Summary]] — Steps 1-7 当前版本（generic prompt 生成）
 
 ## Connections
 
 Related Pages: [[Portfolio-Career-Design]], [[Movement-Career-Options]], [[Life-Design-Methodology]]
-
-
-## Structured Summary
-[[Life_Design_Structured_Summary]] — DYL steps 1-7 documented from June 2026 coaching session.
-
-**Current position in DYL process:** Step 6-7 (Prototyping). Both prototype experiments identified; neither booked yet.
-
-**Gate:** H1 review (mid-July 2026) → then book Iyengar workshop + Studio Anna Mora 1-on-1.

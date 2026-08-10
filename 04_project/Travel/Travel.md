@@ -1,10 +1,10 @@
 ---
 name: "Travel"
-status: "active"
+status: "parked"
 pillar: "Travel"
-current_focus: "Post-Madrid (2026-07): next trip planning TBD"
+current_focus: "Parked — travel preferences to clarify before next trip planning."
 created: "2026-06-04"
-updated: "2026-07-24"
+updated: "2026-08-09"
 target_completion: "ongoing"
 priority: "P3"
 tags: [Travel, Lifestyle]
@@ -38,9 +38,9 @@ Master project for all travel planning and trip execution. Each trip has its own
 
 ## Strategic Direction
 
-- Post-Madrid: consolidate travel preferences and learnings
-- Next trip planning: align with Q3/Q4 coaching windows and training schedule
-- Integrate travel into coaching framework — trip reflections as coaching input
+- Clarify travel preferences — 梳理个人旅行偏好
+- Next trip planning TBD — 等旅行偏好明确后再规划
+- P3 低优先级
 
 ---
 
@@ -55,7 +55,7 @@ Master project for all travel planning and trip execution. Each trip has its own
 **Parent Pillar:** [[Travel]]
 
 **Related Projects:**
-- [[Training_program]] — Training schedule alignment
+- [[Training_Program]] — Training schedule alignment
 - [[Life_Management_System]] — KMS travel knowledge integration
 
 **Related References:**

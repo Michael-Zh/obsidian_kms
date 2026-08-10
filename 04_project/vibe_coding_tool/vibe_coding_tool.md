@@ -1,10 +1,10 @@
 ---
 name: "vibe_coding_tool"
-status: "active"
+status: "parked"
 pillar: "Career"
-current_focus: "Mobile-first AI coding assistant — Plan/Code/Debug three-mode interface"
+current_focus: "Parked — 大部分开发在电脑端完成，不是开始此项目的最佳时机。超体学完后再 revisit。"
 created: "2026-05-15"
-updated: "2026-07-24"
+updated: "2026-08-09"
 target_completion: "ongoing"
 priority: "P3"
 tags: [Career, LifeManagement]
@@ -40,11 +40,18 @@ Mobile-first AI coding assistant. Describe code changes → planning agent analy
 
 ---
 
+## Current Status
+
+Parked — 大部分 active development 在电脑端完成，目前不是开始 vibe coding tool 的最佳时机。超体学完后 revisit 此项目。
+
 ## Strategic Direction
+
+保留的 valid backlog（超体学完后 revisit）：
 
 - Stabilize Plan → Code pipeline — reduce hallucinated file modifications
 - Debug mode refinement — better error log parsing and fix suggestions
 - Multi-repo support beyond current GitHub workflow
+- P3 优先级 — 不紧急
 
 ---
 
@@ -59,5 +66,5 @@ Mobile-first AI coding assistant. Describe code changes → planning agent analy
 **Parent Pillar:** [[Career]]
 
 **Related Projects:**
-- [[Training_Coach]] — Primary app built with this tool
+- [[Danseur_Noble_Hub]] — Primary app built with this tool
 - [[AI_learning]] — Output > input learning philosophy

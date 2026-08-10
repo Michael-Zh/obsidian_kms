@@ -44,7 +44,7 @@ You are acting as a **thought partner and analyst** for this project. Your role 
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新时，同步更新 `_in_case_you_are_bored.md` 里 [[Flight_Upsell]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新时，同步更新 `project_overview.md` 里 [[Flight_Upsell]] 行的 Current Focus + Updated 字段。
 
 ---
 
@@ -53,6 +53,7 @@ You are acting as a **thought partner and analyst** for this project. Your role 
 | File | 用途 / When to read |
 |---|---|
 | `PROJECT_CONTEXT.md` | **统领性项目文档** — 背景、workstream 状态、进展、blockers、next steps。每次 session 必读。|
+| `CONTEXT.md` | **数据定义与 BQ 表结构参考** — primary/sub-order 关系、关键字段、常见查询模式、已知坑。写 SQL 前必读。|
 | `Flight Upsell Project Hub.md` | FBU 侧权威文档（只读参考，不主动维护）|
 | `upsell_diagnostic_framework.md` | 五层漏斗详细定义，两类 needle mover，KPI 可比性原则 |
 | `void_policy_display_analysis.md` | Void/24h 完整技术 brief：EY 数据、SQL、航司排名 |
@@ -61,8 +62,11 @@ You are acting as a **thought partner and analyst** for this project. Your role 
 | `H1_self_evaluation.md` | H1 自评正式草稿（OKR + Leadership Competency）|
 | `Strategic Portfolio - Global Flight Fare Upsell Optimization.md` | SLT pitch / CV bullet 用途 |
 | `Strategic Framework - Brand Fare Coverage Optimization.md` | Triage & Trigger 方法论：Archetypes、Golden Routes、Ghost Query |
-| `Flight_Upsell_Trial_Log.md` | Session log（Sessions 1–9，through 2026-07-20）|
-| `audit/TK/` | TK scraper v1（operational）+ v2（in dev）|
+| `Flight_Upsell_Trial_Log.md` | Session log（through 2026-07-23）|
+
+**已迁出（移入 iCloud Drive `Documents/Audit/`，减轻 vault 加载）：**
+- `audit/` — 航司 audit 数据分析（11 航司 coverage 等）
+- `scraper/` — TK/NH/JL 航司官网爬虫脚本
 
 **归档（历史参考，不需主动维护）：**
 - `Flight Upsell Project Strategic Review - May 2026.md` — Phase 1 回顾（已被 PROJECT_CONTEXT 吸收）

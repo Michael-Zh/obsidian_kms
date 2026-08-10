@@ -1,11 +1,10 @@
 ---
 name: Skincare_Routine
-status: active
+status: complete
 pillar: AdminHome
-current_focus: "Routine established (home + travel). Future idea: incorporate eye mask & face mask treatments."
+current_focus: "Routine established — home + travel protocols in place. No new content to add."
 created: 2026-04-01
-updated: 2026-07-24
-target_completion: 2026-07-31
+updated: 2026-08-09
 priority: P3
 tags:
   - AdminHome
@@ -77,40 +76,26 @@ Daily consistent protocol (no alternating):
 
 ---
 
+## Current Status
+
+Complete — Home + travel 护肤 routine 已建立并运行。暂无新内容需要补充。
+
 ## Strategic Direction
 
-- Home + travel routine established — 维持现状
-- 未来想法: 加入 eye mask + face mask treatments
-- 重新激活为 active P3 — 低优先级但持续维护
+- 维持现有 home + travel routine
+- 无 active next steps
+- 后续如需调整 routine 或补充新产品，再重新 activate
 
 ---
 
 ## Decisions
 
 - **2026-07-24:** Status changed from done → active P3. Routine established but ongoing maintenance.
-## Open Decisions/Questions
-
-Decisions to be made, blockers to resolve.
-
-### Decisions Pending
-
-- [ ] **Should you order all 5 at once or stagger?** → Target date: 2026-05-08
-  - Option A: Stagger by 3-5 days (safer for free gifts; easier to track)
-  - Option B: All at once (faster shipping; risk of confused promotions)
-  - Recommendation: Stagger (Option A)
-
-- [ ] **Retinoid frequency: Start 2x/week or 1x/week?** → Target date: 2026-05-20
-  - Option A: Cautious start at 1x/week (Tuesday); escalate if tolerated
-  - Option B: Standard 2x/week (Tue + Thu)
-  - Recommendation: Option A (skin barrier integrity)
-
-### Blockers
-
-- **No current blockers** — All procurement and routine execution are within your control
+- **2026-08-09:** Status changed to complete. 无新内容需要补充，routine 已建立并运行中。
 
 ---
 
-## Accomplishments
+## Connections
 
 What's already been completed or achieved in this project.
 

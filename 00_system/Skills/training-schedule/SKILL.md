@@ -78,17 +78,17 @@ This is what gets generated if there are no conflicts:
 
 | What | Path |
 |------|------|
-| **Scheduler script** | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training_program/training-calendar-scheduler/calendar_scheduler_v3.py` |
+| **Scheduler script** | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training/training-calendar-scheduler/calendar_scheduler_v3.py` |
 | **OAuth credentials** | Same folder: `google_oauth_credentials.json` |
-| **Project CLAUDE.md** | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training_program/CLAUDE.md` |
-| **Scheduling Rules** | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training_program/Training_program_Scheduling_Rules.md` |
-| **Class Pool** | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training_program/Training_program_Class_Pool.md` |
-| **Weekly Schedule log** | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training_program/Training_program_Weekly_Schedule.md` |
+| **Project CLAUDE.md** | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training/CLAUDE.md` |
+| **Scheduling Rules** | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training/reference/Scheduling_Rules.md` |
+| **Class Pool** | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training/reference/Class_Pool.md` |
+| **Weekly Schedule log** | `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training/logs/Weekly_Schedule.md` |
 | **Prior session memory** | `~/.claude/projects/-Users-michael-zhang-training-calendar-scheduler/memory/` |
 
 **Run the scheduler:**
 ```bash
-cd "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training_program/training-calendar-scheduler"
+cd "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/KMS/04_project/Training/training-calendar-scheduler"
 source .venv/bin/activate                   # activate Python venv first
 python3 calendar_scheduler_v3.py --json    # fetch conflicts + proposed plan as JSON
 python3 calendar_scheduler_v3.py           # human-readable preview

@@ -1,13 +1,17 @@
 # Project Context: Life_Management_System (LMS)
-_Last updated: 2026-07-21_
+_Last updated: 2026-08-09_
 
 ## What This Project Is
 
-The **meta-system hub** — the overarching operating system that integrates all of Michael's knowledge management, training and physical management, daily priming, and coaching into one cohesive whole. Two layers: (1) 概念层 — how the system works (8 pillars, wiki-coach, POS, priority system); (2) 执行层 — the technical implementation (custom App + Claude Code + iOS Shortcuts). Modules 1–3 are complete and live. The system now orchestrates multiple integrated sub-systems: Training Coach App, Training Program, Meal Prep Routine, Priming, and Coaching.
+The **meta-system architecture map** — defines the boundaries and relationships between 5 modules. LMS itself does NOT produce backlog items or own execution details. It is a map, not an executor.
+
+Detailed designs live in:
+- `KMS_Design.md` — KMS pipeline architecture, wiki templates, skill definitions, info flow
+- `LMS.md` — 5-module overview, data flow, skills index
 
 **Primary Pillar:** LifeManagement
-**Status:** Active — meta-system hub
-**Current Focus:** Ongoing: maintain + evolve. LMS itself no longer has a separate build roadmap — it evolves through the sub-systems it orchestrates.
+**Type:** meta-system
+**Status:** Active — architecture maintenance
 **Priority:** P1
 
 ---
@@ -52,7 +56,7 @@ The **meta-system hub** — the overarching operating system that integrates all
 
 ---
 
-## Other Pending Items (from _in_case_you_are_bored)
+## Other Pending Items (from project_overview)
 
 - **Naval's Almanack as KMS skill** — Convert Naval Ravikant's decision-making prompts into a reusable Claude skill. Trigger: July 2026, low priority, quiet slot. (ref: [[coaching_20260530]])
 - **Xiaohongshu Content Series** — Share KMS journey + movement/body tips; defer until KMS MVP validated. Related: [[Content-Creator-and-Entrepreneurship-Ideas]]
@@ -70,7 +74,7 @@ Timeless synthesis. "What do I know about X?" AI-generated. 5 page types: concep
 **Layer 3 — Morning Priming** (`/03_priming/`)
 HTML card output from the `/priming` skill. Dated, self-contained.
 
-**The bridge:** `_in_case_you_are_bored.md` — durable project landscape (active + backlog + ideas).
+**The bridge:** `project_overview.md` — durable project landscape (active + backlog + ideas).
 
 **Key architectural insight:** Annotation IS the routing logic. Add `annotation:` to a file's YAML → it gets processed. Coaching files are always processed (no annotation gate). No database, no explicit routing rules.
 
@@ -114,7 +118,7 @@ HTML card output from the `/priming` skill. Dated, self-contained.
 | `02_wiki/LifeManagement/Information-Overload.md` | Problem definition; ideal pipeline; capture friction points |
 | `01_raw/_watchlist.md` | Current watchlist; check for `process+done` items ready for annotation |
 | `01_raw/coaching/coaching_YYYYMMDD.md` | Past coaching sessions — all unified here now |
-| `04_project/_in_case_you_are_bored.md` | Full active project landscape and backlog |
+| `04_project/project_overview.md` | Full active project landscape and backlog |
 
 ---
 
@@ -147,4 +151,4 @@ You are acting as a **thought partner and analyst** for the KMS / Life_Managemen
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里 [[Life_Management_System]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `project_overview.md` 里 [[Life_Management_System]] 行的 Current Focus + Updated 字段。

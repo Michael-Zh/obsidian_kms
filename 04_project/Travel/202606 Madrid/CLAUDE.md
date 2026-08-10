@@ -49,7 +49,7 @@ No session log exists yet. The travel plan is fully drafted with day-by-day itin
 - **[[travel_preference]]** — `/04_project/Travel/travel_preference.md`
   - Distilled hotel selection criteria, aesthetic sightseeing filter, LGBTQ+ infrastructure needs, dance class routine
 
-## Other Pending Items (from _in_case_you_are_bored)
+## Other Pending Items (from project_overview)
 
 - "June 30: Madrid/Pride travel" — listed as an on-the-horizon milestone. No additional pending items beyond the booking checklist above.
 
@@ -85,4 +85,4 @@ You are acting as a **logistics partner and travel thought partner** for this tr
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里相关项目行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `project_overview.md` 里相关项目行的 Current Focus + Updated 字段。

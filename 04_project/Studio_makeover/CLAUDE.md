@@ -1,13 +1,15 @@
 # Project Context: Studio_makeover
-_Last updated: 2026-07-21_
+_Last updated: 2026-08-09_
 
 ## What This Project Is
 
-A room-by-room renovation of a 33sqm studio apartment toward a "Modern Art Museum Cafe / Neo-Industrial" aesthetic — clean lines, white space, black steel accents, warm wood and plants. **Currently in a reduced scope:** the highest priority is cleaner prep (整理到适合 cleaner 清洁的状态). Remaining makeover items (plant repotting, gallery rail, etc.) are deferred to after summer/dance intensive.
+A room-by-room renovation of a 33sqm studio apartment toward a "Modern Art Museum Cafe / Neo-Industrial" aesthetic — clean lines, white space, black steel accents, warm wood and plants. **Current timeline:** 8 月完成 Plant repotting + Cleaner prep，9 月以后继续 Phase 2+ Systems。Target: 2026 年底。
+
+Sub-project: [[Plant_rearrangement]]
 
 **Primary Pillar:** AdminHome  
-**Status:** active — reduced scope  
-**Current Focus:** Cleaner prep only. Full renovation deferred to post-summer.  
+**Status:** active  
+**Current Focus:** 8 月 — Plant repotting + Cleaner prep | 9 月+ — Phase 2 Systems  
 **Priority:** P2
 
 ## Objectives
@@ -77,7 +79,7 @@ _Forward-looking references (pages that don't exist yet but could be relevant):_
 - `[[Home_Aesthetic_Principles]]` — would house the Museum Rule, style principles, and decision frameworks
 - `[[Plant_Care_System]]` — plants audit was split out as a separate project idea (see Other Pending Items)
 
-## Other Pending Items (from _in_case_you_are_bored)
+## Other Pending Items (from project_overview)
 
 - **Plants audit project** — Audit current plant conditions and make necessary changes. Flagged as a separate project idea to formalize when ready. For now, repotting is embedded in Phase 2 of this project.
 - No other Studio_makeover items in the bored backlog.
@@ -118,4 +120,4 @@ You are acting as a **thought partner and project coach** for this home renovati
 
 **Output rules:** Always reply in Chinese (中文).
 
-**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `_in_case_you_are_bored.md` 里 [[Studio_Makeover]] 行的 Current Focus + Updated 字段。
+**Sync rule:** 每次会话结束更新此 CLAUDE.md 时，同步更新 `project_overview.md` 里 [[Studio_Makeover]] 行的 Current Focus + Updated 字段。

@@ -2,19 +2,21 @@
 name: "Plant_rearrangement"
 status: "active"
 pillar: "AdminHome"
-current_focus: "Tropical triage: Monstera root check and repot (URGENT)"
+parent_project: "Studio_makeover"
+current_focus: "Phase 1: 紧急 repotting 和 root check"
 created: "2026-06-01"
-updated: "2026-07-24"
-target_completion: "2026-08-31"
-priority: "P3"
+updated: "2026-08-09"
+priority: "P2"
 tags: [AdminHome]
 ---
 
 # Plant Rearrangement — Indoor Garden Overhaul
 
+> **Sub-project of [[Studio_makeover]]**
+
 ## Overview
 
-Rescue and reorganize the indoor plant collection. Two-phase plan: (1) Tropical triage — stabilize struggling tropicals; (2) Succulent rescue — repot and optimize light conditions. Goal: sustainable, thriving indoor garden with low-maintenance routine.
+Rescue and reorganize the indoor plant collection. Three priorities, ordered by urgency.
 
 ---
 
@@ -37,9 +39,11 @@ Rescue and reorganize the indoor plant collection. Two-phase plan: (1) Tropical 
 
 ## Strategic Direction
 
-- Phase 1: Monstera root check and emergency repot
-- Phase 2: Systematic tropical health assessment — identify and triage all struggling plants
-- Long-term: Self-watering system setup for travel periods
+按紧急程度排序：
+
+1. **紧急：Plant repotting 和 root check** — Monstera 等热带植物换盆，检查根系健康
+2. **重要：重新 arrange 植物位置** — 优化光照和空间布局
+3. **长期：建立 plant care routine** — 可持续的浇水养护计划，兼容旅行 schedule
 
 ---
 
