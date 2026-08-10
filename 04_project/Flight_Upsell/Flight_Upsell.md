@@ -1,5 +1,6 @@
 ---
 name: "Flight_Upsell"
+project_id: "pj0002"
 status: "active"
 pillar: "Career"
 current_focus: "Phase 2 analytical work — opportunity sizing and stakeholder communication"

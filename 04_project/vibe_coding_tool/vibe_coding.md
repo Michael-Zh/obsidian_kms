@@ -1,5 +1,9 @@
 ---
+name: Vibe Coding Tool
 project_id: pj0009
+status: parked
+pillar: CreativityCuriosity
+priority: P3
 ---
 
 # Vibe Coding Tool
@@ -32,7 +36,20 @@ Mobile-first AI coding assistant。描述代码改动 → planning agent 分析 
 - Multi-file support — `proposals: { target_file, new_code }[]`
 - Auth layer — `TOOL_PASSWORD` env var 或 Supabase Auth
 - Vercel deploy status polling — Apply 后轮询 deploy 状态
-- Cloud Executor（云端执行端） — GitHub Codespaces 或廉价 VPS（Hetzner $5/月）运行 Claude Code，实现纯移动端闭环：手机 Plan + 云端执行 + 自动 commit。云服务器到 GitHub/OpenRouter 延迟更低、不挂墙、24 小时在线
+- Cloud Executor（云端执行端） — GitHub Codespaces 或廉价 VPS（Hetzner $5/月）运行 Claude Code，实现纯移动端闭环
+
+---
+## Strategic Direction
+
+- Multi-repo switching — 同一界面切换目标 repo
+- Streaming responses — SSE 实时流式输出
+- Cloud Executor — 云端 Claude Code 执行端，实现手机端闭环
+
+---
+## Decisions
+
+- **2026-07:** MVP 上线 — 三种 UI 模式（Plan/Code/Debug）+ GitHub Trees API 原子提交
+- **长期:** 切换到 Claude Code subagent 架构，当前 DeepSeek 方案作为 fallback
 
 ---
 

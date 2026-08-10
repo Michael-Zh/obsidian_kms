@@ -1,5 +1,6 @@
 ---
 name: Strategic_relationship_audit
+project_id: pj0011
 status: active
 pillar: Relationships
 current_focus: "9 月开始讨论。October gate: Jeroen 公寓 → cohabitation/ENM/kids in Q4。"

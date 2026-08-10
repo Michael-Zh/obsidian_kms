@@ -2,37 +2,35 @@
 
 ---
 
-## Short-Term Focus (now → CT Intensive, late July 2026)
+## Short-Term Focus (now → September 2026)
 
-*What is actually getting attention right now. Updated: 2026-07-21.*
+*What is actually getting attention right now. Updated: 2026-08-09.*
 
 **Active focuses — in order of current energy/urgency:**
 
-1. **CT Notes 收尾** — 绝大部分已完成整理（A–F taxonomy），只剩少量零散内容。本周（7月21日这周）收尾完毕。
+1. **AI Learning** — 超体 program Ch5 开始，一周两章推进（Ch5–Ch18）。完成后依次：IP 变现课程（3课，一周）→ Anthropic Academy → CS50。Practice-driven learning: Flight Upsell AI 分析 + Training Coach App 开发。
 
-2. **AI Learning / App 开发** — Output > input confirmed。Training Coach App + Claude Code 深度使用是主要学习方式。超体 program 提供理论框架。想法沉淀到 Wiki。
+2. **Physical Foundation: Training Program** — 训练哲学 + 规则 + 课程池已在 [[Training]] 稳定。当前重点转向 [[Meal_prep_routine]]（什么时候吃、吃什么、吃多少）。Body recomposition 大方向不变，先解决 plan 层。
 
-3. **Physical Foundation** — 下一步转向 **Meal Prep Routine**（什么时候吃、吃什么、吃多少）。不讲具体 calorie、不讲 timing 细节——先讨论 eating philosophy 和 routine 设计。Sleep + fasting 当前执行困难，通过 Meal Prep 先解决 plan 层。
+3. **Home** — 8 月：Plant repotting（[[Plant_rearrangement]]）+ Cleaner prep。9 月+：Phase 2 Systems。Target: 2026 年底。
 
-4. **Dance** — CT intensive 即将开始（late July）。CT notes 收尾是 immediate priority；intensive 期间 body maintenance 是重点（bilateral lower back recovery 继续关注）。
+4. **Parents** — 9 月 kick off。Phase 1 从 CT intensive 体验开始分享「安全层」内容。目标 2026 年底。
 
-5. **Parents** — 新立项 [[Parents_Relationship]]：Phase 1 从 CT intensive 开始分享「安全层」内容。动机已从「寻求认可」转为「分享真实快乐」。核心原则：说完，给时间，不追着解释，不道歉，不收回。
+5. **Relationship** — 9 月重新启动讨论。6 条 backlog：Internal Audit, ENM disclosure, Kids, traffic light, hardware checklist, cohabitation。October gate: Jeroen 公寓。Target: 2026 年底。
 
-6. **Home** — Cleaner prep 是唯一优先级。整理到适合 cleaner 清洁的状态。其余 makeover items 推迟到 summer 结束后。
+6. **Finance** — Road to 2040 系统已跑起来。待推进：确定 net worth 更新频率、AI 投资监控系统、Q4 合理避税。
 
-7. **Relationship** — 推迟到 8 月底/9 月。Madrid 关键数据（ENM 双向探索、FOMO/safety 模式）已沉淀在 coaching docs 和 [[Strategic_Relationship_Audit]]。October gate: Jeroen 公寓 → Q4 conversations。
+7. **Danseur Noble Hub App** — LMS 执行层 PWA 持续迭代。Backlog 重构 + Web Push + Exercise Library v3。
 
-8. **Finance** — Road to 2040 system 已完全跑起来。Automated waterfall + 3-tier architecture operational。仅需 quarterly net worth review，不需 active management。
-
-**Backlog (parked — not active):**
-- Life Management System (LMS) — 不再是独立 build 项目，已成为 meta-system hub；通过集成的子系统（Training Coach App、Training Program、Meal Prep、Priming、Coaching）持续演进
-- Road to 2040 — system operational，parked
-- Strategic Relationship Audit — 推迟到 8 月底/9 月
-- Life Design prototyping (Iyengar workshop, Studio Anna Mora, Fighting Monkey) — 推迟到 late August
-- Microaggression storybase — [[Microaggression_Synthesis]] created; add cases as they arise
-- Post-intensive (August+): improv comedy, social accounts, dance direction
-
-**Alignment note:** CT Notes 和 AI Learning 是当前的 parallel P1。Meal Prep 是下一阶段的 P2 driver。CT intensive 前的基础维护（cleaner prep、parents 第一步）在并行推进。
+**Parked (not currently active):**
+- Dance_Note — reference library，quarterly review
+- Design_your_life — Q4 奥德赛计划 review
+- Show_scraper — Q4 评估 Phase 2
+- Microaggression — 被动收集模式
+- Travel — park，clarify preferences
+- Travel_Buddy — park，下次 travel 前 review
+- Vibe_Coding — park，超体学完后 revisit
+- Iyengar/Gyrotonic/Fighting Monkey — Q4 再评估
 
 ---
 
@@ -43,9 +41,9 @@
 **Key Actions:**
 
 - Establish minimal health baseline (pragmatic, not perfectionist—e.g., 7 hours sleep daily, rest flexible)
-- Create repeatable meal prep system (3-5 core recipes) — **now pushed forward as [[Meal_Prep_Routine]] (P2)**
-- Design consistent, sustainable workout routine
-- Complete apartment make-over (design, contractor, execution) — **currently reduced to cleaner prep only**
+- Create repeatable meal prep system (3-5 core recipes) — **now pushed forward as [[Meal_prep_routine]] (P2)**
+- Design consistent, sustainable workout routine — **概念层在 [[Training]]；执行层在 [[Danseur_Noble_Hub]] App**
+- Complete apartment make-over — **8 月 Plant repotting + Cleaner prep；9 月+ Phase 2 Systems**
 - Hire long-term cleaner (outsource trivial maintenance tasks)
 
 **Timeline:** Q2-Q3 (active), Q4 (optimization & maintenance)
@@ -63,9 +61,9 @@
 **Related Pages:**
 
 - [[Studio_Makeover]]
-- [[Daily-Habits-and-Sleep-Optimization]]
-- [[Training_Program]]
-- [[Meal_Prep_Routine]]
+- [[Training]]
+- [[Meal_prep_routine]]
+- [[Danseur_Noble_Hub]]
 
 ---
 
@@ -89,7 +87,7 @@
 - ✅ Q2 net worth calculated and baseline established; quarterly tracking system live
 - ✅ Financial clarity achieved: you can articulate your "moat" (cash position, growth trajectory, risk tolerance)
 
-**Current status (2026-07-21):** Road to 2040 system has been fully set up and is running automatically — automated waterfall cashflow + 3-tier architecture operational. Parked as active project; only quarterly net worth reviews needed.
+**Current status (2026-08-09):** Road to 2040 system 已全自动运行。待推进：确定 net worth 更新频率、AI 投资监控系统开发、Q4 合理避税。
 
 **Why This Matters:** Resource security is the prerequisite for handling relational complexity with clarity rather than desperation. It also enables Priority 1's low-friction living without financial anxiety. Financial autonomy = psychological freedom.
 
@@ -112,7 +110,7 @@
 
 **Timeline:** H2 2026 (Q3-Q4 active conversations; Q2 preparation)
 
-**Current status (2026-07-21):** Madrid trip brought key new data — ENM shifted from one-way to mutual exploration (Jeroen tried a hookup, positively encouraged); FOMO/safety pattern identified at Sauna Paraíso. October conversation texture changed: less "asking permission," more shared territory. Full relationship audit paused until late August/September. Hard gate unchanged: Jeroen's apartment October → cohabitation/ENM/kids in Q4.
+**Current status (2026-08-09):** 9 月重新启动讨论。Madrid 数据已沉淀（ENM 单向→双向探索、FOMO/safety 模式）。October gate: Jeroen 公寓 → cohabitation/ENM/kids in Q4。6 条 backlog 已写入 [[Strategic_Relationship_Audit]]。
 
 **Success Metrics:**
 

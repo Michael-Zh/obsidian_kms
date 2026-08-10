@@ -30,9 +30,7 @@ SYSTEM_FILES = {
     "priority": "00_system/_priority.md",
 }
 PROJECTS_GLOB = "04_project/**/*.md"
-
-# Each project's main file is 04_project/<project>/<project>.md
-# Exclude sub-files like CLAUDE.md, Order.md, etc. by checking dirname == stem
+EXCLUDED_FILES = {"CLAUDE.md"}
 
 # ─── Supabase helpers ─────────────────────────────────────────────────────────
 
@@ -68,67 +66,93 @@ def extract_section(md: str, heading: str) -> str:
     return m.group(1).strip() if m else ""
 
 
+def parse_frontmatter(text: str) -> dict[str, str]:
+    """Extract simple YAML frontmatter between --- markers. Returns key→value dict."""
+    result: dict[str, str] = {}
+    # Find frontmatter block (first --- to second ---)
+    blocks = re.findall(r'^---\s*\n(.*?)\n---', text, re.DOTALL)
+    if not blocks:
+        return result
+    fm = blocks[0]
+    for line in fm.split('\n'):
+        # Match "key: value" (value may be quoted or unquoted, may have inline comments)
+        m = re.match(r'^([A-Za-z_][A-Za-z0-9_]*)\s*:\s*(.+)$', line)
+        if m:
+            key = m.group(1).strip().lower()
+            val = m.group(2).strip().strip('"').strip("'")
+            # Strip inline comments (but not date fields like 2026-08-09)
+            if not re.match(r'^\d{4}-\d{2}-\d{2}', val):
+                val = re.sub(r'\s+#.*$', '', val)
+            result[key] = val
+    return result
+
+
 def parse_project_file(path: Path) -> Optional[dict]:
     """
     Parse a project markdown file and return a projects_state row dict.
-    Expected frontmatter or top-level fields:
-      - Title: from filename or first H1
-      - Status: from frontmatter 'Status:' or section
-      - Pillar: from frontmatter
-      - Priority: from frontmatter (P1/P2/P3)
-      - Next Steps: bulleted list → next_actions array
+
+    Canonical project files MUST have `project_id: pjXXXX` in frontmatter.
+    Files without this are skipped (they are support docs, not project definitions).
+
+    Fields extracted:
+      - project_id: from frontmatter (REQUIRED)
+      - title: first H1 heading
+      - status: from frontmatter (default: "active")
+      - pillar: from frontmatter
+      - priority: from frontmatter (P1/P2/P3)
+      - next_actions: bulleted list from ## Strategic Direction section
+      - notes: first paragraph after frontmatter (capped at 500 chars)
     """
     try:
         text = path.read_text(encoding="utf-8")
     except Exception:
         return None
 
-    # project_id = stem of filename (e.g. Training_Coach)
-    project_id = path.stem
+    # ── Require project_id frontmatter ──
+    fm = parse_frontmatter(text)
+    project_id = fm.get("project_id", "")
+    if not project_id.startswith("pj"):
+        return None  # Not a tracked project file — skip
 
-    # Skip non-project files (index pages, etc.)
-    if project_id.startswith("_") or project_id.lower() in ("readme", "index"):
-        return None
-
-    # Extract title — first H1 or filename
+    # ── Title: first H1 ──
     title_m = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
-    title = title_m.group(1).strip() if title_m else project_id
+    title = title_m.group(1).strip() if title_m else path.stem
 
-    # Extract status from frontmatter or inline
-    status = "active"
-    status_m = re.search(r"(?:Status|状态)[:\s]+([A-Za-z]+)", text, re.IGNORECASE)
-    if status_m:
-        raw_status = status_m.group(1).lower()
-        if raw_status in ("active", "paused", "done", "idea", "completed"):
-            status = raw_status if raw_status != "completed" else "done"
+    # ── Status: from frontmatter, map "completed" → "done" ──
+    status = fm.get("status", "active").lower()
+    if status == "completed":
+        status = "done"
+    if status not in ("active", "paused", "done"):
+        status = "active"
 
-    # Extract pillar
-    pillar = None
-    pillar_m = re.search(r"Pillar[:\s]+([A-Za-z]+)", text, re.IGNORECASE)
-    if pillar_m:
-        pillar = pillar_m.group(1).strip()
+    # ── Pillar: from frontmatter ──
+    pillar = fm.get("pillar")
 
-    # Extract priority
-    priority = None
-    priority_m = re.search(r"\bP([123])\b", text)
-    if priority_m:
-        priority = f"P{priority_m.group(1)}"
+    # ── Priority: from frontmatter (P1/P2/P3) ──
+    priority = fm.get("priority")
+    if priority and not re.match(r'^P[123]$', priority):
+        # Try to extract from frontmatter value (e.g. "P2 — something")
+        m = re.search(r'\b(P[123])\b', priority)
+        priority = m.group(1) if m else None
 
-    # Extract next actions from "## Next Steps" or "## Pending Next Steps"
+    # ── Next actions: from ## Strategic Direction bullets ──
     next_actions = []
-    for heading in ("Next Steps", "Pending Next Steps", "下一步", "Next Actions"):
+    for heading in ("Strategic Direction", "Next Steps", "Pending Next Steps"):
         section = extract_section(text, heading)
         if section:
-            bullets = re.findall(r"^[-*]\s+(.+)$", section, re.MULTILINE)
-            # Skip already-done items (strikethrough ~~...~~)
-            next_actions = [b.strip() for b in bullets if not b.strip().startswith("~~")]
+            # Match both bullet (-, *) and numbered list (1., 2), ...) formats
+            bullets = re.findall(r"^(?:[-*]\s+|(?:\d+[.)])\s+)(.+)$", section, re.MULTILINE)
+            next_actions = [b.strip() for b in bullets if b.strip()]
             break
 
-    # Brief notes — first paragraph after title
+    # ── Notes: first paragraph after frontmatter (skip H1 lines) ──
     notes = ""
-    paras = [p.strip() for p in re.split(r"\n{2,}", text) if p.strip() and not p.startswith("#")]
+    # Get body text (after frontmatter block)
+    fm_end = text.find("---", text.find("---") + 3) + 3
+    body = text[fm_end:] if fm_end > 2 else text
+    paras = [p.strip() for p in re.split(r"\n{2,}", body) if p.strip() and not p.startswith("#")]
     if paras:
-        notes = paras[0][:500]  # cap at 500 chars
+        notes = paras[0][:500]
 
     source_path = str(path.relative_to(VAULT_PATH))
 
@@ -167,23 +191,43 @@ def main() -> None:
     if snapshot_rows:
         supabase_upsert("context_snapshots", snapshot_rows, ["key"])
 
-    # 2. Sync projects_state (04_project/<name>/<name>.md only)
+    # 2. Sync projects_state
+    #    Canonical detection: file has `project_id: pjXXXX` in frontmatter.
+    #    This naturally handles nested sub-directories (e.g. Training/Meal_prep_routine/).
+    #    Support docs without project_id (Architecture.md, Dev_Log.md, etc.) are skipped.
     print("\n[2] Syncing projects_state…")
     project_files = sorted(VAULT_PATH.glob(PROJECTS_GLOB))
-    # Only keep canonical project files: dir name == stem, skip _-prefixed
+
+    # Filter: skip CLAUDE.md, _-prefixed files, _archive directories
     valid = []
     for p in project_files:
+        if p.name in EXCLUDED_FILES:
+            continue
         if p.stem.startswith("_"):
             continue
-        if p.parent.name != p.stem:
+        if any(part.startswith("_") for part in p.parts):
             continue
         valid.append(p)
+
     parsed = [parse_project_file(p) for p in valid]
-    project_rows = [r for r in parsed if r is not None]
+    # Deduplicate by project_id — last file wins (handles same project_id in multiple docs)
+    seen: dict[str, dict] = {}
+    for r in parsed:
+        if r is not None:
+            pid = r["project_id"]
+            if pid in seen:
+                print(f"  DEDUP: {pid} — overriding {seen[pid]['source_path']} with {r['source_path']}")
+            seen[pid] = r
+
+    project_rows = list(seen.values())
     print(f"  parsed {len(project_rows)} project files (filtered from {len(project_files)} total)")
 
     if project_rows:
+        for r in project_rows:
+            print(f"  {r['project_id']} → {r['title']} ({r['status']}, {r['priority']}) — {len(r['next_actions'])} actions")
         supabase_upsert("projects_state", project_rows, ["project_id"])
+    else:
+        print("  WARNING: no projects with project_id found — nothing to sync")
 
     print("\n=== done ===")
 

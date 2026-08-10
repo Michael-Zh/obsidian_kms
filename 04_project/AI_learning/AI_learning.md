@@ -1,5 +1,6 @@
 ---
 name: AI_learning
+project_id: pj0012
 status: active
 pillar: LifeManagement
 current_focus: 通过实践学习——自定义 App 开发（Training Coach App）+ Claude Code 深度使用。超体 program 作为理论框架。想法沉淀到 Wiki，不单独追踪项目。

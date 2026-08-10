@@ -20,11 +20,11 @@ Single source of truth for the full project landscape: what's in motion, what's 
 | [[Studio_Makeover]]        | pj0005 | AdminHome           | P2       | 8 月 Plant repotting + Cleaner prep；9 月+ Phase 2 Systems | 2026-08-09 |
 | [[Training_Program]]       | pj0006 | PhysicalHealth      | P3       | 训练哲学 + 规则 + 课程池；执行层由 [[Danseur_Noble_Hub]] 承载 | 2026-08-09 |
 | [[Danseur_Noble_Hub]]      | pj0007 | LifeManagement      | P1       | LMS 执行层 PWA — Priming + Backlog + Coaching + Training + Scheduling | 2026-08-09 |
-| [[AI_learning]]            | —     | LifeManagement      | P1       | 超体 Ch5 开始（一周两章）→ IP 变现 → Anthropic Academy → CS50 | 2026-08-09 |
+| [[AI_learning]]            | pj0012 | LifeManagement      | P1       | 超体 Ch5 开始（一周两章）→ IP 变现 → Anthropic Academy → CS50 | 2026-08-09 |
 | [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance | P2       | Automated waterfall + 3-tier 运行中；AI 投资监控开发中；Q4 tax review | 2026-08-09 |
 | [[Strategic_Relationship_Audit]]      | pj0011 | Relationships | P2       | 9 月重新启动讨论；6 条 backlog（Internal Audit, ENM disclosure, Kids, traffic light, hardware checklist, cohabitation） | 2026-08-09 |
-| [[Design_your_life]]       | —     | MindMentalHealth    | P3       | 找系统性 prompt 重走 DYL exercise；Q4 奥德赛计划 review | 2026-08-09 |
-| [[Plant_rearrangement]]    | —     | AdminHome           | P2       | Sub-project of [[Studio_Makeover]] — 8 月内完成 repotting + root check | 2026-08-09 |
+| [[Design_your_life]]       | pj0013 | MindMentalHealth    | P3       | 找系统性 prompt 重走 DYL exercise；Q4 奥德赛计划 review | 2026-08-09 |
+| [[Plant_rearrangement]]    | pj0014 | AdminHome           | P2       | Sub-project of [[Studio_Makeover]] — 8 月内完成 repotting + root check | 2026-08-09 |
 | [[Meal_prep_routine]]     | pj0004 | PhysicalHealth      | P2       | 饮食 philosophy + routine 设计（什么时候吃、吃什么、吃多少）| 2026-08-09 |
 
 ## Recently Completed / Wrapping Up
@@ -40,10 +40,10 @@ Single source of truth for the full project landscape: what's in motion, what's 
 |---------|----|--------|----------|-------|
 | [[Travel_Buddy]] | pj0008 | CreativityCuriosity | P3 | Parked — 下次 travel 前 review。MVP 核心流已完成。|
 | [[Vibe_Coding]] | pj0009 | CreativityCuriosity | P3 | Parked — 超体学完后 revisit |
-| [[Show_Scraper]] | — | CreativityCuriosity | P3 | Parked — Q4 评估 Phase 2 多源扩展 |
-| [[Microaggression]] | — | MindMentalHealth | P3 | Parked — 被动收集模式 |
-| [[Travel]] | — | Travel | P3 | Parked — clarify travel preferences |
-| [[Dance_Note]] | — | PhysicalHealth / CreativityCuriosity | P3 | Reference library — quarterly review |
+| [[Show_Scraper]] | pj0017 | CreativityCuriosity | P3 | Parked — Q4 评估 Phase 2 多源扩展 |
+| [[Microaggression]] | pj0016 | MindMentalHealth | P3 | Parked — 被动收集模式 |
+| [[Travel]] | pj0019 | Travel | P3 | Parked — clarify travel preferences |
+| [[Dance_Note]] | pj0015 | PhysicalHealth / CreativityCuriosity | P3 | Reference library — quarterly review |
 
 ---
 

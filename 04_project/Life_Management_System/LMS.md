@@ -74,6 +74,22 @@ System-level skills and which module they serve:
 - **2026-07-24:** CC Backlog Sync implemented — coaching sessions push action items directly to App DB.
 
 ---
+## Strategic Direction
+
+- Design Module 4 entity processing — `_watchlist.md` `type:process` + `status:done` → annotation → wiki synthesis
+- Add shows & museums as first-class capture type in `_watchlist.md`
+- Validate `/quick-read` desktop flow before building mobile route
+- Update module flow chart to reflect Phases 2.5–2.8 completions
+- YAML metadata enrichment for `_watchlist` processed entries
+
+---
+## Decisions
+
+- **2026-08-09:** LMS restructured — KMS design details extracted to `KMS_Design.md`, scope clarified as "architecture map" not executor
+- **2026-06-17:** External validation — "the build phase is done; use the system, don't keep refining it." Push toward Module 4 design decisions.
+- **2026-05-16:** Annotation-first design confirmed — `annotation:` field as routing logic; no database, no explicit rules engine
+
+---
 
 ## Related
 

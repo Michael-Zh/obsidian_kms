@@ -66,3 +66,20 @@ The full LMS architecture is documented at `04_project/Life_Management_System/LM
 - **DeepSeek V3 for coaching** — strong Chinese-English bilingual performance for training/body sensation conversations
 - **Rules in DB, not code** — training rules evolve with user state without requiring code deployment
 - **Two-layer sync** — KMS (strategy) → App (execution) via GitHub Action; coaching decisions flow back via manual Push to Obsidian
+
+---
+## Strategic Direction
+
+- Priorities Panel 精简 — 直读 `_priority.md` Short-Term Focus section，不再 AI 压缩
+- Web Push Notifications — iOS 17+ 训练提醒（Service Worker + VAPID keys）
+- Exercise Library v3 — YouTube links + AI substitution ranking
+- `context_snapshots` 实际消费 — 从直接调 GitHub API 迁移到 Supabase 表读取
+- Coaching decisions 回流 Obsidian — `sync-decisions` 脚本实现闭环
+
+---
+## Decisions
+
+- **2026-08-09:** LMS 重构 — App 文档从 LMS 独立到 `Danseur_Noble_Hub/`，明确执行层定位
+- **2026-07-24:** Two-Layer Architecture 明确化（KMS 策略层 + App DB 执行层），Backlog Sync + Stale Review 闭环
+- **2026-07-21:** Backlog 重构 — 从 project 层面重新生成，Strategic Direction 替代 Next Steps
+- **2026-07-09:** Gym Logger 完整重写（warmup sets, inline edit, rest timer, deload + training mode 叠加）

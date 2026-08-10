@@ -1,5 +1,6 @@
 ---
 name: Road_to_2040_Investment_Blueprint
+project_id: pj0010
 status: active
 pillar: Finance
 current_focus: "System operational — automated waterfall + 3-tier running. Net worth update frequency TBD. AI market monitoring under development. Q4 tax optimization."

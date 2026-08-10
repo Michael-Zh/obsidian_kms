@@ -1,5 +1,6 @@
 ---
 project_id: pj0008
+pillar: CreativityCuriosity
 updated: 2026-08-09
 status: parked
 priority: P3
