@@ -1,0 +1,97 @@
+04_project/Flight_Upsell/Flight_Upsell.md
+  s_85507fe780f08f::t_21c759a7cfb5d8 3
+04_project/AI_learning/AI_learning.md
+  s_85507fe780f08f::t_07d11523e7b06b 3
+scripts/sync-context.py
+  s_85507fe780f08f::t_2ec08b2bbcfcdc 143-144
+  s_85507fe780f08f::t_3f8037a85d7433 33,69-89,93-104,111-115,117,119-138,140,145,148,150-153,155,194-197,200-201,204-205,208,211,213-222,226-227,229-230
+04_project/Plant_rearrangement/Plant_rearrangement.md
+  s_85507fe780f08f::t_9f54fe7e54f370 3
+04_project/Show_scraper/Show_scraper.md
+  s_85507fe780f08f::t_fd22d996e7f062 3
+04_project/Danseur_Noble_Hub/App_Vision.md
+  s_85507fe780f08f::t_9f378fb7569726 69-85
+04_project/AI_learning/CLAUDE.md
+  s_85507fe780f08f::t_ae63f3d4e3f0b9 1-59
+04_project/Microaggression/CLAUDE.md
+  s_85507fe780f08f::t_b0b522b1b0ccd6 1-16
+04_project/Travel/CLAUDE.md
+  s_85507fe780f08f::t_b4e5cfe10c0363 1-16
+04_project/travel_buddy/CLAUDE.md
+  s_85507fe780f08f::t_bf205491659d86 1-17
+04_project/vibe_coding_tool/vibe_coding.md
+  ai_agent 2,4-6,39-52
+04_project/Skincare_Routine/CLAUDE.md
+  s_85507fe780f08f::t_a8811e343a3ae9 1-15
+04_project/Plant_rearrangement/CLAUDE.md
+  s_85507fe780f08f::t_a32462e3089f63 1-38
+04_project/Show_scraper/CLAUDE.md
+  s_85507fe780f08f::t_2327e986d8d6fc 1-16
+04_project/vibe_coding_tool/CLAUDE.md
+  s_85507fe780f08f::t_90db5cf5a9b2cf 1-18
+04_project/travel_buddy/travel_buddy.md
+  s_85507fe780f08f::t_6f0712c8202ec8 3
+04_project/Road_to_2040_Investment_Blueprint/Road_to_2040_Investment_Blueprint.md
+  s_85507fe780f08f::t_b8f684274d67c1 3
+00_system/_priority.md
+  s_2d1eb832286570::t_40bed77558bb12 5,7,11,13,15,17,19,21,23,25-33
+  s_2d1eb832286570::t_102a95e5bb2110 113
+  s_2d1eb832286570::t_f3b6d7cb9a3514 64-66
+  s_2d1eb832286570::t_7204f80b3ff327 90
+  s_2d1eb832286570::t_4669d9a1658c9d 44-46
+04_project/Dance_Note/Dance_Note.md
+  s_85507fe780f08f::t_37d04595f7084e 3
+04_project/project_overview.md
+  s_85507fe780f08f::t_d070a1f02d2ee2 43-46
+  s_85507fe780f08f::t_f4d714b529dac1 23,26-27
+04_project/Travel/Travel.md
+  s_85507fe780f08f::t_070973c3576446 3
+04_project/Microaggression/Microaggression.md
+  s_85507fe780f08f::t_46a75aa2ac5f31 3
+04_project/Flight_Upsell/PROJECT_CONTEXT.md
+  s_7bc464a9405d34::t_195508c9413628 2,8,13,15,18,22,24,26,28,30-34,36,38-41,45,47,49-52,56,58,60-64,68,70-76,80,82-88,92,94-96,98,100-102,106,108-113,115-117,124-148,152,155-157,159-162,164-170
+04_project/Strategic_relationship_audit/CLAUDE.md
+  s_85507fe780f08f::t_53c0f1a4e06334 1-59
+04_project/Design_your_life/Design_your_life.md
+  s_85507fe780f08f::t_b5c0c55928c466 3
+04_project/Strategic_relationship_audit/Strategic_relationship_audit.md
+  s_85507fe780f08f::t_73b3d5ab796055 3
+04_project/Life_Management_System/LMS.md
+  s_85507fe780f08f::t_52e74320a63e32 77-91
+04_project/Road_to_2040_Investment_Blueprint/CLAUDE.md
+  s_85507fe780f08f::t_0b2bcf5021aa84 1-56
+04_project/Skincare_Routine/Skincare_Routine.md
+  s_85507fe780f08f::t_69048667677ee7 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "f24fd9ade452b9a56e006ed0acaf7d1dca486022",
+  "prompts": {},
+  "sessions": {
+    "s_2d1eb832286570": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca4a1ddf-4a9d-4cfd-94f5-8008428a9e28",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_7bc464a9405d34": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cc21a88b-bca4-4ff6-811f-1fd242c75e20",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_85507fe780f08f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "64990674-fe7a-43c9-ab45-eb2cac7f2e6e",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
