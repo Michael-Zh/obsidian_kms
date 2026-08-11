@@ -1,0 +1,33 @@
+04_project/Flight_Upsell/Flight_Upsell.md
+  s_7bc464a9405d34::t_da400ebb3d098e 6,8,15,17,19-63,67-69,71-75,79,81-87,91-95,97-101,105-116,118-121,125-133,135-147,151,157-160
+04_project/Flight_Upsell/CLAUDE.md
+  s_7bc464a9405d34::t_cd4f79d02d547a 6,8,10,18-19,22,28,32-34,51-52,55-57,68-70,73
+04_project/AI_learning/AI_learning.md
+  s_08a76d3d7316ca::t_4bb57f75c42315 75-76
+04_project/Life_Management_System/LMS.md
+  s_08a76d3d7316ca::t_8294d7bccb3096 79-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "483963c4dfa4733e1d8fbeb747ce84c3a18c6d28",
+  "prompts": {},
+  "sessions": {
+    "s_08a76d3d7316ca": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0a73a7f2-e0fb-409b-8978-d7e8927b7270",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_7bc464a9405d34": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cc21a88b-bca4-4ff6-811f-1fd242c75e20",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
