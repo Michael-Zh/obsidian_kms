@@ -85,7 +85,6 @@ Automated monthly flow:
 
 - Net Worth 更新频率 — TBD，需要确定合理节奏
 - AI 投资监控系统 — 建立 AI-assisted 市场观察 + 投资决策辅助
-- 长线 EUNL 定投保持 automated，不需要关注
 - Q4 tax optimization review — Peildatumarbitrage + Box 1 pension 策略
 
 ---

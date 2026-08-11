@@ -76,11 +76,10 @@ System-level skills and which module they serve:
 ---
 ## Strategic Direction
 
-- Design Module 4 entity processing — `_watchlist.md` `type:process` + `status:done` → annotation → wiki synthesis
-- Add shows & museums as first-class capture type in `_watchlist.md`
-- Validate `/quick-read` desktop flow before building mobile route
-- Update module flow chart to reflect Phases 2.5–2.8 completions
-- YAML metadata enrichment for `_watchlist` processed entries
+1. Update module flow chart to reflect Phases 2.5–2.8 completions
+2. Design Module 4 entity processing — `_watchlist.md` `type:process` + `status:done` → annotation → wiki synthesis
+3. YAML metadata enrichment for `_watchlist` processed entries
+4. Validate `/quick-read` desktop flow before building mobile route — TBD
 
 ---
 ## Decisions

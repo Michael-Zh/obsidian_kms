@@ -26,7 +26,6 @@ Build a clear, structured view of my three Odyssey Plans and the prototype exper
 ## Strategic Direction
 
 - 用更系统性的 prompt 重新过一遍 DYL exercise — 有一个文章笔记里包含了更完整的 prompt 框架
-- 使用 Gemini 或 Claude 重新生成 DYL 结构化总结
 - Workshop 探索（Iyengar Yoga、Studio Anna Mora Gyrotonic、Fighting Monkey / Celeste Pereira）推迟到 Q4 再评估
 - Q4 时 review 奥德赛计划，判断是否有值得转化为 action 的部分
 

@@ -72,11 +72,9 @@ The Life Management System — already built and running. The 超体 program wil
 
 ## Strategic Direction
 
-- 超体 — 一周两章持续推进（Ch5–Ch18），预计 2026年10月中旬完成
-- AI 时代 IP 变现（3课）— 超体完成后一周内完成
+- 超体 Ch5–Ch18 持续推进，每周两章。每章一个 task 用于追踪进度。
+- AI 时代 IP 变现（3课）— 超体完成后开始，每课一个 task。
 - 之后依次进入 Anthropic Academy → CS50
-- Flight upsell AI 分析 — 建立 BQ 数据分析能力，形成可复用的商业分析 pattern
-- 实践驱动学习 — 每个学习目标绑定一个 build project，输出 > 输入
 - Learning Log 在其他地方体现，不在此文件记录
 
 ---
