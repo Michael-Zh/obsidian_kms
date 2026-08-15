@@ -1,0 +1,46 @@
+04_project/Parents_relationship/Parents_relationship.md
+  s_83c3ee1d88cd8d::t_0a00805f7b59a6 8
+04_project/Strategic_relationship_audit/Strategic_relationship_audit.md
+  s_83c3ee1d88cd8d::t_46e314bfe0f228 8
+04_project/Road_to_2040_Investment_Blueprint/Road_to_2040_Investment_Blueprint_networth.md
+  s_83c3ee1d88cd8d::t_04762074726b90 33-34
+04_project/Training/Meal_prep_routine/Meal_prep_routine.md
+  s_83c3ee1d88cd8d::t_ffd5f99daf05b2 139
+  s_83c3ee1d88cd8d::t_5ffb9dad455256 9
+04_project/Plant_rearrangement/Plant_rearrangement.md
+  s_83c3ee1d88cd8d::t_334a3d09db6b90 9
+04_project/Danseur_Noble_Hub/App_Vision.md
+  s_83c3ee1d88cd8d::t_35236b8e4810c0 74
+  s_83c3ee1d88cd8d::t_5125c1fbae0f63 8
+04_project/AI_learning/AI_learning.md
+  s_83c3ee1d88cd8d::t_daff6d2dae2cb5 8
+  s_83c3ee1d88cd8d::t_3684a9de6307ad 76
+04_project/Training/Training.md
+  s_83c3ee1d88cd8d::t_fbd1fe001ec41b 71
+00_system/_priority.md
+  s_83c3ee1d88cd8d::t_6fa396a56966cb 112
+  s_83c3ee1d88cd8d::t_2299f281382aca 104-111,113-115
+  s_83c3ee1d88cd8d::t_6317235f2b3526 126
+  s_83c3ee1d88cd8d::t_530d2b0e68539e 13-41,44
+  s_83c3ee1d88cd8d::t_c90c0c4e527406 68
+  s_83c3ee1d88cd8d::t_ba1004719de9ca 4
+  s_83c3ee1d88cd8d::t_9e3da724cd264e 8
+04_project/Studio_makeover/Studio_makeover.md
+  s_83c3ee1d88cd8d::t_82a7ffc27890d3 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "779e3e6e9359c2af22c99ee38f228922ad4962db",
+  "prompts": {},
+  "sessions": {
+    "s_83c3ee1d88cd8d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bcea844-77c3-44f8-86c3-5928a76a4e06",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
