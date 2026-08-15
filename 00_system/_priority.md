@@ -1,16 +1,47 @@
 ---
 name: _priority
 description: Single source of truth — priorities, active & parked projects, ideas, and cross-pillar synergies
-updated: 2026-08-10
+updated: 2026-08-15
 ---
 打开这个文档，从上到下依次回答：现在应该关注什么？→ 有哪些项目在推进？→ 为什么是这些？
 
-**Last Updated:** 2026-08-10
+**Last Updated:** 2026-08-15
 **Links:** `/project-review` for priority re-ordering | `/project-context [name]` to start a focused session | `/Project-Initiation` to formalize a backlog idea
 
 ---
 
+## Annual Bottom Lines (2026 — 三条并行底线)
+
+*底线 = AND 逻辑：三条都完成，2026 才算达标。不排序、不互相牺牲。*
+
+| 底线 | 内容 | 年度判据 |
+|------|------|----------|
+| **Foundation 地基** | App dev + Physical（训练 / Meal prep）+ Home | 身体能自动跑（sleep ≥80%、meal prep 3-5 可重复菜、训练有 AI 反馈闭环）；Home 年底前完成 Phase 2 |
+| **Leverage 杠杆** | AI learning + 财务 | 超体 Ch5→Ch18 完成并启动变现路径；财务全自动 + Q4 税务落定 |
+| **Relationship 关系** | 父母 + 男友 | October gate 出明确结果（cohabitation/ENM/kids 不再 suspended）；父母 Phase 1 启动 |
+
+---
+
+## Execution Cadence (now → Sept 2026)
+
+*执行 = WHEN 逻辑：同一时刻主推 1-2 件，其余到点再动或自动跑。*
+
+| 状态 | 事项 | 时间 | 说明 |
+|------|------|------|------|
+| 🔥 主战场 | Home（Plant repotting + Cleaner prep） | Q3 硬 | 一次性工程，做完松手 |
+| 🔥 主战场 | Meal prep | Q3 硬 | daily rhythm，不抢周末大块时间 |
+| 🟡 持续底色 | App dev | 全年 | 唯一 KPI = 把这份 priority 结构长进 app，做外置「先做哪个」决策器 |
+| 🟡 持续底色 | AI learning | 全年 | 一周两章，忙周减半 |
+| ⏳ on-deck | Relationship（父母 + 男友） | 9月轻启动 → 10月主战场 | Parents Phase 1 + October gate |
+| 🛟 自动驾驶 | Finance | Q4 | net worth 月度 review + Q4 避税 |
+
+**🚫 Parked（不在执行节奏内）：** Training_Program 概念层（近期不改图纸，执行靠 App + Meal Prep）· Design_your_life（Q4）· 其余 Q4 deferred ideas
+
+---
+
 ## Short-Term Focus (now → September 2026)
+
+> ⚠️ Legacy 视图（单轴 P1/P2/P3）——已被上方 **Annual Bottom Lines + Execution Cadence** 取代。暂保留待迁移（见 Quick Decisions Queue deferred）。
 
 *What is actually getting attention right now — and why.*
 
@@ -34,7 +65,7 @@ Build an auto-running, low-resistance physical foundation — the root to weathe
 
 Financial autonomy = psychological freedom. Resource security enables handling relational complexity with clarity.
 
-**Current status:** Road to 2040 system 已全自动运行（automated waterfall + 3-tier investment architecture）。AI 投资简报已上线：launchd `com.michael.investment-brief` 每天 16:00 自动跑 → `Brief/YYYY-MM-DD.md`。待推进：确定 net worth 更新频率、Q4 合理避税。H1 review submitted (3.92) — strategist identity shift underway.
+**Current status:** Road to 2040 system 已全自动运行（automated waterfall + 3-tier investment architecture）。AI 投资简报已上线：launchd `com.michael.investment-brief` 每天 16:00 自动跑 → `Brief/YYYY-MM-DD.md`。待推进：net worth 月度 review（对齐 monthly review）→ Q4 合理避税。H1 review submitted (3.92) — strategist identity shift underway.
 
 **Related:** [[Road_to_2040_Investment_Blueprint]], [[Flight_Upsell]]
 
@@ -70,6 +101,18 @@ Dance_Note（reference library, quarterly review）· Design_your_life（Q4 奥�
 
 ---
 
+## Quick Decisions Queue
+
+_<2min 拍板项。batch process：有空时一次性过，resolve 后写回对应项目行并移除本条。_
+
+1. **Net worth 更新频率** → ✅ 已定：月度（对齐 monthly review + body scan 节奏）
+2. **Q4 避税主题** → 待定：Q4 review 聚焦哪个税项？（capital gains realization / 账户结构 / deductions）
+3. **Late-Aug 触发项批处理** → 待定：三个 trigger 已到（Alternative career session / Energy Budgeting / Hardware Checklist），现在 activate 还是 defer 到 9 月后？
+4. **Cleaner prep 范围** → 待定：8 月内，先定 agency vs 个人 + 预算上限
+5. **Frontmatter `priority` 字段迁移（元决策 B）** → deferred：新体系（Annual Bottom Lines + Execution Cadence）先在本文档跑顺，再决定是否把 13 个 active project 的 `priority: P1/P2/P3` 下沉为 `execution_state` / `bottom_line` 字段
+
+---
+
 ## Active Projects
 
 | Project | ID | Pillar | Priority | Current Focus | Updated |
@@ -80,7 +123,7 @@ Dance_Note（reference library, quarterly review）· Design_your_life（Q4 奥�
 | [[AI_learning]] | pj0012 | LifeManagement | P1 | 超体 Ch5 开始（一周两章）→ IP 变现 → Anthropic Academy → CS50 | 2026-08-10 |
 | [[Parents_Relationship]] | pj0003 | Relationships | P2 | 9 月 kick off — CT intensive 安全层分享，建立真实沟通语境 | 2026-08-10 |
 | [[Studio_Makeover]] | pj0005 | AdminHome | P2 | 8 月 Plant repotting + Cleaner prep；9 月+ Phase 2 Systems | 2026-08-10 |
-| [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance | P2 | Automated waterfall + 3-tier 运行中；AI 投资简报已上线（每天 16:00 自动跑）；Q4 tax review | 2026-08-15 |
+| [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance | P2 | Automated waterfall + 3-tier 运行中；AI 投资简报已上线（每天 16:00 自动跑）；net worth 月度 review；Q4 tax review | 2026-08-15 |
 | [[Strategic_Relationship_Audit]] | pj0011 | Relationships | P2 | 9 月重新启动讨论；6 条 backlog（Internal Audit, ENM disclosure, Kids, traffic light, hardware checklist, cohabitation） | 2026-08-10 |
 | [[Meal_prep_routine]] | pj0004 | PhysicalHealth | P2 | 饮食 philosophy + routine 设计（什么时候吃、吃什么、吃多少） | 2026-08-10 |
 | [[Plant_rearrangement]] | pj0014 | AdminHome | P2 | Sub-project of [[Studio_Makeover]] — 8 月内完成 repotting + root check | 2026-08-10 |

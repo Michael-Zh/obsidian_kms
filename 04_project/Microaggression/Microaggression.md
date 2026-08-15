@@ -7,6 +7,7 @@ created: 2026-06-12
 updated: 2026-08-09
 description: Personal learning resource for identifying and responding to anti-Asian microaggression and discrimination. Currently parked — when relevant wiki content or articles are found, add as source for future discussion.
 priority: P3
+execution_state: parked
 ---
 
 # Microaggression — Response Database

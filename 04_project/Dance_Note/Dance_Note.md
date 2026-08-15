@@ -9,6 +9,7 @@ last_reviewed: 2026-08-09
 created: 2026-06-13
 updated: 2026-08-09
 priority: P3
+execution_state: parked
 tags:
   - PhysicalHealth
   - CreativityCuriosity

@@ -7,6 +7,7 @@ created: 2026-06-12
 updated: 2026-08-09
 description: Applying Stanford DYL framework — Odyssey plans, prototype experiments, identity-anchored life architecture
 priority: P3
+execution_state: parked
 ---
 
 # Design Your Life

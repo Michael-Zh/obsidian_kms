@@ -8,6 +8,7 @@ created: 2026-04-15
 updated: 2026-08-09
 target_completion: 2040-12-31
 priority: P2
+execution_state: autopilot
 tags:
   - Finance
 ---

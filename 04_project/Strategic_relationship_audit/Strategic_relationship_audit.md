@@ -5,9 +5,10 @@ status: active
 pillar: Relationships
 current_focus: "9 月开始讨论。October gate: Jeroen 公寓 → cohabitation/ENM/kids in Q4。"
 created: 2026-04-01
-updated: 2026-08-09
+updated: 2026-08-15
 target_completion: 2026-12-31
 priority: P2
+execution_state: on_deck
 tags:
   - Relationships
   - MindMentalHealth

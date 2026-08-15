@@ -6,9 +6,10 @@ pillar: PhysicalHealth
 parent_system: Life_Management_System
 current_focus: "Phase 1: 讨论饮食 philosophy + routine 设计；Phase 2: 与 Training Program 结合，集成到 App"
 created: 2026-05-03
-updated: 2026-08-09
+updated: 2026-08-15
 target_completion: 2026-09-30
 priority: P2
+execution_state: main
 tags:
   - PhysicalHealth
 ---
@@ -135,6 +136,7 @@ tags:
 
 ## Strategic Direction
 
+- **Q3 硬 deadline**：跑通 3-5 个可重复菜 + 周日 20-min batch prep protocol（container 采购到位）
 - 设计可重复的 meal prep 流程 — container 采购、批量备餐、存储方案
 - 回答三个核心问题: 什么时候吃、吃什么、吃多少
 - 与 Training Program 集成 — meal timing 对齐训练日历

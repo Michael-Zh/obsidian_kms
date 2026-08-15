@@ -5,8 +5,9 @@ status: active
 pillar: LifeManagement
 current_focus: 通过实践学习——自定义 App 开发（Training Coach App）+ Claude Code 深度使用。超体 program 作为理论框架。想法沉淀到 Wiki，不单独追踪项目。
 created: 2026-06-12
-updated: 2026-08-09
+updated: 2026-08-15
 priority: P1
+execution_state: ongoing
 tags:
   - LifeManagement
   - Career
@@ -72,7 +73,7 @@ The Life Management System — already built and running. The 超体 program wil
 
 ## Strategic Direction
 
-- 超体 Ch5–Ch18 持续推进，每周两章。每章一个 task 用于追踪进度。
+- 超体 Ch5–Ch18 持续推进，每周两章（忙周减半）。每章一个 task 用于追踪进度。
 - AI 时代 IP 变现（3课）— 超体完成后开始，每课一个 task。
 - 之后依次进入 Anthropic Academy → CS50
 - Learning Log 在其他地方体现，不在此文件记录

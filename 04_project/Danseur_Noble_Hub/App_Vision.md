@@ -5,8 +5,9 @@ status: active
 pillar: LifeManagement
 parent_system: Life_Management_System
 current_focus: "LMS execution layer PWA — Priming + Backlog + Coaching + Training + Scheduling"
-updated: 2026-08-09
+updated: 2026-08-15
 priority: P1
+execution_state: ongoing
 ---
 
 # Danseur Noble Hub — App Vision
@@ -70,6 +71,7 @@ The full LMS architecture is documented at `04_project/Life_Management_System/LM
 ---
 ## Strategic Direction
 
+- **核心 KPI（2026-08-15 重定位）**：App dev 的度量 = 把排好的 priority 结构「长」进 app，做外置的「先做哪个」决策器，使 daily 决策不用脑子记/纠结。所有 feature 迭代都应服务于这一条。现有 feature（下方）待按此 KPI 重排，其余留待验证 ③ 记忆闭环后再动。
 - Priorities Panel 精简 — 直读 `_priority.md` Short-Term Focus section，不再 AI 压缩
 - Web Push Notifications — iOS 17+ 训练提醒（Service Worker + VAPID keys）
 - Exercise Library v3 — YouTube links + AI substitution ranking

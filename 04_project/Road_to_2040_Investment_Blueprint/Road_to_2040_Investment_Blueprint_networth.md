@@ -30,4 +30,5 @@ tags:
     
 ## 2. Tracking against the target
 
-(TBU)
+- **Review cadence（2026-08-15 定）:** Net worth 月度 review — 对齐 monthly review + body scan 节奏。日常由每天 16:00 AI 投资简报覆盖，不需要更频繁手动 snapshot。
+- (TBU)

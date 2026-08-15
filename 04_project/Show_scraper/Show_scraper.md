@@ -7,6 +7,7 @@ created: 2026-06-12
 updated: 2026-08-09
 description: Automated show discovery — Phase 1 (wearepublic.nl) complete. Parked until Q4 2026 for Phase 2 multi-source expansion.
 priority: P3
+execution_state: parked
 ---
 
 # Show Scraper

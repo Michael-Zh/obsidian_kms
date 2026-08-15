@@ -9,6 +9,7 @@ created: 2026-04-06
 updated: 2026-08-09
 target_completion: 2026-09-30
 priority: P3
+execution_state: parked
 tags: [PhysicalHealth]
 ---
 
@@ -67,6 +68,7 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 
 *Major coaching decisions related to training strategy.*
 
+- **2026-08-15:** 概念层标记为 Parked — Training_Program（训练哲学/规则/课程池）近期不改图纸，执行由 [[Danseur_Noble_Hub]] App + [[Meal_prep_routine]] 承载。图纸改动待 backlog（class pool 重查 / 整体安排重审）时 revisit。
 - **2026-07-21:** Current focus shift — body recomposition 大方向不变，但现阶段优先级是 CT intensive 前的基础维护。Meal Prep Routine 作为独立 project（P2）推进，Training Program 配合执行（P3）。
 - **2026-07-09:** Two-track sleep protocol defined — Track A（home by 10:30pm）/ Track B（late night accepted）；Sunday Meal Prep 20-min passive protocol；Pre-class eating habit（5-5:30pm meal）
 

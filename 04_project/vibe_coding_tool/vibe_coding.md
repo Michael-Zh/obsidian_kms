@@ -4,6 +4,7 @@ project_id: pj0009
 status: parked
 pillar: CreativityCuriosity
 priority: P3
+execution_state: parked
 ---
 
 # Vibe Coding Tool

@@ -8,6 +8,7 @@ created: "2026-06-04"
 updated: "2026-08-09"
 target_completion: "ongoing"
 priority: "P3"
+execution_state: parked
 tags: [Travel, Lifestyle]
 ---
 
