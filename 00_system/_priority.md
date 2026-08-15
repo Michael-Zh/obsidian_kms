@@ -34,7 +34,7 @@ Build an auto-running, low-resistance physical foundation — the root to weathe
 
 Financial autonomy = psychological freedom. Resource security enables handling relational complexity with clarity.
 
-**Current status:** Road to 2040 system 已全自动运行（automated waterfall + 3-tier investment architecture）。待推进：确定 net worth 更新频率、AI 投资监控系统开发、Q4 合理避税。H1 review submitted (3.92) — strategist identity shift underway.
+**Current status:** Road to 2040 system 已全自动运行（automated waterfall + 3-tier investment architecture）。AI 投资简报已上线：launchd `com.michael.investment-brief` 每天 16:00 自动跑 → `Brief/YYYY-MM-DD.md`。待推进：确定 net worth 更新频率、Q4 合理避税。H1 review submitted (3.92) — strategist identity shift underway.
 
 **Related:** [[Road_to_2040_Investment_Blueprint]], [[Flight_Upsell]]
 
@@ -80,7 +80,7 @@ Dance_Note（reference library, quarterly review）· Design_your_life（Q4 奥�
 | [[AI_learning]] | pj0012 | LifeManagement | P1 | 超体 Ch5 开始（一周两章）→ IP 变现 → Anthropic Academy → CS50 | 2026-08-10 |
 | [[Parents_Relationship]] | pj0003 | Relationships | P2 | 9 月 kick off — CT intensive 安全层分享，建立真实沟通语境 | 2026-08-10 |
 | [[Studio_Makeover]] | pj0005 | AdminHome | P2 | 8 月 Plant repotting + Cleaner prep；9 月+ Phase 2 Systems | 2026-08-10 |
-| [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance | P2 | Automated waterfall + 3-tier 运行中；AI 投资监控开发中；Q4 tax review | 2026-08-10 |
+| [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance | P2 | Automated waterfall + 3-tier 运行中；AI 投资简报已上线（每天 16:00 自动跑）；Q4 tax review | 2026-08-15 |
 | [[Strategic_Relationship_Audit]] | pj0011 | Relationships | P2 | 9 月重新启动讨论；6 条 backlog（Internal Audit, ENM disclosure, Kids, traffic light, hardware checklist, cohabitation） | 2026-08-10 |
 | [[Meal_prep_routine]] | pj0004 | PhysicalHealth | P2 | 饮食 philosophy + routine 设计（什么时候吃、吃什么、吃多少） | 2026-08-10 |
 | [[Plant_rearrangement]] | pj0014 | AdminHome | P2 | Sub-project of [[Studio_Makeover]] — 8 月内完成 repotting + root check | 2026-08-10 |

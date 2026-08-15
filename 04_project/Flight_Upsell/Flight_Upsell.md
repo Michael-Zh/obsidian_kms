@@ -143,7 +143,7 @@ Data Foundation → Supply → Fare Selection → Ranking → Display
 - [ ] 后续 BQ analysis 优先让 AI 代跑
 
 **Airline Audit Carryover**
-- [ ] CI 官网人工走查（TPE→NRT、TPE→HKG、TPE→LAX）
+- [x] CI 官网人工走查（TPE→NRT、TPE→HKG、TPE→LAX）
 - [ ] 完成剩余 FSC（欧线 + 北美/中东/日本）+ EU LCC audit
 
 ---
