@@ -1,0 +1,35 @@
+00_system/_priority.md
+  s_9a5f7b61b06bef::t_4f053f114225cf 83
+  s_9a5f7b61b06bef::t_d3e17bfdf92622 37
+04_project/Road_to_2040_Investment_Blueprint/Brief/2026-08-15.md
+  s_9a5f7b61b06bef::t_b59bc734195cf7 66-74
+  s_6e4ca7c540eab2::t_7513ba0d36d044 1-65
+04_project/Road_to_2040_Investment_Blueprint/Brief/run_brief.sh
+  s_9a5f7b61b06bef::t_55da601f74bc73 1-2,4-6,8-21,38-44,46-56
+  s_9a5f7b61b06bef::t_09a55b995b026c 3,22,24-34,45
+  s_9a5f7b61b06bef::t_af4a9af84c71ab 7,23,35-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "1ee0d6b5df6023804a55d74200c02b7e1640ec85",
+  "prompts": {},
+  "sessions": {
+    "s_6e4ca7c540eab2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a6d3de2d-14a9-4657-b714-2fd5111cc72b",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_9a5f7b61b06bef": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b0a499aa-7f06-4676-b203-4fc399ff020d",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
