@@ -1,0 +1,21 @@
+scripts/sync-context.py
+  s_83c3ee1d88cd8d::t_7a46c391b9ef83 170
+  s_83c3ee1d88cd8d::t_2c0e193f3a6de3 131,138-141
+  s_83c3ee1d88cd8d::t_8e0a11d4df250c 233
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "d78e3fbe043faabce83c7b0982f72fdb7c3a6c82",
+  "prompts": {},
+  "sessions": {
+    "s_83c3ee1d88cd8d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bcea844-77c3-44f8-86c3-5928a76a4e06",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
