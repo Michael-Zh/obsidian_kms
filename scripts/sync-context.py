@@ -128,12 +128,17 @@ def parse_project_file(path: Path) -> Optional[dict]:
     # ── Pillar: from frontmatter ──
     pillar = fm.get("pillar")
 
-    # ── Priority: from frontmatter (P1/P2/P3) ──
+    # ── Priority: from frontmatter (P1/P2/P3) — kept for Step-1 compatibility ──
     priority = fm.get("priority")
     if priority and not re.match(r'^P[123]$', priority):
         # Try to extract from frontmatter value (e.g. "P2 — something")
         m = re.search(r'\b(P[123])\b', priority)
         priority = m.group(1) if m else None
+
+    # ── Execution state: from frontmatter (main|on_deck|ongoing|autopilot|parked) ──
+    execution_state = fm.get("execution_state")
+    if execution_state and execution_state.lower() not in ("main", "on_deck", "ongoing", "autopilot", "parked"):
+        execution_state = None
 
     # ── Next actions: from ## Strategic Direction bullets ──
     next_actions = []
@@ -162,6 +167,7 @@ def parse_project_file(path: Path) -> Optional[dict]:
         "status": status,
         "pillar": pillar,
         "priority": priority,
+        "execution_state": execution_state,
         "next_actions": next_actions,
         "notes": notes,
         "source_path": source_path,
@@ -224,7 +230,7 @@ def main() -> None:
 
     if project_rows:
         for r in project_rows:
-            print(f"  {r['project_id']} → {r['title']} ({r['status']}, {r['priority']}) — {len(r['next_actions'])} actions")
+            print(f"  {r['project_id']} → {r['title']} ({r['status']}, {r['priority']}, {r['execution_state']}) — {len(r['next_actions'])} actions")
         supabase_upsert("projects_state", project_rows, ["project_id"])
     else:
         print("  WARNING: no projects with project_id found — nothing to sync")
