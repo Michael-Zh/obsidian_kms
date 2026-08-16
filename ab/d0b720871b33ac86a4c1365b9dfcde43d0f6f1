@@ -1,0 +1,21 @@
+04_project/AI_learning/AI_learning.md
+  s_83c3ee1d88cd8d::t_e85677fbccc79f 76
+04_project/Parents_relationship/Parents_relationship.md
+  s_83c3ee1d88cd8d::t_f54ff56219b69a 100-101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "abd0b720871b33ac86a4c1365b9dfcde43d0f6f1",
+  "prompts": {},
+  "sessions": {
+    "s_83c3ee1d88cd8d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bcea844-77c3-44f8-86c3-5928a76a4e06",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
