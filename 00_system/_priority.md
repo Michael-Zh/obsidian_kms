@@ -119,7 +119,7 @@ _<2min 拍板项。batch process：有空时一次性过，resolve 后写回对�
 |---------|-----|--------|----------|---------------|---------|
 | [[Life_Management_System]] | pj0001 | LifeManagement | P1 | Meta-system hub — 5-module architecture map: KMS, Coaching, Training, Project Coaching, Daily Ops | 2026-08-10 |
 | [[Flight_Upsell]] | pj0002 | Career | P1 | Regional Sync agenda 准备完成（中英文版）；AirAsia VPL coverage 排查初步结论（指标分母问题）；Jay v2 对比分析完成 | 2026-07-23 |
-| [[Danseur_Noble_Hub]] | pj0007 | LifeManagement | P1 | LMS 执行层 PWA — Priming + Backlog + Coaching + Training + Scheduling | 2026-08-10 |
+| [[Danseur_Noble_Hub]] | pj0007 | LifeManagement | P1 | LMS 执行层 PWA — Priority 系统重构（execution_state 火候轴）+ 排序逻辑（due 提权 + 删 consecutive 惩罚）| 2026-08-16 |
 | [[AI_learning]] | pj0012 | LifeManagement | P1 | 超体 Ch5 开始（一周两章）→ IP 变现 → Anthropic Academy → CS50 | 2026-08-10 |
 | [[Parents_Relationship]] | pj0003 | Relationships | P2 | 9 月 kick off — CT intensive 安全层分享，建立真实沟通语境 | 2026-08-10 |
 | [[Studio_Makeover]] | pj0005 | AdminHome | P2 | 8 月 Plant repotting + Cleaner prep；9 月+ Phase 2 Systems | 2026-08-10 |
