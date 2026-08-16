@@ -73,7 +73,7 @@ The Life Management System — already built and running. The 超体 program wil
 
 ## Strategic Direction
 
-- 超体 Ch5–Ch18 持续推进，每周两章（忙周减半）。每章一个 task 用于追踪进度。
+- 超体 Ch5–Ch18 持续推进，每周两章（忙周减半）。**滚动 2 窗口：backlog 只保留「当前章 + 下一章」两个 task，完成一章后再创建下一章，不要一次性列出所有章节**（完整清单见上方 Learning Pipeline 表）。
 - AI 时代 IP 变现（3课）— 超体完成后开始，每课一个 task。
 - 之后依次进入 Anthropic Academy → CS50
 - Learning Log 在其他地方体现，不在此文件记录

@@ -97,8 +97,8 @@ tags:
 
 ## Strategic Direction
 
-- Phase 1: 9 月开始 kick off — 从 CT intensive 体验开始分享安全层内容，建立沟通基础
-- Phase 2: 扩展分享范围 — 舞蹈训练、展览、旅行等充实生活的侧面
+- Phase 1（9 月）: 首次分享 — CT intensive 体验与感受（安全层，建立沟通基础）
+- Phase 2（Phase 1 后）: 后续分享 — 马德里 FGT 展览 + 舞蹈训练日常（扩展范围）
 - Long-term: 渐进打开取向话题 — 需要耐心，不触碰敏感话题
 - Target completion: 2026 年底
 - 核心原则: 说完给时间，不追着解释，不道歉，不收回
