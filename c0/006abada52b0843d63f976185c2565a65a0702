@@ -1,0 +1,64 @@
+04_project/Road_to_2040_Investment_Blueprint/Brief/2026-08-17.md
+  s_177b0acee5d6ed::t_d1d8e249d148c3 1-76
+04_project/Road_to_2040_Investment_Blueprint/Brief/2026-08-19.md
+  s_888872ffc918cb::t_c6651ae7fc5d0f 1,3-6,8,10-15,17,19-24,28,30,34,36-38,40,42,44,48-53,55,59,61-75,79-84,86,90,92-99,103,105-108,110,114-124,128-145
+04_project/Training/Training.md
+  s_fed7b9fc05e5ff::t_bc749502fa8ea2 70
+  s_fed7b9fc05e5ff::t_e103953a2fbbe8 7,9,20,22,34-42
+  s_fed7b9fc05e5ff::t_1989d8299eb322 48,50,52,54
+04_project/Plant_rearrangement/Plant_rearrangement.md
+  s_1b9ef05415350c::t_241a34840d1bc0 7,9,21,30,36-37,42,44,46-120,126-127
+04_project/Road_to_2040_Investment_Blueprint/Brief/2026-08-21.md
+  s_006f2bb9f370aa::t_c62019f048ce98 1-166
+04_project/Road_to_2040_Investment_Blueprint/Brief/2026-08-20.md
+  s_888872ffc918cb::t_8eed5d5e3d3251 156-163
+  s_888872ffc918cb::t_055c1395521713 1-155
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "c0006abada52b0843d63f976185c2565a65a0702",
+  "prompts": {},
+  "sessions": {
+    "s_006f2bb9f370aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3b2a8d9a-f1aa-4939-b464-7c1ac3016b49",
+        "model": "arn:aws:bedrock:us-west-2:466494951737:application-inference-profile/0g7b16vjhfmz"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_177b0acee5d6ed": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "027347a3-1266-4501-a8f3-b2670d420f65",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_1b9ef05415350c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7df97aec-4200-4bb5-a7e6-06c56c4a00dd",
+        "model": "arn:aws:bedrock:us-west-2:466494951737:application-inference-profile/0g7b16vjhfmz"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_888872ffc918cb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "27b1d8c5-7c59-450f-81b7-ea372fe5e55d",
+        "model": "arn:aws:bedrock:us-west-2:466494951737:application-inference-profile/0g7b16vjhfmz"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_fed7b9fc05e5ff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "dbd38c7a-691c-44eb-89df-1cf9cae91127",
+        "model": "ep-5e9quh5a"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
