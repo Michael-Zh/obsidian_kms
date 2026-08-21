@@ -4,9 +4,9 @@ project_id: "pj0014"
 status: "active"
 pillar: "AdminHome"
 parent_project: "Studio_makeover"
-current_focus: "Phase 1: 紧急 repotting 和 root check"
+current_focus: "Phase 2: Succulent Rescue & Pest Control"
 created: "2026-06-01"
-updated: "2026-08-15"
+updated: "2026-08-19"
 priority: "P2"
 execution_state: main
 tags: [AdminHome]
@@ -18,7 +18,7 @@ tags: [AdminHome]
 
 ## Overview
 
-Rescue and reorganize the indoor plant collection. Three priorities, ordered by urgency.
+Rescue and reorganize the indoor plant collection. Two plant groups, three phases ordered by urgency: stabilize tropicals → rescue succulents → relocate and establish routine.
 
 ---
 
@@ -27,31 +27,104 @@ Rescue and reorganize the indoor plant collection. Three priorities, ordered by 
 - **Trigger:** Yellowing Monstera leaves and general plant neglect during travel/training focus
 - **Key Assumptions:** Root issues are primary cause (dense soil, root-bound); succulents can wait
 - **Constraints:** Limited windows with good light; travel schedule interrupts care
-- **Prior Work:** Master Indoor Gardening Playbook written; Sprint 1 execution plan documented
+- **Prior Work:** Master Indoor Gardening Playbook written; Sprint execution plan active
 
 ---
 
 ## Objectives & Goals
 
-- **Goal 1:** Stabilize struggling tropicals (Monstera, etc.)
-- **Goal 2:** Repot succulents with proper soil and light conditions
+- **Goal 1:** Stabilize struggling tropicals (Monstera, Ficus, Alocasia)
+- **Goal 2:** Repot succulents with proper soil; eliminate mealybugs
 - **Goal 3:** Establish sustainable watering/maintenance routine compatible with travel schedule
 
 ---
 
-## Strategic Direction
+## Execution Plan
 
-按紧急程度排序：
+### Phase 1: Tropical Triage & Root Audit ✅ (Mostly Done)
 
-1. **紧急：Plant repotting 和 root check** — Monstera 等热带植物换盆，检查根系健康
-2. **重要：重新 arrange 植物位置** — 优化光照和空间布局
-3. **长期：建立 plant care routine** — 可持续的浇水养护计划，兼容旅行 schedule
+- [x] **Monstera Root Check & Repot** — Massaged out old suffocating dirt; repotted into Universal Chunky Mix
+- [x] **Prune Dead Weight** — Cut entirely yellow bottom leaf, dead black leaf stem, trimmed crispy variegated edges
+- [x] **Ficus Root Rescue** — Root ball loosened; repotted into Universal Chunky Mix
+- [ ] **Alocasia Rescue (URGENT)** — Unpot, massage away old soil, check/snip black/mushy roots, repot in Chunky Mix; do NOT plant too deep (corm top must sit at or just above soil line)
+
+### Phase 2: Succulent Rescue & Pest Control (Current)
+
+- [ ] **Snake Plant Repotting** — Desert Dwellers Mix (2–3 parts cactus soil + 1 part perlite); wait until roots fully dry before watering
+- [ ] **Succulent Mealybug Check (URGENT)** — Move any plant with white cotton fuzz 2m away; Q-tip test with 70% alcohol (rust/brown = mealybugs); dab all bugs with alcohol
+
+### Phase 3: Relocation & Reset (Next Week)
+
+- [ ] **Succulent Chop** — Behead leggy/stretched rosettes, callous 3 days, plant in dry soil
+- [ ] **Light Zone Placement** — Move all plants to designated zones (see Strategy below)
+
+---
+
+## Plant Groups & Diagnosed Issues
+
+### Group A: Tropicals (Monstera, Ficus 'Tineke', Alocasia)
+
+| Issue | Symptom | Fix |
+|---|---|---|
+| Overwatering / root suffocation | Yellow leaves, brown patches with yellow halos, soil fungus | Chunky Mix + wet-to-dry watering cycles |
+| No climbing support | Monstera tilting, top-heavy | Bamboo stake / moss pole |
+| Browning variegation | White patches turn brown/crispy | Stable watering + bright indirect light (no direct afternoon sun) |
+
+### Group B: Desert Dwellers (Succulents & Snake Plants)
+
+| Issue | Symptom | Fix |
+|---|---|---|
+| Mealybugs | White cotton fuzz in crevices | Alcohol Strike (Q-tip dab) |
+| Etiolation | Stretching/legginess | Succulent Chop + more direct sunlight |
+
+---
+
+## Long-Term Strategy
+
+### Light Zoning
+
+- **Zone 1 — Direct Sun** (South/West window): All succulents & snake plants
+- **Zone 2 — Bright Indirect** (East window or pulled back from South/West): Monstera & Ficus; keep variegated Monstera out of direct afternoon sun
+
+### Watering System
+
+- **Tropicals (Top-2-Inches Rule):** Water when top 2–3 inches are completely dry; always empty cache pot 30 min after watering
+- **Succulents (Soak & Dry):** Wait until 100% bone dry all the way down; drench, drain, then ignore for weeks
+
+### Preventative Maintenance
+
+- Monthly lukewarm leaf showers for tropicals (dust + pest deterrent)
+- 15-second weekly check: inspect leaf undersides and stem joints every time you water
+
+---
+
+## Soil Mix Recipes
+
+**Universal Chunky Mix (Tropicals — 2:1:1)**
+- 2 parts standard potting soil
+- 1 part bark chips
+- 1 part perlite
+
+**Desert Dwellers Mix (Succulents & Snake Plants — 2–3:1)**
+- 2–3 parts cactus soil
+- 1 part perlite
+- No bark chunks
+
+**Repotting Steps:**
+1. Wash nursery pot with hot soapy water
+2. Add 1–2 inch base layer of mix (don't pack)
+3. Place stake/moss pole first (bottom of pot)
+4. Position plant — angle root ball to correct tilt; root flare at/just below soil surface; never bury main stem
+5. Backfill sides with mix
+6. Tap outside of pot gently to settle (don't press)
+7. Tie main stem (not leaf stems) to stake; water thoroughly until it runs from drainage holes
 
 ---
 
 ## Decisions
 
-<!-- Populate after coaching sessions -->
+- Repotting sequence: Tropicals first (most urgent), succulents second
+- Stake placement: insert before backfilling to avoid root damage
 
 ---
 
@@ -61,4 +134,3 @@ Rescue and reorganize the indoor plant collection. Three priorities, ordered by 
 
 **Related References:**
 - [[The Master Indoor Gardening Playbook]] — Comprehensive strategy document
-- [[Sprint_1_execution]] — Immediate action plan

@@ -4,9 +4,9 @@ project_id: pj0006
 status: active
 pillar: PhysicalHealth
 parent_system: Life_Management_System
-current_focus: "Training philosophy + rules + class pools. Execution via Danseur Noble Hub App."
+current_focus: "Training philosophy + goals + decision log. Execution details (weekly structure, templates, rules, class pool) live in Danseur Noble Hub App DB."
 created: 2026-04-06
-updated: 2026-08-09
+updated: 2026-08-17
 target_completion: 2026-09-30
 priority: P3
 execution_state: parked
@@ -17,9 +17,9 @@ tags: [PhysicalHealth]
 
 ## Overview
 
-Elite athlete recomposition protocol balancing dance-based endurance (ballet/jazz/ashtanga/pilates) with resistance work (2x/week gym: Sun back/legs/arms + Mon chest/shoulders). Target: Maintain 43kg+ skeletal muscle while reducing body fat to 9kg (from current 15%). Optimized through 16:8 fasting, 2,300 kcal structured macros, and cognitive load management.
+Elite athlete recomposition protocol balancing dance-based endurance (ballet/jazz/ashtanga/pilates) with resistance work. Target: Maintain 43kg+ skeletal muscle while reducing body fat to ~9kg.
 
-**当前阶段（2026-07-21）：** Body recomposition 大方向不变，但现阶段 focus 是 CT intensive 前的基础维护。Sleep + fasting 执行困难，下一步优先推向 **Meal Prep Routine**（什么时候吃、吃什么、吃多少），先解决 plan 层面。Meal Prep 作为独立项目推进（P2），Training Program 配合执行（P3）。
+**单一真相源（2026-08-17 确立）：** 本文件只承载训练**哲学 + 目标 + 决策日志**。所有可执行细节（周结构、gym 模板、规则参数、硬约束、课程池）的真相在 **Danseur Noble Hub App 的 DB**（`training_context` / `gym_templates` / `scheduling_guidelines` / `scheduling_constraints` / `class_pool`）。执行细节只在 DB 改（app 或 CC 均可），改完 snapshot 回写；哲学只改本文件。详细定案见 App repo `docs/tech-spec.md §11`。
 
 ---
 
@@ -31,28 +31,27 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 
 ---
 
+## Training Philosophy（WHY — 跨规则的哲学）
+
+> 规则的理由与参数在同一条 DB 记录里；这里只存跨规则的哲学。
+
+- **Gym serves dance, never the reverse.** 训练是舞蹈的功能性底座，不是反过来。
+- **V-taper 优先**：背宽 > 侧束宽 > 臂细节；胸是 secondary。
+- **Recovery is the anchor.** 低 CNS 恢复是弹性缓冲；alignment（Iyengar/Reformer）永远安全。
+- **Recomposition lens**：每次训练决策都回溯到 Sept 2026 目标（86-87kg / 43kg+ SMM / <10% BFM）。
+- **低摩擦 + satisficing**：规则只挡已知失败模式（过载、多样性衰减、腘绳伤、肌肉间距），不做每天判断。
+
+---
+
 ## Roadmap
 
-### Weekly Training Architecture
+### Weekly Structure & Class Pool → 执行层
 
-| Day | Activity | Focus | Purpose |
-|---|---|---|---|
-| **SUN** | Ballet (ADC 16:00) | Technique | Primary ballet slot; long lines, Prince posture, silent landings |
-| **MON** | Gym (Back/Legs/Arms) + Iyengar | Muscle Retention + Recovery | "Do or Die" back/leg session (Trap Bar DL, Lat Pulldown, etc.) followed by Iyengar for alignment and stretch |
-| **TUE** | Gym (Chest/Shoulder) + optional light class | Muscle Retention + Cardio | Chest/shoulder press work; optional evening: improv contemporary, salsa solo, or hiphop (single only) |
-| **WED** | Jazz (1x/week) | Cardio | High calorie burn; tap into fat stores. Optional Hiphop after |
-| **THU** | Ballet (ADC 17:30 or HJS) | Technique | Secondary ballet slot — core control and silent landings |
-| **FRI** | Mysore 07:00 or Rest | Core + Recovery | Default Mysore day; active recovery if skipped |
-| **SAT** | Rest | Deep Recovery | Partner time; nervous system reset |
+> 周结构（四形态 weekly_pattern）、gym 模板（Session A/B）、规则参数、硬约束、课程池的真相在 **App DB**。本文件不再维护执行表。当前结构概览见 App repo `docs/tech-spec.md §11.5`。
 
-### Activity-Aligned Nutrition Protocol (The "Tri-Phasic" Window)
-*Window: 12:00/13:00 – 21:00/21:30. Target: 2,300 kcal (175g P | 230g C | 75g F).*
+### Nutrition → 独立项目 [[Meal_prep_routine]]
 
-| Phase | Time | Protocol | Focus / Components |
-|---|---|---|---|
-| **1. The Anchor** | 12:00/13:00 | **High Solid Protein + Fats** | **Focus:** Stable energy for desk work. <br> *Food:* 250g Chicken/Beef, Avocado/Oils, Moderate Carbs. |
-| **2. The Primer** | 17:00/17:30 | **Carb-Forward + Mod Protein** | **Focus:** Explosive fuel for evening classes. <br> *Food:* Pasta/Rice, Light Fish/Tofu. *Must digest easily.* |
-| **3. The Soft Close** | 21:30 | **Liquid/Soft Protein Heavy** | **Focus:** Fast absorption, won't elevate core temp before midnight sleep. <br> *Food:* 2 Scoops Whey Isolate, Greek Yogurt/Skyr, 5g Creatine. |
+营养协议（16:8 窗口、2,300 kcal 宏量）由 [[Meal_prep_routine]] 承载，不在本文件重复。
 
 ---
 
@@ -68,6 +67,7 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 
 *Major coaching decisions related to training strategy.*
 
+- **2026-08-17:** 单一真相源确立 — 执行细节全部归 App DB（三桶分类：constraints 7 / guidelines 15 / context 8），本文件精简为哲学+目标+决策日志。workout plan 结构重排：gym 落 Thu+Fri back-to-back（客观约束），HJS 枢轴三分支由 scheduling 问卷推导。完整定案见 App repo `docs/tech-spec.md §11` + `docs/Training_Coach_Dev_Log.md` Session 44。
 - **2026-08-15:** 概念层标记为 Parked — Training_Program（训练哲学/规则/课程池）近期不改图纸，执行由 [[Danseur_Noble_Hub]] App + [[Meal_prep_routine]] 承载。图纸改动待 backlog（class pool 重查 / 整体安排重审）时 revisit。
 - **2026-07-21:** Current focus shift — body recomposition 大方向不变，但现阶段优先级是 CT intensive 前的基础维护。Meal Prep Routine 作为独立 project（P2）推进，Training Program 配合执行（P3）。
 - **2026-07-09:** Two-track sleep protocol defined — Track A（home by 10:30pm）/ Track B（late night accepted）；Sunday Meal Prep 20-min passive protocol；Pre-class eating habit（5-5:30pm meal）
