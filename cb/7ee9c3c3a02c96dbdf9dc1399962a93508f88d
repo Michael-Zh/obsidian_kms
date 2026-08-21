@@ -1,0 +1,24 @@
+04_project/Dance_Note/CT_Toolbox.md
+  s_993205702dbe2b::t_622ef6dfda5f29 10-77,81
+  s_993205702dbe2b::t_713fe43262b2bd 98-100
+  s_993205702dbe2b::t_d74d40e15725ea 184-188
+  s_993205702dbe2b::t_aee084e227153c 174,176
+04_project/Dance_Note/Dance_Creation.md
+  s_993205702dbe2b::t_5cc82cf7943b34 28-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "cb7ee9c3c3a02c96dbdf9dc1399962a93508f88d",
+  "prompts": {},
+  "sessions": {
+    "s_993205702dbe2b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1cea4d64-7e9a-44d0-8a7d-8b7362b1da20",
+        "model": "arn:aws:bedrock:us-west-2:466494951737:application-inference-profile/0g7b16vjhfmz"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
