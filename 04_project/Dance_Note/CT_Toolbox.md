@@ -7,54 +7,79 @@ Countertechnique personal reference — organized by the six categories of the t
 ## A — Perspective
 *Direction and point of view, especially in relation to the joints*
 
-1. Everything moves away from the ankle: feet travel away, femur travels away — think from the ankle's perspective.
-2. Lift the hip off the leg, and the leg off the ankle — each joint holds its own space.
-3. Step in: the leg travels over the ankle, not just placing the foot down.
-4. All ribs move away from the legs.
-5. Nose is not your ribs — they can face different directions independently. `[Perspective, Body]` [[#^ct-c-nose-ribs]] ^ct-a-nose-ribs
-6. The pelvis moves away from the heel; the pelvis tips away to the side.
-7. Pelvis is above the legs, not on the legs. Pelvis is not your leg.
-8. Knees move away from each other.
-9. Elbows move away from each other — creates more space around you.
-10. Keep the front shoulder upward.
-11. The heel connects to the last two metatarsals; heel traveling back and down counterbalances something moving upward (shoulders, chest). `[Perspective, Body]` [[#^ct-c-heel-meta]] ^ct-a-heel-meta
-12. In side bend: wide back; arm not overhead until the very end — use it to lengthen. Opposite leg presses into the floor to initiate.
-13. In forward fold: loosen the upper back to allow the lower back to soften (also lift the toes); the lift initiates from the front of the pelvis.
-14. Release the hips so you can actually go into plié. From the release and stretch, you find the power and engine.
-15. Think about your mid-back, stretch your mid-back and lift.
-16. fold and lengthen your knees and legs, especially in combinations.
-17. Lift the front of your pelvis.
-18. Your sitting bone is looking towards the floor.
-19. Think about your side body / ribs floats up in #side_bend .
-20. Be aware that my inner heel is not pressing into the floor, and I'm rolling towards my outer feet.
-21. in arm side and up and twist (wind wipe) arms are in front of myself and arms out and up to keep giving more space to lower back
-22. in lounge, arm circles, and the front of pelvis and trunk is moving up and my leg lengths so much that i can lift my feet
-23. Arms in front of my body (in #arm_swing)
-24. #arm_swing your face falls first
-25. Fluffy arm pits
-26. Shoulder girdle away from toes
-27. in #head_roll feet stand under your seat bone (for the purpose of the exercise)
-28. #head_roll Lift the floating ribs up
-29. #head_roll hand on the floor, weight over the hands doesn't mean to press the hand to the floor
-30. from lounge to rotation, lift the front of the pelvis
-31. in second #head_roll allow knees to fold, all joints fold at the same time, ear up to sky
-32. in plie exercise, arm swing up and floating ribs up just before lengthening the leg to access the back of the legs, and use the fingers to lift up
-33. shifting weights pile exercise, keep the weight in the middle not all dump on one leg
-34. in low lounge, ass hole behind
-35.  #Pre-falling exercise
+#### Head / Jaw
+1. Lift the tongue to lose the jaw.
+2. Open arms front and back after arm swings: "ah" singing to the sky — to unblock the neck.
+3. In #arm_swing your face falls first.
+4. In #head_roll / head circle: move the top of the spine into the space. As the head travels back: front of the pelvis up, back of the legs down.
+
+#### Shoulder / Collar bones
+5. Keep the front shoulder upward.
+6. Fluffy arm pits.
+7. Shoulder girdle away from toes.
+8. Collar bones travel away from each other (to widen the shoulders) and away from the fat feet — creates more space in the hip joint. (#hamie_stretch, #head_roll)
+9. Hug the forearm to lift the shoulder blades — find more space in the lower back.
+10. Elbows move away from each other — creates more space around you.
+
+#### Arms / Hands
+11. Arms in front of the body. (#arm_swing)
+12. In arm side and up and twist (wind wipe): arms in front, then out and up — keeps more space in the lower back.
+13. In #head_roll: hand on the floor — weight over the hands doesn't mean to press.
+14. In forward fold: lean more weight above the hands — plant them further forward.
+15. In lounge: hands travel away from you with a slight outward rotation to soften the elbows; widen the shoulders and back; feel the weight over the hands, not pressing into them; release the hip joints and send the femur bones away from each other. (No fixed form.)
+
+#### Ribs / Trunk
+16. Nose is not your ribs — they can face different directions independently. `[Perspective, Body]` [[#^ct-c-nose-ribs]] ^ct-a-nose-ribs
+17. All ribs move away from the legs.
+18. In #side_bend: think about your side body / ribs floating up.
+19. In #head_roll: lift the floating ribs up.
+20. Think about your mid-back — stretch and lift.
+21. In #side_bend: wide back; arm not overhead until the very end — use it to lengthen. Opposite leg presses into the floor to initiate.
+22. In #side_bend: back to the back and up, arms in front.
+23. Allow the trunk to float.
+
+#### Pelvis / Hip
+24. Pelvis is above the legs, not on the legs.
+25. Lift the front of the pelvis.
+26. The pelvis moves away from the heel; the pelvis tips away to the side.
+27. Sitting bone looking towards the floor.
+28. Expand the pelvis above the hip joint.
+29. From lounge to rotation: lift the front of the pelvis.
+30. Release the hips so you can actually go into plié. From the release and stretch, you find the power and engine.
+
+#### Back
+31. In forward fold: loosen the upper back to allow the lower back to soften (also lift the toes); the lift initiates from the front of the pelvis.
+
+#### Legs / Knees
+32. Knees move away from each other.
+33. Fold and lengthen the knees and legs, especially in combinations.
+34. In #head_roll (second): allow knees to fold, all joints fold at the same time, ear up to sky.
+35. In plie exercise: arm swing up and floating ribs up just before lengthening the leg to access the back of the legs; use fingers to lift up.
+36. In shifting weights plie exercise: keep the weight in the middle, not all dumped on one leg.
+37. In (force-arch) plies: don't press the ankle — move the side of the back up and over the leg.
+38. In grand plié: think "pop" — a quick release of unnecessary tension, not a collapse. Soften the jaw; keep sending the trunk off the legs; knees away from each other; fingers, head, and legs free to fall.
+
+#### Feet / Ankle
+39. Everything moves away from the ankle: feet travel away, femur travels away — think from the ankle's perspective.
+40. Lift the hip off the leg, and the leg off the ankle — each joint holds its own space.
+41. Step in: the leg travels over the ankle, not just placing the foot down.
+42. The heel connects to the last two metatarsals; heel traveling back and down counterbalances something moving upward (shoulders, chest). `[Perspective, Body]` [[#^ct-c-heel-meta]] ^ct-a-heel-meta
+43. In #head_roll: feet stand under your seat bone (for the purpose of the exercise).
+44. Lift the toes, find the rotation out to give more space to fold the ankle joint.
+45. Be aware that my inner heel is not pressing into the floor, and I'm rolling towards my outer feet.
+46. Leaving the heel behind.
+
+#### Exercise: Lounge
+47. In lounge, arm circles: the front of the pelvis and trunk moves up, and legs lengthen so much you can lift the feet.
+48. In low lounge: ass hole behind.
+
+#### Exercise: Pre-falling
+49.  #Pre-falling exercise
 	1. Move the side of the back up and above the leg
 	2. Front of the pelvis up
 	3. Fat feet, small to big steps
-	4. Access falling energy. Notice the moment of falling and be patient. follow the same weight distribution throughout.
+	4. Access falling energy. Notice the moment of falling and be patient. Follow the same weight distribution throughout.
 	5. (it's a research)
-36. Lift the toes, find the rotation out to gie more space to fold the ankle joint
-37. in (force-arch) plies not to press the ankle - move the side of the back up and over the leg
-38. expand pelvis above the hip joint
-39. Leaving the hill behind
-40. Allow the trunk floating
-41. open arms front and back after arm swings: "ah" singing to the sky (to unblock the neck)
-42. Lift the tongue to lose the jaw.
-43. In #side_bend back to the back and up arms in front
 ---
 
 ## B — Space
@@ -70,6 +95,9 @@ Countertechnique personal reference — organized by the six categories of the t
 8. Breath is always happening. It creates space.
 9. #step_forward  Move out and horizontally into the space.
 10. My middle toe moves away from the heel
+11. Open and widen the skin of the back — broaden it into the space behind you. (#step_forward, #hamie_stretch)
+12. Move the armpit into the space. (#Pre-falling)
+13. Widen the armpits. (#arm_swing)
 
 ---
 
@@ -143,9 +171,9 @@ Countertechnique personal reference — organized by the six categories of the t
 3. Knowing where to move my body in space.
 4. Clearly direct your body part in space.
 5. Fuck it if not working — release judgment about the outcome.
-6. You don't have to "do" the seeing.
+6. You don't have to "do" the seeing. ^ct-e-seeing-1
 7. Keep it simple.
-8. Seeing without judging.
+8. Seeing without judging. ^ct-e-seeing-2
 
 Shifting attention:
 1. hand squeeze and sound passing game. Be open and available but also not zoom out or drifted away.
@@ -153,6 +181,11 @@ Shifting attention:
 3. when you are in class, the verbal instructions or other source of info is also a "simple task"
 4. this is a also a kind of stamina that can be trained
 5. naming the body part exercise is to let go of the thinking mind to just move
+6. Seeing as a tool — direct your gaze without forcing it. See [[#^ct-e-seeing-1]] and [[#^ct-e-seeing-2]].
+
+Exploration — less-used body parts / positions:
+1. Less-used body parts sequence: on knee and on hand, lift the hip, face up, arch in — right hand dominant, left leg dominant, then into lounge. (Explore the path.)
+2. Open knee squat: sit into an open knee squat, then move from within that position.
 
 ---
 

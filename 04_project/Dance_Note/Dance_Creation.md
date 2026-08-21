@@ -25,6 +25,27 @@ Three objectives guiding project selection and practice design (crystallised May
 - **Creative boredom pattern**: Once I understand and know something well, I get bored. Want continuous learning/improvement. Bored in rehearsals and repeating performances; only interested when still learning
 - **Work direction**: Create work based on improv to keep it fresh. Attend more workshops and performances related to improv-based creation
 
+### Notes from practice: Out of Tool Box double bill workshop
+
+**Movement quality / body approach:**
+1. Think the dot — a mung bean-sized single point, on the skin. Press, then pick it up to travel for a distance.
+2. If working with a whole part, think 3D — give it volume, not just a flat label.
+3. Soft is the default — but find where and how to break it.
+4. Explore using everyday poses as entry points for movement.
+
+**Dynamics & decisions:**
+1. Think the line of the movement; contrast the line and the impulse.
+2. Impulse doesn't have to be followed by a stop.
+3. Different stimulation sources: music, feel-good sensation.
+4. Stops create space to listen, react, and plan.
+5. Get to where you want to go — but through small movements.
+6. Dynamic balance — distinction between *balancing* (active, dynamic) and *balanced* (a state).
+7. Persistence; be clear to others and the audience.
+8. Foco point — shift attention inside and outside the performing group; relate to the foco point.
+9. Problem solving might be the more interesting perspective when viewing an improv.
+10. Only a few decisions at a time — not every problem is yours to solve.
+11. Exit without exiting: develop or retrieve.
+
 ---
 
 ## Artist Identity
