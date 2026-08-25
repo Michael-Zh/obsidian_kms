@@ -1,0 +1,42 @@
+00_system/_priority.md
+  s_22f599488f015d::t_48974cb12155ec 233-234
+  s_86285b4626de39::t_c23cb76cbd615e 121
+  s_22f599488f015d::t_91a2dd535a443d 8
+  s_22f599488f015d::t_8858de14f4da0f 144
+  s_22f599488f015d::t_a386ce9492a90d 4
+  s_22f599488f015d::t_444e276d4055da 70
+04_project/Flight_Upsell/doc-architecture.md
+  s_a747f229131cbc::t_7fbf1558391542 1-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "f0ba9b017ca6775378b49ffe19d36795a088ac24",
+  "prompts": {},
+  "sessions": {
+    "s_22f599488f015d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6fe5ec47-89a5-410b-9460-3d05b0208667",
+        "model": "arn:aws:bedrock:us-west-2:296122126678:application-inference-profile/0h6hdpgzshl1"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_86285b4626de39": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "816d665a-12ac-45f7-bc19-1fd93aefebcb",
+        "model": "arn:aws:bedrock:us-west-2:466494951737:application-inference-profile/0g7b16vjhfmz"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_a747f229131cbc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c3f5fe92-df23-4f7f-8285-9c346d3a76da",
+        "model": "arn:aws:bedrock:us-west-2:466494951737:application-inference-profile/0g7b16vjhfmz"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
