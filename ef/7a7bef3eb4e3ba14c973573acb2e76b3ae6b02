@@ -1,0 +1,28 @@
+04_project/Studio_makeover/Plant_rearrangement/Plant_rearrangement.md
+  s_8c533efda0c41a::t_daeb46d14322f6 7-9
+  s_8c533efda0c41a::t_062ac77d91cca9 128-129
+04_project/Studio_makeover/CLAUDE.md
+  s_8c533efda0c41a::t_bc1062fc8e1826 8
+00_system/_priority.md
+  s_8c533efda0c41a::t_b3c50e24bcf2e1 176
+  s_8c533efda0c41a::t_cc33cbf0adca8c 268
+  s_8c533efda0c41a::t_3bc2f0f09f7c37 76-77
+04_project/Studio_makeover/Plant_rearrangement/CLAUDE.md
+  s_8c533efda0c41a::t_4ce761d45bcdec 10-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "ef7a7bef3eb4e3ba14c973573acb2e76b3ae6b02",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
