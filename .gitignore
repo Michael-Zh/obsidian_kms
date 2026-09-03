@@ -27,6 +27,8 @@ __pycache__/
 google_oauth_credentials.json
 *credentials*.json
 *client_secret*.json
+.google_oauth_credentials.json
+scripts/.google_token.pickle
 
 # Logs
 *.log
