@@ -73,6 +73,8 @@ Coaching tab → `weekends` scope → **Weekend Allocation** 面板。它读 cal
 
 **队列来源：** App 面板读的是 `priming_backlog`（app DB），不是本文档。所以下方队列是**给人看的策略视图**，实际排序在 app 里跑。两边任务名保持一致即可对上。
 
+**⚠️ 边界（2026-09-03 定）：** backlog 是「要做什么」的唯一真相源；项目文件的 `## Strategic Direction` 是**策略叙述**，只作为 AI 的 prompt 上下文（帮 priming 挑 top3），**不判定任务是否完成**。此前 app 的 re-sync cascade 会把不在 Strategic Direction 里的 backlog 项静默标 done —— 已修（app Session 54）。所以：往 Strategic Direction 里写东西不会创建 task，从里面删东西也不会完成 task。要动 task 就去 backlog。
+
 *（`scripts/weekend_status.py` 是这个功能的前身，需单独走 Google OAuth，已被 app 内实现取代。保留作离线备用，不需要配。）*
 
 ### 待排队列（按 deadline，不按周末）
@@ -171,7 +173,7 @@ _<2min 拍板项。batch process：有空时一次性过，resolve 后写回对�
 | [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance | autopilot | Surrogacy 基金口径锁定；GOOGL 第一批完成（ABEA EUR €1,493），跟踪第二批；net worth €142,247（2026-09-01，月度）；Q4 tax review | 2026-09-01 |
 | [[Strategic_Relationship_Audit]] | pj0011 | Relationships | on_deck | Gate 后移至 12 月（Jeroen 11/12 搬入自购公寓）；10–11 月思考窗口；6 条 backlog 待激活 | 2026-09-03 |
 | [[Meal_prep_routine]] | pj0004 | PhysicalHealth | on_deck | 停滞中，9 月下旬重启。重新归类为训练输入而非家务 | 2026-09-03 |
-| [[Plant_rearrangement]] | pj0014 | AdminHome | main | Phase 2 待做（介壳虫检查 + Alocasia 抢救）；换盆/分区需 9 月中旬后的周末半天 | 2026-09-03 |
+| [[Plant_rearrangement]] | pj0014 | AdminHome | main | Sub-project of [[Studio_Makeover]]（2026-09-03 移入其文件夹）。Phase 2 待做（介壳虫检查 + Alocasia 抢救）；换盆/分区需 9/19–20 周末半天 | 2026-09-03 |
 | [[Training_Program]] | pj0006 | PhysicalHealth | parked | 图纸不改，但本轮 workout plan 改造（两个 intensive 后）的决策要落在这里 | 2026-09-03 |
 | [[Design_your_life]] | pj0013 | MindMentalHealth | parked | 找系统性 prompt 重走 DYL exercise；Q4 奥德赛计划 review | 2026-08-10 |
 
@@ -263,7 +265,7 @@ Ideas with enough context to become a project when priority opens up.
 
 ### Admin & Home
 
-- **Plants audit project** — 已合并入 [[Plant_rearrangement]]（[[Studio_Makeover]] sub-project）。8 月内完成 repotting + root check。
+- **Plants audit project** — 已合并入 [[Plant_rearrangement]]，文件在 `04_project/Studio_makeover/Plant_rearrangement/`（2026-09-03 移入父项目文件夹）。Phase 1 换盆已完成；Phase 2 待做。
 
 ### Life Management / KMS
 

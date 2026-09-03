@@ -4,9 +4,9 @@ project_id: "pj0014"
 status: "active"
 pillar: "AdminHome"
 parent_project: "Studio_makeover"
-current_focus: "Phase 2: Succulent Rescue & Pest Control"
+current_focus: "Phase 2: 介壳虫检查 + Alocasia 抢救（工作日晚间 10 分钟）；换盆/修剪/分区需周末半天（9/19–20）"
 created: "2026-06-01"
-updated: "2026-08-19"
+updated: "2026-09-03"
 priority: "P2"
 execution_state: main
 tags: [AdminHome]
@@ -125,6 +125,8 @@ Rescue and reorganize the indoor plant collection. Two plant groups, three phase
 
 - Repotting sequence: Tropicals first (most urgent), succulents second
 - Stake placement: insert before backfilling to avoid root damage
+- **2026-09-03:** 文件夹从 `04_project/Plant_rearrangement/` 移入 `04_project/Studio_makeover/Plant_rearrangement/` — 它本来就是 [[Studio_Makeover]] 的 sub-project，结构上跟 [[Meal_prep_routine]] 在 Training 之下一致。wikilink 不受影响（Obsidian 按文件名解析），`kms_search.py` 与 `sync-context.py` 都按 `project_id` 递归探测，也不受影响。
+- **2026-09-03:** 本项目不写 `## Strategic Direction` — task 由 app backlog 承载。此前 app 的 re-sync cascade 会把「不在 Strategic Direction 里」的 backlog 项静默标 done，对没有该 section 的项目（本项目）尤其致命；已在 app Session 54 修复（改为只有 KMS 来源的行才可被 KMS 自动解决）。
 
 ---
 

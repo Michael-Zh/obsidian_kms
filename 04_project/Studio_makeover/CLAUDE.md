@@ -5,7 +5,7 @@ _Last updated: 2026-08-09_
 
 A room-by-room renovation of a 33sqm studio apartment toward a "Modern Art Museum Cafe / Neo-Industrial" aesthetic — clean lines, white space, black steel accents, warm wood and plants. **Current timeline:** 8 月完成 Plant repotting + Cleaner prep，9 月以后继续 Phase 2+ Systems。Target: 2026 年底。
 
-Sub-project: [[Plant_rearrangement]]
+Sub-project: [[Plant_rearrangement]] — 文件在 `Plant_rearrangement/` 子目录（2026-09-03 从 04_project 顶层移入）
 
 **Primary Pillar:** AdminHome  
 **Status:** active  
