@@ -32,11 +32,11 @@ updated: 2026-09-03
 | 🔥 主战场 | Home（excessive 物品清理 + Plants） | 9 月中旬后 | 基础 clean-up + cleaner ✅ 已完成；剩余部分需要周末大块时间，按 Weekend Allocation 排 |
 | 🟡 待重启 | Meal prep | 9 月下旬 | 停滞中。归类从「家务/采购」改为「训练输入」——它是 workout plan 改造的另一半 |
 | 🟡 待重启 | AI learning | 9 月下旬 | 超体 Ch5→Ch18，一周两章；晚间 activity 密集期结束后重启 |
-| ⏸ 主动暂停 | App dev | 无期限 | 日常只用 scheduling，未 active 使用 → 没痛到需要「先做哪个」决策器。重启条件见下 |
+| 🟡 持续底色 | App dev | 全年 | **2026-09-03 解除暂停** — 重启条件 ② 成立（需要外置决策器管周末大块时间）。Session 53 已做 Weekend Allocation。仍不做无需求的 feature |
 | ⏳ on-deck | Relationship（父母 + 男友） | 父母 9 月下旬 · gate → 12 月 | Jeroen 11/12 搬入自购公寓；10–11 月为思考窗口 |
 | 🛟 自动驾驶 | Finance | Q4 | net worth 月度 review + Q4 避税 |
 
-**App dev 重启条件（三者任一成立）：** ① meal prep 需要认真做 priming；② 个人 priority 真的管不过来、需要外置决策器；③ 超体学完后对 app 该怎么长有新的整体判断。在此之前不加新 feature。
+**App dev 暂停 → 解除（2026-09-03）：** 原三个重启条件是 ① meal prep 需要认真做 priming；② 个人 priority 管不过来、需要外置决策器；③ 超体学完后有新整体判断。**② 已成立** —— 周末大块时间的分配正是「先做哪个」决策器要解决的事，且手工维护会变成第二个真相源。Session 53 做了 Weekend Allocation。原则不变：只做有真实需求的 feature，① 和 ③ 仍未到。
 
 **🚫 Parked（不在执行节奏内）：** Training_Program 概念层（图纸不改，但本轮 workout plan 改造的决策要落在这里）· Design_your_life（Q4）· 其余 Q4 deferred ideas
 
@@ -46,37 +46,34 @@ updated: 2026-09-03
 
 *周末是最稀缺的资源，且部分不可预测（海牙 / 临时演出）。所以不排「哪天做什么」，只排「哪个周末归谁」。*
 
-**状态不用手填 —— 直接读 calendar（2026-09-03 定）**
+**已做进 App（Session 53）—— 本节不再手工维护状态**
 
-```bash
-python3 scripts/weekend_status.py --weeks 8      # 表格
-python3 scripts/weekend_status.py --json         # 机器可读
-```
+Coaching tab → `weekends` scope → **Weekend Allocation** 面板。它读 calendar 判可用性，从 backlog 按 deadline 取任务，写 placeholder 进主 calendar。
 
-判定规则（脚本已实现，只读权限，从不写 calendar）：
+判定规则（2026-09-03 定）：
 
 | Location calendar | 主 calendar | 判定 |
 |---|---|---|
-| 有 `DH` | — | 🔒 **已占用** — 在海牙，不排大块事项 |
-| 只有 `AMS` | 无演出 | 🟢 **可用** — 在家 |
-| 只有 `AMS` | 有演出 | ⚠️ **待定** — 演出通常会吃掉周边时间 |
-| 都没有 | 有演出 | 🔒 **已占用** |
-| 都没有 | 无演出 | ⚠️ **未填** — 空 = 未定，未定的周末最容易被吃掉，所以不当成 🟢 |
+| **为空** | 无硬安排 | 🟢 **可安排** — 默认在阿姆斯特丹 |
+| **为空** | 有硬安排（show/office/social/tbc） | ⚠️ **有硬安排** — 通常会吃掉周边时间 |
+| **有任何值** | — | 🔒 **外出** — 值只表示「不在家」，不限于海牙 |
 
-只有标题**严格等于** `AMS` 或 `DH` 的事件才算 location marker（与 App `/api/location/plan` 同规则，Session 27 决策）。主 calendar 侧用关键词识别演出（show/performance/ballet/opera/concert/演出/首演…），并排除 dinner/lunch/gym/reformer 这类日常项——它们不构成占用。
-
-**为什么「空」算待定而不算可用：** 空只说明还没决定，而没决定的周末正是会被临时演出或临时去海牙吃掉的那些。当成 🟢 排了大块事项，等于把计划建在最不稳的格子上。
+**Placeholder 机制：** 写进主 calendar，标题 `LMS: <任务>` 或 `PJ: <任务>`（挂到 KMS 项目的用 `PJ`，其余 `LMS`）。默认**周六 14:00–18:00**。marker 的作用是让 app 下次读的时候认出「这是 AI 放的占位」而不是「我自己承诺的事」——所以它不计入占用判定，可以在 calendar 里自由拖动或删除。
 
 **方法：月初一次，五分钟**
 
-1. **跑一次脚本**拿到状态（🔒 已占用 / 🟢 可用 / ⚠️ 待定或未填）
-2. **每个 🟢 周末只分配一件大块事项。** 一个周末塞两件 = 两件都做不完。
-3. **⚠️ 周末不分配任何事**，它是缓冲；真的空出来就从队列顶部拿一件。
-4. **每件大块事项带一个 deadline。** 被挤掉就顺延到下一个 🟢；**顺延到超过 deadline，就是降 scope 或改 deadline 的信号**——不是再顺延一次。
+1. **打开面板**，它自动给出建议（每个 🟢 周末一件，按 deadline 最早优先）
+2. **逐条跳过不想要的**，然后写入主 calendar
+3. **⚠️ 和 🔒 周末不分配任何事**，⚠️ 是缓冲；真的空出来就从队列顶部拿一件
+4. **每件大块事项带一个 deadline。** 被挤掉就顺延到下一个 🟢；**顺延到超过 deadline，就是降 scope 或改 deadline 的信号**——不是再顺延一次
+
+第 4 条是这套方法唯一需要人判断的地方，app 不替你做。
 
 **关键拆分：把「采购」从「执行」里拆出来。** 植物这类事之所以吃掉整个下午，是因为「诊断 → 去店里买 supply → 动手」串成了一条链。先用工作日十分钟做诊断、列出 supply 清单，采购挪到工作日晚上或线上，周末那个半天就只剩纯执行——半天变成两小时，而且能排进 ⚠️ 周末。
 
-**分工：** `weekend_status.py` 读 calendar 回答「这个周末我能不能干活」；App 的 Weekend Planner（Coaching tab → `weekends` scope，Session 27）负责**写** AMS/DH（12 周视图 + 批量文本解析 + 写回 Google Calendar）。两者读同两个 calendar ID，规则一致。**「这个周末归哪件事」由下方队列决定**，不需要为此重启 app 开发。
+**队列来源：** App 面板读的是 `priming_backlog`（app DB），不是本文档。所以下方队列是**给人看的策略视图**，实际排序在 app 里跑。两边任务名保持一致即可对上。
+
+*（`scripts/weekend_status.py` 是这个功能的前身，需单独走 Google OAuth，已被 app 内实现取代。保留作离线备用，不需要配。）*
 
 ### 待排队列（按 deadline，不按周末）
 
@@ -91,15 +88,9 @@ python3 scripts/weekend_status.py --json         # 机器可读
 
 ### 当前分配
 
-*状态由脚本读出，非手填。最近一次核对：待首次运行（需先配 OAuth，见脚本 docstring）。*
+*不在本文档维护 —— 打开 App 面板看实时状态（它读 calendar + backlog）。*
 
-| 周末 | 状态 | 归属 |
-|------|------|------|
-| 9/5–6 | 🔒 已占用 | — |
-| 9/12–13 | 🔒 已占用 | — |
-| 9/19–20 | 🟢 | 队列 #1 Plants Phase 2+3 |
-| 9/26–27 | ⚠️ 待定 | 缓冲；空出来 → 队列 #3 |
-| 10/3–4 | 🟢 | 队列 #2 Meal prep 启动 |
+9 月的预期形状（按你 2026-09-03 给的信息，待 app 首次跑确认）：9/5–6 和 9/12–13 已满；9/19–20 是第一个可用周末，归 Plants；9/26–27 留作缓冲；10/3–4 归 Meal prep 启动。
 
 ---
 
@@ -111,7 +102,7 @@ python3 scripts/weekend_status.py --json         # 机器可读
 1. **Physical Foundation** — 两个 dance intensive 后的 workout plan 改造进行中；[[Meal_prep_routine]] 为配套营养输入（停滞待重启）
 2. **Studio_Makeover** — 基础 clean-up + cleaner 已完成；剩余 excessive 物品清理 + [[Plant_rearrangement]]（9 月中旬后的周末大块时间）
 3. **AI_learning** — 超体 Ch5→Ch18，一周两章；9 月下旬重启
-4. **Danseur_Noble_Hub** — 已主动暂停开发（见下方 status），仅 scheduling 在日常使用
+4. **Danseur_Noble_Hub** — 暂停已解除；Session 53 Weekend Allocation 上线，只做有真实需求的 feature
 
 **Success metrics（Foundation 底线判据）：** Sleep ≥80% compliance · meal prep 3-5 可重复菜 · 训练有 AI 反馈闭环 · Home 年底完成 Phase 2 · cleaner 常态运行 ✅
 
@@ -173,7 +164,7 @@ _<2min 拍板项。batch process：有空时一次性过，resolve 后写回对�
 | Project | ID | Pillar | 火候 | Current Focus | Updated |
 |---------|-----|--------|------|---------------|---------|
 | [[Life_Management_System]] | pj0001 | LifeManagement | ongoing | Meta-system hub — 5-module architecture map: KMS, Coaching, Training, Project Coaching, Daily Ops | 2026-08-10 |
-| [[Danseur_Noble_Hub]] | pj0007 | LifeManagement | ⏸ paused | 主动暂停开发 — 日常仅用 scheduling；重启条件见 Execution Cadence。代码 Session 52 (2026-08-31) | 2026-09-03 |
+| [[Danseur_Noble_Hub]] | pj0007 | LifeManagement | ongoing | 暂停已解除（重启条件 ② 成立）。Session 53：Weekend Allocation — 读 calendar 判可用性 + 写 LMS:/PJ: placeholder 进主 calendar。**Migration 054 待手动跑** | 2026-09-03 |
 | [[AI_learning]] | pj0012 | LifeManagement | on_deck | 停滞中 — 超体 Ch5 未开始，9 月下旬重启（一周两章）→ IP 变现 → Anthropic Academy → CS50 | 2026-09-03 |
 | [[Parents_Relationship]] | pj0003 | Relationships | on_deck | Phase 1 推至 9 月下旬 — CT intensive 安全层分享，建立真实沟通语境 | 2026-09-03 |
 | [[Studio_Makeover]] | pj0005 | AdminHome | main | 基础 clean-up + cleaner ✅ 完成；下一步 excessive 物品清理，需周末大块时间 | 2026-09-03 |
