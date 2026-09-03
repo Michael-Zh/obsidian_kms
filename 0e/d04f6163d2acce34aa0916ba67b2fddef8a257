@@ -1,0 +1,28 @@
+00_system/_priority.md
+  s_8c533efda0c41a::t_038bcc72bc635e 35
+  s_8c533efda0c41a::t_7c7869d486fb1b 167
+  s_8c533efda0c41a::t_65a80a5f43d8e1 39
+  s_8c533efda0c41a::t_b192c1e30ee4ba 74-76
+  s_8c533efda0c41a::t_8ca3ecb1d2e1c9 91,93
+  s_8c533efda0c41a::t_4f557fbe2f4331 49,51,53,57-59,61,65-70
+  s_8c533efda0c41a::t_915c0f3ad79ca5 105
+04_project/Danseur_Noble_Hub/App_Vision.md
+  s_8c533efda0c41a::t_d7b2e0e00381e3 7,10
+  s_8c533efda0c41a::t_9bc68f5099fb95 74-76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "0ed04f6163d2acce34aa0916ba67b2fddef8a257",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
