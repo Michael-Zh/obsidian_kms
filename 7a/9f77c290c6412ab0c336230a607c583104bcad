@@ -1,0 +1,24 @@
+scripts/weekend_status.py
+  s_8c533efda0c41a::t_70e06152eea2f3 1-243
+.gitignore
+  s_8c533efda0c41a::t_996ce509bb9d81 30-31
+00_system/_priority.md
+  s_8c533efda0c41a::t_c367d02bec7157 79-90,92,94,96-102
+  s_8c533efda0c41a::t_bc2a9fefbd3050 49-69,72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "7a9f77c290c6412ab0c336230a607c583104bcad",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
