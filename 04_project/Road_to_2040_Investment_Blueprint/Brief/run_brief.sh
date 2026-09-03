@@ -13,6 +13,10 @@ VAULT="/Users/michael_zhang/Library/Mobile Documents/iCloud~md~obsidian/Document
 BRIEF_DIR="$VAULT/04_project/Road_to_2040_Investment_Blueprint/Brief"
 LOG_DIR="$BRIEF_DIR/.logs"
 
+# launchd 的 PATH 极简（/usr/bin:/bin:/usr/sbin:/sbin），不含 uvx/npx/node，
+# 会导致 trading212（uvx）、tradingview（npx）等 MCP 无法加载。这里补全 PATH。
+export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.npm-global/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
 mkdir -p "$BRIEF_DIR" "$LOG_DIR"
 
 TODAY="$(date +%Y-%m-%d)"
@@ -40,12 +44,19 @@ echo "=== run_brief start $(date '+%F %T') ===" >> "$LOG_FILE"
 
 cd "$VAULT"
 
+# 无头 claude 偶尔会卡死（MCP 握手/网络），加 watchdog：超时 15 分钟强杀，避免永久挂起。
+TIMEOUT_SEC=900
 "$CLAUDE_BIN" -p "$PROMPT" \
   --permission-mode auto \
   --allowed-tools "$ALLOWED_TOOLS" \
-  >> "$LOG_FILE" 2>&1
+  >> "$LOG_FILE" 2>&1 &
+CL_PID=$!
+( sleep "$TIMEOUT_SEC"; kill "$CL_PID" 2>/dev/null ) &
+WATCH_PID=$!
+status=0
+wait "$CL_PID" || status=$?
+kill "$WATCH_PID" 2>/dev/null
 
-status=$?
 echo "=== run_brief end $(date '+%F %T') status=$status ===" >> "$LOG_FILE"
 
 if [ ! -s "$OUT_FILE" ]; then

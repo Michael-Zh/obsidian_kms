@@ -79,3 +79,6 @@ Tags:
 	1. Coverage:
 		- Ideate and prototype coverage data set with FBU
 		- Lead the brand fare audit with regions. This audit aims to ensure Trip.com has complete and accurate mapping of airline brand fares across **40 global airlines** and to identify gaps between airline official sites offerings and what we source/sell on our platform. We built auditing material and educated markets to conduct the audit. We aim to insights are pending to be summarized
+	2. Decision influence (price competitiveness):
+		- Feasibility analysis on the TH-domestic (SL/DD) 5kg baggage-bundle test. Hypothesis was that surfacing a 5kg bundle would surface Trip's price advantage vs Agoda. I showed the supply side had already been tested naturally — DD/Nok Air exposes a 5kg fare card to 49% of middle pages but only 1.4% click / 0.6% order (lowest of all bag tiers) — and lowering the bundle threshold from ≥10kg → ≥5kg would replace a working 10kg lever with a near-zero-supply, low-intent 5kg tier.
+		- Result: FBU leadership decided to **abandon the 5kg bundle test** based on this analysis. (Doc: [5kg Bundle Feasibility Analysis](https://trip.sg.larkenterprise.com/docx/Aa5Cd7RcEogZ9dx2n8vls8Fwgwg))

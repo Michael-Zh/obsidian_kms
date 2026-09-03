@@ -1,13 +1,14 @@
 ---
 name: "Flight_Upsell"
 project_id: "pj0002"
-status: "active"
+status: "done"
 pillar: "Career"
-current_focus: "AirAsia VP/VPL 排查与优化；Refund/Change Policy 前端展示推动；AI-augmented discovery"
+current_focus: "已归档（2026-08）— Portfolio/Analysis/Learnings 保留为 reference，不再主动管理"
 created: "2026-04-15"
-updated: "2026-08-10"
+updated: "2026-09-03"
 target_completion: "ongoing"
-priority: "P1"
+priority: "P3"
+execution_state: "parked"
 tags: [Career]
 ---
 

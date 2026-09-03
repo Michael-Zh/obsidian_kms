@@ -11,6 +11,16 @@
 # Claude Code local settings (contains API tokens)
 .claude/
 
+# Other AI tool local config (same rationale — may contain tokens/settings)
+.agents/
+.copilot/
+.opencode/
+copilot/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
 # Sensitive credentials
 *.pickle
 *.google_token*

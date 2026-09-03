@@ -4,10 +4,10 @@ project_id: pj0007
 status: active
 pillar: LifeManagement
 parent_system: Life_Management_System
-current_focus: "LMS execution layer PWA — Priming + Backlog + Coaching + Training + Scheduling"
-updated: 2026-08-15
+current_focus: "⏸ 开发暂停（2026-09-03）— 日常仅用 scheduling。代码 Session 52。重启条件见 Strategic Direction"
+updated: 2026-09-03
 priority: P1
-execution_state: ongoing
+execution_state: parked
 ---
 
 # Danseur Noble Hub — App Vision
@@ -71,8 +71,10 @@ The full LMS architecture is documented at `04_project/Life_Management_System/LM
 ---
 ## Strategic Direction
 
-- **核心 KPI（2026-08-15 重定位）**：App dev 的度量 = 把排好的 priority 结构「长」进 app，做外置的「先做哪个」决策器，使 daily 决策不用脑子记/纠结。所有 feature 迭代都应服务于这一条。现有 feature（下方）待按此 KPI 重排，其余留待验证 ③ 记忆闭环后再动。
+- **⏸ 开发主动暂停（2026-09-03）**：日常只用 scheduling，未 active 使用整个 app → 说明还没痛到需要下面那条 KPI 描述的东西。暂停期间不加新 feature，下列条目全部转为 backlog。重启条件（三者任一）：① meal prep 需要认真做 priming；② 个人 priority 真的管不过来、需要外置决策器；③ 超体学完后对 app 整体该怎么长有新判断。
+- **核心 KPI（2026-08-15 重定位，仍然有效但未启动）**：App dev 的度量 = 把排好的 priority 结构「长」进 app，做外置的「先做哪个」决策器，使 daily 决策不用脑子记/纠结。
 - Priorities Panel 精简 — 直读 `_priority.md` Short-Term Focus section，不再 AI 压缩
+  - ⚠️ 该 section 自 2026-09-03 起改为**派生视图**（真相源 = Annual Bottom Lines + Execution Cadence）。格式契约仍是 `N. **项目名**`，三条 route 依赖：`/api/coaching/priorities`、`/api/context/status`、`/api/priming`。改 `_priority.md` 结构前先确认这三条。
 - Web Push Notifications — iOS 17+ 训练提醒（Service Worker + VAPID keys）
 - Exercise Library v3 — YouTube links + AI substitution ranking
 - `context_snapshots` 实际消费 — 从直接调 GitHub API 迁移到 Supabase 表读取
@@ -85,3 +87,5 @@ The full LMS architecture is documented at `04_project/Life_Management_System/LM
 - **2026-07-24:** Two-Layer Architecture 明确化（KMS 策略层 + App DB 执行层），Backlog Sync + Stale Review 闭环
 - **2026-07-21:** Backlog 重构 — 从 project 层面重新生成，Strategic Direction 替代 Next Steps
 - **2026-07-09:** Gym Logger 完整重写（warmup sets, inline edit, rest timer, deload + training mode 叠加）
+
+- **2026-08-22 (Session 51):** Schedule AI 改进 — classifyConflict (office/show/social/tbc→hard)注入 adjust prompt；applicable_titles (Migration 053) 防约束误套；generate class_pool lookup 修复；SchedulePanel 提取为单一 src/components/SchedulePanel.tsx；Coaching chat history 重构（无 welcome bubble，Clear Chat 存时间戳，history 按 cutoff 显示）；Schedule panel 移入对话流

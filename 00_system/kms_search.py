@@ -28,9 +28,15 @@ Commands:
       List all projects from /04_project/ with their YAML metadata.
 """
 
+from __future__ import annotations  # keeps `Path | None` valid on python 3.9 (/usr/bin/python3)
+
 import argparse, json, os, re, subprocess, sys
 from pathlib import Path
-import yaml
+
+try:
+    import yaml
+except ModuleNotFoundError:  # PyYAML missing (e.g. homebrew python3) — use fallback parser
+    yaml = None
 
 # Auto-detect vault root: this script is at $VAULT/00_system/kms_search.py
 VAULT = Path(__file__).resolve().parent.parent
@@ -40,6 +46,35 @@ PROJECTS = VAULT / "04_project"
 
 # ── helpers ──────────────────────────────────────────────────────────────────
 
+def _fallback_frontmatter(block: str) -> dict:
+    """Minimal key: value frontmatter parser, used when PyYAML is unavailable.
+
+    Handles the subset of YAML actually used in this vault: flat `key: value`
+    pairs plus `- item` list entries. Nested mappings are ignored.
+    """
+    meta: dict = {}
+    current_list_key = None
+    for line in block.split("\n"):
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        list_item = re.match(r"^\s+-\s+(.*)$", line)
+        if list_item and current_list_key:
+            meta.setdefault(current_list_key, []).append(
+                list_item.group(1).strip().strip('"').strip("'")
+            )
+            continue
+        pair = re.match(r"^([A-Za-z_][A-Za-z0-9_-]*)\s*:\s*(.*)$", line)
+        if pair:
+            key, val = pair.group(1).strip(), pair.group(2).strip()
+            if val == "":
+                current_list_key = key
+                meta.setdefault(key, [])
+            else:
+                current_list_key = None
+                meta[key] = val.strip('"').strip("'")
+    return meta
+
+
 def parse_frontmatter(text: str):
     """Return (meta_dict, body_text) from a markdown file."""
     if not text.startswith("---"):
@@ -47,9 +82,15 @@ def parse_frontmatter(text: str):
     end = text.find("\n---", 3)
     if end == -1:
         return {}, text
-    try:
-        meta = yaml.safe_load(text[3:end]) or {}
-    except Exception:
+    block = text[3:end]
+    if yaml is not None:
+        try:
+            meta = yaml.safe_load(block) or {}
+        except Exception:
+            meta = _fallback_frontmatter(block)
+    else:
+        meta = _fallback_frontmatter(block)
+    if not isinstance(meta, dict):
         meta = {}
     return meta, text[end + 4:].lstrip("\n")
 
@@ -74,15 +115,49 @@ def find_page(name: str) -> Path | None:
     return None
 
 
+def _python_grep(pattern: str, path: str, ignore_case=False, files_only=False):
+    """Pure-python stand-in for ripgrep over *.md, used when `rg` is unavailable."""
+    flags = re.IGNORECASE if ignore_case else 0
+    try:
+        regex = re.compile(pattern, flags)
+    except re.error:
+        regex = re.compile(re.escape(pattern), flags)
+    out = []
+    for f in sorted(Path(path).rglob("*.md")):
+        try:
+            text = f.read_text(encoding="utf-8", errors="ignore")
+        except Exception:
+            continue
+        if files_only:
+            if regex.search(text):
+                out.append(str(f))
+        else:
+            for i, line in enumerate(text.split("\n"), 1):
+                if regex.search(line):
+                    out.append(f"{f}:{i}:{line}")
+    return out
+
+
 def rg(pattern: str, path: str, extra_flags: list = None, files_only=False):
-    """Run ripgrep and return stdout lines."""
+    """Run ripgrep and return stdout lines, falling back to python if rg is absent.
+
+    `rg` may be shadowed by a shell function rather than a real binary, so a
+    subprocess call raises FileNotFoundError. Fall back rather than crash.
+    """
     cmd = ["rg", "--glob", "*.md"]
     if files_only:
         cmd.append("-l")
     if extra_flags:
         cmd.extend(extra_flags)
     cmd.extend([pattern, path])
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True)
+    except (FileNotFoundError, OSError):
+        return _python_grep(
+            pattern, path,
+            ignore_case=bool(extra_flags and "-i" in extra_flags),
+            files_only=files_only,
+        )
     return [l for l in result.stdout.strip().split("\n") if l]
 
 
@@ -207,44 +282,74 @@ def cmd_backlinks(args):
         print(str(Path(f).relative_to(VAULT)))
 
 
-def cmd_projects(args):
-    rows = []
-    for project_dir in sorted(PROJECTS.iterdir()):
-        if not project_dir.is_dir() or project_dir.name.startswith("_"):
+def find_project_files() -> list[Path]:
+    """Return every canonical project file under /04_project/.
+
+    Canonical marker is `project_id: pjXXXX` in frontmatter — same rule as
+    scripts/sync-context.py. Keying on the marker rather than on
+    `<dirname>/<dirname>.md` means this also finds:
+      - nested projects (e.g. Training/Meal_prep_routine/)
+      - overview files named differently from their folder (LMS.md, App_Vision.md)
+    Support docs (Architecture.md, Dev_Log.md, CLAUDE.md) have no project_id
+    and are skipped automatically.
+    """
+    found = []
+    for path in sorted(PROJECTS.rglob("*.md")):
+        if path.name == "CLAUDE.md" or path.stem.startswith("_"):
             continue
-        overview = project_dir / f"{project_dir.name}.md"
-        if not overview.exists():
+        if any(part.startswith("_") for part in path.relative_to(PROJECTS).parts):
             continue
         try:
-            meta, _ = parse_frontmatter(overview.read_text())
+            meta, _ = parse_frontmatter(path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if str(meta.get("project_id", "")).startswith("pj"):
+            found.append(path)
+    return found
+
+
+def cmd_projects(args):
+    rows = []
+    for overview in find_project_files():
+        try:
+            meta, _ = parse_frontmatter(overview.read_text(encoding="utf-8"))
         except Exception:
             meta = {}
         if args.status and meta.get("status", "active") != args.status:
             continue
+        rel = overview.relative_to(PROJECTS)
         rows.append({
-            "name": project_dir.name,
+            "name": meta.get("name") or overview.stem,
+            "project_id": str(meta.get("project_id", "")),
             "pillar": meta.get("pillar", ""),
             "priority": meta.get("priority", ""),
+            "execution_state": meta.get("execution_state", ""),
             "status": meta.get("status", "active"),
             "current_focus": meta.get("current_focus", ""),
             "updated": str(meta.get("updated", "")),
+            "path": str(overview.relative_to(VAULT)),
+            "nested": len(rel.parts) > 2,
         })
+    rows.sort(key=lambda r: r["project_id"])
 
     if args.json:
         print(json.dumps(rows, indent=2))
     else:
-        fmt = "{:<30} {:<20} {:<5} {:<8} {:<10} {}"
-        print(fmt.format("Project", "Pillar", "Pri", "Status", "Updated", "Current Focus"))
-        print("─" * 110)
+        fmt = "{:<8} {:<28} {:<18} {:<10} {:<8} {:<10} {}"
+        print(fmt.format("ID", "Project", "Pillar", "ExecState", "Status", "Updated", "Current Focus"))
+        print("─" * 120)
         for r in rows:
             print(fmt.format(
-                r["name"][:30],
-                r["pillar"][:20],
-                r["priority"][:5],
-                r["status"][:8],
+                r["project_id"][:8],
+                (r["name"] + (" *" if r["nested"] else ""))[:28],
+                str(r["pillar"])[:18],
+                str(r["execution_state"])[:10],
+                str(r["status"])[:8],
                 r["updated"][:10],
-                r["current_focus"][:50],
+                str(r["current_focus"])[:45],
             ))
+        if any(r["nested"] for r in rows):
+            print("\n* nested under a parent project folder")
 
 
 # ── CLI wiring ────────────────────────────────────────────────────────────────

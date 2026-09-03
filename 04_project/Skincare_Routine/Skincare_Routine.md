@@ -1,7 +1,7 @@
 ---
 name: Skincare_Routine
 project_id: pj0018
-status: complete
+status: done
 pillar: AdminHome
 current_focus: "Routine established — home + travel protocols in place. No new content to add."
 created: 2026-04-01

@@ -1,11 +1,11 @@
 ---
 name: _priority
 description: Single source of truth — priorities, active & parked projects, ideas, and cross-pillar synergies
-updated: 2026-08-25
+updated: 2026-09-03
 ---
 打开这个文档，从上到下依次回答：现在应该关注什么？→ 有哪些项目在推进？→ 为什么是这些？
 
-**Last Updated:** 2026-08-25
+**Last Updated:** 2026-09-03
 **Links:** `/project-review` for priority re-ordering | `/project-context [name]` to start a focused session | `/Project-Initiation` to formalize a backlog idea
 
 ---
@@ -28,58 +28,82 @@ updated: 2026-08-25
 
 | 状态 | 事项 | 时间 | 说明 |
 |------|------|------|------|
-| 🔥 主战场 | Home（Plant repotting + Cleaner prep） | Q3 硬 | 一次性工程，做完松手 |
-| 🔥 主战场 | Meal prep | Q3 硬 | daily rhythm，不抢周末大块时间 |
-| 🟡 持续底色 | App dev | 全年 | 唯一 KPI = 把这份 priority 结构长进 app，做外置「先做哪个」决策器 |
-| 🟡 持续底色 | AI learning | 全年 | 一周两章，忙周减半 |
-| ⏳ on-deck | Relationship（父母 + 男友） | 9月轻启动 → 10月主战场 | Parents Phase 1 + October gate |
+| 🔥 主战场 | Physical（workout plan 改造） | 9 月 | 两个 dance intensive 后的 inspiration momentum，趁热改；概念层落点见 [[Training]] Decisions |
+| 🔥 主战场 | Home（excessive 物品清理 + Plants） | 9 月中旬后 | 基础 clean-up + cleaner ✅ 已完成；剩余部分需要周末大块时间，按 Weekend Allocation 排 |
+| 🟡 待重启 | Meal prep | 9 月下旬 | 停滞中。归类从「家务/采购」改为「训练输入」——它是 workout plan 改造的另一半 |
+| 🟡 待重启 | AI learning | 9 月下旬 | 超体 Ch5→Ch18，一周两章；晚间 activity 密集期结束后重启 |
+| ⏸ 主动暂停 | App dev | 无期限 | 日常只用 scheduling，未 active 使用 → 没痛到需要「先做哪个」决策器。重启条件见下 |
+| ⏳ on-deck | Relationship（父母 + 男友） | 父母 9 月下旬 · gate → 12 月 | Jeroen 11/12 搬入自购公寓；10–11 月为思考窗口 |
 | 🛟 自动驾驶 | Finance | Q4 | net worth 月度 review + Q4 避税 |
 
-**🚫 Parked（不在执行节奏内）：** Training_Program 概念层（近期不改图纸，执行靠 App + Meal Prep）· Design_your_life（Q4）· 其余 Q4 deferred ideas
+**App dev 重启条件（三者任一成立）：** ① meal prep 需要认真做 priming；② 个人 priority 真的管不过来、需要外置决策器；③ 超体学完后对 app 该怎么长有新的整体判断。在此之前不加新 feature。
+
+**🚫 Parked（不在执行节奏内）：** Training_Program 概念层（图纸不改，但本轮 workout plan 改造的决策要落在这里）· Design_your_life（Q4）· 其余 Q4 deferred ideas
+
+---
+
+## Weekend Allocation（大块时间的分配方法）
+
+*周末是最稀缺的资源，且部分不可预测（海牙 / 临时演出）。所以不排「哪天做什么」，只排「哪个周末归谁」。*
+
+**方法：月初一次，五分钟**
+
+1. **列出本月所有周末**，每个标成三类：
+   - 🔒 **已占用** — 海牙 / 已订演出 / 出行
+   - 🟢 **可用** — 完整半天以上可支配
+   - ⚠️ **待定** — 有可能被临时演出或行程吃掉
+2. **每个 🟢 周末只分配一件大块事项。** 一个周末塞两件 = 两件都做不完。
+3. **⚠️ 周末不分配任何事**，它是缓冲；真的空出来就从队列顶部拿一件。
+4. **每件大块事项带一个 deadline。** 被挤掉就顺延到下一个 🟢；**顺延到超过 deadline，就是降 scope 或改 deadline 的信号**——不是再顺延一次。
+
+**关键拆分：把「采购」从「执行」里拆出来。** 植物这类事之所以吃掉整个下午，是因为「诊断 → 去店里买 supply → 动手」串成了一条链。先用工作日十分钟做诊断、列出 supply 清单，采购挪到工作日晚上或线上，周末那个半天就只剩纯执行——半天变成两小时，而且能排进 ⚠️ 周末。
+
+**已有工具：** App 的 Weekend Planner（Coaching tab → `weekends` scope，Session 27）已经在管 AMS/DH 的 12 周视图，支持批量文本解析和写回 Google Calendar。**它管的是「我人在哪」，不管「这个周末归哪件事」**——后者暂时在本节手工维护即可，不需要为此重启 app 开发。
+
+### 2026-09 分配（首次应用）
+
+| 周末 | 状态 | 归属 | Deadline |
+|------|------|------|----------|
+| 9/5–6 | 🔒 已占用 | — | — |
+| 9/12–13 | 🔒 已占用 | — | — |
+| 9/19–20 | 🟢 | **Plants Phase 2+3**（换盆 / 修剪 / 分区）— 前提：supply 已在工作日买齐 | 9 月底 |
+| 9/26–27 | ⚠️ 待定 | 缓冲。空出来 → excessive 物品清理；被吃掉 → 顺延到 10 月第一个 🟢 | — |
+| 10/3–4 | 🟢 | Meal prep 启动（容器采购 + 第一次周日 batch） | 10 月中 |
+
+**不占周末的三件（工作日晚间即可）：** 介壳虫检查 + Alocasia 抢救（10 分钟，本周内，虫会扩散）· 超体一周两章 · 父母第一次通话（挑一个安静的晚上，不需要半天）
 
 ---
 
 ## Short-Term Focus (now → September 2026)
 
-> ⚠️ Legacy 视图（单轴 P1/P2/P3）——已被上方 **Annual Bottom Lines + Execution Cadence** 取代。暂保留待迁移（见 Quick Decisions Queue deferred）。
+> **派生视图，不是第三套排序。** 唯一真相源是上方 **Annual Bottom Lines**（AND 逻辑：什么算达标）+ **Execution Cadence**（WHEN 逻辑：现在推哪个）。本节把两者压平成「当下在做什么」，供 App 读取（Priorities Panel / priming top3 / context alignment 三条 route 依赖本节的 `N. **项目名**` 格式，且编号项必须在某个 `###` 小标题之下才会被 Priorities Panel 收录）。改动请先改上方两张表，再同步这里。
 
-*What is actually getting attention right now — and why.*
+### 当前主推（对应 Execution Cadence 的 🔥 + 🟡）
+1. **Physical Foundation** — 两个 dance intensive 后的 workout plan 改造进行中；[[Meal_prep_routine]] 为配套营养输入（停滞待重启）
+2. **Studio_Makeover** — 基础 clean-up + cleaner 已完成；剩余 excessive 物品清理 + [[Plant_rearrangement]]（9 月中旬后的周末大块时间）
+3. **AI_learning** — 超体 Ch5→Ch18，一周两章；9 月下旬重启
+4. **Danseur_Noble_Hub** — 已主动暂停开发（见下方 status），仅 scheduling 在日常使用
 
-### The Physical Base: Low-Friction Life System (Priority 1)
+**Success metrics（Foundation 底线判据）：** Sleep ≥80% compliance · meal prep 3-5 可重复菜 · 训练有 AI 反馈闭环 · Home 年底完成 Phase 2 · cleaner 常态运行 ✅
 
-Build an auto-running, low-resistance physical foundation — the root to weather complexity. Yi Wood needs structure to thrive.
-
-**Current focus:**
-1. **AI Learning** — 超体 Ch5 开始，一周两章（Ch5→Ch18）。完成后依次：IP 变现 → Anthropic Academy → CS50。
-2. **Danseur Noble Hub App** — LMS 执行层 PWA 持续迭代。Backlog 重构 + Web Push + Exercise Library v3。
-3. **Physical Foundation** — 训练概念层在 [[Training]]，当前重点转向 [[Meal_prep_routine]]（什么时候吃、吃什么、吃多少）。
-4. **Home** — 8 月 Plant repotting + Cleaner prep；9 月+ Phase 2 Systems。Target: 2026 年底。
-
-**Success metrics:** Sleep baseline ≥80% compliance; meal prep system repeatable (3-5 recipes); workout routine tracked through AI feedback; cleaner hired and running bi-weekly.
-
-**Related:** [[Studio_Makeover]], [[Training]], [[Meal_prep_routine]], [[Danseur_Noble_Hub]]
+**Related:** [[Studio_Makeover]], [[Training]], [[Meal_prep_routine]], [[Danseur_Noble_Hub]], [[Plant_rearrangement]]
 
 ---
 
-### The Resource Moat: Cash Flow Security & Growth (Priority 2)
+### Finance（🛟 自动驾驶）
 
-Financial autonomy = psychological freedom. Resource security enables handling relational complexity with clarity.
-
-**Current status:** Road to 2040 system 已全自动运行（automated waterfall + 3-tier investment architecture）。AI 投资简报已上线：launchd `com.michael.investment-brief` 每天 16:00 自动跑 → `Brief/YYYY-MM-DD.md`。待推进：net worth 月度 review（对齐 monthly review）→ Q4 合理避税。H1 review submitted (3.92) — strategist identity shift underway.
+系统全自动运行：automated waterfall + 3-tier 架构（Bucket 2/3 已并入 T212）。AI 投资简报 launchd `com.michael.investment-brief` 每天 16:00 → `Brief/YYYY-MM-DD.md`。Net worth €142,247（2026-09-01），月度 review。Surrogacy 基金口径已锁定。待推进：Q4 合理避税。H1 review submitted (3.92)。
 
 **Related:** [[Road_to_2040_Investment_Blueprint]]
 
 ---
 
-### The Relationship Gate: Resolve the Suspended State (Priority 3)
+### Relationship（⏳ on-deck → 时间线已后移）
 
-Move from "stuck" to clear outcomes on major relationship decisions. Even amicable separation is a win compared to indecision.
+**2026-09-03 更新：** October gate 后移至 **December**。Jeroen 11/12 搬入自购公寓（另一城市，非租约，无到期压力），所以「是否搬去同住」不是紧急决策；momentum 会在他搬进去之后才变明显。十月至十一月为思考窗口，12 月做正式 discussion。
 
-**Current status:** 9 月重新启动讨论。Madrid 数据已沉淀（ENM 单向→双向探索、FOMO/safety 模式）。October gate: Jeroen 公寓 → cohabitation/ENM/kids in Q4。6 条 backlog 已写入 [[Strategic_Relationship_Audit]]。
-
-**Also active in this cluster:**
-- **Parents** — 9 月 Phase 1 kick off，从 CT intensive 体验开始分享安全层内容
-- **Strategic Relationship Audit** — Internal Audit, ENM disclosure, Kids binary, traffic light, hardware checklist, cohabitation roadmap
+- **Parents** — Phase 1 推至 9 月下旬启动（CT intensive 安全层分享）
+- **Strategic Relationship Audit** — 6 条 backlog 待激活；hardware checklist 建议在 12 月对话前完成
 
 **Related:** [[Strategic_Relationship_Audit]], [[Parents_Relationship]], [[Design_your_life]]
 
@@ -105,29 +129,31 @@ Dance_Note（reference library, quarterly review）· Design_your_life（Q4 奥�
 
 _<2min 拍板项。batch process：有空时一次性过，resolve 后写回对应项目行并移除本条。_
 
-1. **Net worth 更新频率** → ✅ 已定：月度（对齐 monthly review + body scan 节奏）
-2. **Q4 避税主题** → 待定：Q4 review 聚焦哪个税项？（capital gains realization / 账户结构 / deductions）
-3. **Late-Aug 触发项批处理** → 待定：三个 trigger 已到（Alternative career session / Energy Budgeting / Hardware Checklist），现在 activate 还是 defer 到 9 月后？
-4. **Cleaner prep 范围** → 待定：8 月内，先定 agency vs 个人 + 预算上限
-5. **Frontmatter `priority` 字段迁移（元决策 B）** → deferred：新体系（Annual Bottom Lines + Execution Cadence）先在本文档跑顺，再决定是否把 13 个 active project 的 `priority: P1/P2/P3` 下沉为 `execution_state` / `bottom_line` 字段
+1. ~~**Net worth 更新频率**~~ → ✅ 已定：月度。已写回 [[Road_to_2040_Investment_Blueprint]]，本条关闭（2026-09-03）
+2. ~~**Cleaner prep 范围**~~ → ✅ 已完成：cleaner 已请、已清。本条关闭（2026-09-03）
+3. **Q4 避税主题** → 待定：Q4 review 聚焦哪个税项？（capital gains realization / 账户结构 / deductions）
+4. **Late-Aug 触发项** → 部分澄清（2026-09-03）：Hardware Checklist 挂到 12 月 gate 前完成（不再是「现在 or defer」，有了具体 deadline）；Alternative career session 和 Energy Budgeting 仍待定 — 9 月下旬那个窗口已经排了三件事，这两条建议 defer 到 Q4
+5. **Frontmatter `priority` 字段迁移（元决策 B）** → 部分完成（2026-09-03）：Active Projects 表的 Priority 列已换成火候（execution_state）。frontmatter 的 `priority: P1/P2/P3` **暂不动** — App 的 `/api/context/status` alignment check 仍读它做对比，改之前要先改 app 侧三条 route。App dev 已暂停，所以此条随之 defer
 
 ---
 
 ## Active Projects
 
-| Project | ID | Pillar | Priority | Current Focus | Updated |
-|---------|-----|--------|----------|---------------|---------|
-| [[Life_Management_System]] | pj0001 | LifeManagement | P1 | Meta-system hub — 5-module architecture map: KMS, Coaching, Training, Project Coaching, Daily Ops | 2026-08-10 |
-| [[Danseur_Noble_Hub]] | pj0007 | LifeManagement | P1 | LMS 执行层 PWA — Schedule AI 改进（conflict 分类 + applicable_titles）；SchedulePanel 单一真相源；Coaching chat history 重构 | 2026-08-22 |
-| [[AI_learning]] | pj0012 | LifeManagement | P1 | 超体 Ch5 开始（一周两章）→ IP 变现 → Anthropic Academy → CS50 | 2026-08-10 |
-| [[Parents_Relationship]] | pj0003 | Relationships | P2 | 9 月 kick off — CT intensive 安全层分享，建立真实沟通语境 | 2026-08-10 |
-| [[Studio_Makeover]] | pj0005 | AdminHome | P2 | 8 月 Plant repotting + Cleaner prep；9 月+ Phase 2 Systems | 2026-08-10 |
-| [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance | P2 | Automated waterfall + 3-tier 运行中；AI 投资简报已上线（每天 16:00 自动跑）；net worth 月度 review；Q4 tax review | 2026-08-15 |
-| [[Strategic_Relationship_Audit]] | pj0011 | Relationships | P2 | 9 月重新启动讨论；6 条 backlog（Internal Audit, ENM disclosure, Kids, traffic light, hardware checklist, cohabitation） | 2026-08-10 |
-| [[Meal_prep_routine]] | pj0004 | PhysicalHealth | P2 | 饮食 philosophy + routine 设计（什么时候吃、吃什么、吃多少） | 2026-08-10 |
-| [[Plant_rearrangement]] | pj0014 | AdminHome | P2 | Sub-project of [[Studio_Makeover]] — 8 月内完成 repotting + root check | 2026-08-10 |
-| [[Training_Program]] | pj0006 | PhysicalHealth | P3 | 训练哲学 + 规则 + 课程池；执行层由 [[Danseur_Noble_Hub]] 承载 | 2026-08-10 |
-| [[Design_your_life]] | pj0013 | MindMentalHealth | P3 | 找系统性 prompt 重走 DYL exercise；Q4 奥德赛计划 review | 2026-08-10 |
+*火候 = `execution_state` frontmatter 字段（main / on_deck / ongoing / autopilot / parked），与上方 Execution Cadence 对齐。P1/P2/P3 已从本表移除——frontmatter 里暂时保留，因为 App 的 context alignment check 仍读它（见 Quick Decisions Queue #5）。*
+
+| Project | ID | Pillar | 火候 | Current Focus | Updated |
+|---------|-----|--------|------|---------------|---------|
+| [[Life_Management_System]] | pj0001 | LifeManagement | ongoing | Meta-system hub — 5-module architecture map: KMS, Coaching, Training, Project Coaching, Daily Ops | 2026-08-10 |
+| [[Danseur_Noble_Hub]] | pj0007 | LifeManagement | ⏸ paused | 主动暂停开发 — 日常仅用 scheduling；重启条件见 Execution Cadence。代码 Session 52 (2026-08-31) | 2026-09-03 |
+| [[AI_learning]] | pj0012 | LifeManagement | on_deck | 停滞中 — 超体 Ch5 未开始，9 月下旬重启（一周两章）→ IP 变现 → Anthropic Academy → CS50 | 2026-09-03 |
+| [[Parents_Relationship]] | pj0003 | Relationships | on_deck | Phase 1 推至 9 月下旬 — CT intensive 安全层分享，建立真实沟通语境 | 2026-09-03 |
+| [[Studio_Makeover]] | pj0005 | AdminHome | main | 基础 clean-up + cleaner ✅ 完成；下一步 excessive 物品清理，需周末大块时间 | 2026-09-03 |
+| [[Road_to_2040_Investment_Blueprint]] | pj0010 | Finance | autopilot | Surrogacy 基金口径锁定；GOOGL 第一批完成（ABEA EUR €1,493），跟踪第二批；net worth €142,247（2026-09-01，月度）；Q4 tax review | 2026-09-01 |
+| [[Strategic_Relationship_Audit]] | pj0011 | Relationships | on_deck | Gate 后移至 12 月（Jeroen 11/12 搬入自购公寓）；10–11 月思考窗口；6 条 backlog 待激活 | 2026-09-03 |
+| [[Meal_prep_routine]] | pj0004 | PhysicalHealth | on_deck | 停滞中，9 月下旬重启。重新归类为训练输入而非家务 | 2026-09-03 |
+| [[Plant_rearrangement]] | pj0014 | AdminHome | main | Phase 2 待做（介壳虫检查 + Alocasia 抢救）；换盆/分区需 9 月中旬后的周末半天 | 2026-09-03 |
+| [[Training_Program]] | pj0006 | PhysicalHealth | parked | 图纸不改，但本轮 workout plan 改造（两个 intensive 后）的决策要落在这里 | 2026-09-03 |
+| [[Design_your_life]] | pj0013 | MindMentalHealth | parked | 找系统性 prompt 重走 DYL exercise；Q4 奥德赛计划 review | 2026-08-10 |
 
 ---
 

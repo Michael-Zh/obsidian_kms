@@ -3,9 +3,9 @@ name: Road_to_2040_Investment_Blueprint
 project_id: pj0010
 status: active
 pillar: Finance
-current_focus: "System operational — automated waterfall + 3-tier running. Net worth update frequency TBD. AI market monitoring under development. Q4 tax optimization."
+current_focus: "Surrogacy 基金执行口径锁定（Wise $18.3k 种子 + €850/月 → 2029 Q3 €50k）；GOOGL 第一批已完成、仅跟踪第二批；net worth 月度 review；Q4 tax optimization。"
 created: 2026-04-15
-updated: 2026-08-09
+updated: 2026-09-01
 target_completion: 2040-12-31
 priority: P2
 execution_state: autopilot
@@ -22,7 +22,7 @@ Build a retirement portfolio targeting age 50 (2040) via a "Barista FIRE" strate
 
 ## Objectives & Goals
 
-- **Goal 1:** Reach €50k CapEx fund (surrogacy) with zero market risk by Q3 2029 — held in T212 cash at 3.5% interest.
+- **Goal 1:** Reach €50k CapEx fund (surrogacy) with zero market risk by Q3 2029 — held in T212 cash at 3.5% interest. **Funding（2026-09-01 定）:** 种子 Wise $18,340（≈€15,803）+ €850/月 → Q3 2029 达标 €50k。
 - **Goal 2:** Hit Barista FIRE target of **€684,000** in retirement portfolio by 2040 via €1,600/month automated contributions (100% EUNL/IWDA).
 - **Goal 3:** Shield capital from Box 3 wealth tax (€57,684 threshold) via Pillar 3 (Box 1) pension structures.
 
@@ -46,15 +46,31 @@ Build a retirement portfolio targeting age 50 (2040) via a "Barista FIRE" strate
 | **2. Tactical** | Weeks–Months | Capture medium-term opportunities (event arbitrage) | €7,000 — T212 Custom Pie | High | Rule-driven. Daily Tactical SOP triggers at 16:00 CET. No manual research. |
 | **3. Sandbox** | Days–Weeks | Experimental short-term trades (learning by doing) | ~$1,000 — Schwab USD | Very High | Rule-driven. Daily Tactical SOP. Physically isolated from Core. |
 
+**卫星仓（Tier 2/3）退出规则（2026-09-02 定）** — 把止盈从「区间」改成「具体动作」：
+
+| 触发 | 动作 |
+|---|---|
+| 浮盈 ≥ +5% | 减半 |
+| 浮盈 ≥ +10% | 清仓（或按标的特定目标价） |
+| +5% 后回撤 ≥ 3% | 离场（移动止盈） |
+| 浮亏收窄至 −10% 内 | 主动换仓 |
+| 跌破保护线 | 减仓 |
+
+> 各标的特定阈值优先（MSFT €340/€480、AAPL $275、GOOGL P/E、IKRA −10%）。Tier 1（EUNL/CapEx）不适用此规则，长期持有不触及。
+
 ---
 
 ## Waterfall Cash Management (The €5,000 Engine)
 
 Automated monthly flow:
 
-1. **Dutch Bank & Wise** — Retain ~€1,300 fixed expenses + €1,000 emergency buffer. FX Auto-Conversion: USD holdings locked at EUR/USD 1.05–1.06, sweeps to T212 on execution.
-2. **T212 Main Pot** — ~€1,000 for variable spending (T212 debit card, 3.5% interest). Excess pools here toward €50k CapEx wall (Goal 1).
-3. **T212 Invest** — €1,600 auto-routed to Core EUNL Pie (Goal 2). €0 to tactical pies.
+1. **ABN（中转）** — 仅中转房贷/固定账单等必经荷兰账户的款项，不存现金（≈€118）。
+2. **Wise（Surrogacy 种子）** — $18,340（≈€15,803）作为 Surrogacy 启动种子，一次性迁至 T212 3.5% 稳定基金。
+3. **T212 稳定基金（3.5%，三个现金桶，物理隔离）**：
+   - Surrogacy 桶：种子 €15,803 + €850/月 → 2029 Q3 达标 €50k（Goal 1），不得挪用。
+   - GOOGL 第二批子弹：~€2,000，触发 P/E < 16 或价格 ~$318。
+   - Spending pot：日常花销（T212 借记卡）。
+4. **T212 Invest（FIRE）** — €1,600/月（或全部剩余）自动投入 Core EUNL Pie（Goal 2）。
 
 ---
 
@@ -66,11 +82,12 @@ Automated monthly flow:
 
 ## Current Focus
 
-- 大部分 setup 已完成 — automated waterfall + 3-tier 已在运行，无需频繁主动管理
-- 三个待推进方向：
-  1. 确定 Net Worth 更新频率（目前不确定多 often 才合理）
-  2. AI 投资监控系统 — 利用 AI 结合固定策略观察市场，寻找中短线投资时机
-  3. Q4 合理避税讨论 — 届时集中处理 Box 3 / Peildatumarbitrage
+- 系统运行中 — automated waterfall + 3-tier 已运行；AI 投资简报（/investment-brief）每日 16:00 自动跑；net worth 月度 review。
+- 近期已定（2026-09-01）：
+  1. Surrogacy 基金：Wise $18,340 种子 + €850/月 → 2029 Q3 €50k（见 Goal 1）
+  2. GOOGL 第一批已完成（ABEA EUR 线 €1,493），仅跟踪第二批
+  3. Wise 弃用（息无竞争力），现金统一迁至 T212 3.5% 稳定基金
+- 待推进：Q4 tax optimization — Box 3 / Peildatumarbitrage / Pillar 3（Pillar 3 低优先级，Q4 用真实税率算）
 
 ## Connections
 
@@ -84,9 +101,10 @@ Automated monthly flow:
 
 ## Strategic Direction
 
-- Net Worth 更新频率 — TBD，需要确定合理节奏
-- AI 投资监控系统 — 建立 AI-assisted 市场观察 + 投资决策辅助
-- Q4 tax optimization review — Peildatumarbitrage + Box 1 pension 策略
+- Net worth 月度 review — 已定（对齐 monthly review + body scan 节奏）；最近一次 2026-09-01，€142,247
+- AI 投资监控系统 — 已上线：launchd `com.michael.investment-brief` 每天 16:00 → `Brief/YYYY-MM-DD.md`
+- GOOGL 第二批进场 — 第一批已完成（ABEA EUR 线 €1,493），仅跟踪第二批临界点
+- Q4 tax optimization review — Box 3 / Peildatumarbitrage / Pillar 3（Pillar 3 低优先级，Q4 用真实税率算）
 
 ---
 
@@ -94,3 +112,4 @@ Automated monthly flow:
 
 - **2026-07-24:** Status changed from parked → active P3. System fully operational — passive monitoring only.
 - **2026-08-09:** Priority P3 → P2（重要但不紧急，大部分 setup 已完成）。Current focus 调整为：net worth 更新频率 TBD、AI 投资监控系统开发、Q4 tax optimization review。
+- **2026-09-01:** Surrogacy 基金执行口径锁定：Wise $18,340（≈€15,803）为启动种子，迁至 T212 3.5% 稳定基金，另 €850/月转入，2029 Q3 达标 €50k。GOOGL 两批进场第一批已完成（ABEA EUR 线 €1,493），后续仅跟踪第二批。net worth 更新至 €142,247。
