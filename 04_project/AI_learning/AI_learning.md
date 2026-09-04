@@ -3,9 +3,9 @@ name: AI_learning
 project_id: pj0012
 status: active
 pillar: LifeManagement
-current_focus: 通过实践学习——自定义 App 开发（Training Coach App）+ Claude Code 深度使用。超体 program 作为理论框架。想法沉淀到 Wiki，不单独追踪项目。
+current_focus: "超体停滞中（Ch5 未开始），9 月下旬重启——晚间 activity 密集期结束后。实践侧持续：Danseur Noble Hub + Claude Code 深度使用"
 created: 2026-06-12
-updated: 2026-08-15
+updated: 2026-09-03
 priority: P1
 execution_state: ongoing
 tags:
@@ -27,12 +27,14 @@ AI learning 的主要方式是通过**实践**—目前的核心实践是搭建�
 - **Started**: 2026-06-12
 - **Total chapters**: 18
 - **Current progress**: Chapter 5 (未开始)
-- **Pace**: 2 chapters/week, starting this week (2026-08-09)
-- **Target completion**: ~9 weeks, around mid-October 2026
+- **Status**: ⏸ 停滞 — 原定 2026-08-09 那周开始，实际未启动
+- **Restart**: 9 月下旬（晚间 activity 密集期结束后）
+- **Pace**: 2 chapters/week（忙周减半）
+- **Target completion**: 14 章 ÷ 2 章/周 ≈ 7 周 → 若 9 月下旬重启，约 2026 年 11 月底完成
 
 **Backlog**:
 - Chapter 1–4 — 已完成
-- Chapter 5 — 本周开始
+- Chapter 5 — 9 月下旬重启后的第一章
 - Chapter 6
 - Chapter 7
 - Chapter 8
@@ -73,7 +75,7 @@ The Life Management System — already built and running. The 超体 program wil
 
 ## Strategic Direction
 
-- 超体 Ch5–Ch18 持续推进，每周两章（忙周减半）。**滚动 2 窗口：backlog 只保留「当前章 + 下一章」两个 task，完成一章后再创建下一章，不要一次性列出所有章节**（完整清单见上方 Learning Pipeline 表）。
+- 超体 Ch5–Ch18：**9 月下旬重启**，每周两章（忙周减半），约 11 月底完成。这条决定 Leverage 底线能否达标——完成后才启动 IP 变现 → Anthropic Academy → CS50 队列。**滚动 2 窗口：backlog 只保留「当前章 + 下一章」两个 task，完成一章后再创建下一章，不要一次性列出所有章节**（完整清单见上方 Learning Pipeline 表）。
 - AI 时代 IP 变现（3课）— 超体完成后开始，每课一个 task。
 - 之后依次进入 Anthropic Academy → CS50
 - Learning Log 在其他地方体现，不在此文件记录

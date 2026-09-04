@@ -3,9 +3,9 @@ name: Parents_relationship
 project_id: pj0003
 status: active
 pillar: Relationships
-current_focus: "Phase 1: 计划 9 月开始 kick off — 从 CT intensive 体验开始做第一次安全层分享"
+current_focus: "Phase 1: 9 月下旬 kick off — 从 CT intensive 体验开始做第一次安全层分享（一个安静的晚上即可，不占周末）"
 created: 2026-07-01
-updated: 2026-08-15
+updated: 2026-09-03
 target_completion: 2026-12-31
 priority: P2
 execution_state: on_deck
@@ -44,7 +44,7 @@ tags:
 
 ## Objectives & Goals
 
-- **Phase 1（9 月开始）：** 建立「安全层分享」的 communication loop — 从 CT intensive 体验开始，2-3 次有意义的分享，让他们看到我在过一个充实、快乐的生活
+- **Phase 1（9 月下旬开始）：** 建立「安全层分享」的 communication loop — 从 CT intensive 体验开始，2-3 次有意义的分享，让他们看到我在过一个充实、快乐的生活
 - **Phase 2（Phase 1 完成后）：** 逐步扩大可分享范围，建立更自然的沟通频率
 - **Goal 3（长期）：** 父母能够在情感上接纳真实的我（包括取向和生活方式），形成相互理解而非相互担心的关系
 
@@ -56,7 +56,7 @@ tags:
 
 ## 下一步
 
-- 9 月开始第一次安全层分享 — CT intensive 体验（发生了什么、学到什么、感受）
+- 9 月下旬第一次安全层分享 — CT intensive 体验（发生了什么、学到什么、感受）
 - 设定合理预期 — 不期待立刻得到理想回应，第一反应可能平淡
 - 建立节奏 — 不用每次沟通都刻意深度，但不逃避真实内容
 
@@ -97,7 +97,7 @@ tags:
 
 ## Strategic Direction
 
-- Phase 1（9 月）: 首次分享 — CT intensive 体验与感受（安全层，建立沟通基础）
+- Phase 1（9 月下旬）: 首次分享 — CT intensive 体验与感受（安全层，建立沟通基础）。不需要周末大块时间，挑一个安静的晚上即可
 - Phase 2（Phase 1 后）: 后续分享 — 马德里 FGT 展览 + 舞蹈训练日常（扩展范围）
 - Long-term: 渐进打开取向话题 — 需要耐心，不触碰敏感话题
 - Target completion: 2026 年底

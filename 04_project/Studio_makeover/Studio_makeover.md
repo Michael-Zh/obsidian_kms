@@ -3,9 +3,9 @@ name: Studio_makeover
 project_id: pj0005
 status: active
 pillar: AdminHome
-current_focus: "8 月重点：Plant repotting + Cleaner prep | 9 月以后继续 Phase 2+ Systems"
+current_focus: "Phase 1.5 已完成（cleaner 已请已清）。剩余：excessive 物品清理 + Plant Phase 2/3（需周末半天）+ Phase 2 Systems"
 created: 2026-05-03
-updated: 2026-08-15
+updated: 2026-09-03
 target_completion: 2026-12-31
 priority: P2
 execution_state: main
@@ -25,16 +25,22 @@ tags:
 - **Strategy:** Prioritize layout and flow first (Phase 1), then storage systems (Phase 2), then aesthetics (Phase 3).
     
 
-## 🗓 Current Focus: The "Sanitation Runway"
+## 🗓 Current Focus（2026-09-03 更新）
 
-- **Status:** Transitioning from Phase 1 (Layout) to Phase 2 (Systems).
-    
-- **Immediate Goal:** Execute Phase 1.5 (below) to maximize ROI on incoming professional cleaner.
-    
+- **Status:** Phase 1（Layout）与 Phase 1.5（Cleaner Prep）**均已完成** —— 基础 clean-up 做完，专业清洁工已请、已清。现进入 Phase 2（Systems）。
 
-## 🧹 Phase 1.5: The Cleaner Prep (High ROI Dependencies)
+- **剩余三块：**
+    1. **Excessive 物品清理** —— 可切块，两小时起，无硬 deadline；适合塞进「待定」周末
+    2. **[[Plant_rearrangement]] Phase 2+3** —— 唯一需要周末整块半天的一项（目标 9/19–20）
+    3. **Phase 2 Systems**（下方）—— 衣物循环 / 娱乐待客 / 画轨 / 储物
 
-_A cleaner cannot sanitize what they cannot reach. Do not organize "hidden" areas (like the Besta) until these wet/high-dust zones are clear._
+- **年度判据：** 2026 年底前完成 Phase 2（Foundation 底线四条之一）
+
+## ✅ Phase 1.5: The Cleaner Prep —— 已完成（2026-09）
+
+_原清单保留作记录。清洁工已入场，本阶段的依赖项（厨房 / 湿区 / 桌面清空）不再是阻塞。_
+
+_原则备忘，后续每次清洁前仍适用：a cleaner cannot sanitize what they cannot reach。_
 
 ### 1. The Kitchen Dependency (Priority 1)
 
@@ -260,12 +266,14 @@ _Low priority improvements to tackle when budget/time allows._
 
 ## Strategic Direction
 
-- Cleaner prep — 为专业清洁工入场做好准备（厨房 + 湿区优先）
-- Phase 2: Systems — 建立可持续的家居维护体系
-- 其余 makeover items 推迟到 summer 结束后
+- Excessive 物品清理 —— 当前剩余项中最灵活的一块，可切成两小时的小块推进
+- [[Plant_rearrangement]] Phase 2+3 —— 需周末半天；诊断与 supply 采购可提前到工作日，把周末压缩成纯执行
+- Phase 2: Systems —— 衣物循环 / 娱乐待客 / 画轨 / 储物，目标 2026 年底完成
 
 ---
 
 ## Decisions
 
 - **2026-07-21:** Cleaner prep 是当前唯一优先级的家居任务。其余 makeover 推迟。
+- **2026-09-03:** Phase 1.5 收尾 —— 基础 clean-up 完成、cleaner 已请已清。剩余三块（excessive 物品清理 / Plant Phase 2+3 / Phase 2 Systems）中只有植物需要周末整块时间，另两块可切碎推进。
+- **2026-09-03:** [[Plant_rearrangement]] 文件夹移入本项目之下（`Studio_makeover/Plant_rearrangement/`），它一直就是本项目的 sub-project。

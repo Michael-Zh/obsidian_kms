@@ -4,10 +4,10 @@ project_id: pj0004
 status: active
 pillar: PhysicalHealth
 parent_system: Life_Management_System
-current_focus: "Phase 1: 讨论饮食 philosophy + routine 设计；Phase 2: 与 Training Program 结合，集成到 App"
+current_focus: "⏸ 停滞中，10/3–4 周末启动（容器采购 + 第一次周日 batch）。已重新归类为训练输入而非家务"
 created: 2026-05-03
-updated: 2026-08-15
-target_completion: 2026-09-30
+updated: 2026-09-03
+target_completion: 2026-10-31
 priority: P2
 execution_state: main
 tags:
@@ -18,7 +18,15 @@ tags:
 
 设计一套可持续的饮食系统，回答三个核心问题：**什么时候吃、吃什么、吃多少**。这是实现 body recomposition 目标的 foundation — 先解决 plan 层面，再通过执行养成习惯。
 
-**当前阶段（2026-07-21）：** 作为独立项目推进。先讨论整体饮食 philosophy + routine，之后再与 Training Program 结合，集成到 Training Coach App 中。
+**当前阶段（2026-09-03）：** ⏸ **停滞中。** 计划层（容器矩阵、周日流程、办公室仪式、冷冻常备）已经很完整，卡住的是执行——容器未采购、菜未试跑。
+
+**重新归类：** 从「家务 / 采购」改为**训练输入**。它此前一直排在周末大块时间之后，而周末排满，所以永远轮不到。但两个 dance intensive 之后 workout plan 正在改造，营养是决定这套新计划出不出结果的另一半——放在训练线下面，优先级和触发时机都不一样。
+
+**下一步只有两件**（不要一次铺开整套）：
+1. **重设 fasting 窗口** —— 已知堵点，16:8 后半段晚上不吃在实际执行中做不到。这条不解决，后面全是空转
+2. **买容器** —— IKEA 清单见下方 Inventory Matrix
+
+这两件做完再谈 3-5 个可重复菜。目标周末：10/3–4。
 
 **关键待解决问题：**
 - 晚上不吃（16:8 后半段）在实际执行中困难 — 需要重新设计 fasting 窗口
@@ -136,7 +144,7 @@ tags:
 
 ## Strategic Direction
 
-- **Q3 硬 deadline**：跑通 3-5 个可重复菜 + 周日 20-min batch prep protocol（container 采购到位）
+- **10 月 deadline**（原 Q3 已过期）：先做两件 —— 重设 fasting 窗口 + 容器采购到位。之后才是 3-5 个可重复菜 + 周日 20-min batch protocol
 - 设计可重复的 meal prep 流程 — container 采购、批量备餐、存储方案
 - 回答三个核心问题: 什么时候吃、吃什么、吃多少
 - 与 Training Program 集成 — meal timing 对齐训练日历
@@ -147,3 +155,4 @@ tags:
 ## Decisions
 
 - **2026-07-21:** Meal Prep Routine 独立为 P2 project。先解决 plan 层面（eating philosophy + routine 设计），再与 Training Program 合并执行。
+- **2026-09-03:** 归类从「家务/采购」改为**训练输入** —— 它是 workout plan 改造的另一半，不是待办杂事。同时承认真实状态是停滞：计划层富余、执行层没动。Q3 硬 deadline 过期，改为 10 月，且 scope 收窄成两件（fasting 窗口 + 容器）。原因是计划一次铺太开反而没有入口。
