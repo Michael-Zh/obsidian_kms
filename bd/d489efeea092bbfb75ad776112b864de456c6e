@@ -1,0 +1,21 @@
+04_project/Training/Meal_prep_routine/Meal_prep_routine.md
+  s_8c533efda0c41a::t_a76aba4a80c67f 80-90,233
+04_project/Training/Training.md
+  s_8c533efda0c41a::t_a76aba4a80c67f 77,86,88-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "bdd489efeea092bbfb75ad776112b864de456c6e",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
