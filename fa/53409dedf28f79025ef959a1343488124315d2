@@ -1,0 +1,23 @@
+00_system/Skills/priming/SKILL.md
+  s_8c533efda0c41a::t_c44bf02cef8d83 25-28,51,53-57
+04_project/Life_Management_System/LMS.md
+  s_8c533efda0c41a::t_05887d08808263 58
+04_project/Training/Training.md
+  s_8c533efda0c41a::t_d1d695e9e6c732 94,98-104
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "fa53409dedf28f79025ef959a1343488124315d2",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
