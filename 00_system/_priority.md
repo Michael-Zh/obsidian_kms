@@ -55,6 +55,11 @@ updated: 2026-09-04
 
 *方法见 `00_system/Weekend_Allocation.md`。这里只放活的部分。*
 
+> **⚠️ 边界（2026-09-03 定，勿删）：** backlog（app DB `priming_backlog`）是「要做什么」的**唯一真相源**；项目文件的 `## Strategic Direction` 是**策略叙述**，只作 AI prompt 上下文（帮 priming 挑 top3），**不判定任务是否完成**。
+> 往 Strategic Direction 写东西**不会**创建 task，从里面删东西**不会**完成 task。要动 task 就去 backlog。
+> 起因：app 的 re-sync cascade 曾把不在 Strategic Direction 里的 backlog 项静默标 done（已修，app Session 54 / commit 6dfb4d3）。
+> 下方队列是**给人看的策略视图**，实际排序在 app 里跑，两边任务名一致即可对上。
+
 ### 待排队列（按 deadline，不按周末）
 
 *每次有 🟢 就从顶部取一件。这样周末状态变化不需要重排整张表。*
@@ -71,8 +76,6 @@ updated: 2026-09-04
 *不在本文档维护 —— 打开 App 面板看实时状态（它读 calendar + backlog）。*
 
 9 月的预期形状（按你 2026-09-03 给的信息，待 app 首次跑确认）：9/5–6 和 9/12–13 已满；9/19–20 是第一个可用周末，归 Plants；9/26–27 留作缓冲；10/3–4 归 Meal prep 启动。
-
----
 
 ---
 
