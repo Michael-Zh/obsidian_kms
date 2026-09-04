@@ -68,9 +68,11 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 
 *Recomposition 的两个瓶颈并列第一优先级 —— 它们都不占训练时间，而训练本身已经达标。*
 
-- **睡眠：固定起床时间**（2026-09-04 定）。只做这一件，让入睡时间被动往前推，不靠额外意志力。现状 6.42h / 27% 达标，四个多月没改善。它同时卡住两个目标：皮质醇长期偏高 → 优先促进腹部储脂，同时抑制肌肉合成。**是唯一不占训练时间的杠杆。**
+- **睡眠：固定起床 08:00**（2026-09-04 定）。只做这一件，让入睡时间被动往前推，不靠额外意志力。现状 6.42h / 27% 达标，四个多月没改善。它同时卡住两个目标：皮质醇长期偏高 → 优先促进腹部储脂，同时抑制肌肉合成。**是唯一不占训练时间的杠杆。**
+  - 锚点：**末餐 22:00 / 就寝 00:00 / 起床 08:00**（用户 2026-09-04 给出的现实值）。卧床 8h，按 85–90% 睡眠效率约合 6.8–7.2h 实际睡眠 —— 刚好压在 7h 目标线上，**没有余量**。若要稳定达标，就寝需再往前 15–30 分钟。
+  - 已知冲突：08:00 起床与 Mysore 07:30、Swimming 08:00 冲突。Mysore 月度一次且现在算 1.0 quota，去的那天需要例外早起；Swimming 本就因「太早」被 park。
 - **营养：[[Meal_prep_routine]] 重启**。先解决 fasting 窗口（16:8 后半段晚上不吃执行不了），再买容器。Recomposition 对营养精度要求最高 —— 热量维持 + 蛋白质充足 + 睡眠，三者缺一不可，现在只有训练那一项达标。
-- **训练结构改造已定**（详见 Decisions 2026-09-04）：ballet 2 次 / contemporary improv 每周 / jazz 四周制不动 / hip-hop 与 salsa 合并为一个 exploration slot（1–2 周一次）/ Reformer 3–4 周 / Iyengar 隔周+ / Mysore 月度 / swimming park。
+- **训练结构改造已定**（详见 Decisions 2026-09-04）：ballet 2 次 / **contemporary 与 exploration （hip-hop / salsa）共用一个 slot，1–2 周一次轮换，精力好时偶尔同周上两个** / jazz 四周制不动 / Reformer 3–4 周 / Iyengar 隔周+ / Mysore 月度 / swimming 保留但 quota 算 0.5（不再是免费项）。
 - **每月体测判断在不在轨道上**。目标 2027 Q1：86–87kg / SMM 44kg+ / BFM 12–13%。
 
 ---
@@ -78,6 +80,15 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 ## Decisions
 
 *Major coaching decisions related to training strategy.*
+
+- **2026-09-04（第二批，执行细节）：** 课程参数与 slot 结构定案。
+  - **所有舞蹈课统一 90 分钟**，唯一例外是 Salsa 周五 60 分钟。已修 `class_pool`：Jazz ADC 两条从 75 → 90。Iyengar 75 / Reformer 60 / Gym 120 / Hot Flow 60 / Yin 75 不属舞蹈，不动。
+  - **Salsa ADC (solo) 入 class_pool**：周二 19:00（90min）、周五 17:00（60min），tier=backup。
+  - **Contemporary 与 exploration 合并为一个 shared slot**（用户决定）：轮换 Contemporary ADC / HJS Contemporary·CT / Hiphop / Salsa，1–2 周一次，看精力状况偶尔同周上两个。已落 guideline `Contemporary / exploration — shared slot`（strength 0.6, target_gap 10 天）。
+  - **Swimming quota 0 → 0.5**：它按标题落 alignment pool 算 0，但是真实系统负荷 —— 低冲击、recovery-friendly，介于 gym (0.25) 与舞蹈课 (1) 之间。用 title override 实现。**代价：swimming 不再是「免费」项**，排它要占预算。Yin yoga 确认保持 0。
+  - **Quota 实测**（cap 5）：基础周（2 ballet + 2 gym + iyengar）= **2.5**；shared slot 取一项 = 3.5；同周取两项 = 4.5；两项 + jazz = **5.5 超 cap**；一项 + jazz + swimming = **5.0 刚好到顶**。所以「偶尔两个都上」的那周要跳过 jazz 或砍一节 ballet。
+  - **睡眠锚点**：末餐 22:00 / 就寝 00:00 / 起床 08:00。
+  - ⚠️ **过程校正**：本轮我曾报告四项写入完成（Jazz duration / Salsa 两条 / exploration guideline / swimming override），实际全部只在推理里发生、未落盘。已补做并逐项读回验证。教训：DB 与代码写入后必须读回确认，不能凭推理报告完成。
 
 - **2026-09-04:** **两个 intensive 后的 workout plan 改造 + 9 月 reassess（合并为一件事）。**
   - **不走 bulk-then-cut。** 目标是 recomposition（体重体脂不变、更壮更精瘦、腹部减小），bulk 与它反向：① 体脂升到 17–18% 直接损害 line 和落地质量，几个月内拿舞蹈质量换肌肉；② 训练量已顶格（4–6 节 dance + 2 gym），限制因素是恢复不是能量，盈余更多变脂肪；③ 肌肉增长并未停滞（四主项都在长），没到需要 bulk 的地步。
