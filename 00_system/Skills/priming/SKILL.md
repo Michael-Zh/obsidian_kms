@@ -22,8 +22,10 @@ Context files:
   04_project/Training/sleep_log.md
   01_raw/coaching/coaching_YYYYMMDD.md    ← all coaching sessions (unified)
 
-Calendar script:
-  04_project/Training/training-calendar-scheduler/calendar_scheduler_v3.py
+Calendar:
+  Danseur Noble Hub app — GET /api/priming returns today's trainingEvents
+  (the standalone calendar_scheduler_v3.py was deleted 2026-09-04; it had no
+   OAuth credentials and had not run in months)
 
 Output targets:
   01_raw/_daily_note/YYYY-MM-DD.md           ← append priming block
@@ -46,13 +48,13 @@ Output targets:
 Load in this order:
 
 1. **`_POS.md`** — communication style, active bugs, operating patterns
-2. **`_priority.md`** — current priorities and short-term focus (read the Short-Term Focus section closely)
+2. **`_priority.md`** — read **Annual Bottom Lines** + **Execution Cadence** closely; those are the source of truth for「现在做什么」。（`## Short-Term Focus` 已于 2026-09-04 删除 —— 它是这两节的派生视图。）
 3. **`sleep_log.md`** — read the most recent entry only (last AutoSleep block at the top of file)
-4. **Calendar — today's events:**
-   ```bash
-   python3 "[vault]/04_project/Training/training-calendar-scheduler/calendar_scheduler_v3.py" --today
-   ```
-   Returns JSON with `training_events` and `main_events` for today.
+4. **Calendar — today's events:** the app fetches these server-side.
+   `GET /api/priming` returns `trainingEvents` for today (via
+   `fetchTrainingEventsForWindow`), alongside metrics/backlog/projects.
+   There is no local script to call — `calendar_scheduler_v3.py` was deleted
+   2026-09-04 (no OAuth credentials, hadn't run in months).
 5. **Most recent coaching session** — find the latest `coaching_YYYYMMDD.md` in `01_raw/coaching/` by date → read the Open Items and Experiment Checklist sections only
 6. (Step 6 removed — session and discussion are now unified in a single `coaching_YYYYMMDD.md` file)
 

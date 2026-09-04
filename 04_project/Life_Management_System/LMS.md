@@ -55,7 +55,7 @@ System-level skills and which module they serve:
 | wiki-coach-kms-cli | KMS + Coaching | Raw input → wiki synthesis + coaching output |
 | priming | Daily Ops | Typeless transcript → daily brief + Top 3 |
 | training-coach-context | Training | Load training context from Supabase |
-| training-schedule | Training + Daily Ops | Weekly training schedule planning |
+| ~~training-schedule~~ | — | **已删（2026-09-04）** — 功能移入 app：`/api/schedule/generate` + `/api/schedule/approve`。原 skill 依赖的脚本与三个 KMS 文件在 Session 44 单一真相源重构时就已归档，skill 自那时起即失效 |
 | project-context | Project Coaching | Load single-project CLAUDE.md context |
 | project-review | Project Coaching | Cross-project priority review |
 | coach-session | Coaching | Ad-hoc coaching without wiki processing |
