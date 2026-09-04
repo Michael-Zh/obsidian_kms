@@ -1,0 +1,35 @@
+04_project/Danseur_Noble_Hub/App_Vision.md
+  s_8c533efda0c41a::t_20c91e4d5800e1 77-83
+04_project/Road_to_2040_Investment_Blueprint/Brief/2026-09-04.md
+  s_ed456b7a1991db::t_429afa4a709f6f 214-244
+  s_ed456b7a1991db::t_30ec83fde6a599 245-302
+  s_ed456b7a1991db::t_341c713f51f468 134-146,303
+  s_ed456b7a1991db::t_ea956470e1374c 186-213
+  s_ed456b7a1991db::t_0f97cb792dcd14 147-185
+04_project/Training/Training.md
+  s_8c533efda0c41a::t_0d98cb29eecdb9 77,86-93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "2abfb750035c409bcab9c55c9c118fc55849d989",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_ed456b7a1991db": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a97882ae-8fc0-474e-9042-1f9d428741cd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
