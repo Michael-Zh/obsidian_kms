@@ -74,7 +74,7 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
   - 目标：就寝 23:30 + 自然起床 07:22 ≈ 卧床 7.9h ≈ 实际 6.9–7.1h，刚好达标。**不动课表**，也不需要靠晚起换睡眠。
   - 末餐仍是 22:00。
 - **营养：[[Meal_prep_routine]] 重启**。Fasting 已定案为**按日程吃（三日型）而非固定窗口** —— 断食本身无独立价值，而真实问题是蛋白质吃不够。下一步是买容器 + 跑第一次周日 batch（10/3–4）。Recomposition 对营养精度要求最高 —— 热量维持 + 蛋白质充足 + 睡眠，三者缺一不可，现在只有训练那一项达标。
-- **训练结构改造已定**（详见 Decisions 2026-09-04）：ballet 2 次 / **周二一个轮换 slot：Contemporary ⇄ Exploration（salsa 19:00 / hiphop 20:30），两周一循环，ISO 奇数周 = Contemporary，锚点 2026-09-08** / jazz 四周制不动 / Reformer 3–4 周 / Iyengar 隔周+ / Mysore 月度 / swimming 保留但 quota 算 0.5（不再是免费项）。
+- **训练结构改造已定**（详见 Decisions 2026-09-04）：ballet 2 次 / **周二一个轮换 slot：Contemporary ⇄ Exploration（salsa 19:00 / hiphop 20:30），两周一循环，ISO 奇数周 = Contemporary，锚点 2026-09-08。**已做进 app generate，自动排期**** / jazz 四周制不动 / Reformer 3–4 周 / Iyengar 隔周+ / Mysore 月度 / swimming 保留但 quota 算 0.5（不再是免费项）。
 - **每月体测判断在不在轨道上**。目标 2027 Q1：86–87kg / SMM 44kg+ / BFM 12–13%。
 
 ---
@@ -82,6 +82,15 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 ## Decisions
 
 *Major coaching decisions related to training strategy.*
+
+- **2026-09-04（第七批，实现）：** **周二轮换已做进 `generate`，不再需要手动 adjust。**
+  - 此前 `/api/schedule/generate` **完全不读 `scheduling_guidelines`** —— 周结构硬编码在 `slotRequestsForShape()`，而 Contemporary / Hiphop / Salsa 三个词在整个文件里一次都没出现。所以第六批定的规则记录完整但不自动执行，生成的一周里周二是空的。
+  - 新增 `src/lib/rotating-slots.ts`：读 `parameters.shared_slot === true` 的 guideline，按 ISO 周 parity 对锚点解析当周该排哪门。确定性实现不走 AI（generate 是确定性路径）。**以后加新轮换不用改代码，插一条同 shape 的 guideline 即可。**
+  - `generate` 现在与 class_pool 并行读 guidelines；与硬编码 shape 撞天的 slot 跳过并记入 dropped，避免占掉 2-per-day 配额。
+  - **顺带修一个真 bug（E2E 测试抓到的）：** `class_pool` 同 title 多行有两层歧义 —— 跨天（Salsa 周二 19:00/90min vs 周五 17:00/60min）和**同天**（周二 Hiphop 有 18:30 **和** 20:30；Contemporary ADC 有 18:45 **和** 20:15）。原来 `candidates[0]` 盲取第一行，只按天过滤时**周二 Hiphop 会解析成 18:30 —— 而实际上的是 20:30 那节**。现改为先按 day_of_week 再按 startTime 过滤，guideline 里记的实际上课时间成为判据。
+  - 测试：单元 22 条断言 + E2E 对 prod 真实数据模拟四周（9/8 Contemporary 18:45 / 9/15 Hiphop 20:30 / 严格交替）。guideline 缺失或格式不对 → 返回空，硬编码 shape 原样工作。
+  - **已知 quirk（非 bug）：** 2026 有 53 个 ISO 周，week 53 与 week 1 同为奇数，所以**跨年那次 Contemporary 会连续两周**。要消除需把口径从 parity 改为「距锚点的周数差」。已在测试里断言此行为，留作已知项。
+  - app commit `f9504b2`（develop + main）。
 
 - **2026-09-04（第六批）：** **周二收敛为一个轮换 slot：Contemporary ⇄ Exploration，两周一循环。**
   - 锚点：**2026-09-08（ISO week 37，奇数）= Contemporary**。规则：ISO 奇数周 → Contemporary；偶数周 → exploration。

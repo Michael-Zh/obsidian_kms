@@ -74,6 +74,13 @@ The full LMS architecture is documented at `04_project/Life_Management_System/LM
 - **暂停 → 解除（2026-09-03）**：8 月底因「日常只用 scheduling、未 active 使用」而暂停，定了三个重启条件。**② 已成立** —— 周末大块时间的分配需要外置决策器，且手工维护会变成第二个真相源。Session 53 做了 Weekend Allocation。① meal prep priming 和 ③ 超体后的整体判断仍未到，所以原则不变：只做有真实需求的 feature。
 - **核心 KPI（2026-08-15 重定位）**：App dev 的度量 = 把排好的 priority 结构「长」进 app，做外置的「先做哪个」决策器，使 daily 决策不用脑子记/纠结。**Weekend Allocation 是这条 KPI 的第一个真正落地**：它把「哪个周末归哪件事」从 KMS 手工表变成了 app 读 calendar + backlog 自动给建议。
 - **Weekend Allocation（Session 53，已上线待验证）**：可用性判定在 `src/lib/weekend-availability.ts`（location calendar 空 = 在阿姆斯特丹可安排；有值 = 外出）；placeholder 以 `LMS:` / `PJ:` 标记写入主 calendar，默认周六 14:00–18:00；`weekend_allocations` 表（Migration 054）记录对应关系。**Migration 054 需手动在 Supabase 跑**，真实 calendar 读写需部署后验证。
+- **Rotating slots — generate 开始读 DB guidelines（Session 57，2026-09-04）**
+  - 此前 `generate` 完全不读 `scheduling_guidelines`（只有 `adjust` 读），周结构硬编码在 `slotRequestsForShape()`。所以 DB 里定的排期规则永远到不了生成的一周。
+  - `src/lib/rotating-slots.ts` 读 `parameters.shared_slot === true` 的 guideline，按 ISO 周 parity 对锚点解析。确定性实现（generate 不走 AI）。
+  - **扩展方式：插 guideline，不改代码。** 参数 shape：`{shared_slot: true, day_of_week, anchor: {date, iso_week, kind}, options: {sideA: [{title, start, preferred}], sideB: [...]}}`。
+  - 首个用例：周二 Contemporary ⇄ Exploration（见 [[Training]] Decisions 第七批）。
+  - 降级：guideline 缺失或格式不对 → 返回空，硬编码 shape 原样工作（6 条断言覆盖）。
+  - 这是「把 priority 结构长进 app」KPI 的第二个落地（第一个是 Weekend Allocation）。
 - **Meal plan integration — 重启条件 ① 的具体形态（2026-09-04 定 spec，未实现）**
   - 用户原话：「之后有了 meal plan integration 之后，我就不用自己用脑子去想这个了。执行过几次之后就会条件反射。」
   - 要做的事：priming 输出当天的**日型 + 吃法**，取代人脑判断。
