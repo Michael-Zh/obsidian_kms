@@ -1,0 +1,37 @@
+00_system/Cross_Pillar_Synergies.md
+  s_8c533efda0c41a::t_a87ef44882cda6 1-19
+00_system/_idea_backlog.md
+  s_8c533efda0c41a::t_233bdc5e8dd444 1-100
+04_project/Road_to_2040_Investment_Blueprint/Brief/2026-09-04.md
+  s_da9861f723130e::t_ac6caf51dae953 1-133
+00_system/_priority.md
+  s_8c533efda0c41a::t_3b0b643895e878 3-4,8-14,30-31,52,54,56,91-92,113-114,131,135-137,141-142
+00_system/Weekend_Allocation.md
+  s_8c533efda0c41a::t_a87ef44882cda6 1-43
+04_project/Training/Training.md
+  s_8c533efda0c41a::t_1d4d82c6071e0d 71-75,86-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "288392ef80a2b6ca1428351b7c0e2e9e59254ad5",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    },
+    "s_da9861f723130e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a154b7d8-7ba8-48bf-86be-4db8e63dddb5",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
