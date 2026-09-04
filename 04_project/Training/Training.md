@@ -4,12 +4,12 @@ project_id: pj0006
 status: active
 pillar: PhysicalHealth
 parent_system: Life_Management_System
-current_focus: "Training philosophy + goals + decision log. Execution details (weekly structure, templates, rules, class pool) live in Danseur Noble Hub App DB."
+current_focus: "两个 intensive 后的 workout plan 改造（2026-09）。Goal 1 重述为 recomposition，BFM 目标 12–13% @ 2027 Q1。哲学+目标+决策在本文件，执行细节在 App DB。"
 created: 2026-04-06
-updated: 2026-08-17
-target_completion: 2026-09-30
+updated: 2026-09-04
+target_completion: 2026-12-31
 priority: P3
-execution_state: parked
+execution_state: main
 tags: [PhysicalHealth]
 ---
 
@@ -25,7 +25,10 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 
 ## Objectives & Goals
 
-- **Goal 1:** Achieve target body composition (86-87kg, 43kg+ muscle, <10% BFM) by Sept 2026 via data-driven recomposition
+- **Goal 1（2026-09-04 重述）：** Recomposition — **86–87kg / SMM 44kg+ / BFM 12–13% @ 2027 Q1**。不走 bulk-then-cut。
+  - 原目标是 `<10% BFM by Sept 2026`。已到期且未达（8/25 实测 87.8kg / SMM 43.1 / BFM 14.7%）。
+  - `<10%` 对当前结构不可达：87kg @ 10% 需要瘦体重 78.3kg，实际 74.9kg —— 等于同时增 3.4kg 肌肉 + 减 4.2kg 脂肪。四个月只动了 0.3pp。
+  - 12–13% 是能达到的，且视觉效果就是目标（更壮更精瘦、腹部减小）。从 14.7% 到 12% 约 2.4kg 脂肪，主要来自腹部。
 - **Goal 2:** Maintain elite dance performance while executing strict training + nutrition discipline
 - **Goal 3:** Execute "Danseur Noble" aesthetic (V-taper physique, zero bloat, silent landings) through systems optimization
 
@@ -40,6 +43,12 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 - **Recovery is the anchor.** 低 CNS 恢复是弹性缓冲；alignment（Iyengar/Reformer）永远安全。
 - **Recomposition lens**：每次训练决策都回溯到 Sept 2026 目标（86-87kg / 43kg+ SMM / <10% BFM）。
 - **低摩擦 + satisficing**：规则只挡已知失败模式（过载、多样性衰减、腘绳伤、肌肉间距），不做每天判断。
+- **Release unnecessary tension（2026-09 新增，来自 CT intensive）**：两年之后 CT 真正 click —— 该放松的地方能放松，上课的累是累在需要 strengthening 的肌肉上，而不是用多余 tension 自己 beat up 自己。这条现在是筛子，往整个系统上套：
+  - **任何增加不必要 tension 的东西，成本变高了**，不再是中性的。
+  - Reformer 因此降到 3–4 周一次（CT 之后帮助变小）。
+  - Iyengar 因此升到隔周以上 —— alignment 直接服务 tension release，是 CT 之后**唯一变得更有用**的补充项。
+  - Gym 保留 2 次但改练法：hypertrophy（8–12 次）→ strength（4–6 次、组间休息更长）。低次数高负荷维持肌肉一样有效，但总做功量更低、CNS 疲劳更小。
+- **诊断优先于加量（2026-09-04）**：四个月体测平线不是训练不足造成的。gym 出勤 1.94/周（目标 2.0）、四个主项都在渐进超负荷（bench 60→70kg / lat pulldown 55→65kg / leg press 120→150kg / row 50→60kg）。真正没达标的是**睡眠**（148 晚均 6.42h，≥7h 仅 27%，<6h 达 37%）和**营养**（[[Meal_prep_routine]] 从未跑起来）。所以瘦体重 −1.2kg 而脂肪只 −0.5kg —— 掉的肌肉是脂肪的两倍多，这是吃不够+睡不够的缓慢 cut，不是 recomposition。**结论：先修恢复与营养，不加训练量。**
 
 ---
 
@@ -57,9 +66,12 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 
 ## Strategic Direction
 
-- 推进 Meal Prep Routine — CT intensive 前的 nutrition driver。解决什么时候吃、吃什么、吃多少的 plan 层面问题。两餐 timing + 周日 20-min prep protocol
-- CT intensive 期间身体维护 — bilateral lower back recovery 持续关注、sleep/energy management、维护性 gym 训练（不再是重训阶段）
-- 9 月 body composition reassess — 重新评估 body recomposition 指标（体重、SMM、BFM），决定 Q4 训练方向
+*Recomposition 的两个瓶颈并列第一优先级 —— 它们都不占训练时间，而训练本身已经达标。*
+
+- **睡眠：固定起床时间**（2026-09-04 定）。只做这一件，让入睡时间被动往前推，不靠额外意志力。现状 6.42h / 27% 达标，四个多月没改善。它同时卡住两个目标：皮质醇长期偏高 → 优先促进腹部储脂，同时抑制肌肉合成。**是唯一不占训练时间的杠杆。**
+- **营养：[[Meal_prep_routine]] 重启**。先解决 fasting 窗口（16:8 后半段晚上不吃执行不了），再买容器。Recomposition 对营养精度要求最高 —— 热量维持 + 蛋白质充足 + 睡眠，三者缺一不可，现在只有训练那一项达标。
+- **训练结构改造已定**（详见 Decisions 2026-09-04）：ballet 2 次 / contemporary improv 每周 / jazz 四周制不动 / hip-hop 与 salsa 合并为一个 exploration slot（1–2 周一次）/ Reformer 3–4 周 / Iyengar 隔周+ / Mysore 月度 / swimming park。
+- **每月体测判断在不在轨道上**。目标 2027 Q1：86–87kg / SMM 44kg+ / BFM 12–13%。
 
 ---
 
@@ -67,6 +79,15 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 
 *Major coaching decisions related to training strategy.*
 
+- **2026-09-04:** **两个 intensive 后的 workout plan 改造 + 9 月 reassess（合并为一件事）。**
+  - **不走 bulk-then-cut。** 目标是 recomposition（体重体脂不变、更壮更精瘦、腹部减小），bulk 与它反向：① 体脂升到 17–18% 直接损害 line 和落地质量，几个月内拿舞蹈质量换肌肉；② 训练量已顶格（4–6 节 dance + 2 gym），限制因素是恢复不是能量，盈余更多变脂肪；③ 肌肉增长并未停滞（四主项都在长），没到需要 bulk 的地步。
+  - **Goal 1 重述**：`<10% BFM @ Sept 2026` → `12–13% BFM @ 2027 Q1`。不新增非体成分指标（用户决定）。
+  - **CT insight 成为哲学条目**（见 Training Philosophy）：release unnecessary tension 作为筛子。
+  - **Quota 重新加权**（App `src/lib/workout-utils.ts`）：mysore/ashtanga 0.5→1（anchor pool 权重改 1，只有它落这个 pool）；hip-hop / salsa 此前未映射算 0，现映射 performance=1；iyengar 保持 0；material generation 用 title override 算 0.25（不新增第 5 个 pool —— `workouts.type` 有 CHECK 约束且 pool 驱动 UI 颜色与排序）。Quota cap 保持 5（用户决定）。
+  - **Hip-hop 与 Salsa 合并为一个 exploration slot**，1–2 周一次轮换（用户决定）。原方案是二选一，合并后既保留探索又只占一个位置。
+  - **Gym 保持 2 次但改练法**：hypertrophy → strength（4–6 次）。理由是恢复受限时低做功量维持肌肉更划算。**撤回此前「gym 降到 1 次」的建议** —— 数据显示 gym 是唯一达标的一环，在偏消耗的系统里它很可能是拦住瘦体重继续掉的东西。
+  - **发现一处 quota 结构冲突**：`Weekly high-intensity session cap = 4`（guideline，strength 0.9）在重新加权后比 quota cap 5 更早触发 —— 4 节 performance 就是 4 高强度、占 4.0 quota。而该 guideline 只作为文本注入 AI prompt，**代码里没有强制**。待定如何处理。
+  - **本文件 unpark**（parked → main）：这次改的就是图纸本身（哲学加一条、Goal 1 改数字），parked 不再成立。`target_completion` 2026-09-30 → 2026-12-31。
 - **2026-08-17:** 单一真相源确立 — 执行细节全部归 App DB（三桶分类：constraints 7 / guidelines 15 / context 8），本文件精简为哲学+目标+决策日志。workout plan 结构重排：gym 落 Thu+Fri back-to-back（客观约束），HJS 枢轴三分支由 scheduling 问卷推导。完整定案见 App repo `docs/tech-spec.md §11` + `docs/Training_Coach_Dev_Log.md` Session 44。
 - **2026-08-15:** 概念层标记为 Parked — Training_Program（训练哲学/规则/课程池）近期不改图纸，执行由 [[Danseur_Noble_Hub]] App + [[Meal_prep_routine]] 承载。图纸改动待 backlog（class pool 重查 / 整体安排重审）时 revisit。
 - **2026-07-21:** Current focus shift — body recomposition 大方向不变，但现阶段优先级是 CT intensive 前的基础维护。Meal Prep Routine 作为独立 project（P2）推进，Training Program 配合执行（P3）。
