@@ -74,7 +74,7 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
   - 目标：就寝 23:30 + 自然起床 07:22 ≈ 卧床 7.9h ≈ 实际 6.9–7.1h，刚好达标。**不动课表**，也不需要靠晚起换睡眠。
   - 末餐仍是 22:00。
 - **营养：[[Meal_prep_routine]] 重启**。Fasting 已定案为**按日程吃（三日型）而非固定窗口** —— 断食本身无独立价值，而真实问题是蛋白质吃不够。下一步是买容器 + 跑第一次周日 batch（10/3–4）。Recomposition 对营养精度要求最高 —— 热量维持 + 蛋白质充足 + 睡眠，三者缺一不可，现在只有训练那一项达标。
-- **训练结构改造已定**（详见 Decisions 2026-09-04）：ballet 2 次 / **contemporary 与 exploration （hip-hop / salsa）共用一个 slot，1–2 周一次轮换，精力好时偶尔同周上两个** / jazz 四周制不动 / Reformer 3–4 周 / Iyengar 隔周+ / Mysore 月度 / swimming 保留但 quota 算 0.5（不再是免费项）。
+- **训练结构改造已定**（详见 Decisions 2026-09-04）：ballet 2 次 / **周二一个轮换 slot：Contemporary ⇄ Exploration（hiphop/salsa 二选一），两周一循环，ISO 奇数周 = Contemporary，锚点 2026-09-08** / jazz 四周制不动 / Reformer 3–4 周 / Iyengar 隔周+ / Mysore 月度 / swimming 保留但 quota 算 0.5（不再是免费项）。
 - **每月体测判断在不在轨道上**。目标 2027 Q1：86–87kg / SMM 44kg+ / BFM 12–13%。
 
 ---
@@ -82,6 +82,13 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 ## Decisions
 
 *Major coaching decisions related to training strategy.*
+
+- **2026-09-04（第六批）：** **周二收敛为一个轮换 slot：Contemporary ⇄ Exploration（hiphop/salsa 二选一），两周一循环。**
+  - 锚点：**2026-09-08（ISO week 37，奇数）= Contemporary**。规则：ISO 奇数周 → Contemporary；偶数周 → exploration。
+  - **这三门课时间本来就重叠**，所以从来只能上一门 —— 本决策只是把隐含约束写明确：hiphop 18:30–20:00 / Contemporary ADC 18:45–20:15 / Salsa 19:00–20:30。
+  - Quota 不变（三者都是 performance = 1），所以周基础仍是 2.5，周二这一门算 1.0。
+  - 周二晚还有第二档（Contemporary 20:15 / Hiphop 20:30）。精力好时可加一门，但那周 quota 到 4.5–5.5、要跳过 jazz 或砍一节 ballet；且**第二档 22:00 结束，正好撞末餐 22:00 与「20:00 后下课补蛋白」规则，优先选早档**。
+  - 已落 guideline （含 parity_rule + anchor + 两组选项）。
 
 - **2026-09-04（第五批，睡眠 + intensive）：**
   - **睡眠锚点从「固定起床 08:00」改为「固定就寝 23:30」。** 原方案诊断错了：数据说起床已经固定（中位数 07:22，比目标 08:00 更早），飘的是就寝（中位数 00:30）。而 00:00 前就寝均 6.85h vs 之后 6.16h —— 就寝是唯一有效变量。改锚点后不需要动课表，也不靠晚起换睡眠。
