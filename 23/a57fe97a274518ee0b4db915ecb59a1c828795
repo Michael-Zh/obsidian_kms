@@ -1,0 +1,19 @@
+04_project/Training/Training.md
+  s_8c533efda0c41a::t_db2017a9dcc337 77,86-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "23a57fe97a274518ee0b4db915ecb59a1c828795",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
