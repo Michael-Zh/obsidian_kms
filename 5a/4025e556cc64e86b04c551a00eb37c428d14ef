@@ -1,0 +1,29 @@
+04_project/Training/Meal_prep_routine/Meal_prep_routine.md
+  s_8c533efda0c41a::t_22d95fa9c27118 7,9-10,21-29,147,158
+04_project/Studio_makeover/Studio_makeover.md
+  s_8c533efda0c41a::t_22d95fa9c27118 6,8,28,30-39,41,43,269-271,278-279
+04_project/Strategic_relationship_audit/Strategic_relationship_audit.md
+  s_8c533efda0c41a::t_22d95fa9c27118 6,8
+  s_8c533efda0c41a::t_b6ce155351570e 23-31,34,40-84,142-153,155,157-158,168-172
+04_project/AI_learning/AI_learning.md
+  s_8c533efda0c41a::t_e9f9e3d0e02e94 6,8,30-33,37,78
+04_project/Parents_relationship/Parents_relationship.md
+  s_8c533efda0c41a::t_9b412baeab6dce 6,8,47,59
+  s_8c533efda0c41a::t_ca79d286a6105e 100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "5a4025e556cc64e86b04c551a00eb37c428d14ef",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
