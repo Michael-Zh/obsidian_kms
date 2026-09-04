@@ -74,6 +74,10 @@ The full LMS architecture is documented at `04_project/Life_Management_System/LM
 - **暂停 → 解除（2026-09-03）**：8 月底因「日常只用 scheduling、未 active 使用」而暂停，定了三个重启条件。**② 已成立** —— 周末大块时间的分配需要外置决策器，且手工维护会变成第二个真相源。Session 53 做了 Weekend Allocation。① meal prep priming 和 ③ 超体后的整体判断仍未到，所以原则不变：只做有真实需求的 feature。
 - **核心 KPI（2026-08-15 重定位）**：App dev 的度量 = 把排好的 priority 结构「长」进 app，做外置的「先做哪个」决策器，使 daily 决策不用脑子记/纠结。**Weekend Allocation 是这条 KPI 的第一个真正落地**：它把「哪个周末归哪件事」从 KMS 手工表变成了 app 读 calendar + backlog 自动给建议。
 - **Weekend Allocation（Session 53，已上线待验证）**：可用性判定在 `src/lib/weekend-availability.ts`（location calendar 空 = 在阿姆斯特丹可安排；有值 = 外出）；placeholder 以 `LMS:` / `PJ:` 标记写入主 calendar，默认周六 14:00–18:00；`weekend_allocations` 表（Migration 054）记录对应关系。**Migration 054 需手动在 Supabase 跑**，真实 calendar 读写需部署后验证。
+- **SchedulePanel 手机可用性修复（Session 58，2026-09-04）**
+  - **Dropped session 在手机上拖不动。** Session 51 记的「dropped 可拖拽」只挂了 HTML5 drag（`draggable` + `onDragStart`），而**那套事件在 iOS 上根本不触发**。session 卡片能拖是因为另挂了 `onTouchStart`。所以桌面能用、手机不能 —— 而这是个 iOS PWA，等于该功能对主场景从未生效。已补 touch 路径 + `touch-none`。
+  - ⚠️ **教训（写进 app CLAUDE.md）：本 app 是 iOS PWA，任何拖放都必须同时实现 touch 路径。** 只有 HTML5 drag 的功能等于不存在。
+  - **Generate 之后回不去改参数。** 问卷只在 `!hasPlan` 时渲染，所以「HJS 哪天上」这类结构参数一旦生成就在窗口内锁死，只能 Approve 或 Adjust（而 Adjust 是 AI 路径、不改 shape）。已加 Params 按钮：重开问卷 → 改参数 → Regenerate 替换当前计划。
 - **Rotating slots — generate 开始读 DB guidelines（Session 57，2026-09-04）**
   - 此前 `generate` 完全不读 `scheduling_guidelines`（只有 `adjust` 读），周结构硬编码在 `slotRequestsForShape()`。所以 DB 里定的排期规则永远到不了生成的一周。
   - `src/lib/rotating-slots.ts` 读 `parameters.shared_slot === true` 的 guideline，按 ISO 周 parity 对锚点解析。确定性实现（generate 不走 AI）。
