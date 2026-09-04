@@ -83,6 +83,20 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 
 *Major coaching decisions related to training strategy.*
 
+- **2026-09-04（第八批）：** **Gym 的两个时长都对，是措辞歧义；顺带定位一个失效的 launchd job。**
+  - 用户报「jazz 没有设置成 90 分钟，gym 也不是默认的 2 小时」。查 DB：`class_pool` 里 **Jazz ADC 已是 90**、**Gym 已是 120** —— 源头没问题。
+  - **两个 gym 时长量的是不同的东西，不是矛盾：**
+    - `class_pool.duration_min = 120` → **日历占的时间 = 在 gym 的全部时长**，含跑步和其他 training
+    - `training_context/session_design_principles = 75 min` → **抗阻训练本身**（6-7 个动作）
+  - 问题在措辞：那条 constraint 原文是 `Each gym session: max 75 minutes`，`session` 这个词让它读起来像在描述整个 gym session。已改为 `Resistance-training block: max 75 minutes…` 并补一句说明 120 是总时长、两者不冲突、**不要去"reconcile"**。同时给 `class_pool` 两条 gym 行加了 note，从任一端看都不会再混。
+  - **我此前建议把 `class_pool` 的 120 改成 75 —— 那个建议是错的，已撤回。** 起因是我把两个不同粒度的数当成同一个字段的冲突。
+  - **8 月已进日历的旧事件带旧时长**（Jazz 8/12、8/19、8/26 是当时的 75min）。`approve` 会 clear+insert 整个窗口，所以 9/9 之后重新 approve 就是新值；8 月已完成的不动。**8/31、9/1 那两个 Gym 仍是 planned 但已进日历**，重新 approve 时会更新。
+  - **失效的 launchd job：`com.michael.training-calendar-sync`**（每周六 08:00）指向 `04_project/Training_program/calendar_write_approved.py`，**该文件不存在**，自 2026-08-29 起每周静默失败（见 `Training_program/training_scheduler_error.log`）。功能已被 app 的 `/api/schedule/approve`（`clearTrainingCalendarForWindow` + `insertCalendarEvents`）取代。**建议删除，待确认。** plist 内容存档如下以便还原：
+    - `ProgramArguments`: `/usr/bin/python3` + `.../Training_program/calendar_write_approved.py`
+    - `StartCalendarInterval`: Weekday 6, Hour 8, Minute 0
+    - `StandardOutPath` / `StandardErrorPath`: `.../Training_program/training_scheduler{,_error}.log`
+  - 另注意 `04_project/Training/training-calendar-scheduler/calendar_scheduler_v3.py` 里还硬编码着一套课表（ADC Ballet 90 / Gym 120 / Iyengar 75 / Mysore 90 / ADC Improv Contemporary 90 / Swimming 60）。它不在任何 launchd/cron 里，**不会自动跑**，但它是第三处课表定义 —— 与 Session 44 定的「执行细节归 App DB」相悖。留作待清理项。
+
 - **2026-09-04（第七批，实现）：** **周二轮换已做进 `generate`，不再需要手动 adjust。**
   - 此前 `/api/schedule/generate` **完全不读 `scheduling_guidelines`** —— 周结构硬编码在 `slotRequestsForShape()`，而 Contemporary / Hiphop / Salsa 三个词在整个文件里一次都没出现。所以第六批定的规则记录完整但不自动执行，生成的一周里周二是空的。
   - 新增 `src/lib/rotating-slots.ts`：读 `parameters.shared_slot === true` 的 guideline，按 ISO 周 parity 对锚点解析当周该排哪门。确定性实现不走 AI（generate 是确定性路径）。**以后加新轮换不用改代码，插一条同 shape 的 guideline 即可。**
