@@ -1,0 +1,23 @@
+04_project/Dance_Note/Material_Generation/_README.md
+  s_8c533efda0c41a::t_8a2e27b2f15f93 1-46
+04_project/Dance_Note/Material_Generation/_TEMPLATE.md
+  s_8c533efda0c41a::t_cd5fb52db9b1cf 1-37
+04_project/Training/Training.md
+  s_8c533efda0c41a::t_4c4b017da5bb2e 7,9-10,12,28-31,46-51,69-74,82-90
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "1b5dc26def7661d7446d7bd82e78a10cf9b44118",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
