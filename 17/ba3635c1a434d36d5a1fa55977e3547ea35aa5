@@ -1,0 +1,31 @@
+.gitignore
+  s_8c533efda0c41a::t_6a1b087a9a0df3 24-34
+04_project/Training/Meal_prep_routine/Meal_prep_routine.md
+  s_8c533efda0c41a::t_00a84aefed0f58 7,57-94,224-227
+  ai_agent 51,53-56,223
+04_project/Dance_Note/Material_Generation/_README.md
+  s_8c533efda0c41a::t_47fd0c1e594c82 41-58
+04_project/Training/Training.md
+  ai_agent 84-93
+  s_8c533efda0c41a::t_a578eafdfdf020 63,74,94-98
+04_project/Dance_Note/Material_Generation/_TEMPLATE.md
+  s_8c533efda0c41a::t_a0477e5379d3cf 23
+04_project/Danseur_Noble_Hub/App_Vision.md
+  s_8c533efda0c41a::t_44f76a69290e19 77-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "17ba3635c1a434d36d5a1fa55977e3547ea35aa5",
+  "prompts": {},
+  "sessions": {
+    "s_8c533efda0c41a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56807035-7ffc-4a6e-be49-c294921776bc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Michael Zhang <boping.m.zhang@gmail.com>"
+    }
+  }
+}
