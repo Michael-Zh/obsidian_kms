@@ -60,7 +60,7 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 
 ### Nutrition → 独立项目 [[Meal_prep_routine]]
 
-营养协议（16:8 窗口、2,300 kcal 宏量）由 [[Meal_prep_routine]] 承载，不在本文件重复。
+营养协议由 [[Meal_prep_routine]] 承载，不在本文件重复。**2026-09-04 定案：放弃固定 16:8 窗口，改为按日程吃**（大运动量日不设窗口并先补碳水 / 常规日 12:00–22:00 / 轻日 14:00–22:00），恒定项是每天 175g 蛋白质 + 20:00 后下课补一份蛋白。热量目标随 bulk/cut 取消而回到维持量附近。
 
 ---
 
@@ -71,7 +71,7 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 - **睡眠：固定起床 08:00**（2026-09-04 定）。只做这一件，让入睡时间被动往前推，不靠额外意志力。现状 6.42h / 27% 达标，四个多月没改善。它同时卡住两个目标：皮质醇长期偏高 → 优先促进腹部储脂，同时抑制肌肉合成。**是唯一不占训练时间的杠杆。**
   - 锚点：**末餐 22:00 / 就寝 00:00 / 起床 08:00**（用户 2026-09-04 给出的现实值）。卧床 8h，按 85–90% 睡眠效率约合 6.8–7.2h 实际睡眠 —— 刚好压在 7h 目标线上，**没有余量**。若要稳定达标，就寝需再往前 15–30 分钟。
   - 已知冲突：08:00 起床与 Mysore 07:30、Swimming 08:00 冲突。Mysore 月度一次且现在算 1.0 quota，去的那天需要例外早起；Swimming 本就因「太早」被 park。
-- **营养：[[Meal_prep_routine]] 重启**。先解决 fasting 窗口（16:8 后半段晚上不吃执行不了），再买容器。Recomposition 对营养精度要求最高 —— 热量维持 + 蛋白质充足 + 睡眠，三者缺一不可，现在只有训练那一项达标。
+- **营养：[[Meal_prep_routine]] 重启**。Fasting 已定案为**按日程吃（三日型）而非固定窗口** —— 断食本身无独立价值，而真实问题是蛋白质吃不够。下一步是买容器 + 跑第一次周日 batch（10/3–4）。Recomposition 对营养精度要求最高 —— 热量维持 + 蛋白质充足 + 睡眠，三者缺一不可，现在只有训练那一项达标。
 - **训练结构改造已定**（详见 Decisions 2026-09-04）：ballet 2 次 / **contemporary 与 exploration （hip-hop / salsa）共用一个 slot，1–2 周一次轮换，精力好时偶尔同周上两个** / jazz 四周制不动 / Reformer 3–4 周 / Iyengar 隔周+ / Mysore 月度 / swimming 保留但 quota 算 0.5（不再是免费项）。
 - **每月体测判断在不在轨道上**。目标 2027 Q1：86–87kg / SMM 44kg+ / BFM 12–13%。
 
@@ -80,6 +80,22 @@ Elite athlete recomposition protocol balancing dance-based endurance (ballet/jaz
 ## Decisions
 
 *Major coaching decisions related to training strategy.*
+
+- **2026-09-04（第四批）：** **只保留 quota cap 5，删掉 high-intensity cap 4。**
+  - 背景：重新加权后 performance pool = 高强度，所以 4 节 performance 就触发 `max_high_sessions: 4`，但只占 4.0 quota —— 它比 cap 5 更早触发，等于 cap 5 在以舞蹈为主的周里永远碰不到。两个上限量的是同一件事的两种数法，留着只会互相干扰。
+  - 已从 `scheduling_guidelines` 删除该行（`volume_target` / strength 0.9 / `{"max_high_sessions": 4, "rationale": "energy crash pattern documented"}` / id `5179a893-e93e-4f7e-802e-8e6c24efbe44`，2026-06-25 由 system 写入）。**记录在此以便需要时还原。**
+  - **energy crash 的防护没有丢**：`/api/coaching/insights` 的 overload guardrail 读的是 `workouts.intensity` 逐场判断（睡眠 <6h + 未来 3 天有 high intensity → 告警），与被删的 guideline 无关，仍然生效。
+  - 现在唯一的周上限是 **quota cap 5**（代码里 `QUOTA_CAP`，`computeQuota` 强制）。
+- **2026-09-04：** **3-day food log 推迟到 meal prep 跑起来之后。**
+  - 这条源自 `evolvement/session_20260521.md`：「窗口稳定约一周后做 3-day food log 验证蛋白质摄入」—— 从未执行。
+  - 影响：**「蛋白质吃不够」目前仍是推断**，由「四个月瘦体重 −1.2kg vs 脂肪 −0.5kg」反推，不是实测。
+  - 决定顺序：先把日型吃法和 meal prep 跑起来，再做 food log 验证。理由是现在测的是一个还没执行的协议，测不出有用信息。
+
+- **2026-09-04（第三批，营养）：** **放弃固定 fasting 窗口，改为按日程吃。** 详见 [[Meal_prep_routine]]。
+  - 理由：断食在热量与蛋白质匹配时无独立代谢价值，它只是合规工具；而实测问题是蛋白质吃不够（四个月瘦体重 −1.2kg vs 脂肪 −0.5kg），不是吃过量。固定 14:00–22:00 会让 HJS 早课（周四 09:30 / 周六 10:00 / 周一 11:15）全程空腹且课后延迟补蛋白 —— 在瘦体重下降期放大分解。
+  - 实证：CT intensive 期间运动量大、吃早餐 + 晚上加餐、睡眠一般，无 fasting 也没问题（用户观察）。那实际上是 peri-workout nutrition。
+  - 三日型：大运动量日不设窗口（先补碳水）/ 常规日 12:00–22:00 / 轻日 14:00–22:00。恒定项：175g 蛋白质每天 + 20:00 后下课补一份蛋白（不算破窗）。
+  - **终局交给 App**：日型可从当天 quota 权重推导（≥2 或「早课+gym」或两练 → 大运动量；1 节 performance/anchor → 常规；0 节或只有 alignment → 轻日），无需新输入。这是 App dev 重启条件 ① 的具体形态。先手动跑几次 —— 用户预期「执行过几次就会条件反射」，且跑过才知道判据要不要调。
 
 - **2026-09-04（第二批，执行细节）：** 课程参数与 slot 结构定案。
   - **所有舞蹈课统一 90 分钟**，唯一例外是 Salsa 周五 60 分钟。已修 `class_pool`：Jazz ADC 两条从 75 → 90。Iyengar 75 / Reformer 60 / Gym 120 / Hot Flow 60 / Yin 75 不属舞蹈，不动。

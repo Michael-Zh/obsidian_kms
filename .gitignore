@@ -21,6 +21,17 @@ copilot/
 __pycache__/
 *.pyc
 
+# Dance material recordings — canonical location is OUTSIDE the vault
+# (~/Library/Mobile Documents/com~apple~CloudDocs/Dance_Material/).
+# This is a safety net in case a file lands here by accident: video must never
+# enter the repo. Note it does NOT stop iCloud from syncing — that is why the
+# real location is outside the vault.
+Dance_Material/
+*.mov
+*.mp4
+*.MOV
+*.MP4
+
 # Sensitive credentials
 *.pickle
 *.google_token*

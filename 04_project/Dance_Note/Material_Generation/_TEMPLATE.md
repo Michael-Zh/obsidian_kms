@@ -20,7 +20,7 @@ tags:
 
 -
 
-**录像：**
+**录像：** `~/Library/Mobile Documents/com~apple~CloudDocs/Dance_Material/YYYY-MM-DD/`
 
 ## 3. 哪一段值得留
 
